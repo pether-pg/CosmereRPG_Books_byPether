@@ -1,0 +1,34 @@
+\section{Shell Seller}
+
+If a character decides to disembark and see the city, read the following:
+
+\quoteBox{
+	When you step on the stone ground of the port, a little girl approaches you. Her hair looks as if made of gold, and she has gold tattoos on her skin.
+	\\ \\
+	"Would you like to buy a shell?", she asks with a cute voice.
+}
+
+\npcShellSeller[s] is a young Irali girl. She sells sea shells on the sea shore. If a player inspects her collection, they can find shells of various shapes, sizes and colors, as well as various hand-made jewelry. The girl tells about amazing properties each of them has.
+
+If a character is interested in something in particular, \npcShellSeller{} tells them a price of the item. It is much too high for a character at this level (25 marks should be high enough for 1st level characters, but she is a skilled trader and can adjust the price if she can see the buyer is richer than that).
+
+Characters can start a conversation with \npcShellSeller{} to haggle the price down.
+\conversationDefence{\npcShellSeller{}}{12}{14}{4}
+She can be easily interested with some curiosities from Shinovar, but she will spend 1 focus to resist PC's counter-offers.
+\conversationEnd{\npcShellSeller{}}{1}
+
+Once the conversation is over, she presents her final offer. For each focus \npcShellSeller{} spent during the conversation, lower the price by 25\%.
+
+\roleplayBox{\npcShellSeller{}}{
+	\roleplayTips
+	{Cute, enterprising.}
+	{Sell shells at the best price.}
+	{\npcShellSeller[s] is a young Iriali girl with golden skin, eyes and hair. Her arms are decorated with golden floral patterns.}
+	{\npcShellSeller{} is starting her trade from the earliest years. She is a proud owner of jewelry selling stand, mostly focusing on pretty shells. She is curious of the world and loves hearing stories about the places far away. Each customer is a new hope for something interesting happening. }
+}
+
+\creditedArtFigure{width=0.5\textwidth}
+					{images/shellSeller.png}
+					{AI}
+					{\npcShellSeller{} selling shells.}
+					{fig:shellSeller}

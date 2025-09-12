@@ -1,0 +1,56 @@
+\section{\enemyVineAbominationName}
+\label{enemyVineAbomination}
+
+Given enough time and blood, \enemyVineMonster{} will eventually grow into \enemyVineAbomination{} - huge mass of bones, corpses and Red Vines dripping blood onto the battlefield.
+
+Those horrors are often found nearby sacrificial altars, where they are offered continuous supply of sustenance.
+
+Growing out of proportions, those grotesque plants are impossible to miss and they have much harder time blending into the surrounding than its younger and less developed forms. However, they are strong enough to slowly pull themselves closer to their enemies, increasing reach of their attacks.
+
+\tacticsBox{
+	Grown on blood, \enemyVineAbomination{} has always thirst for more. It will Vine Whip anyone who is close enough in order to Constrict them later. If enemies are out of range, it will Hurl Remains onto them, spawning allies in the process. When overwhelmed by foes, \enemyVineAbomination{} will use Tripping Whip and Puppeteer Corpse to even the odds.
+}
+
+\vspace{1cm}
+{\hfill \includeCreditedGraphics{width=0.40\textwidth}{images/vineAbomination.png}{AI} \hfill}
+
+\newpage
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyVineAbomination{}}{2}{Boss}{Large Plant}
+}{
+	\enemyStatBlockStats{3}{5}{2}{3}{4}{2}{100 (75–125)}{5}{0} 
+}{
+\small
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsMovement[10 ft.]\\
+	\enemyStatblockSkillsSenses[20 ft. (touch)]
+	\enemyStatblockSkillsPhysical[Agility +8, Stealth +8]
+	\enemyStatblockSkillsSpiritual[Survival +6]
+	\enemyStatblockSkillsLanguages
+	]
+}{
+	\enemyStatblockFeature{Flammable}{This creature takes double energy damage from fire sources.}\\
+	
+	\enemyStatblockFeatureBoss{}\\
+}{
+	\enemyStatblockAction{Strike: Vine Whip}{Attack +8, reach 25 ft., one target. Graze: 3 (1d6) keen damage. Hit: 11 (1d6 + 8) keen damage and the vine can spend 1 focus to wrap around the target. If it does, the target becomes \restrained{}. As \iconAction{}, the Restrained target or a character within 5 ft. can make \skillCheck{18}{Athletics} to release the target on success.}\\
+	
+	\enemyStatblockAction{Strike: Hurl Remains}{Attack +8, range 30/120 ft., one target. Graze: 3 (1d6) impact damage. Hit: 11 (1d6 + 8) impact damage. Spawn \enemyReanimatedRemains{} within 5 ft. from the target \textit{(even if the attack did not hit).}} \\
+	
+	\enemyStatblockAction{Constrict}{The vine attempts to crush an enemy Restrained by it. That enemy must pass \skillCheck{18}{Athletics}. The vine deals 3 (1d6) impact damage to them on failure and heals for the same amount.}\\
+	
+	\enemyStatblockAction{Tripping Whip (Costs 1 Focus)}{An enemy within 25 ft. must pass \skillCheck{18}{Agility} or falls Prone.}\\
+	
+	\enemyStatblockAction{Puppeteer Corpse (Costs 1 Focus)}{The vine animates a corpse within 20 ft. range, giving it \abilityVinesName{} and \abilityHuskName{} for as long it stays within the range. Unless slain or disjointed from the vine, the puppet will gain full autonomy after 1 hour.} \\
+	
+	\enemyStatblockAction[\iconActionDouble]{Drink Blood}{The vine drinks blood from a nearby source, regaining 5 focus and 5 health.}
+}
+\normalsize
+
+
+
+
+
+
+
+

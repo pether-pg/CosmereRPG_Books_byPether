@@ -1,0 +1,76 @@
+\section{Ancient Protectors}
+
+When characters reach Kadrix in hopes to find help from other Reshi Islands, read the following:
+
+\quoteBox{
+	You arrive at Kadrix, the biggest of the Reshi Islands. After all that time you spent on the back of \theIsland{}, Kadrix seems strangly quiet - huge mountain chain sits calmly at the surface of the sea, without any legs that would shake it all the time.
+	\\ \\
+	When you land, two Reshi mounted on enormous greathsells approach you. "What do you want from Kadrix?", one of them asks.
+}
+
+If a character says they need to speak to the king, they must pass \skillCheck{15}{Persuasion}. The skill check has an advantage if the character earned Reshi respect previously. If the check fails, the guards dismiss the party and the players must find an alternative way to get the king's ear.
+
+\subsection{King's Interpreter}
+
+Once the party is brought in the presence of the king, read the following:
+
+\quoteBox{
+	You step before the king, escorted by the two Reshi mounted on the greathsell steads. The king sits on a throne carved from another greathell's carapace. You feel so small...
+	\\ \\
+	"Speak, outsiders", king's interpreter says. "What is a reason for you to be here?"
+}
+
+\npcReshiInterpreter[s] is a king's interpreter. The characters must enter a conversation with her and persuade her not to dismiss them.
+\conversationDefence{\npcReshiInterpreter{}}{15}{16}{4}
+She lives to serve her king and respects boldness, but is cautious not to overstep.
+
+\conversationEnd{\npcReshiInterpreter}{2}
+She will spend 1 Focus to repeal characters' arguments, 2 if they wear marks of Reshi respect (see \fullref{ssec:reshiBoldness}).
+
+\textbf{Success.} If \npcReshiInterpreter{} is out of Focus to defend from a character's argument, the king himself enters the conversation. Move to \fullref{ssec:reshiKing}.
+
+\textbf{Failure.} If the characters fail to convince \npcReshiInterpreter{}, they will need to leave the island empty-handed.
+
+\roleplayBox{\npcReshiInterpreter{}}{
+	\roleplayTips
+	{Calm, distanced.}
+	{Serve \npcReshiKing{}, deny unreasonable requests.}
+	{Older Reshi woman, wearing shell jewelry and rich robes.}
+	{\npcReshiInterpreter[s]{} is the voice of \npcReshiKing{}. She speaks for him, granting boons her king would grant and deny the favor to anyone who asks for too much.}
+}
+
+\subsection{\npcReshiKing{}}
+\label{ssec:reshiKing}
+
+Once \npcReshiInterpreter{} is out of arguments, the king joins the conversation. Read the following:
+
+\quoteBox{
+	Suddenly, the king raises from his carved throne. Everyone grows silent, and his words echo in the valley as he speaks:
+	\\ \\
+	"Your case intrigues me, little one. But tell me, outsider, why should I help you?"
+}
+
+\npcReshiKing[s] joins the conversation.
+\conversationDefence{\npcReshiKing{}}{16}{17}{5}
+He cares about the safety of his people, but he is sure they don't need the characters' help.
+
+\conversationEnd{\npcReshiKing}{3}
+He will spend 1 Focus to repeal characters' arguments.
+
+\roleplayBox{\npcReshiKing{}}{
+	\roleplayTips
+	{Stoic, regal.}
+	{Protect people of Kadrix.}
+	{Middle-aged Reshi man, wears armor made from greatshell's carapace.}
+	{\npcReshiKing[s]{} is the great king of Kadrix, the greatest of Reshi Isles. Though each Isle has its own king, \npcReshiKing{} has an ambition to be seen as the most powerful of them and rule the Reshi Sea as the King of Kings.}
+}
+
+\textbf{Success.} If \npcReshiKing{} is out of Focus to defend from a character's argument, he will give them \lootSprenDagger{}, ancient weapon forged by the Reshi for fighting evil gods of other islands. Two \enemyReshiWarrior{}s will accompany the party and carry the weapon, assisting in combat if required.
+
+\textbf{Failure.} If the characters fail to convince \npcReshiKing{}, he will spare two of his \enemyReshiWarrior{}s to join the party and investigate the threat of the Red Vines. They will assist in each combat, joining the PC's side.
+
+\creditedArtFigure{width=0.45\textwidth}
+					{images/reshiKing.png}
+					{AI}
+					{\npcReshiKing{} of Kadrix and his greatshell.}
+					{fig:reshiKing}

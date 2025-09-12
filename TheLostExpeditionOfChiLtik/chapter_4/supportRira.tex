@@ -1,0 +1,120 @@
+\section{Riran Artifabrian}
+
+When characters reach Kurth in search of artifabrian, read the following:
+
+\quoteBox{
+	When you approach the artifabrian's workshop, a flash of light beams from one of the windows, following by huge explosion. The artifabrian crawls out of the workshop with messy hair and soot on her googles.
+	\\ \\
+	"Storms!", she curses, coughing. "That was not supposed to happen!"
+}
+
+\npcArtifabrian[s] is a Veden artifabrian who recently opened her workshop in Kurth. She survived the explosion without any major injuries apart from a broken arm. She cannot continue her work on her newest fabrial, \fabrialName{}. 
+
+The party can offer their help to \npcArtifabrian{} if they want to earn her favor. If they do, proceed to \fullref{ssec:artifabrianConstruct}.
+
+The party can also ignore injured \npcArtifabrian{} and attempt to break into the shop in hopes of quick gains. If they do, proceed to \fullref{ssec:artifabrianHeist}.
+
+\roleplayBox{\npcArtifabrian{}}{
+	\roleplayTips
+	{Brilliant, impatient.}
+	{Craft great new inventions.}
+	{Veden woman, with black hair she ties. She wears a velvet glove on her safehound when she works.}
+	{\npcArtifabrian[s]{} traveled to Kurth to open best artifabrian business on this side of the world. She is passionate about her work, loves solving crafting puzzles and inventing new solutions to artifabrian problems. She has little patience for all other things - people bothering her, showing proper manners or annoying details like naming her inventions.}
+}
+
+\creditedArtFigure{width=0.45\textwidth}
+					{images/artifabrian.png}
+					{AI}
+					{\npcArtifabrian{} working on a \fabrialName{}.}
+					{fig:artifabrian}
+
+
+\subsection{Constructing \fabrialName{}}
+\label{ssec:artifabrianConstruct}
+
+If characters wish to earn \npcArtifabrian{}'s favor, they would need to help her construct \npcArtifabrian{}'s newest invention, \fabrialName{}. Run this as an endeavor. Possible approaches may include:
+
+\scriptedOption{Suggesting a better name.}{
+	A character may propose a better name for the fabrial. Passing \skillCheck{5}{Persuasion} will convince \npcArtifabrian{} to change the name - she never bothered with properly naming it anyway, she focused on making it work first.
+}
+
+\scriptedOption{Mending broken arm.}{
+	\npcArtifabrian{} will provide more constructive suggestions if her broken arm is attended to. A character may help with that using \skillCheck{13}{Medicine}
+}
+
+\scriptedOption{Recalling saltwater properties.}{
+If a character succeeds on \skillCheck{15}{Lore}, they will be able to recall some useful information about the nature of sea water.
+}
+
+\scriptedOption{Improving original design.}{
+	It seems that explosions are not a feature of the machine and the design should be improved. \skillCheck{20}{Deduction} can be used for that.
+}
+
+\scriptedOption{Crafting the fabrial.}{
+	The previous model exploded, so new one must be prepared from scratch. A character may use \skillCheck{25}{Crafting} to properly craft the fabrial.
+}
+
+\scriptedOption{Finesse handwork.}{
+	Some of the more delicate parts of the fabrial require more gentle touch. Use \skillCheck{20}{Thievery} to verify if a character does not break other parts in an attempt.
+}
+
+\scriptedOption{Organizing the workspace.}{
+	All projects need someone who will manage all moving parts - not only those in a machine. Use \skillCheck{18}{Leadership} do determine if a character's leadership skills can apply here.
+}
+
+\subsubsection{\pursuitResolveHeader}
+
+\pursuitReq{10}{3}. If the party reaches at least half of the threshold before failing, they will receive an old fabrial as a thank-you gift.
+
+\textbf{Success.} If characters complete the endeavor, \npcArtifabrian{} is very impressed with their skills. Proceed to \fullref{ssec:artifabrianImpressed}.
+
+\textbf{Failure (5 successes collected).} The artifabrian is grateful for your attempts, but she will take over from now. She will reward players with an old fabrial of their choice. Proceed to \fullref{ssec:artifabrianGrateful}.
+
+\textbf{Failure (without 5 successes).} Your clumsy attempts enrage \npcArtifabrian{} even more. Proceed to \fullref{ssec:artifabrianAngry}.
+
+
+\subsection{Impressed Artifabrian}
+\label{ssec:artifabrianImpressed}
+
+Once the characters fully completed the endeavor, read the following:
+
+\quoteBox{
+	"Well done, you clearly have a calling for that!", \npcArtifabrian{} praises you. "Now, about your problem... I think I have something that may help you, let me see..."
+	\\ \\
+	\npcArtifabrian{} unlocks her safe and produces a perfectly round diamond sphere.
+	\\ \\
+	"If it is a spren that troubles you, I believe this should be a perfect solution to your troubles"
+}
+
+The party is rewarded with \lootPerfectGemstone{}. It can be used to forever trap a spren inside. On top of that, the party receives one fabrial of their choice (see \fullref{ssec:artifabrianGrateful}).
+
+\subsection{Grateful Artifabrian}
+\label{ssec:artifabrianGrateful}
+
+If the party fails the endeavor, but managed to earn artifabrian's thanks, read the following:
+
+\quoteBox{
+	"All right, I can see your heart is in the right place, but this is clearly not your calling. Let me finish the project. As a payment for your troubles, feel free to take something from that box labeled as "Old, Useless, Trash""
+}
+
+A party can select one of the old fabrials as a reward: Amplifying Painral, Numbing Painral, Emotion Bracelet, or one of the Attractors. See \handbook{} for details.
+
+\subsection{Enraged Artifabrian}
+\label{ssec:artifabrianAngry}
+
+If the party fails the endeavor with little progress, read the following:
+
+\quoteBox{
+	"Damnation! I have no time for your storming fat fingers! Get out of my shop, I don't have patience for storming fools like you! Storming storms...!"
+}
+
+The party is thrown out of the shop without any rewards. If they want to push their luck, they can still attempt to break inside and unlock the safe (see \fullref{ssec:artifabrianHeist}).
+
+\subsection{Breaking into the workshop}
+\label{ssec:artifabrianHeist}
+
+Characters may decide to break into the artifabrian's workshop. First, they would need to make sure \npcArtifabrian{} is not around with a \skillCheck{25}{Deception or Persuasion}. That check has a disadvantage if characters previously attempted to help the artifabrian.
+
+The workshop is guarded by alerting fabrials. A character needs \skillCheck{20}{Perception} to spot them and \skillCheck{20}{Stealth} to sneak around them. Opening the safe requires \skillCheck{30}{Thievery}.
+
+Once the safe opens, the characters may find \lootPerfectGemstone{} inside.

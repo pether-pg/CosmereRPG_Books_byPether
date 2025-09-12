@@ -1,0 +1,130 @@
+\section{Rogue Shardbearer}
+
+The party can travel to Iri to track down the \enemyRogueShardbearer{}. \npcRogueShardbearer[s] is a Riran rebel sowing mayhem in the Iriali lands. There are some rumors he was last seen in Rall Elorim.
+
+This hunt consists on three tasks - tracking the outlaw, preparing for fight and in the end - the duel itself.
+
+\subsection{Tracking \npcRogueShardbearer{}}
+
+First thing the characters must do is to find their prey. They must travel to Rall Elorim, and start from there. You can run the search part as an endeavor presented as a montage of several days' worth of tracking effort. Possible approaches may include:
+
+\scriptedOption{Looking for \npcRogueShardbearer{}'s victims.}{
+	\npcRogueShardbearer{} is quite active in Rall Elorim. \skillCheck{15}{Perception} should allow players to find some corpses he left behind. Those will certainly provide a clue where to track him.
+}
+
+\scriptedOption{Asking Iriali underworld.}{
+	There are many here, who don't follow the law. Asking nicely with \skillCheck{18}{Persuasion, Deception or Intimidation} may yield some answers.
+}
+
+\scriptedOption{Tracking \npcRogueShardbearer{}'s contacts}{
+	Even a Shardbearer can't work alone. There are those who help him. Tracking them with \skillCheck{16}{Stealth} may lead a character to some answers.
+}
+
+\subsubsection{\pursuitResolveHeader}
+
+\pursuitReq{5}{5}
+Once the players reach 5 successes they will be able to determine where they can find \npcRogueShardbearer{}. 
+
+If the players fail the endeavor, \npcRogueShardbearer{} takes a notice of them. They will still meet him, but on his terms - the \enemyRogueShardbearer{} will not be surprised by the characters or even might surprise them.
+
+\reasonBox{
+	For pacing reasons, the searching part is limited to one simple endeavor. If your group enjoys roleplaying parts of the game, you can consider expanding that part to include more NPCs, more intrigue and more complex story.
+	\\ \\
+	This book does not focus on that as the search for \npcRogueShardbearer{} does not tie strongly to the main plot and is only required to bridge the gap between the party not knowing where he is and the party fighting him.
+}
+
+\subsection{Preparing the Battlefield}
+
+\enemyRogueShardbearer is a dangerous enemy and the party should not rush to the fight. Allow them to plan and prepare to even the odds. 
+
+Once they are ready, proceed to \fullref{ssec:shardbearerFight}.
+
+\subsection{Fighting \npcRogueShardbearer{}}
+\label{ssec:shardbearerFight}
+
+\npcRogueShardbearer{} fights alone in this battle. Even then, \enemyRogueShardbearer{} is a deadly foe. Allow the fight to start in the location selected by the characters. If they succeeded in the tracking endeavor, he will be surprised by the party as the fight starts.
+
+As the fight goes on, \npcRogueShardbearer{} will change the scenery to another of the locations. First such change will happen after he loses more than 25\% of his health. After loosing more than 50\% he will flee to another location again.
+
+\roleplayBox{\npcRogueShardbearer{}}{
+	\roleplayTips
+	{Careful, secretive}
+	{Abolish Iriali supremacy over Rira}
+	{Young man with blond, Riran hair. Wears black clothes.}
+	{\npcRogueShardbearer[s]{} is a Riran agent fighting for freedom for his kingdom. He despises Iriali and sows chaos and anarchy inside their borders. Knowing that he will be hunted for his rebellious acts, he is careful not to leave traces. Fight, run, and live to fight another day, this is how he operates. }
+}
+
+
+\creditedArtFigure{width=0.45\textwidth}
+					{images/rogueShardbearer.png}
+					{AI}
+					{\npcRogueShardbearer{} holding his Shardblade.}
+					{fig:rogueShardbearer}
+
+
+\ifthenelse{\equal{\useAI}{true}}{\newpage}{}  % manual newpage to micromanage page layout
+
+\subsubsection{Fighting \enemyRogueShardbearer{} -\\ Opportunities and Complications}
+
+If an Opportunity or Complication is rolled during the fight, use following table for inspiration:
+
+\oppCompTable{
+	\oppCompRow{\iconOpp[15pt]}{Stray \enemyAxehound{} joins the fight, attacking \enemyRogueShardbearer{}.}
+	\oppCompRow{\iconOpp[15pt]}{\npcRogueShardbearer{} looses his grip and the Shardblade is lost to in the mist. He will need to summon it again.}
+	\oppCompRow{\iconComp[15pt]}{\enemyDrunkenSailor{} appears and attacks the party.}
+	\oppCompRow{\iconComp[15pt]}{\npcRogueShardbearer{} was able to cut through the surroundings and modify it to his advantage.}
+}
+
+\label{ssec:shardbearerLocations}
+\subsection{Fight Location - Dark Alley}
+
+Following battlefield effects apply here:
+
+\scriptedOption{Narrow Alleyways.}{
+	Those streets are not wide enough for two characters to fight side by side.
+}
+
+\scriptedOption{Crem Puddle.}{
+	The crem puddles are a difficult terrain. A character entering one of them must pass \skillCheck{10}{Agility} or fall Prone.
+}
+
+\scriptedOption{High Rooftops.}{
+	Roofs here are roughly 10 feet above the street level. Characters can climb them with \skillCheck{10}{Athletics} and fire projectiles on enemies below.
+}
+
+\subsection{Fight Location - Old Warehouse}
+
+Following battlefield effects apply here:
+
+\scriptedOption{Wooden Floors.}{
+	A character armed with a Shardblade can cut the floor (\iconAction) to make it a difficult terrain on a medium (5 ft.) area.
+}
+
+\scriptedOption{Torches and Oil Storage.}{
+	Torches in here are flaming with open fire. It is easy to find small barrels of flammable oil.
+	When set of fire, the oil creates a medium (5-foot radius) area that deals 4 (1d8) energy damage each time a character moves into that area or starts their turn there.
+}
+
+\scriptedOption{High Boxes.}{
+	The boxes in the warehouse are high enough to provide cover in combat. A character may climb such a box, treating it as a dangerous terrain. The boxes are roughly 5-feet tall.
+}
+
+\subsection{Fight Location - Empty Shore}
+
+Following battlefield effects apply here:
+
+\scriptedOption{Strong Waves.}{
+	A character starting their turn in the sea must pass \skillCheck{15}{Athletics} or fall Prone as the wave crashes onto them.
+}
+
+\scriptedOption{Nets and Ropes.}{
+	A character may toss a net onto their foe using ranged attack against their Physical Defense. If a net hits, the character becomes Restrained and must take action (\iconAction{}) to end the effect.
+}
+
+\subsection{Aftermath}
+
+Once \npcRogueShardbearer{} is defeated, his \lootRogueShardblade{} drops next to him, ready to be taken by a PC.
+
+If the characters flee the fight, \npcRogueShardbearer{} lays low during following days and cannot be encountered again. However, players can loot the Old Warehouse. Assume they can find most items from Equipment table in \handbook{}.
+
+

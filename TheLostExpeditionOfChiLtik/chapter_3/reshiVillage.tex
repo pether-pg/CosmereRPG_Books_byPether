@@ -1,0 +1,109 @@
+\section{Reshi Village}
+
+Characters can find the Reshi people near the head of the island. When they approach this area, read the following:
+
+\quoteBox{
+	As you approach closer to the island's head, you see more and more groups of Reshi people diving into the water from the shell's edge. A little higher, a warrior in carapace armor and red sinuous patterns on a white skin paint guards an Irali man, tied to a tree.
+}
+
+Characters that are familiar with Reshi culture will know, that those people respect boldness. Any other character can deduce that much with \skillCheck{10}{Lore or Deduction}.
+
+The party can rush to the village without any preparation. However, if they want to gain respect of the locals first, they will need to show their bravery before that. They can also interact with the man tied to the tree.
+
+\subsection{Imprisoned sailor}
+\label{ssec:imprisonedSailor}
+
+Tied to one of the trees is \npcCapturedExplorer{}. If the party talks to him, he will share following information:
+
+\scriptedOption{Who are you?}{
+	"\npcCapturedExplorer{}. Joined Thaylen expedition."
+}
+
+\scriptedOption{Why are you captured?}{
+	"Those people are savages! They mumbled something about gods, those primitives!"
+}
+
+\scriptedOption{Where did they capture you?}{
+	"In the island, near the summit." Characters who already found \npcDeadExplorer{} may connect the location to the description.
+}
+
+\scriptedOption{Were there other people?}{
+	"Yeah, \npcDeadExplorer{}, but those savages slaughtered him!". If a character succeeds on \skillCheck{15}{Insight} he will notice a lie - he was the one who killed him. The check has an advantage if the party found the body earlier and inspected the wounds (see chapter \ref{sec:ancientTemple}).
+}
+
+\scriptedOption{What were you looking for?}{
+	"Nothing much, we just wanted to have a view of the island". If a character succeeds on \skillCheck{15}{Insight} he will notice a lie. The check has an advantage if the players discovered the location (see \ref{sec:ancientTemple}) or found the map leading to it (see \ref{sec:crewQuarters}).
+}
+
+\scriptedOption{What were you really looking for?}{
+	"All right, all right! We had this map, we hoped to found some treasure... Ancient Shardblade perhaps? Or other riches? But we found only trouble..."
+}
+
+\subsection{Deciding Prisoner's Fate}
+
+The prisoner is guarded by one of \enemyReshiWarrior{}s. He is not willing to let him go, nor he will allow to harm him, but he might be swayed during conversation with characters. \conversationDefence{\enemyReshiWarrior{}}{13}{14}{4} 
+He will spend his focus to resist character's arguments, yielding once he is our of focus.
+\conversationEnd{\enemyReshiWarrior{}}{2}
+
+\ptrBox{
+	Freeing captured prisoner may attract lightspren. Discovering his lies may attract a cryptic. Finding proof of his guilt and executing him may attract highspren.
+}
+
+\subsection{Showing boldness}
+\label{ssec:reshiBoldness}
+
+Characters can attend to various Reshi activities to prove themselves to the local people. Run this as an endeavor. The result of that will determine how willing Reshi will be to share their knowledge.
+
+Potential approaches to the endeavor may include:
+
+\scriptedOption{Freeing the prisoner}{
+	If the party managed to free \npcCapturedExplorer{}, award them with 1 success in this endeavor, 2 if they executed him instead.
+}
+
+\scriptedOption{Jumping into the sea}{
+	A character may use Athletics to jump from the shell into the sea. Players can choose how difficult the jump will be - the higher the jump, the harder the check, but will show more boldness. If the jump fails, the character will take fall damage, but it will still gain Reshi's respect.
+}
+
+\scriptedOption{Swinging on the vines}{
+	Some of the vines grow beyond the shell edge, just above the sea. Players can swing and jump between them using Agility. Again, harder paths can be chosen, gaining more respect, but risking more damage in case of failure.
+}
+
+\scriptedOption{Intimidating posture}{
+	Reshi skirmishes consist mostly of verbal fights. Player can attempt \skillCheck{15}{Intimidation} to be seen more scary. 
+}
+
+\scriptedOption{Bold words}{
+	Calm talk can be as bold as intimidating shouts. Players can attempt \skillCheck{18}{Persuasion} to show their talking prowess.
+}
+
+\scriptedOption{War paint}{
+	Some of the Reshi paint their bodies in red, white and black patterns. A character may duplicate the effect using \skillCheck{12}{Thievery}
+}
+
+\scriptedOption{Brave face}{
+	Sometimes it's not about what you do, it's about how you do it. A character may pass \skillCheck{20}{Discipline} to keep their cold blood in a face of some dangerous challenge.
+}
+
+\subsection{Difficulty options}
+
+For various checks during the endeavor, players can choose the difficulty as they seem fit. Use following table to determine how hard the check is, how much damage a character will take in case of failure and how much respect will that earn in the eyes of the Reshi (even in case of failure):
+\newline
+
+\begin{tabular}{c c c}
+	Skill DC & Damage Risk & Respect Earned \\ \hline
+	5 & 1d6 & 1 \\
+	10 & 2d6 & 2 \\
+	15 & 3d6 & 3 \\
+	20 & 4d6 & 4 \\
+	25 & 5d6 & 5 \\
+\end{tabular}
+
+\subsection{\pursuitResolveHeader}
+
+\pursuitReq{12}{3}
+
+\textbf{Success.} The party shows their bravery and earns respect of the Reshi. They are more willing to treat them as one of them. The characters are marked with traditional Reshi tattoos.
+
+\textbf{Failure.} You can't fool anyone, you are too weak and timid. Note how many successes the party obtained before the final failure.
+
+Regardless of the result of the endeavor, proceed to to the next scene (see \ref{sec:reshiLegends}). The number of successes gathered here will affect an attitude of NPCs there, though.

@@ -1,0 +1,50 @@
+\newpage % manual newpage to micromanage page layout
+\section{Following the Crew}
+\label{sec:crewSearch}
+
+Player may wish to attempt a search for the lost crew members: \npcCapturedExplorer{} and \npcDeadExplorer{}. Run this as an endeavor (see "\pursuitResolveHeader{}"). If the party fails the endeavor, but later finds some clues about their whereabouts (eg. the map from expedition's ship), allow to repeat the endeavor attempt.
+
+Potential approaches to the endeavor may include:
+
+\scriptedOption{Following the map}{
+	If the players found island map on the ship (see \fullref{sec:crewQuarters}), they can simply follow it (\skillCheck{5}{Deduction}).
+}
+
+\scriptedOption{Following Reshi tales}{
+	If the party knows about the temple from the local Reshi people (see \fullref{sec:reshiLegends}), they can assume someone from the crew attempted to find it. Using this knowledge (\skillCheck{5}{Lore}) may help them find the temple entrance and \npcDeadExplorer{}.
+}
+
+\scriptedOption{Following the Vines}{
+	All Red Vines originate from the temple, where \npcDeadExplorer{} can be found (see \fullref{sec:ancientTemple}). At first there is not so many of them, but as the story unfolds more and more Vines can be found on the island. If the party wishes to follow the Vines, that will require \skillCheck{30}{Survival}. This DC is lowered by 5 for each chapter of the story (DC 20 in chapter 2, DC 5 in chapter 5).
+}
+
+\scriptedOption{Searching for Clues}{
+	Characters may search for some clues about the path \npcDeadExplorer{} took - perhaps some footprints, broken branches, etc. That will require \skillCheck{15}{Perception}.
+}
+
+\scriptedOption{Tracking}{
+	Characters that are good at tracking may attempt \skillCheck{13}{Survival}.
+}
+
+\scriptedOption{Climbing the trees}{
+	A character make attempt \skillTreeClimb{} to climb a tree and have a better view around.
+}
+
+\subsection{Opportunities And Complications}
+
+\oppCompTable{
+	\oppCompRow{\iconOpp[15pt]}{ You find a scrap of the clothes. Add one success to the endeavor. }
+	\oppCompRow{\iconComp[15pt]}{ You twist your ankle. Your speed is reduced by 10 ft. and you have disadvantage on Athletics checks. }
+}
+
+\subsection{\pursuitResolveHeader}
+
+\pursuitReq{8}{4}
+
+\textbf{Success.} The party finds \npcDeadExplorer{}'s corpse near the entrance to the old ruins. Proceed to "Ancient Temple".
+
+\textbf{Failure.} No crew member can be found on this island. Where did they go...?
+
+\reasonBox{
+	It is OK if the party does not manage to succeed at this stage. Encourage them to try again later when more information is gathered.
+}

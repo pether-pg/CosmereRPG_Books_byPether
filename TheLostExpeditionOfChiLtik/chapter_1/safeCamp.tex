@@ -1,0 +1,99 @@
+\section{Safe Camp}
+
+\npcMedic{} leads characters to his camp. When they get there, read the following:
+
+\quoteBox{
+	With your help, \npcMedic{} slowly leads you to his camp, located in a lait-like formation, big enough to shelter several people. A few boxes and barrels serve as a most basic furniture. 
+	\newline \newline
+	Two other people found their shelter here: Thaylen man with tired eyes, and a young Thaylen girl, perhaps 7-years old, sleeping pale in gray tatters, brown from the crem. A single axehound with red ribbon in her antennae lies nearby the girl, watching over her.
+}
+
+Lying in the rags is \npcSickGirl[s], young Thaylen girl sick with unknown illness. Her babsk, \npcBabsk[s] sits nearby, visibly worrried.
+
+It is good place to rest, mend wounds and have some conversations with NPCs.
+
+\creditedArtFigure{width=0.45\textwidth}
+					{images/girlAndBabsk.png}
+					{AI}
+					{\npcSickGirl{} and \npcBabsk{} in the camp.}
+					{fig:girlAndBabsk}
+
+
+\newpage % manual newpage to micromanage page layout
+\subsection{Talking with \npcMedic}
+
+\npcMedic{} is grateful for players' help. When asked, he will share following information to the players:
+
+\scriptedOption{Who are you?}{
+	"I am \npcMedic{}. I joined \npcBabsk{}'s expedition as a ship's medic."
+}
+
+\scriptedOption{What were you doing back there?}{
+	"I was searching for some medical herbs. I am out of \medicalHerb{}, and \npcSickGirl{} is in desperate need of some..."
+}
+
+\scriptedOption{How is your leg?}{
+	"It's bad... Not as bad as it could've been, though. I cannot thank you enough, you saved my life! Don't worry about the leg, with some painkillers and bandages I will manage..."
+}
+
+\scriptedOption{What's wrong with the girl?}{
+	"Her name is \npcSickGirl{}. She got weak during our voyage a few days back. We landed here with hopes to find some help, but so far we had no luck. And with every day, she's getting worse..."
+}
+
+\subsection{Talking with \npcBabsk}
+
+\npcBabsk{} sits next to \npcSickGirl{}, his eyes weary and tired. If the party approaches him, he will talk to them and answer their questions:
+
+\scriptedOption{Who are you?}{
+	"My name is \npcBabsk{}, and this is \npcSickGirl{}, my pupil. We are explorers, and I am teaching the girl my trade"
+}
+
+\scriptedOption{What are you doing here?}{
+	"We were sent to explore those seas for the queen. We hoped to map those islands and learn more about their resources."
+}
+
+\scriptedOption{Are there more people from the expedition?}{
+	"There were also \npcCapturedExplorer{} and \npcDeadExplorer{}, but we were separated. They were talking about lost treasures, naive fools..."
+}
+
+\scriptedOption{Why are you camping here?}{
+	"\npcSickGirl{} got sick when we were sailing. We hoped to find some help on this island, but the Reshi cast us out, worried about us spreading some plague."
+}
+
+\roleplayBox{\npcBabsk{}}{
+	\roleplayTips
+	{Fatherly, protective.}
+	{Take care of \npcSickGirl{}.}
+	{\npcBabsk[s] is a Thaylen man with his eyebrows tied with the rest of his long, black hair.}
+	{\npcBabsk{} is an expedition leader from Thaylenah. As a babsk of \npcSickGirl{}, he treats her like his own daughter. Now, when she is sick, he is determined to do whatever is best for her.}
+}
+
+\subsection{Healing \npcSickGirl}
+
+Characters may wish to attempt healing \npcSickGirl{}. Doing so requires \skillCheck{18}{Medicine}, but the check has disadvantage if players don't have healing herbs from the island. Failure does not improve the girls state in any way. Success does little, too - the girl smiles faintly, but does not wake up.
+
+If a player attempts using Stormlight in the attempt to heal her, other NPCs in the camp rush to stop them. If the player continues, spawn \enemyLarkin{} draining the Investure and failing the healing attempt.
+
+\reasonBox{
+	It is important for \npcSickGirl{} not to wake up. Her treatment is a part of the future plot. You can reward players for healing attempts in other ways, eg. with a warm thanks from \npcBabsk{}, but do not allow the girl to wake up.
+}
+
+\ptrBox{
+	Attempting to heal \npcSickGirl{} may attract a cultivationspren.
+}
+
+\subsection{Playing with Axehounds}
+
+There are at least 3 \enemyAxehound{}s in the camp: \npcHoundLady{}, \npcHoundFetch{} and \npcHoundScratch{}. After atmosphere calms down and the party spends some time in the camp, they can invite PCs to play.
+
+\npcHoundLady{} is a well-groomed, pretty female \enemyAxehound{} with a gleaming carapace and a red ribbon bow tied around her antennae. She is visibly worried about \npcSickGirl{} - she lies by her side, never leaving, with her eyes staring at the sick girl all the time.
+
+\npcHoundScratch{} is a very friendly male \enemyAxehound{} who wears a green collar. He likes to approach strangers to ask for scratches. When you pet him, he is making a purr-like clicking sound with his mandibles, earning him the name.
+
+\npcHoundFetch{} is the youngest of the pack, not much older than a pup. He loves to play and walks around the camp with his stuffed blue skyeel toy. When a character is nearby, he drops the toy onto their feet, asking to throw it. When he dashes to fetch it, he always jumps happy once he catches his toy back, often attracting a joyspren or two.
+
+\reasonBox{
+	There are two reasons to have cute axehounds in the camp: to offer some counterbalance after the tense fight and to make players love them. Or at least - get attached to them. 
+	\newline \newline
+	Each time the party comes back to the camp, spare a moment to have axehounds compete for players' attention, happy to see them again. The more fun the party has with them, the more devastating will be the loss of them in the later chapters.
+}

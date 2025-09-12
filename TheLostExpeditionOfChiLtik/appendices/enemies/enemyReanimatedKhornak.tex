@@ -1,0 +1,33 @@
+\section{\enemyReanimatedKhornakName}
+\label{enemyReanimatedKhornak}
+
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyReanimatedKhornak}{1}{Rival}{Medium Undead Animal Plant}
+}{
+	\enemyStatBlockStats{5}{2}{0}{0}{2}{0}{28 (22–34)}{0}{0} % STR: 3+2, WIL: 2->0, HP: 26+2
+}{
+	\small
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[2 (carapace)] \\
+	\enemyStatblockSkillsMovement[25 ft., swim 30 ft.]
+	\enemyStatblockSkillsSenses[10 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Athletics +7, Stealth +4]
+	\enemyStatblockSkillsSpiritual[Perception +3, Survival +4]
+	]
+}{
+	\enemyStatblockFeature{Terrifying Ambush}{At the start of each scene, each enemy who can sense the khornak must make a DC 14 Discipline test. On a failure, that enemy can’t take a fast turn this round unless they spend 2 focus.} \\
+	
+	\enemyStatblockFeature{Ruthless Predator}{When the khornak attacks and hits an enemy who hasn’t taken a turn yet this round, the attack deals an extra 1d8 damage.} \\
+	
+	\enemyStatblockFeature{\abilityVinesName[2]}{\abilityVinesTextShort[2]} \\
+	
+	\enemyStatblockFeature{\abilityHuskName[2]}{\abilityHuskText[2]} 
+}{
+	\enemyStatblockAction{Strike: Crushing Jaw}{Attack +5, reach 5 ft., one target. Hit: 9 (1d8 + 5) impact damage, and the target becomes Restrained while the khornak remains within 5 feet of them. As \iconAction{}, the target or a character who can reach them can make a DC 16 Agility or Athletics test, ending the Restrained condition on a success. While the khornak is restraining this target, the khornak can’t make another Crushing Jaw attack.}\\
+	
+	\enemyStatblockAction{Tail Sweep}{Attack +5, reach 5 ft., one target. Hit: 8 (1d6 + 5) impact damage, and the target must succeed on a DC 15 Athletics test or be knocked Prone.} \\
+	
+	\enemyStatblockAction{Drag}{The khornak moves up to 15 feet in any direction while dragging an enemy they have Restrained behind them.}
+}
+\normalsize
+

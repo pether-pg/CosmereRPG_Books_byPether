@@ -1,0 +1,46 @@
+\section{\enemyRogueShardbearerName}
+\label{enemyRogueShardbearer}
+
+Most of the Shardblades are bonded to Shardbearers appointed by rulers and their blades are carefully watched. Those wonders can change the tide of battle and rewrite realms' history and everyone is carefully tracking them.
+
+Most, but not all. Some fell into a wrong hands of people who prefer operating from the shadows: thieves, assassins or crime lords. They keep information about the blade hidden and their enemies can only glimpse the flash of them right before their demise.
+
+Fighting \enemyRogueShardbearer{} is a difficult task - their weapon is deadly and they will not hesitate to play dirty. However, the reward is worth it, as the \lootRogueShardblade{} will belong to anyone who is skilled or lucky enough to survive such fight.
+\\
+
+\tacticsBox{
+	\enemyRogueShardbearer{} approaches carefully to the fight. While their weapon is deadly, they are not invincible. They will dodge, hide, use dirty tricks to ensure they will live long enough to make the cut with their Shardblade.
+}
+
+\vspace{1cm}
+\includeCreditedGraphics{width=0.40\textwidth}{images/rogueShardbearer.png}{AI}
+
+\newpage
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyRogueShardbearer{}}{1}{Boss}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{3}{2}{5}{2}{2}{4}{55 (45–65)}{6}{0}
+}{
+	\small
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[1 (leather)] \\
+	\enemyStatblockSkillsMovement[25 ft.]
+	\enemyStatblockSkillsSenses[20 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Heavy Weaponry +6, Light Weaponry +5, Athletics +5]
+	\enemyStatblockSkillsCognitive[Deduction +8, Discipline +6, Intimidation +6]
+	\enemyStatblockSkillsSpiritual[Deception +7, Leadership +7, Perception +5, Persuasion +6]
+	\enemyStatblockSkillsLanguages[defined by culture]
+	]
+}{
+	\enemyStatblockFeatureBoss{} \\
+}{
+	\enemyStatblockAction{Strike: Knife}{Attack +5, reach 5 ft, one target. Graze: 2 (1d4) keen damage. Hit: 8 (1d4 + 6) keen damage plus 7 (2d6) vital damage, and the target must succeed on a DC 16 Athletics test or become \exhausted{}.}\\
+	
+	\enemyStatblockAction{Strike: Shardblade}{Attack +6, reach 5 ft, one target. Graze: 9 (2d8) spirit damage. Hit: 15 (2d8 + 6) spirit damage.}\\
+
+	\enemyStatblockAction{Flash Fabrial (Costs 1 Focus)}{The rogue activates a fabrial that emits a piercing light from its gemstone. Each character within 10 feet of the rogue must succeed on a DC 15 Discipline test or become Disoriented until the end of the rogue’s next turn.}\\
+	
+	\enemyStatblockAction{Subdue}{The rogue menaces a foe, making an opposed Intimidation test against the target’s Discipline. If the rogue succeeds, the target loses 1d4 focus and gains a disadvantage on tests against the rogue until the end of the rogue’s next turn.}\\
+	
+	\enemyStatblockAction{Firemoss}{The rogue grinds firemoss and inhales the smoke, regaining 6 focus}\\
+}

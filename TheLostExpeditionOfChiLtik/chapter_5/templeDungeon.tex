@@ -1,0 +1,218 @@
+\section{Temple of \npcSprenVines{}}
+\label{sec:templeDungeon}
+
+Temple of \npcSprenVines{} is a dungeon-like location for the characters to explore. The temple is carved into the shell of Tai-Na, with rope bridges and wooden platforms hold by the roots and vines hanging from the ceiling.
+
+The temple has been closed since the ancient times. Recently it was reopened, awakened by the blood of slain \npcDeadExplorer{}.
+
+
+\subsection{Temple Entrance}
+\label{ssec:dungeonEntrance}
+
+This is the location that the characters may already know from \fullref{sec:ancientTemple}.
+
+At this moment \enemyReanimatedPerson{} (dead \npcDeadExplorer{}) guards the gate along with \enemyReanimatedRemains{} (more, if players spent long time finding the temple). Three rounds after the combat starts, \enemyReanimatedWhitespine{} joins, drawn by the screams and the scent of blood.
+
+From here the characters can travel to \fullref{ssec:dungeonPassage}.
+
+\subsection{Long Passage}
+\label{ssec:dungeonPassage}
+
+When characters enter into the temple, read the following:
+
+\quoteBox{
+	Long and narrow passage carved into the shell of Tai-Na descends into the darkness. The rubble that previously blocked the path now hangs from the ceiling, entangled by a forest of vines.
+}
+
+The passage is too narrow for Large creatures (such as \enemyReanimatedWhitespine{}) to pass through. Medium creatures (such as the characters) have no trouble to travel here. The passage might be used to run away from dangerous fight at the entrance, but the enemies will wait there when the characters will exit the temple.
+
+At the end of the passage, hidden among the Red Vines, \enemyVineMonster{} lurks in the darkness. It will attack once the characters are nearby, surprising anyone who was not able to spot it.
+
+The end of the passage is connected to \fullref{ssec:torchlightScripture}.
+
+\subsection{Illuminated Scripture}
+\label{ssec:torchlightScripture}
+
+When characters reach this chamber, read the following:
+
+\quoteBox{
+	The passage widens and opens to a vast darkness - a wooden platform hanging above a bottomless emptiness. On the platform there is a brazier and several torches. Once lit, they illuminate a scripture carved into the shell of Tai-Na.
+}
+
+There are 3 \lootTorchShort{}es and 2 \lootTorchLong{}es that characters can take form this place. All torches are already lit if Reshi entered the temple (see \ref{sec:returnToTheIsland}).
+
+The text is written in ancient Reshi dialect of dawnchant. Any character with dawnchant expertise will be able to read it. A character knowing Reshi language can attempt to decipher it with \skillCheck{20}{Lore}. This check is rolled with an advantage if the character translated another scripture in the temple. The text says:
+
+\quoteBox{
+	\centering
+	Walk adorned in the gold and red \\
+	Into the temple of Red God \\
+	May his love guide your heart \\
+	May his covenant guard your flesh
+}
+
+From here, characters can reach \fullref{ssec:dungeonSacrifices} using rope bridges or they can climb down to \fullref{ssec:dungeonOvergrown}.
+
+\reasonBox{
+	The scripture on the wall is a riddle suggesting to walk with the fire of the torches as it might help characters in the fights ahead. Failing to solve the riddle does not prevent characters from moving forward.
+}
+
+
+\subsection{Overgrown Chamber}
+\label{ssec:dungeonOvergrown}
+
+Climbing down here can be dangerous. Any character entering this room from above must pass \skillCheck{20}{Athletics} or they fall and take 1d6 impact damage plus additional 1d6 impact damage for each 5 points of difference between their results and the required DC.
+
+When characters reach this location (either safely or by falling down), read the following:
+
+\quoteBox{
+	You climb down, until you reach solid carapace surface beneath your feet. The shell of Tai-Na is overgrown with the Red Vines, more thick than everywhere else you've seen them. Between them, bones of ancient sacrifices are entangled by the plants. Some of the vines seem to reach for you, hungry for your blood.
+}
+
+Growing between the Red Vines are three \enemyVineMonster{}s. They attack the party, surprising all characters who could not spot the thread before.
+
+From here, the characters can go to \fullref{ssec:finalAltar}.
+
+\creditedArtFigure{width=0.45\textwidth}
+					{images/vineMonster.png}
+					{AI}
+					{\enemyVineMonsterName{} hungry for blood.}
+					{fig:vineMonster}
+
+
+\subsection{Sacrificial Grounds}
+\label{ssec:dungeonSacrifices}
+
+When characters enter this room, read the following:
+
+\quoteBox{
+	You enter a wide area - wooden platforms built on roots and held by vines hang above empty darkness. The platforms are connected with rope bridges. Each of them supports overgrown altar with carvings directing dripping blood into a carapace bowl below.
+}
+
+If characters spent long enough preparing (see \ref{sec:returnToTheIsland}), three \enemyReshiWarrior{}s are here, one of them is \npcReshiPriest{}. They are sacrificing one of their tribe members on the altar. The Reshi are empowered by \textbf{\abilityVinesName[2]}. When killed, they will return with \textbf{\abilityHuskName[2]}. 
+
+Characters may attempt to talk their way out of here.
+\conversationDefence{\npcReshiPriest{}}{15}{16}{5}
+He is fanatical follower of \npcSprenVines{}. His aim is to offer sacrifices to his god and let him grow in power.
+\conversationEnd{\npcReshiPriest{}}{2}
+
+If the characters fail or never attempt conversation, the Reshi will attack them, attempting to drag them to one of the altars as a sacrifice for their god. 
+
+\subsubsection{Battlefield Effects}
+
+If the battle starts here, following rules affect the battlefield:
+
+\scriptedOption{Sacrifices}{
+	On the altars there are corpses of people offered in sacrifice to \npcSprenVines{}. After 3 rounds of combat, one of them rises as \enemyReanimatedPerson{} and joins the fight against the players.
+}
+
+\scriptedOption{High Above}{
+	If a character is pushed of the platform or rope bridge, they can attempt \skillCheck{15}{Agility or Athletics} to grab or jump on the roots the platforms are built on. On a failure, they fall into \nameref{ssec:dungeonOvergrown}. The check that triggers while walking into the room still happens, but the character has disadvantage on the test.
+}
+
+\subsubsection{Aftermath}
+
+From here, the characters can climb down to \fullref{ssec:dungeonOvergrown}, or venture deeper, reaching \fullref{ssec:dungeonScripture}.
+
+\subsection{Ancient Scripture}
+\label{ssec:dungeonScripture}
+
+When party ventures closer to the Ancient Scripture, read the following:
+
+\quoteBox{
+	You see a writings carved into the carapace wall of the temple. They seem to be ancient and difficult to read. Below there is an image carved: Huge skull, crushed on the top. From it, smaller skull rises above, with a tail of twisting vines following it.
+}
+
+The image shows \npcSprenVines{} rising from the altar. Upon reaching \fullref{ssec:finalAltar}, characters will recognize it from the carvings.
+
+The text is written in ancient Reshi dialect of dawnchant. Any character with dawnchant expertise will be able to read it. A character knowing Reshi language can attempt to decipher it with \skillCheck{20}{Lore}. This check is rolled with an advantage if the character translated another scripture in the temple. The text says:
+
+\quoteBox{
+	\centering
+	His blessings upon us. \\
+	His wrath on our foes. \\
+	Our blood spills for him. \\
+	Our worship will last eternal.\\	
+	Death before life. \\
+	Weakness before strength. \\
+	Destination before journey.
+}
+
+Any Knight Radiant in the party will recognize this as a twisted mockery of their Ideals.
+
+From this room, the party can explore \fullref{ssec:larkinNest} or proceed to \fullref{ssec:finalAltar}.
+
+\subsection{Larkin Nest}
+\label{ssec:larkinNest}
+
+When characters reach this place, read the following:
+
+\quoteBox{
+	You hear buzzing and clicking sounds echoing in the darkness. Soon, you can see a swarm of larkins biting the ends of the vines. Behind them, you see a massive organ, pulsing in slow, regular rhythm - the heart of Tai-Na.
+}
+
+Swarm of \enemyLarkin{}s can be found here. They are protecting the Tai-Na from the Red Vines attempting to infect the creature's heart. They will not attack the characters, nor will they use Drain Light on them.
+
+\subsection{Ancient Altar}
+\label{ssec:finalAltar}
+
+Once the party reaches the final chamber of the temple, read the following:
+
+\quoteBox{
+	You reach a grand chamber with an altar in a shape of a skull carved from a giant shell. The top is open, gathering blood dripping from the sacrifices above. Thick entangled vines spread from it into the entire room. Some of the vines twist on the floor, others grow on the walls towards the ceiling from where they hang like a red rain.
+	\\ \\
+	When you enter, the vines seem to notice you. They twitch and writhe towards you. Suddenly, huge mass of vines, bones and broken carapace rises from the altar and rushes towards you.
+}
+
+Characters are attacked by \enemyVineAbomination{} rising from the altar in the center of the room. The enemy will fight until slain. 
+
+\reasonBox{
+	This is the final fight of the adventure. This boss guards \npcSprenVines{} and must be slain before heroes will be able to save the island.
+}
+
+\creditedArtFigure{width=0.45\textwidth}
+					{images/vineAbomination.png}
+					{AI}
+					{\enemyVineAbominationName{}.}
+					{fig:vineAbomination}
+
+
+\subsubsection{Battlefield Effects}
+
+Following rules take effect here:
+
+\scriptedOption{Altar of Blood}{
+	There is enough blood in the altar for the \enemyVineAbomination{} to Drink from it. The altar might be toppled (with successful \skillCheck{20}{Athletics}) or destroyed with a Shardblade to prevent the monster from using Drink Blood ability.
+}
+
+\scriptedOption{Scattered Corpses}{
+	In the room there is enough corpses to be puppeteered. Asume they are \enemyAxehound{}s or \enemyExpert{}.
+}
+
+\scriptedOption{Torches}{
+	On the wall there are two \lootTorchShort{}es. Around the altar, there are four more \lootTorchLong{}es. They are not lit.
+}
+
+\subsubsection{Ancient Altar - Victory!}
+
+When the party defeats the foe, read the following:
+
+\quoteBox{
+	When the abomination fell, a spren looking like a human skull rises from the altar and hovers high above ground, red vines spreading behind it like a tail of a comet. It looks at you, intrigued, waiting for your next move.
+}
+
+This is the final encounter of the temple, the altar of the spren responsible for the Red Vines infesting the island. Proceed to \fullref{sec:finalBoss}.
+
+\subsubsection{Ancient Altar - Defeat...}
+
+If the whole party is killed during this fight, don't end the story just yet. Instead, read the following:
+
+\quoteBox{
+	As the world grows darker, you look around to see your friends massacred and lying in the pools of their own blood. The Red Vines slowly creep towards all of you. 
+	\\ \\
+	In your final moments, you see a skull entangled by a twisting tail of vines rising from the altar. It turns its empty sockets towards you, smiling grimly. \npcSprenVines{} is delighted. So much blood! So much flesh! Such a great offering!
+}
+
+Allow the last dying player to see \npcSprenVines{} and bond it (see \fullref{sec:finalBoss}.). This way, the party will have one last chance to deal with the threat and properly end the story.
+
+

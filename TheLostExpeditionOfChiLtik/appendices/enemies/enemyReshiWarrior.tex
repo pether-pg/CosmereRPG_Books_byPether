@@ -1,0 +1,100 @@
+\section{\enemyReshiWarriorName}
+\label{enemyReshiWarrior}
+
+\enemyReshiWarrior{}s function as guards and soldiers in Reshi culture. They obey their king and priest of the island. Bold and fearless, they will never show weakness in the face of enemy.
+
+Without access to metal ore and metallurgy, Reshi craft their weapons from shells and carapace of creatures living on their island. Carapace armor gives them intimidating look, but their weapons are even more scary - shellmaces are wooden swords overgrowing sharp-edged shells. Wounds made by this terrifying weapon bleed profusely and are very hard to heal.
+
+\subsection{The Red Vines' Blessings}
+
+Some of the \enemyReshiWarrior{}s worship \npcSprenVines{} - an ancient spren infecting the island with the Red Vines. In the final chapter of the story, they can be found accepting spren's blessings. At this point, they receive additional Feature - \abilityVinesName[2]:
+
+\abilityVines[2]{}
+
+Each \enemyReshiWarrior{} with this feature has his Strength increased by 2 (from 3 to 5). As a result, increase Physical Defense (from 14 to 16) and Health (from 24 to 26) as well. Increased Strength also affects Athletics and Heavy Weaponry skills (both to +7), attack bonus (+7) and damage (now 1d10 +7).
+
+When \enemyReshiWarrior{} overgrown with the Red Vines dies, they will return with \abilityHuskName[2] Feature:
+
+\abilityHusk[2]{}
+
+They still continue to benefit from \abilityVinesName[2], but they can no longer spend their Focus. And of course - they must be defeated again...
+\\
+
+\tacticsBox{
+	Strong and brutal, \enemyReshiWarrior{}s will fight to the death to protect their king. Their attacks are brutal, and they will Rend enemy's flesh to quickly remove them from combat.
+}
+
+
+\newpage
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyReshiWarrior{}}{1}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{3}{1}{1}{2}{3}{1}{24 (19–29)}{4}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[2 (carapace)] \\
+	\enemyStatblockSkillsMovement[25 ft.]
+	\enemyStatblockSkillsSenses[20 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Athletics +5, Heavy Weaponry +5]
+	\enemyStatblockSkillsCognitive[Discipline +4, Intimidation +4]
+	\enemyStatblockSkillsSpiritual[Insight +4, Perception +5]
+	\enemyStatblockSkillsLanguages[Reshi]
+	]
+}{
+	\enemyStatblockFeature{Bold}{The warrior's Discipline tests have advantage. Any attempt to Intimidate the warrior has disadvantage.} \\
+}{
+	\enemyStatblockAction{Strike: Shellmace}{Attack +5, reach 5 ft., one target. Graze: 5 (1d10) keen damage. Hit: 10 (1d10 + 5) keen damage.}\\
+	
+	\enemyStatblockAction[\iconActionDouble]{Rend (Costs 2 Focus)}{Attack +5, reach 5 ft., one target. Graze: 5 (1d10) keen damage. Hit: 10 (1d10 + 5) keen damage and the target is Afflicted [1d10]. }\\
+}
+
+\newpage
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyReshiWarrior{} (Enhanced)}{1}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{5}{1}{1}{2}{3}{1}{26 (21–31)}{4}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[2 (carapace)] \\
+	\enemyStatblockSkillsMovement[25 ft.]
+	\enemyStatblockSkillsSenses[20 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Athletics +7, Heavy Weaponry +7]
+	\enemyStatblockSkillsCognitive[Discipline +4, Intimidation +4]
+	\enemyStatblockSkillsSpiritual[Insight +4, Perception +5]
+	\enemyStatblockSkillsLanguages[Reshi]
+]
+}{
+	\enemyStatblockFeature{Bold}{The warrior's Discipline tests have advantage. Any attempt to Intimidate the warrior has disadvantage.} \\
+	
+	\enemyStatblockFeature{\abilityVinesName[2]}{\abilityVinesText[2]} \\
+}{
+	\enemyStatblockAction{Strike: Shellmace}{Attack +7, reach 5 ft., one target. Graze: 5 (1d10) keen damage. Hit: 12 (1d10 + 7) keen damage.}\\
+
+	\enemyStatblockAction[\iconActionDouble]{Rend (Costs 2 Focus)}{Attack +7, reach 5 ft., one target. Graze: 5 (1d10) keen damage. Hit: 12 (1d10 + 7) keen damage and the target is Afflicted [1d10]. }\\
+}
+
+
+\newpage
+\enemyStatBlock{
+	\enemyStatBlockHeader{Reanimated \enemyReshiWarrior{}}{1}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{5}{1}{0}{0}{3}{1}{26 (21–31)}{0}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[2 (carapace)] \\
+	\enemyStatblockSkillsMovement[25 ft.]
+	\enemyStatblockSkillsSenses[20 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Athletics +7, Heavy Weaponry +7]
+	\enemyStatblockSkillsCognitive[Discipline +4, Intimidation +4]
+	\enemyStatblockSkillsSpiritual[Insight +4, Perception +5]
+	\enemyStatblockSkillsLanguages[Reshi]
+	]
+}{
+	\enemyStatblockFeature{Bold}{The warrior's Discipline tests have advantage. Any attempt to Intimidate the warrior has disadvantage.} \\
+	
+	\enemyStatblockFeature{\abilityVinesName[2]}{\abilityVinesText[2]} \\
+	
+	\enemyStatblockFeature{\abilityHuskName[2]}{\abilityHuskText[2]} \\
+}{
+	\enemyStatblockAction{Strike: Shellmace}{Attack +7, reach 5 ft., one target. Hit: 12 (1d10 + 7) keen damage.}\\
+}

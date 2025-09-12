@@ -1,0 +1,32 @@
+\section{\enemyReanimatedAxehoundName}
+\label{enemyReanimatedAxehound}
+
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyReanimatedAxehound}{1}{Minion}{Small Undead Animal Plant}
+}{
+	\enemyStatBlockStats{3}{2}{0}{0}{3}{0}{13 (10-16)}{0}{0} % STR: 2+1, HP: 12+1
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsMovement[40 ft.]\\
+	\enemyStatblockSkillsSenses[40 ft. (smell)]
+	\enemyStatblockSkillsPhysical[Agility +4, Athletics +5, Stealth +3]
+	\enemyStatblockSkillsSpiritual[Perception +5, Survival +4]
+	\enemyStatblockSkillsLanguages
+	]
+}{
+	\enemyStatblockFeature{Enhanced Senses}{The axehound gains an advantage on non-attack tests that rely on smell.} \\
+	
+	\enemyStatblockFeature{Herdazian Breed}{The axehound gains an advantage on Survival tests.} \\	
+	
+	\enemyStatblockFeature{\abilityVinesName[1]}{\abilityVinesText[1]} \\
+	
+	\enemyStatblockFeature{\abilityHuskName[1]}{\abilityHuskText[1]} \\
+	
+	\enemyStatblockFeatureMinion{}
+}{
+	\enemyStatblockAction{Strike: Bite}{Attack +5, reach 5 ft., one target. Hit: 7 (1d4 + 5) keen damage.}\\
+	
+	\enemyStatblockAction[\iconFreeAction]{Pack Instincts}{While within 5 feet of an ally, the axehound can use the Gain Advantage action as \iconFreeAction{}.} \\
+	
+	\enemyStatblockAction[\iconReaction]{On the Hunt}{After an enemy within 30 feet of the axehound falls Prone, the axehound moves up to 15 feet toward them.}
+}

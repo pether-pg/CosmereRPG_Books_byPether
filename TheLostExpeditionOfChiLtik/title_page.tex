@@ -1,0 +1,40 @@
+\makeatletter
+
+\ifthenelse{\equal{\useAI}{true}}
+{
+	% AI page 
+	\begin{titlepage}
+		\pagecolor{blueRadiance}
+		\color{goldStats}
+		\centering
+		{\Huge \bfseries \@title \par}
+		\vspace{1cm}
+		\begin{adjustwidth}{-5cm}{0cm}
+			\includegraphics[width=1.4\textwidth]{images/island.png}
+		\end{adjustwidth}
+		\vspace{1cm}
+		{\Large by \@author \par}
+		\vspace{0.5cm}
+		{\large \today \par}
+	\end{titlepage}
+}
+{
+	% no-AI page
+	\begin{titlepage}
+		\pagecolor{blueRadiance}
+		\color{goldStats}
+		\centering
+		{\Huge \bfseries \@title \par}
+		\vspace{1cm}
+		{\Large by \@author \par}
+		\vspace{18cm}
+		{\large \today \par}
+	\end{titlepage}
+	\vfill
+}
+
+
+\makeatother
+
+\newpage
+\pagecolor{white}

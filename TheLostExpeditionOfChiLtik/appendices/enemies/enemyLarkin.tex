@@ -1,0 +1,42 @@
+\section{\enemyLarkinName{}}
+\label{enemyLarkin}
+
+Native to Aimia, \enemyLarkin{}s found their home on \theIsland{}, taking shelter in lush jungles overgrowing the island.
+
+Those larkins are always hungry for any traces of stormlight, being lured by it whenever it appears nearby. After draining the Investure heir metabolism quickly processes the light, making larkins hungry for more.
+
+This species of larkins is slightly smaller and paler than their cousins on other Reshi Isles. As a result, they are lighter, allowing their wings to carry them on larger distances. 
+\\
+
+\tacticsBox{
+	\enemyLarkin{}s always have appetite for more Investure. They are Lured by Light every time a character uses Investure for their ability and they Drain Light until there is nothing else to consume, at which point they flee. They are not aggressive, but they will Bite if they feel threatened.
+}
+
+\newpage
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyLarkin{}}{2}{Rival}{Small Animal}
+}{
+	\enemyStatBlockStats{1}{3}{1}{2}{3}{1}{14 (12-16)}{4}{5}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[2 (carapace)] \\
+	\enemyStatblockSkillsMovement[30 ft., fly 25 ft.]
+	\enemyStatblockSkillsSenses[20 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +5]
+	\enemyStatblockSkillsSpiritual[Insight +4, Perception +5, Survival +4]
+	\enemyStatblockSkillsLanguages[understands every Rosharan language, but can’t speak]
+	]
+}{
+	\enemyStatblockFeature{Ravenous for Light}{The larkin begins the scene with 0 Investiture, rather than their usual maximum of 5. At beginning of each round, the larkin's Investure drops to 0.} \\
+}{
+	\enemyStatblockAction{Bite}{Attack +5, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 7 (1d4 + 5) keen damage, and the larkin can spend 2 focus to use their Drain Light (no action required) on that target or an effect infusing them. The larkin automatically succeeds on their Agility test to do so.} \\
+	
+	\enemyStatblockAction[\iconActionDouble]{Drain Light}{If the larkin isn’t at full Investiture, they
+		drain 2 (1d4) Investure from any object, item or character within 5 feet of them, draining the chosen target of power. 
+		\\
+		If the target is a character, or if it is an object worn or held by a character, the larkin must succeed on an Agility test against that character’s Spiritual defense or the target isn’t drained.}\\
+	
+	\enemyStatblockAction[\iconFreeAction]{Invested Healing}{The larkin can spend 1 Investiture to recover 5 (1d6 + 2) health.} \\
+	
+	\enemyStatblockAction[\iconReaction]{Lured by Light}{When an enemy within 25 ft. spends Investure, the larkin darts to them and uses Drain Light (no action required), interrupting the ability the Investure was spent for.}
+}

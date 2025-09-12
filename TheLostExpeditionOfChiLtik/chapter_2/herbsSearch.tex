@@ -1,0 +1,39 @@
+\section{Search for \medicalHerb}
+
+To find \medicalHerb{}, the party must search the jungle around the camp. Run this as an endeavor (see "\pursuitResolveHeader{}"). Potential approaches to resolve it may include:
+
+\scriptedOption{Recalling medical training}{
+	Characters proficient in Medicine may attempt to recall what did they learn about this herb (\skillCheck{13}{Medicine}).
+}
+
+\scriptedOption{Flora education}{
+	Even without medical knowledge, characters may check if they learned enough about herbs to help with finding them (\skillCheck{15}{Lore})
+}
+
+\scriptedOption{Deducing best place to search}{
+	Having limited information does not prevent players from trying to deduce where would be best place to search (\skillCheck{14}{Deduction})
+}
+
+\scriptedOption{Searching for plants}{
+	Any search my include, well, searching (\skillCheck{Perception}{16}). If players succeed here, they will find some herb, but they will not be sure if this is the correct one.
+}
+
+\scriptedOption{Navigating in the wild}{
+	Players may attempt \skillCheck{14}{Survival} to determine how well are they fare in the wilderness.
+}
+
+\subsection{Opportunities And Complications}
+
+\oppCompTable{
+	\oppCompRow{\iconOpp[15pt]}{Characters are on the good track. Add one success to the endeavor.}
+	\oppCompRow{\iconComp[15pt]}{Thick mist rises in the jungle. The next Perception check has disadvantage. }
+}
+
+\newpage % manual newpage to micromanage page layout
+\subsection{\pursuitResolveHeader}
+
+\pursuitReq{5}{3}
+
+\textbf{Success.} Players find the correct herb. They can return to camp in hopes to help \npcSickGirl{}.
+
+\textbf{Failure.} \medicalHerb{} is nowhere to be found. It is possible it doesn't grow on this island...

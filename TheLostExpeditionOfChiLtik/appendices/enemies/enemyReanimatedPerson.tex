@@ -1,0 +1,28 @@
+\section{\enemyReanimatedPersonName}
+\label{enemyReanimatedPerson}
+
+The stat block below assumes the person was \textbf{Expert Citizen} \textit(see \bookWorldGuide{}) before death and reanimation. For other cases, please adjust other stat blocks. \\
+
+ 
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyReanimatedPerson{}}{1}{Rival}{Medium Undead Humanoid Plant}
+}{
+	\enemyStatBlockStats{3}{1}{0}{0}{2}{1}{20 (17–23)}{0}{0} % STR: 1+2, INT: 1->0 WIL: 2->0, HP: 18+2
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsMovement[25 ft.] \\
+	\enemyStatblockSkillsSenses[10 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +2, Athletics +4]
+	\enemyStatblockSkillsSpiritual[Insight +4, Perception +4]
+	\enemyStatblockSkillsLanguages
+	]
+}{
+	\enemyStatblockFeature{\abilityVinesName[2]}{\abilityVinesTextShort[2]} \\
+	
+	\enemyStatblockFeature{\abilityHuskName[2]}{\abilityHuskText[2]} \\
+}{
+	\enemyStatblockAction{Strike: Unarmed Attack}{Attack +4, reach 5 ft., one target. Hit: 6 (1d4 + 4) impact damage.}\\
+}
+
+\vspace{0.35cm}
+{\hfill \includeCreditedGraphics{width=0.40\textwidth}{images/reanimatedWhitespine.png}{AI} \hfill}

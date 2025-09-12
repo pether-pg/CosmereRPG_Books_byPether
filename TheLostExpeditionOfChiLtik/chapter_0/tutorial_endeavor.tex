@@ -1,0 +1,44 @@
+\section{The Drunken Skyeel}
+
+A character may wish to visit port tavern, The Drunken Skyeel. When they enter, read the following:
+
+\quoteBox{
+	The tavern hosts few patrons at this hour. The owner cleans some glasses with lazy movements, and the tavern's pet, an old skyeel, currently sleeps in his nest under the ceiling.
+	\\ \\
+	One of the guests, a Thaylen sailor with long, white and ruffled eyebrows, approaches you. "Do you play?", he asks, shuffling a card deck.
+}
+
+\npcDrunkenSailor[s] is a \enemyDrunkenSailor from Thaylenah. Characters can enter a gambling endeavor with him. To start the game, a character must pay 10 marks. Possible approaches to this endeavor may include:
+
+\scriptedOption{Bluffing}{
+	A character may bluff about their hand with \skillCheck{13}{Deception}.
+}
+
+\scriptedOption{Guessing opponent's hand}{
+	The deck is not shuffled between rounds. A character may attempt \skillCheck{12}{Deduction} to determine what cards their opponent may have.
+}
+
+\scriptedOption{Watching for cheating}{
+	A character may attempt \skillCheck{10}{Perception} to make sure the other player does not cheat.
+}
+
+\scriptedOption{Cheating}{
+	A character may also cheat with \skillCheck{15}{Thievery}. If the check is failed, proceed to \fullref{sec:tutorialFightNormal}.
+}
+
+\subsection{\pursuitResolveHeader}
+
+\pursuitReq{5}{3}
+
+\textbf{Success.} A character won 20 marks. Proceed to \fullref{sec:tutorialFightNormal}.
+
+\textbf{Failure.} Their money was lost. The sailor smiles and invites them to another game.
+
+\roleplayBox{\npcDrunkenSailor{}}{
+	\roleplayTips
+	{Drunk, aggressive.}
+	{Drink more and start some fights.}
+	{\npcDrunkenSailor[s] is a sailor from Thaylenah. He is a mess - his clothes are dirty and wet, his eyebrows are all over the place}
+	{\npcDrunkenSailor{} is having too much money for his own good. Currently in between the jobs, he has nothing better to do than drink away all his money and pick up some fights along the way. He is too drunk to know any better.}
+}
+

@@ -1,0 +1,39 @@
+\section{\enemyDrunkenSailorName}
+\label{enemyDrunkenSailor}
+
+Found in every tavern in every port - sailors who have too much money or free time on land and just one goal - drink like there is no tomorrow. 
+
+They will often start fights for any reason, or for no reason at all. They are too intoxicated to properly estimate their chances in the fight and will often pick on bigger and tougher enemies than themselves.
+\\
+
+\tacticsBox{
+	Tactics? What tactics? \enemyDrunkenSailor{} has no plan for the fight, just storming hit the guy who is the most annoying or is just standing in a wrong place.
+}
+
+
+\newpage
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyDrunkenSailor{}}{1}{Minion}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{1}{1}{1}{0}{1}{1}{11 (8-14)}{2}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[1 (leather)] \\
+	\enemyStatblockSkillsMovement[25 ft.]
+	\enemyStatblockSkillsSenses[10 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +3, Athletics +3, Light Weaponry +2]
+	\enemyStatblockSkillsCognitive[Discipline +1, Intimidation +3]
+	\enemyStatblockSkillsSpiritual[Perception +3, Survival +3]
+	\enemyStatblockSkillsLanguages[defined by culture]
+	]
+}{
+	\enemyStatblockFeature{Drunk}{All attacks made by \enemyDrunkenSailor{} are made with disadvantage.} \\
+	
+	\enemyStatblockFeatureMinion{}\\
+}{
+	\enemyStatblockAction{Strike: Improvised Weapon (Bottle)}{Attack +2, reach 5 ft. or range 20/60 ft., one target. Graze: 2 (1d4) keen damage. Hit: 4 (1d4 + 2) keen damage and the bottle breaks - the target is Disoriented, but no more attacks with the bottle can be made. }\\
+	
+	\enemyStatblockAction{Strike: Dagger}{Attack +2, reach 5 ft. or range 20/60 ft., one target. Graze: 2 (1d4) keen damage. Hit: 4 (1d4 + 2) keen damage.}\\
+
+	\enemyStatblockAction{Trip (Costs 1 Focus)}{The sailor makes an Athletics test against a target within 5 feet of them, opposed by the target’s choice of Athletics or Agility. If the sailor succeeds on this test, the target is knocked Prone.}
+}

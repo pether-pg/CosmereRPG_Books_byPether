@@ -1,0 +1,409 @@
+% Basic
+
+\newcommand{\fullref}[1]{\ref{#1}.~"\nameref{#1}"}
+
+% Colors and definitions
+
+\def \useAI{false}
+
+\definecolor{goldStats}{RGB}{208, 164, 82}
+\definecolor{yellowQuote}{RGB}{245, 236, 221}
+\definecolor{yellowRoleplay}{RGB}{244, 239, 233}
+\definecolor{grayReason}{RGB}{200, 200, 200}
+\definecolor{blueRadiance}{RGB}{30, 60, 96}
+
+% Art and graphics
+
+\newcommand{\includeCreditedGraphics}[3]{\ifthenelse{\equal{\useAI}{false} \AND \equal{#3}{AI}}{}{\includegraphics[#1]{#2}}}
+
+\newcommand{\creditedArtFigure}[5]{
+	\ifthenelse{\equal{\useAI}{false} \AND \equal{#3}{AI}}{}{
+		\begin{figure}[h]
+			\centering
+			\includegraphics[#1]{#2}
+			\caption{#4}
+			\label{#5}
+		\end{figure}
+	}
+}
+
+
+% Official Books
+
+\newcommand{\cosmereRPG}[0]{Cosmere RPG}
+\newcommand{\handbook}[0]{\textit{Stormlight Handbook}}
+\newcommand{\bookWorldGuide}[0]{\textit{Stormlight World Guide}}
+\newcommand{\bookWOR}[0]{\textit{"Words of Raidiance"}}
+\newcommand{\bookSA}[0]{\textit{"Stormlight Archive"}}
+
+% Names
+
+\newcommand{\npc}[2][u]{\hyperref[personae]{#2}\ifthenelse{\equal{#1}{f}}{ (she/her)}{\ifthenelse{\equal{#1}{m}}{ (he/him)}{}}}
+
+\newcommand{\npcMedic}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Melio}}{\npc{Melio}}} % Herdazian
+\newcommand{\npcBabsk}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Bnalth}}{\npc{Bnalth}}} % Thaylen
+\newcommand{\npcSickGirl}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Elcryni}}{\npc{Elcryni}}} % Thaylen
+\newcommand{\npcDeadExplorer}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Tsalar}}{\npc{Tsalar}}} % Natan
+\newcommand{\npcCapturedExplorer}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Pilar}}{\npc{Pilar}}} % Irali
+\newcommand{\npcReshiPriest}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Ilesh}}{\npc{Ilesh}}}
+\newcommand{\npcHoundLady}{\npc{Brightness}}
+\newcommand{\npcHoundScratch}{\npc{Dible}}
+\newcommand{\npcHoundFetch}{\npc{Joy}}
+\newcommand{\npcSprenVines}{\npc{Scarlet Sprouter}}
+\newcommand{\npcShinCaptain}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Lorseth-son-Lorn}}{\npc{Lorseth-son-Lorn}}} 
+\newcommand{\npcShellSeller}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Sheli}}{\npc{Sheli}}} 
+\newcommand{\npcDrunkenSailor}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Ylbedr}}{\npc{Ylbedr}}} 
+\newcommand{\npcWorriedWife}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Lysna}}{\npc{Lysna}}} 
+\newcommand{\npcReshiKing}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{King Hailor}}{\npc{King Hailor}}}
+\newcommand{\npcReshiInterpreter}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Naila}}{\npc{Naila}}}
+\newcommand{\npcArtifabrian}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Dorlivana}}{\npc{Dorlivana}}}
+\newcommand{\npcRogueShardbearer}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Imral}}{\npc{Imral}}}
+
+
+\newcommand{\theIsland}{Chi-Ltik}
+\newcommand{\medicalHerb}{Aidleaf}
+\newcommand{\usedPoison}{Night's Whisper}
+\newcommand{\fabrialName}{Slatwatersweeteningfabrial (working name)}
+
+% Abilities, Skills, Checks
+
+\newcommand{\skillCheck}[2]{DC~#1~#2 check}
+\newcommand{\skillTreeClimb}{\skillCheck{12}{Athletics}}
+
+\newcommand{\exhausted}[1][-1]{Exhausted [#1]}
+\newcommand{\restrained}{Restrained}
+
+\newcommand{\pursuitResolveHeader}{Resolving the Endeavor}
+\newcommand{\pursuitReq}[2]{The endeavor succeeds if the party accrues #1 successes before #2 failures, or if they otherwise complete the objective.}
+
+\newcommand{\ability}[2]{
+	\vspace{0.2cm}
+	\fcolorbox{goldStats}{white}{
+		\parbox{7cm}{
+			\noindent \textbf{#1.}#2
+		}
+	}
+	\vspace{0.2cm}
+}
+
+\newcommand{\abilityVinesName}[1][N]{\hyperref[ssec:ruleVines]{Enhancing Vines [#1]}}
+\newcommand{\abilityVinesTextShort}[1][N]{This creature has +#1 bonus to Strength and all its derivatives.}
+\newcommand{\abilityVinesText}[1][N]{\abilityVinesTextShort[#1] \textit{(Bonus is included in the stat block.)} After death, it will be reanimated with \abilityHuskName[#1]{} ability, unless it already has one.}
+\newcommand{\abilityVines}[1][N]{
+	\ability{\abilityVinesName[#1]}{
+		\abilityVinesText[#1]
+	}
+}
+
+\newcommand{\abilityHuskName}[1][N]{\hyperref[ssec:ruleHusk]{Reanimated Husk [#1]}}
+\newcommand{\abilityHuskText}[1][N]{This creature's Intelligence, Willpower and Focus drop to 0. When this creature dies, roll #1 Plot Die(s). For each Complication rolled, spawn \enemyReanimatedRemains{} onto the battlefield.}
+\newcommand{\abilityHusk}[1][N]{
+	\ability{\abilityHuskName[#1]}{
+		\abilityHuskText[#1]{}
+	}
+}
+
+
+% Enemies
+
+
+\newcommand{\enemyDrunkenSailorName}{Drunken Sailor}
+\newcommand{\enemyAxehoundName}{Herdazian Axehound}
+\newcommand{\enemyLarkinName}{Ravenous Larkin}
+\newcommand{\enemyKhornakName}{Reshi Khornak}
+\newcommand{\enemyReshiWarriorName}{Reshi Warrior}
+\newcommand{\enemyWhitespineName}{Reshi Whitespine}
+\newcommand{\enemyRogueShardbearerName}{Rogue Shardbearer}
+\newcommand{\enemyReanimatedRemainsName}{Reanimated Remains}
+\newcommand{\enemyReanimatedAxehoundName}{Reanimated Axehound}
+\newcommand{\enemyReanimatedKhornakName}{Reanimated Khornak}
+\newcommand{\enemyReanimatedWhitespineName}{Reanimated Whitespine}
+\newcommand{\enemyReanimatedPersonName}{Reanimated Person}
+\newcommand{\enemyVineMonsterName}{Vine Monster}
+\newcommand{\enemyVineAbominationName}{Vine Abomination}
+
+\newcommand{\enemy}[1]{\hyperref[chap:enemies]{\textbf{#1}}}
+\newcommand{\enemyDrunkenSailor}{\enemy{\hyperref[enemyDrunkenSailor]{\enemyDrunkenSailorName}}}
+\newcommand{\enemyAxehound}{\enemy{\hyperref[enemyAxehound]{\enemyAxehoundName}}}
+\newcommand{\enemyLarkin}{\enemy{\hyperref[enemyLarkin]{\enemyLarkinName}}}
+\newcommand{\enemyKhornak}{\enemy{\hyperref[enemyKhornak]{\enemyKhornakName}}}
+\newcommand{\enemyReshiWarrior}{\enemy{\hyperref[enemyReshiWarrior]{\enemyReshiWarriorName}}}
+\newcommand{\enemyWhitespine}{\enemy{\hyperref[enemyWhitespine]{\enemyWhitespineName}}}
+\newcommand{\enemyRogueShardbearer}{\enemy{\hyperref[enemyRogueShardbearer]{\enemyRogueShardbearerName}}}
+\newcommand{\enemyReanimatedRemains}{\enemy{\hyperref[enemyReanimatedRemains]{\enemyReanimatedRemainsName}}}
+\newcommand{\enemyReanimatedAxehound}{\enemy{\hyperref[enemyReanimatedAxehound]{\enemyReanimatedAxehoundName}}}
+\newcommand{\enemyReanimatedKhornak}{\enemy{\hyperref[enemyReanimatedKhornak]{\enemyReanimatedKhornakName}}}
+\newcommand{\enemyReanimatedWhitespine}{\enemy{\hyperref[enemyReanimatedWhitespine]{\enemyReanimatedWhitespineName}}}
+\newcommand{\enemyReanimatedPerson}{\enemy{\hyperref[enemyReanimatedPerson]{\enemyReanimatedPersonName}}}
+\newcommand{\enemyVineMonster}{\enemy{\hyperref[enemyVineMonster]{\enemyVineMonsterName}}}
+\newcommand{\enemyVineAbomination}{\enemy{\hyperref[enemyVineAbomination]{\enemyVineAbominationName}}}
+\newcommand{\enemyExpert}{\textbf{Expert Citizen} \textit{(see \bookWorldGuide{})}}
+
+\newcommand{\conversationDefence}[4]{#1 has a Cognitive defense of #2, a Spiritual defense of #3, and #4 focus.}
+
+\newcommand{\conversationEnd}[2]{If #1’s test equals or exceeds the Spiritual defense of a PC, that PC either must spend #2 focus to resist influence or must back down from the conversation. }
+
+\newcommand{\loot}[1]{\hyperref[chap:items]{\textit{\textbf{#1}}}}
+\newcommand{\lootSprenDaggerName}{The Spren Slayer}
+\newcommand{\lootSprenDagger}{\loot{\lootSprenDaggerName}}
+\newcommand{\lootPerfectGemstoneName}{Perfect Gemstone}
+\newcommand{\lootPerfectGemstone}{\loot{\lootPerfectGemstoneName}}
+\newcommand{\lootRogueShardbladeName}{Rogue Shardblade}
+\newcommand{\lootRogueShardblade}{\loot{\lootRogueShardbladeName}}
+\newcommand{\lootTorchShortName}{Ceremonial Torch}
+\newcommand{\lootTorchShort}{\loot{\lootTorchShortName}}
+\newcommand{\lootTorchLongName}{Standing Torch}
+\newcommand{\lootTorchLong}{\loot{\lootTorchLongName}}
+
+% Boxes
+
+\newcommand{\quoteBox}[1]{
+	\vspace{0.2cm}
+	\colorbox{yellowQuote}{
+		\parbox{7cm}{#1}
+	}
+	\vspace{0.2cm}
+}
+
+\newcommand{\reasonBox}[1]{
+	\vspace{0.2cm}
+	\colorbox{grayReason}{		
+		\parbox{7cm}{\textit{#1}}
+	}
+	\vspace{0.2cm}
+}
+
+\newcommand{\coloredBox}[5]{	
+	\begin{minipage}{7cm}
+		\vspace{0.2cm}
+		\noindent
+		\fcolorbox{#1}{#1}{
+			\color{#3}
+			\begin{tabular}{p{7cm}}
+				\textbf{#4}
+			\end{tabular}		
+		}\par
+		\vspace{-0.15cm}
+		\noindent
+		\fcolorbox{#1}{#2}{
+			\begin{tabular}{p{7cm}}
+				#5
+			\end{tabular}
+		}
+		\vspace{0.2cm}
+	\end{minipage}
+}
+
+\newcommand{\roleplayBox}[2]{
+	\coloredBox{goldStats}{yellowRoleplay}{black}{Roleplaying #1}{#2}
+}
+
+\newcommand{\roleplayTips}[4]{
+	\vspace{0.1cm}
+	\textbf{Characteristics:} #1\\
+	\textbf{Goal:} #2\\
+	\textbf{Appearance:} #3 \\ \\
+	#4
+}
+
+\newcommand{\blueBox}[2]{
+	\coloredBox{blueRadiance}{white}{white}{#1}{#2}
+}
+
+\newcommand{\tacticsBox}[1]{
+	\blueBox{Tactics}{#1}
+}
+
+\newcommand{\ptrBox}[1]{
+	\blueBox{Path to Radiance}{#1}
+}
+
+\newcommand{\ptrBoxOLD}[1]{
+	\vspace{0.2cm}
+	\colorbox{blueRadiance} {
+		\parbox{7cm}{
+			\parbox[c][0.6cm]{6.6cm} {
+				\color{white} \textbf{Path to Radiance}
+				}
+			
+			\colorbox{white}{
+				\parbox{6.55cm}{
+					\color{blueRadiance} #1
+				}
+			}
+			\vspace{0.08cm}
+		}
+	}
+	\vspace{0.2cm}
+}
+
+\newcommand{\scriptedOption}[2]{
+	\begin{adjustwidth}{0cm}{0cm} \begin{minipage}{8.6cm}
+		\textbf{\newline #1}
+		\begin{adjustwidth}{1cm}{0cm}		
+			#2
+		\end{adjustwidth}
+	\end{minipage} \end{adjustwidth}
+}
+
+\newcommand{\enemyStatBlock}[5]{
+	\begin{adjustwidth}{0cm}{0cm}
+		\fcolorbox{goldStats}{white}{
+			\parbox{8.4cm}{
+				\vspace{0.2cm}
+				#1	% Name and types
+				\par			
+				#2	% Stat Table
+				#3	% Skills
+				
+				\begin{center} \MakeUppercase{\textbf{Features}} \end{center}
+				{\color{goldStats} \hrule \vspace{0.5cm} }
+				#4 % Features
+				
+				\begin{center} \MakeUppercase{\textbf{Actions}} \end{center}
+				{\color{goldStats} \hrule \vspace{0.5cm} } 
+				#5 % Actions
+			}
+		}
+	\end{adjustwidth}
+}
+
+\newcommand{\enemyStatBlockTest}{
+	\enemyStatBlock{
+		\enemyStatBlockHeader{\enemyAxehound}{1}{Minion}{Small Animal}
+	}{
+		\enemyStatBlockStats{1}{2}{3}{4}{5}{6}{7}{8}{9}
+	}{
+		\enemyStatBlockSkills
+	}{
+		Feature 1\\
+		Feature 2\\
+	}{
+		Action 1\\
+		Action 2\\
+	}
+}
+
+\newcommand{\enemyStatBlockHeader}[4]{
+	\textbf{\LARGE #1} \\
+	\textit{Tier #2 #3 - #4} \\
+}
+
+\newcommand{\enemyStatBlockStats}[9]{
+	\fcolorbox{goldStats}{goldStats}{
+		\color{white} 	
+		\begin{tabular}{p{2.2cm} p{2.2cm} p{2.21cm}}
+			\centering \textbf{P\scriptsize HYSICAL} & 
+			\centering \textbf{C\scriptsize OGNITIVE} & 
+			\centering \textbf{S\scriptsize PIRITUAL}
+		\end{tabular}
+	}
+	
+	\vspace{-0.2cm}
+	\fcolorbox{goldStats}{white}{\begin{tabular}{p{0.30cm} p{0.7cm} p{0.30cm} p{0.30cm} p{0.7cm} p{0.30cm} p{0.29cm} p{0.7cm} p{0.29cm} p{0.01cm}}
+		
+		\begin{tabular}{l} \footnotesize Str \\ #1 \end{tabular}
+		&
+		\fcolorbox{goldStats}{white}{\centering \begin{tabular}{p{0.5cm}} \centering \footnotesize Def \\ \centering \normalsize \the \numexpr 10 + #1 + #2\relax \end{tabular}}
+		&
+		\begin{tabular}{c} \footnotesize Spd \\ #2 \end{tabular}
+		&
+		\begin{tabular}{c} \footnotesize Int \\ #3 \end{tabular}
+		&
+		\fcolorbox{goldStats}{white}{\centering \begin{tabular}{p{0.5cm}} \centering \footnotesize Def \\ \centering \normalsize \the \numexpr 10 + #3 + #4\relax \end{tabular}}
+		&
+		\begin{tabular}{c} \footnotesize Wil \\ #4 \end{tabular}
+		&
+		\begin{tabular}{c} \footnotesize Pre \\ #5 \end{tabular}
+		&
+		\fcolorbox{goldStats}{white}{\centering \begin{tabular}{p{0.5cm}} \centering \footnotesize Def \\ \centering \normalsize \the \numexpr 10 + #5 + #6\relax \end{tabular}}
+		&
+		\begin{tabular}{c} \footnotesize Awa \\ #6 \end{tabular}
+		& \\
+
+	\end{tabular}}
+
+	\vspace{0.2cm}
+
+	\textbf{Health:} #7 \hfill
+	\textbf{Focus:} #8 \hfill
+	\textbf{Intesture:} #9
+	\\
+}
+
+\newcommand{\enemyStatBlockSkills}[1][
+	\enemyStatblockSkillsDeflect
+	\enemyStatblockSkillsMovement
+	\enemyStatblockSkillsSenses
+	\enemyStatblockSkillsImmunities
+	\enemyStatblockSkillsPhysical
+	\enemyStatblockSkillsCognitive
+	\enemyStatblockSkillsSpiritual
+	\enemyStatblockSkillsLanguages
+]{
+	{\color{goldStats} \hrule \vspace{0.5cm} } 			
+	#1
+}
+
+\newcommand{\enemyStatblockSkillsDeflect}[1][0 (none)]{
+	\textbf{Deflect:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsMovement}[1][0 ft.]{
+	\textbf{Movement:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsSenses}[1][(none)]{
+	\textbf{Senses:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsImmunities}[1][(none)]{
+	\textbf{Immunities:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsPhysical}[1][(none)]{
+	\textbf{Physical Skills:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsCognitive}[1][(none)]{
+	\textbf{Cognitive Skills:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsSpiritual}[1][(none)]{
+	\textbf{Spiritual Skills:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsLanguages}[1][(none)]{
+\textbf{Languages:} #1
+}
+
+\newcommand{\enemyStatblockFeature}[2]{\textbf{#1.} #2}
+
+\newcommand{\enemyStatblockFeatureMinion}{\enemyStatblockFeature{Minion}{This creature's attacks can’t critically hit, and they’re immediately defeated when they suffer an injury}}
+
+\newcommand{\enemyStatblockFeatureBoss}{\enemyStatblockFeature{Boss}{This creature can take both a fast turn and a slow turn each round. After an enemy finishes a turn, this creature can spend 1 focus to immediately use an extra \iconAction{} or \iconFreeAction{}. Additionally, they can spend 1 focus on their turn to remove a condition from themself.}}
+
+\newcommand{\enemyStatblockAction}[3][\iconAction{}]{#1 \textbf{#2.} #3}
+
+% Opportunities, Complication
+
+%\newcommand{\iconOpp}{\color{blue}OPP.\color{black}}
+%\newcommand{\iconComp}{\color{red}CMP.\color{black}}
+%\newcommand{\iconAction}{[action]}
+%\newcommand{\iconFreeAction}{[free]}
+%\newcommand{\iconReaction}{[reaction]}
+\newcommand{\iconOpp}[1][10pt]{\includegraphics[height=#1]{icons/opportunity.png}}
+\newcommand{\iconComp}[1][10pt]{\includegraphics[height=#1]{icons/complication.png}}
+\newcommand{\iconAction}[1][10pt]{\includegraphics[height=#1]{icons/action.png}}
+\newcommand{\iconActionDouble}[1][10pt]{\includegraphics[height=#1]{icons/actionDouble.png}}
+\newcommand{\iconFreeAction}[1][10pt]{\includegraphics[height=#1]{icons/freeAction.png}}
+\newcommand{\iconReaction}[1][10pt]{\includegraphics[height=#1]{icons/reaction.png}}
+
+\newcommand{\oppCompHead}{\textbf{Result} & \textbf{Example}\\ \hline }
+\newcommand{\oppCompRow}[2]{\vfill #1 \vfill & \color{black} #2\\}
+\newcommand{\oppCompTable}[1]{
+	\begin{tabular}{p{1cm} p{6cm}}
+		\oppCompHead
+		#1
+	\end{tabular}
+}

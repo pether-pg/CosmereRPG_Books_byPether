@@ -1,0 +1,34 @@
+\section{\enemyReanimatedWhitespineName{}}
+\label{enemyReanimatedWhitespine}
+
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyReanimatedWhitespine}{2}{Rival}{Large Undead Animal Plant}
+}{
+	\enemyStatBlockStats{7}{3}{0}{0}{4}{0}{48 (39–56)}{4}{0} % STR: 4+3, WIL: 2->0, HP 42+3+3
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[1 (carapace)]\\
+	\enemyStatblockSkillsMovement[60 ft.]
+	\enemyStatblockSkillsSenses[40 ft. (smell)]
+	\enemyStatblockSkillsPhysical[\small Agility +6, Athletics +10, Stealth +6 \normalsize]
+	\enemyStatblockSkillsCognitive[Intimidation +3]
+	\enemyStatblockSkillsSpiritual[Perception +6, Survival +6]
+	\enemyStatblockSkillsLanguages
+	]
+}{
+	\enemyStatblockFeature{Enhanced Senses}{The whitespine gains an advantage on non-attack tests that rely on smell.} \\
+	
+	\enemyStatblockFeature{Spined Carapace}{After an enemy within 5 feet of the whitespine grazes them with a weapon attack, that enemy takes 3 (1d6) keen damage} \\
+	
+	\enemyStatblockFeature{Reshi-Born}{The whitespine can ignore negative effects of a difficult terrain caused by plants.} \\
+	
+	\enemyStatblockFeature{\abilityVinesName[3]}{\abilityVinesTextShort[3]} \\
+	
+	\enemyStatblockFeature{\abilityHuskName[3]}{\abilityHuskText[3]} \\
+	
+}{
+	\enemyStatblockAction{Strike: Claws}{Attack +10, reach 5 ft., one target. Hit: 13 (1d6 + 10) keen damage.} \\
+	
+	\enemyStatblockAction{Goring Tusks}{Attack +10, reach 5 ft., one target. Hit: 15 (1d10 + 10) impact damage. If the whitespine hits with this attack immediately after moving at least 15 feet, the target takes an extra 5 (1d10) impact damage and must succeed on a DC 17 Athletics test or be knocked Prone.}\\ 
+}
+

@@ -1,0 +1,102 @@
+\section{Legends of the Reshi}
+\label{sec:reshiLegends}
+
+After the endeavor is completed (with success or not), read the following:
+
+\quoteBox{
+	At once, all shouts and laughter die, and the people bow their heads in pious silence. They step back, giving way to the man walking down the carved steps towards you. He wears vines and leaves, his head crowned with shells and his arm holding a huge pincer made into a scepter.
+}
+
+\npcReshiPriest[s]{} is the Voice of Tai-Na, or the priest of this island. His knowledge can lead the party to their further quests.
+
+\creditedArtFigure{width=0.45\textwidth}
+					{images/reshiPriest.png}
+					{AI}
+					{\npcReshiPriest{}, Reshi priest, the Voice of the Gods.}
+					{fig:reshiPriest}
+
+
+\subsection{Priest of Tai-Na}
+
+If the party succeeded on earning Reshi's respect during the last endeavor, read the following:
+
+\quoteBox{
+	"Though from afar, you show great boldness and respect to our ways", the man says. "Come, let us share our fires and our food, as you are worthy of being called one of us."
+}
+
+However, if the party failed during the endeavor, read the text bellow:
+
+\quoteBox{
+	"Who are you and what you are doing here?", the man bellows. "No matter! Your arms are weak, and your hearts are weak, and there is no place for you by our fire!"
+}
+
+Either way, the party is expected to ask their questions. The only difference is - if the party failed the endeavor, the number of questions they can ask before the priest runs out of patience is limited to the number of successes they gathered before failing.
+
+\reasonBox{
+	\textbf{NOTE:} Position of Tai-Na priests is a creative freedom. So far nobody similar appeared in \bookSA{} and it is not a part of official lore. You might wish to rename the priest to eg. king, shaman, houngan (from Vodoo), kahuna (from Hawaii), tohunga (from M\=aori), etc.
+	\\ \\
+	The reason the story uses priest instead of the king is to introduce more NPC variety and allow the king oversee political aspects of Reshi lives, while the priest focuses on spiritual part. However, in different cultures those functions are either merged or separated, in case of Reshi it could go either way, so feel free to adjust it to your taste.
+}
+
+\subsection{Talking with the Priest}
+
+When talking with the priest, he will answer players' questions as shown below. If the characters failed the endeavor to earn respect of the Reshi, he will answer only a number of questions equal to the number of successes the party gathered. 
+
+\scriptedOption{Who are you?}{
+	"I am \npcReshiPriest{}, the Voice of \theIsland{}, the highest priest on this island. I speak with the gods, and they speak to me."
+}
+
+\scriptedOption{Why did you capture that man?}{
+	"He defiled our sacred ground, awoken and angered our god. The gods say his fate is to die."
+}
+
+\scriptedOption{Who are your gods?}{
+	"Most islands worship only their Tai-Na, but we are special, for we are blessed with another god guarding our island."
+}
+
+\scriptedOption{What are the Red Vines?}{
+	"It is said they are the children of our god, \npcSprenVines{}, and its gift to us. But the god had been slumbering and his gifts were not given to us for generations."
+}
+
+\scriptedOption{Those vines seem more like a curse than a gift...}{
+	"Our legends say the gifts from the gods gave our warriors great strength and boldness. No other island could match us in a war. Life is not a curse. Strength is not a curse. Our journey is not a curse."
+}
+
+\scriptedOption{Can the Red Vines be gifted to a human?}{
+	"Humans, beasts and petty pests - all are loved by the god, all can worship him and be showered with his blessings."
+}
+
+\scriptedOption{Will they save a dying girl?}{
+	"Our god is a god of life and strength. No weakness is too great for him to be shattered, no death too strong enemy to be defeated."
+}
+
+\scriptedOption{Why are the Red Vines appearing now?}{
+	"Foreign fool awaken the god, and with it he awoken god's anger and love to his faithful". If the party executed \npcCapturedExplorer{}, he will add "Your judgment was true, he deserved death, but his life was not yours to take. The gods desired him to be sacrificed to them". If characters freed him instead, he will tell "You were wrong to set him free, the gods desired his death." 
+}
+
+\scriptedOption{Where does the god slumber?}{
+	"His temple is carved on the top of the island. Do not tread there, it is sacred ground!". If characters found the body of \npcDeadExplorer{} before, they will recognize the place that the priest is talking about.
+}
+
+\reasonBox{
+	If the party earned their respect, there is no need to count the number of questions asked. What's more, you can anticipate future topics they would like to ask about, and answer those beforehand, weaving one big tale covering all the topics.
+}
+
+\roleplayBox{\npcReshiPriest}{
+	\roleplayTips
+	{Proud, fanatic}
+	{To follow the wishes of \theIsland{} and \npcSprenVines{}}
+	{Reshi man, tall and imposing. His body is painted white and black with red patterns.}
+	{\npcReshiPriest{} connects people of \theIsland{} with their gods - he listens to their will and enacts it. Some say he holds even bigger power than the king of the island.}
+}
+
+\subsection{Aftermath}
+
+If characters lead the conversation well, they can learn the following information:
+\begin{itemize}
+	\item The Red Vines originate from a Reshi god, \npcSprenVines{}.
+	\item The god of Red Vines has its temple at the top of the \theIsland{} island.
+	\item The god of Red Vines is not Tai-Na, it's probably some unique spren.
+	\item The Red Vines can enhance humans, possibly giving hope to \npcSickGirl{}.
+\end{itemize}
+After gathering those facts, the party can leave the village.

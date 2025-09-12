@@ -1,0 +1,43 @@
+\section{\enemyVineMonsterName}
+\label{enemyVineMonster}
+
+Empowered by the influence of \npcSprenVines{} and invigorated by blood sacrifices, the Red Vines can grow into \enemyVineMonster{}, making them even more deadly threat.
+
+Even if overgrown, \enemyVineMonster{} is still the rockbud vine. It is nearly indistinguishable from other vines growing in the area and can easily surprise inattentive adventurers. Its vines have quite a reach, but luckily the plant itself cannot move.
+
+Growing from the Red Vines, \enemyVineMonster{} can enhance bodies of the fallen creatures and reanimate them as \enemyReanimatedRemains{}. At first the corpse must be in close range of the plant, but after some time the puppet can detach from the main plant and roam free by itself.
+
+Sustaining on blood from sacrifices and its victims, the plant is very vital and quickly regenerates, but it is also vulnerable to fire.
+
+\tacticsBox{
+	\enemyVineMonster{} waits patiently for its prey to come close enough. When the time is right, it strikes with its Vine Whip, hopefully restraining the unsuspecting foe. After that it aims to crush the body of the victim, drink its blood and Puppeteer the remains in hopes to lure another victim nearby. 
+}
+
+
+{\hfill \includeCreditedGraphics{width=0.35\textwidth}{images/vineMonster.png}{AI} \hfill}
+
+\newpage
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyVineMonster{}}{1}{Rival}{Medium Plant}
+}{
+	\enemyStatBlockStats{1}{3}{1}{2}{2}{1}{33 (28–38)}{4}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsMovement[0 ft.]\\
+	\enemyStatblockSkillsSenses[10 ft. (touch)]
+	\enemyStatblockSkillsPhysical[Agility +5, Stealth +5]
+	\enemyStatblockSkillsSpiritual[Survival +4]
+	\enemyStatblockSkillsLanguages
+	]
+}{
+	\enemyStatblockFeature{Flammable}{This creature takes double energy damage from fire sources.}\\
+	
+	\enemyStatblockFeature{Rugged Camouflage}{An undetected vine gains an advantage on attack tests. While the vine is motionless, it's almost indistinguishable from a normal vine, requiring a successful DC 15 Survival test to identify it. This test gains a disadvantage when the vine is in cover or in an area where the other character’s primary sense is obscured.} \\
+}{
+	\enemyStatblockAction{Strike: Vine Whip}{Attack +5, reach 25 ft., one target. Graze: 3 (1d6) keen damage. Hit: 6 (1d6 + 3) keen damage and the vine can spend 1 focus to wrap around the target. If it does, the target becomes \restrained{}. As \iconAction{}, the Restrained target or a character within 5 ft. can make \skillCheck{15}{Athletics} to release the target on success.}\\
+	
+	\enemyStatblockAction{Constrict}{The vine attempts to crush an enemy Restrained by it. That enemy must pass \skillCheck{15}{Athletics}. The vine deals 3 (1d6) impact damage to them on failure and heals for the same amount.}\\
+	
+	\enemyStatblockAction{Puppeteer Remains (Costs 1 Focus)}{The vine animates a corpse within 20 ft. range, turning it into \enemyReanimatedRemains{} for as long it stays within the range. Unless slain or disjointed from the vine, the puppet will gain full autonomy after 1 hour.}
+}
+
