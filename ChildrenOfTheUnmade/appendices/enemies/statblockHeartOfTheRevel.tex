@@ -1,0 +1,28 @@
+\label{enemyHeartOfTheRevel}
+
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyHeartOfTheRevelName}{4}{Boss}{Gargantuan Spren}
+}{
+	\enemyStatBlockStats{5}{0}{1}{7}{5}{7}{---}{9}{9}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsCognitive[Intimidation +9] \\
+	\enemyStatblockSkillsSpiritual[Insight +9, Persuasion +9]
+	\enemyStatblockSkillsLanguages[all]
+	]
+}{	
+	\enemyStatblockFeature{Boss (Conversation)}{The Unmade makes a contribution twice in a conversation round: once after more than a half of enemies made their contribution, and the second time after all of them contributed. \\ After an enemy finishes a turn, the Unmade can spend 1 Focus to immediately use an extra  \iconAction{} or  \iconFreeAction{}. Additionally, they can spend 1 Focus on their turn to remove a condition from themself.} \\
+	
+	\enemyStatblockFeature{Empowered by Revelry}{Whenever a character is overwhelmed by the Unmade and is lost to the revel, \enemyHeartOfTheRevelName{} regains 1 Focus. } \\
+}{
+	\enemyStatblockAction{Feast}{The Unmade makes an Persuasion test against the target's Discipline test. If the Unmade succeeds, the target must spend their next round feasting on the nearby food. \textit{(they cannot contribute to the conversation that round)}}\\
+	
+	\enemyStatblockAction{Embrace the End}{The Unmade makes an Intimidation test against the target's Leadership test. If the Unmade succeeds, the target looses 2 Focus.}\\
+	
+	\enemyStatblockAction{Indulge in Your Desires}{The Unmade makes an Insight test against the target's Deception test. If the Unmade succeeds, the target must spend 1 Focus or looses themselves to the revel.}\\
+	
+	\enemyStatblockAction{Give in (Costs 1 Focus)}{Each enemy must make \skillCheck{20}{Discipline} or loose 1 Focus.}\\
+	
+	\enemyStatblockAction{Join the Revel (Costs 1 Focus)}{Choose one of the nearby Revelers. During this round they can use any action to support the Unmade in the conversation.}\\
+	
+}

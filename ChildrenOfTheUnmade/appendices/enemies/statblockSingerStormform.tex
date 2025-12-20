@@ -1,0 +1,34 @@
+\label{enemySingerStormform}
+
+% From Stormform Singer
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemySingerStormformName}{2}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{2}{4}{2}{4}{1}{3}{40 (30–50)}{6}{5}
+}{
+	
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[1 (carapace)] \\
+	\enemyStatblockSkillsMovement[30 ft.]
+	\enemyStatblockSkillsSenses[10 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +7, Athletics +5, Light Weaponry +6]
+	\enemyStatblockSkillsCognitive[Discipline +6, Intimidation +7]
+	\enemyStatblockSkillsSpiritual[Perception +4]
+	\enemyStatblockSkillsLanguages[alethi]
+	]
+}{	
+	\small
+	\enemyStatblockFeature{Water Weakness}{While the stormform is drenched in water, they can’t use their Bolt of Lightning or Electrical Charge.} \\
+	
+	\enemyStatblockFeature{Barbed Carapace}{While the stormform is Restrained by the Grapple action or a similar effect, the character restraining the stormform is Afflicted [1d8 keen].} \\
+
+	\enemyStatblockFeatureNewborn{} \\
+}{
+	\enemyStatblockAction{Strike: Shortspear}{Attack +6, reach 5 ft., one target. Graze: 4 (1d8) keen damage. Hit: 10 (1d8 + 6) keen damage.}\\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Bolt of Lightning (Costs 1 Investiture)}{Attack +7, range 60 ft., one target. This attack gains a disadvantage unless the Regal spends 1 focus to ignore it. Graze: 8 (2d8) energy damage. Hit: 15 (2d8 + 7) energy damage.}\\
+	
+	\enemyStatblockAction{Storm Leap (Costs 1 Investiture)}{The Regal jumps up to 60 feet. If they land within 5 feet of an enemy, the Regal can use the Gain Advantage action as \iconFreeAction{}.}\\
+	
+	\enemyStatblockAction[\iconFreeAction{}]{Electrical Charge}{After the Regal uses the Move action, they become electrically charged until the start of their next turn. While charged, they’re immune to energy damage, and whenever the charged Regal is hit by an attack by an enemy within 5 feet of them, the attacker takes 4 (1d8) energy damage.}\\
+}

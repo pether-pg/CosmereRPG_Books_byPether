@@ -1,0 +1,38 @@
+\section{\enemyRioterName}
+\label{enemyRioter}
+
+Hunger and unrest in the city of Kholinar made plenty people angry and desperate. At some point, enough is enough and those people - bakers, tailors and merchants - will grab whatever is nearby to fight for any glimmer of hope for a better tomorrow.
+
+On their own, each \enemyRioter{} is timid an cowardly. In a group, however, they loose all traces of any rational behavior, turning into mindless incarnation of mayhem. Do not try to reason with them or find any logic in their actions - they are way beyond that. Now, there is only riot!
+
+\tacticsBox{
+	Not much a threat when they are alone. Fighting in larger groups gives them courage, however. A gang of \enemyRioter{}s will attempt to rain stones and rubble on their enemies with a hope to keep a safe distance. If that fails, they will use some wooden planks as a maces to defend. 
+}
+
+\newpage
+% From Bandit
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyRioterName}{1}{Minion}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{1}{1}{1}{0}{2}{1}{11 (8-14)}{2}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[1 (leather)] \\
+	\enemyStatblockSkillsMovement[25 ft.]
+	\enemyStatblockSkillsSenses[10 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +3, Athletics +3, Light Weaponry +2]
+	\enemyStatblockSkillsCognitive[Discipline +1, Intimidation +3]
+	\enemyStatblockSkillsSpiritual[Perception +3, Survival +3]
+	\enemyStatblockSkillsLanguages[alethi]
+	]
+}{	
+	\enemyStatblockFeature{Momentum}{If the \enemyRioterName{} moves at least 10 feet in a straight line toward a target then makes a Mace attack against them on that turn, the \enemyRioterName{} gains an advantage on that attack.} \\
+	
+	\enemyStatblockFeatureMinion{} \\
+}{
+	\enemyStatblockAction{Strike: Mace}{Attack +2, reach 5 ft., one target. Graze: 3 (1d6) impact damage. Hit: 5 (1d6 + 2) impact damage.}\\
+	
+	\enemyStatblockAction{Strike: Throw Rubble}{Attack +2, range 20/60 ft., one target. Graze: 3 (1d6) keen damage. Hit: 5 (1d6 + 2) impact damage. This attack gains an advantage if another \enemyRioterName{} used the same action this round.} \\
+	
+	\enemyStatblockAction{Trip (1 Focus)}{The \enemyRioterName{} makes an Athletics test against a target within 5 feet of them, opposed by the target’s choice of Athletics or Agility. If the \enemyRioterName{} succeeds on this test, the target is knocked Prone.}
+}

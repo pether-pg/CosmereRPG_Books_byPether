@@ -1,0 +1,37 @@
+\label{enemySingerDireform}
+
+% From Warform Singer
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemySingerDireformName}{2}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{5}{3}{1}{3}{3}{1}{42 (33–51)}{5}{5}
+}{
+\footnotesize
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[4 (carapace)] \\
+	\enemyStatblockSkillsMovement[30 ft.]
+	\enemyStatblockSkillsSenses[30 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +5, Athletics +8, Heavy Weaponry +8, Light Weaponry +6]
+	\enemyStatblockSkillsCognitive[Discipline +6, Intimidation +6]
+	\enemyStatblockSkillsSpiritual[Perception +5]
+	\enemyStatblockSkillsLanguages[alethi]
+	]
+}{	
+	\enemyStatblockFeature{Martial Experience}{The direform can use their Strike action twice on their turn.} \\
+	
+	\enemyStatblockFeature{Obstinate Guard}{It costs the direform 1 fewer focus to resist an enemy’s influence.} \\
+	
+	\enemyStatblockFeature{Spiked Carapace}{The direform can use their carapace like a shield, allowing them to use the Brace action. While benefiting from Brace, the first time on each turn that the direform either is hit or grazed by a melee attack or is successfully Grappled or Shoved by an enemy, that enemy takes 3 (1d6) keen damage.} \\
+	
+	\enemyStatblockFeatureNewborn{} \\
+}{
+	\enemyStatblockAction{Strike: Hammer}{Attack +8, reach 5 ft., one target. The direform gains an advantage on this attack if they moved at least 10 feet in a straight line toward the target this turn. Graze: 5~(1d10) impact damage. Hit: 13 (1d10 + 8) impact damage.}\\
+	
+	\enemyStatblockAction{Strike: Longbow}{Attack +8, range 150/600 ft., one target. Graze: 3 (1d6) keen damage. Hit: 11 (1d6 + 8) keen damage.}\\
+	
+	\enemyStatblockAction{Invested Enhancement (Costs 1 Investiture)}{The direform becomes Enhanced [Strength +1] and Enhanced [Speed~+1] until the end of their next turn. This temporarily increases each of their Physical skills by 1, including their Hammer and Longbow actions’ attack and damage rolls. At the end of each of the direform’s turns, they can spend 1 Investiture to maintain this effect for an additional round.}\\
+	
+	\enemyStatblockAction[\iconReaction{}]{Stand Firm (Costs 1 Focus)}{Before the direform is unwillingly moved or knocked Prone, they ignore that effect.}\\
+	
+	\enemyStatblockAction[\iconReaction{}]{Tackle}{When an enemy triggers a Reactive Strike from the direform, the direform can instead attempt to Grapple the enemy as \iconReaction{}, spending focus as if they made a Reactive Strike. If the Grapple succeeds, the enemy also takes 3 (1d6) keen damage from the direform’s carapace spikes.}\\
+}

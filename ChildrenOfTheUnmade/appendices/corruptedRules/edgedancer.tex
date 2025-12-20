@@ -1,0 +1,83 @@
+\newpage
+\section{Enlightened Edgedancer}
+
+\corruptedBelief{I will remember.}{I will never forget, never forgive.}
+
+\subsection{Philosophy Changes}
+
+Enlightened Edgedancers realize that mere compassion and memory of the forgotten does not fix their situation in the long run. Instead, they focus on the source of their misfortune, never yielding until all wrongs are made right and ensured to never happen again.
+
+At their best, those Edgedancers are focus-driven Radiants, determined to improve the lives of common people.
+
+At their worst, they can become petty, unforgiving individuals with little compassion and understanding in their hearts.
+
+\subsection{Enlightened Cultivationspren}
+
+In the Physical Realm, Enlightened cultivationspren reassemble a skull overgrown with entangled red vines tailing behind it and dripping blood-like sap.
+
+In the Cognitive Realm, those vines form full human-like body. The spren wear rags in here, soaked with red sap still dripping from the vines.
+
+\subsection{Drawbacks and Complications}
+
+Progression and Enlightened talents cause terrible pain on the subjects of those abilities. The GM can request a \skillDiscipline{} check (\corruptedResistanceDC{} by the Edgedancer) from the person being affected by those talents. On a failure, they loose 1 Focus.
+
+Enlightened Edgedancers can be tempted to hurt, maim or even kill other creatures only to experiment with their abilities or subject them to their vines and gain more control over them. When the GM tempts an Edgedancer like that, they must pass a Discipline check (\corruptedResistanceDC{}) or spend a Focus point. If they don't, they must take a hostile action against that creature (eg. make a Strike action).
+
+\newpage
+\subsection{Enlightened Talents}
+
+\talent{\talentEdgedancerKeyName{} (Key)}
+		{Bond an Enlightened cultivationspren}
+		{\iconAction}
+		{Under your touch, red vines sprout from the ground.}
+		{Spend 1 Investure to sprout red rockbud vines. Those are edible and can sustain one person for a day, but you can divide them into multiple smaller portions. If another creature consumes the plants, you can sense a direction and distance to it for a number of days equal to your rank.}
+		
+\talent{\talentEdgedancerEnhanceName}
+		{\talentEdgedancerEnhanceName{} or \talentEdgedancerRemainsName{} talent}
+		{\iconActionDouble}
+		{The vines you fed another person grow, piercing through their skin and entangling their body.}
+		{Choose a creature that was fed with Sprouting Vines talent. You can spend Investure to accelerate the growth of the vines, which will pierce their skin and grow over their body, granting them bonus Strength. Both Investure cost and amount of granted Strength are proportional to the size of the creature (1 for Small creatures, 2 for Medium and so on...). \\
+		The bonus affects all Strength derivatives (Defense, Health and skills) and lasts for a number of days equal to your rank.}
+		
+\talent{\talentEdgedancerReanimateName}
+		{\talentEdgedancerEnhanceName{} talent}
+		{\iconActionDouble}
+		{Your red vines grow stronger and more capable to puppeteer bigger bodies.}
+		{Choose a dead creature that was under the effect of Enhancing Vines. You may raise its body to fight for you for a number of days equal to your rank. A body controlled this way is still granted bonus Strength, but its Intelligence, Willpower and Focus drop to 0. }
+		
+\talent{\talentEdgedancerRemainsName}
+		{Speak the First Ideal; \talentEdgedancerKeyName{} talent}
+		{\iconAction}
+		{The red vines controlled by you can entangle an empty shell or a corpse, reanimating it to fight for you}
+		{Spend 1 Investure to sprout red vines around small remains of a dead creature. It will rise from the dead and fight for you as a \enemyReanimatedRemains{} for a number of days equal to your rank.}
+		
+\talent{\talentEdgedancerPuppeteerName}
+		{\talentEdgedancerEnhanceName{} or \talentEdgedancerRemainsName{} talent}
+		{\iconActionDouble}
+		{Your red vines can overgrow and subdue other creatures}
+		{Touch a creature and spend Investure to make a Progression check against its Spiritual Defense. If you succeed, you gain control over the creature as your red vines entangle its body and break its spirit. The amount of Investure required to make a check is proportional to the size of the creature (1 for Small creatures, 2 for Medium and so on...). \\
+		After a number of rounds equal to your rank, repeat the Progression check. The creature breaks free if the check fails. }
+		
+\newpage
+
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyReanimatedRemains{}}{1}{Minion}{Small Undead Plant}
+}{
+	\enemyStatBlockStats{3}{1}{0}{0}{2}{0}{10 (8–12)}{0}{0} % STR: 2+1, WIL: 1->0, HP: 9+1
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsMovement[25 ft.]
+	\enemyStatblockSkillsSenses[10 ft. (touch)]
+	\enemyStatblockSkillsPhysical[Stealth +3]
+	\enemyStatblockSkillsSpiritual[Survival +4]
+	\enemyStatblockSkillsLanguages
+	]
+}{
+	\enemyStatblockFeature{\abilityVinesName[1]}{\abilityVinesText[1]} \\
+	
+	\enemyStatblockFeature{\abilityHuskName[1]}{\abilityHuskText[1]} \\
+	
+	\enemyStatblockFeatureMinion \\
+}{
+	\enemyStatblockAction{Strike: Slam}{Attack +3, reach 5 ft., one target. Hit: 5 (1d4 + 3) keen damage.}\\
+}

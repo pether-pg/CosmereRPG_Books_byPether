@@ -1,0 +1,30 @@
+\label{enemySingerNimbleform}
+
+% From Nimbleform Singer
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemySingerNimbleformName}{1}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{1}{3}{3}{2}{3}{2}{20 (15–25)}{4}{0}
+}{
+	
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsMovement[30 ft.] \\
+	\enemyStatblockSkillsSenses[20 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +5, Light Weaponry +5, Stealth +4]
+	\enemyStatblockSkillsCognitive[Crafting +4, Deduction +5, Lore +4]
+	\enemyStatblockSkillsSpiritual[Perception +5, Survival +5]
+	\enemyStatblockSkillsLanguages[alethi]
+	]
+}{	
+	\enemyStatblockFeature{Deadly Speed}{At the start of each scene, if the nimbleform singer isn’t Surprised, they can take a fast turn before any other characters (this doesn’t count as their turn this round).} \\
+	
+	\enemyStatblockFeature{Keen Senses}{The nimbleform singer can spend 1 Focus to gain an advantage on a Perception test (no action required).} \\
+	
+	\enemyStatblockFeatureNewborn{} \\
+}{
+	\enemyStatblockAction{Strike: Mace}{Attack +5, reach 5 ft., one target. Graze: 3 (1d6) impact damage. Hit: 8 (1d6 + 5) impact damage.}\\
+	
+	\enemyStatblockAction{Strike: Shortbow}{Attack +5, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 8 (1d6 + 5) keen damage.}\\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Chosen Target (Costs 2 Focus)}{The nimbleform singer chooses an enemy they can sense within 120 feet of them. For 1 hour, when the nimbleform hits their chosen enemy with a weapon attack, they deal an extra 3 (1d6) damage. In addition, the nimbleform singer gains an advantage on Survival tests to track that enemy.}\\
+}

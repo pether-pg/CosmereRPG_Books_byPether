@@ -1,0 +1,29 @@
+\label{enemySoulcaster}
+
+% From Soulcaster Savant
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemySoulcasterName}{2}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{1}{2}{2}{4}{5}{3}{32 (25–39)}{6}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsMovement[25 ft.] \\
+	\enemyStatblockSkillsSenses[50 ft. (sight)]
+	\enemyStatblockSkillsCognitive[Discipline +7, Intimidation +6, Lore +4]
+	\enemyStatblockSkillsSpiritual[Insight +8, Survival +8]
+	\enemyStatblockSkillsLanguages[alethi, herdazian, veden]
+	]
+}{	
+	\enemyStatblockFeature{Soulcaster Essences}{The Soulcaster’s fabrial is set with three emeralds. If one of the Soulcaster’s attacks reduces an enemy to 0 Health, the enemy is killed and transforms into the corresponding Essence.} \\
+		
+}{
+	\enemyStatblockAction{Wood}{Attack +7 vs. Spiritual, reach 5 ft., one target. Graze: 3 (1d6) spirit damage. Hit: 10 (1d6 + 7) spirit damage, and the Soulcaster can spend 1 Focus to make the target Slowed until the end of the target’s next turn.}\\
+	
+	\enemyStatblockAction[\iconActionDouble]{Moss}{Attack +7 vs. Spiritual, reach 5 ft., one target. Graze: 7 (2d6) spirit damage. Hit: 14 (2d6 + 7) spirit damage.}\\
+	
+	\enemyStatblockAction[\iconActionDouble]{Vines}{The Soulcaster transforms ground into thorny vines. Each enemy within 5 feet of them takes 9 (2d8) keen damage. The Soulcaster can spend 1 Focus per enemy in range to make that enemy Restrained. As \iconActionDouble{}, they can make a DC 17 Agility test to remove that condition.}\\
+	
+	\enemyStatblockAction[\iconActionDouble]{Soulcasting}{The Soulcaster touches a Medium or smaller object and makes a DC 17 Discipline test. On a success, they transform the object into one of their Essences. They can spend 2 Focus to target a Large object instead.}\\
+	
+	\enemyStatblockAction[\iconReaction{}]{Soulcast Protection (Costs 2 Focus)}{Before a ranged attack hits the Soulcaster or an ally within 5 feet of them, the Soulcaster makes a Discipline test. If their result is greater than the triggering attack test, the Soulcaster causes the attack to miss.}
+}

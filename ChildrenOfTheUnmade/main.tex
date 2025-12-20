@@ -1,0 +1,71 @@
+\documentclass{report}
+
+\title{\Huge Children of the Unmade \\ \vspace{0.5cm} \Large A Fan-made Adventure in \cosmereRPG}
+
+\author{Pether.pg}
+
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{xcolor}
+\usepackage{ifthen}
+\usepackage{changepage} % margins and adjustwidth 
+\usepackage{graphicx} % insert images
+\usepackage{pdfpages} % insert pdfs
+\usepackage{ulem} % strikethrough \sout
+
+\setlength{\columnsep}{20pt} % space between text columns
+
+
+\usepackage{titlesec}	% change how chapters are printed
+\titleformat{\chapter}{}{}{0em}{\bf\LARGE}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+\usepackage{nameref} % for \nameref{label}
+\usepackage{cleveref}
+
+\begin{document}
+	
+	\input{defsAndCommands.tex}
+	
+	\input{title_page.tex}
+	
+	\setcounter{tocdepth}{1}
+	\tableofcontents
+	
+	\renewcommand{\listfigurename}{List of Images}
+	\renewcommand{\figurename}{Image}
+	\listoffigures
+	
+	\twocolumn
+	\setcounter{chapter}{-1}
+	\input{introduction/introduction.tex}
+	% Act I
+	\input{chapter_1/chapter_1.tex} % Fool Revealed
+	\input{chapter_2/chapter_2.tex} % Dust and the Unmade
+	\input{chapter_3/chapter_3.tex}	% Enemy Reborn
+	\input{chapter_4/chapter_4.tex}	% Enemy Unmade to Dust
+	\input{chapter_5/chapter_5.tex}	% Revel of Fools
+	% Act II
+	\input{chapter_6/chapter_6.tex}
+	\input{chapter_7/chapter_7.tex}
+	\input{chapter_8/chapter_8.tex}
+	\input{chapter_9/chapter_9.tex}
+	\input{chapter_10/chapter_10.tex}
+	
+	\appendix
+	\input{appendices/docHistory.tex}
+	\input{appendices/enemies.tex}
+	\input{appendices/items.tex}
+	\input{appendices/corruptedRules.tex}
+	\input{appendices/deathRattles.tex}
+	\input{appendices/exampleSheets.tex}
+	
+\end{document}

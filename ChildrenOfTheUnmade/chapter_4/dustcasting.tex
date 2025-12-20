@@ -1,0 +1,67 @@
+\section{Dustcasting}
+\label{sec:dustcasting}
+
+Once the party reaches their dustcasting target, read the following to the player doing the dustcasting:
+
+\quoteBox{
+	You place your palm with the \lootDustcaster{} to the cold stone. Suddenly you have a feeling that everything else is gone - there is only you and the stone and the fabrial whispering eagerly: "Make... it... gone...!"
+}
+
+A character using \lootDustcaster{} must do a \skillCheck{10}{Division} or \skillCheck{20}{\skillDiscipline{}} three times. After the 3rd test, the dustcasting is complete and their objective and \lootDustcaster{} itself are annihilated. However, based on the number of failures, additional effects take place:
+
+\scriptedOption{1+ Failures}{
+	The PC looses the tips of their fingers on the dustcasting hand. They take 1d6 Spirit damage.
+}
+
+\scriptedOption{2+ Failures}{
+	Whole dustcasting palm is gone. The PC takes additional 1d8 Spirit damage.
+}
+
+\scriptedOption{3 Failures}{
+	Entire arm of the PC is turned to dust. Its owner takes additional 1d10 Spirit damage.
+}
+
+\subsubsection{Dropping to 0 Health}
+
+If the dustcasting failures reduce a character to 0 Health, that character's entire body turns to dust and the PC is gone. That doesn't stop the dustcasting.
+
+\subsubsection{Unable to Concentrate}
+
+If the dustcasting character takes damage (eg after guard's attack, see \fullref{sec:dustcastingBattle}), their next test for the dustcasting will gain disadvantage.
+
+\reasonBox{
+	Please note, "Dustcasting" is not an official term from the \bookSA{} lore. I based it on "soulcasting" term and modified it to indicate \npcDustmother{}, the \npcDustmotherTitle{}'s influence. I feel it fits, but it's not official.
+}
+
+\corruptedBox{
+	Using \lootDustcaster{}, an artifact of \npcDustmother{}, the \npcDustmotherTitle{}, can expedite the progression of an Enlightened Dustbringer \seeCorruptedRules{}.
+}
+
+
+
+\subsection{Guards! Guards!}
+\label{sec:dustcastingBattle}
+
+If the party failed to sneak to their target (see \fullref{sec:dustcastingSneaking}), they will be attacked by the guards. The PC performing the dustcasting cannot participate in the battle in any way and they must be defended by other characters.
+
+During the fight, each dustcasting test roll takes a turn to complete. For three rolls, the fight will last for three turns. Once the dustcasting is complete, the party can safely flee the battle.
+
+\scriptedOption{Singer Guards}{
+	If the dustcasting takes place in the Singer Camp, the characters are attacked by \enemySingerDireform{} and four \enemySingerNimbleform{}s. At beginning of each round, additional \enemySingerWarform{} joins the fight.
+}
+
+\scriptedOption{Wall Guard}{
+	If the dustcasting takes place at the Kholinar walls, the characters will be attacked by six \enemyWallGuard{}s. At beginning of each round, additional two \enemyWallGuard{}s will join the fight.
+}
+
+
+\subsection{Aftermath}
+
+Once the dustcasting is completed (even if a character performing it dies in a process), read the following:
+
+\quoteBox{
+	In an instant the great stony surface disappears in a puff of smoke. Huge gray cloud suddenly erupts many feet in all directions. You are sure it must be visible from far, far away. \\ \\
+	But there is no time to ponder - you must flee! Now!
+}
+
+The dustcasting is complete, but every guard is now aware of the PCs' presence. They must run. Proceed to \fullref{sec:dustcastingFlee}.

@@ -1,0 +1,33 @@
+\label{enemyWallGuardHighmarshal}
+
+% From Brightlord
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyWallGuardHighmarshalName}{2}{Boss}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{2}{4}{6}{3}{6}{4}{54}{5}{8}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[4 (Full Plate)] \\
+	\enemyStatblockSkillsMovement[30 ft.]
+	\enemyStatblockSkillsSenses[50 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +7, Light Weaponry +7]
+	\enemyStatblockSkillsCognitive[Deduction +4, Discipline +6, Intimidation +7]
+	\enemyStatblockSkillsSpiritual[Insight +9, Leadership +7, Persuasion +6]
+	\enemyStatblockSkillsLanguages[all]
+	]
+}{	
+	\enemyStatblockFeature{Nalthian Awareness}{\enemyWallGuardHighmarshalName{} gains an advantage on all Awareness skill tests. She can sense spren and invisible characters.} \\
+	
+	\enemyStatblockFeature{BioChromatic Sword}{The Highmarshal wields \lootHighmarshalsBlade{}.}
+		
+}{
+	\enemyStatblockAction{Shield Up}{Target ally increases their Physical Defense by 2 until the end of the next round. This action can be used multiple times in a single round.}\\
+	
+	\enemyStatblockAction{Strike True}{Target ally gains and advantage on their next attack. This action can be used multiple times in a single round.} \\
+	
+	\enemyStatblockAction[\iconActionDouble]{Form a Line}{All allies can each spend 1 Focus to move up to their speed as \iconReaction{}. Until the end of the next round, all attacks targeting Azure's allies standing within 5 ft. of a friendly character gain disadvantage.}\\
+	
+	\enemyStatblockAction[\iconFreeAction]{Invested Healing}{Azure can spend 1 Investiture to recover 5 (1d6 + 2) Health.} \\
+	
+	\enemyStatblockAction[\iconReaction]{Parry, Riposte}{Before Azure is hit with a melee attack, she can add her Light Weaponry skill to her Physical Defense. If the attack misses as a result, she can strike the attacker: Attack +7, reach 5 ft., one target. Graze: 13 (2d12) spirit damage. Hit:~20~(2d12~+~7) spirit damage.}
+}

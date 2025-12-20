@@ -1,0 +1,42 @@
+\section{\npcFractionPalace}
+\label{enemyPalace}
+
+The Royal Palace in Kholinar is under heavy influence of \npcYeligNar{}, the \npcYeligNarTitle{}, one of the nine Unmade serving \npcOdium{}. \npcQueen{} bonded the spren, and now she is convinced her loyal guard are a newly reformed Knights Radiant.
+
+Despite the queen's delusions, her guards are the best Alethkar can offer - heavily armed and formidable in battle, they serve day and night to ensure nobody can cross the closed gates of the palace. Though they are not bonded to any spren, \enemyQueensGuard{} are subjected to the corrupting influence \npcYeligNar{} has over the whole palace and their souls, just like the queen's, are lost to the darkness.
+
+\tacticsBox{
+	\enemyQueensGuard{}s are fearless in battle. They will fight to protect the queen and the palace and they will gladly die in their unyielding loyalty. Anyone threatening their liege will meet their blades. If the fight comes anywhere close to \npcQueen{}, she will join it, unleashing terrible powers the Unmade is granting her.
+}
+
+
+\newpage
+\label{enemyQueensGuard}
+% From Ghostblood Enforcer
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyQueensGuardName}{2}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{3}{3}{2}{3}{4}{4}{42 (34-50)}{5}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[3 (half plate)] \\
+	\enemyStatblockSkillsMovement[30 ft.]
+	\enemyStatblockSkillsSenses[20 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Athletics +5, Heavy Weaponry +6, Light Weaponry +6]
+	\enemyStatblockSkillsCognitive[Intimidation +6]
+	\enemyStatblockSkillsSpiritual[Deception +5, Perception +7]
+	\enemyStatblockSkillsLanguages[alethi]
+	]
+}{	
+	\enemyStatblockFeature{Ruthless}{After the \enemyQueensGuardName{} knocks an enemy Prone, they can make an additional Strike against that target as on that turn (even if they’ve already used that Strike action).} \\
+	
+	\enemyStatblockFeature{Defensive Shield}{\enemyQueensGuardName{} can use the Brace action without a cover nearby.}
+}{
+	\enemyStatblockAction{Strike: Longsword}{Attack +6, reach 5 ft., one target. Graze: 4 (1d8) keen damage. Hit: 10 (1d8 + 6) keen damage.}\\
+	
+	\enemyStatblockAction{Strike: Shield}{Attack +6, reach 5 ft., one target. Graze: 2 (1d4) impact damage. Hit: 8 (1d4 + 6) impact damage and the \enemyQueensGuardName{} can spend 1 Focus to knock the target Prone.}\\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Intimidate (Costs 1 Focus)}{The \enemyQueensGuardName{} makes an opposed Intimidation test against the Discipline of a target they can influence. If the \enemyQueensGuardName{} succeeds, the target loses 1 Focus and is no longer Focused.} \\
+	
+	\enemyStatblockAction[\iconReaction{}]{Intercept}{If an allay within 5 ft. of \enemyQueensGuard{} is attacked, he can spend 1 Focus to redirect that attack to himself.}
+}

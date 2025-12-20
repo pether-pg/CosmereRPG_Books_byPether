@@ -1,0 +1,141 @@
+\section{Gates to the Revel}
+\label{sec:revelryGates}
+
+When characters reach the gates to the Monastery, read the following:
+
+\quoteBox{
+	You can see the guards at the Monastery gates. Two of them, with their spren costumes, are standing at both sides. Third one, wearing flat white mask with nothing but an eye holes, approaches you. \\
+	"Who are you?", she asks. "What are you looking for?"
+}
+
+\npcFractionCult{} guards are defending the gates - one \enemyRevelerMasked{} and a number of \enemyCultist{}s equal to the number of PCs (each \enemyCultistOfMoments{} of a random kind). There are only two \enemyCultist{}s standing in front of the gate - the rest is resting nearby and will join the fight after one round.
+
+
+\subsubsection{Entering the Revelry}
+
+\label{sec:cityEscapePlan}
+
+Before \fullref{sec:dustcastingSneaking}, the characters should plan how will they enter the Monastery once they complete the dustcasting. There are several approaches they may attempt, each with its own risks and challenges.
+
+Once the party manages to enter the Monastery using one of the below methods, proceed to \fullref{sec:revelry}.
+
+
+
+\subsection{Allies of the Cult}
+
+If the characters managed to ally the \npcFractionCult{}, they will be allowed inside without any problems.
+
+To become allies, the characters must side with them during \nameref{chap:chapter3}, especially during \fullref{sec:monastery}. On top of that, they couldn't have killed anyone from the cult. 
+
+Use your own judgment if the party was close to reach those goals. If you believe the party is close, but still not there yet, you can give them some bonuses during \fullref{ssec:cityEscapePlanJoin}.
+
+
+
+
+\subsection{Joining \npcFractionCult{}}
+\label{ssec:cityEscapePlanJoin}
+
+If the characters wish to join the cult, they would need to get their attention by doing something grand and daring. You can run it as an endeavor.
+
+Each day, allow one of the characters to attempt doing something that will attract cult's attention - probably something wasteful or extravagant. Use your judgment to adjust tested skill and the test's DC, then ask the player for the skill test to check if they succeeded.
+
+If they succeed the corresponding test, note their total number of successes and ask them for a d20 roll. If the result of that roll increased by the total number of successes equals 21 or more, \npcFractionCult{} notices their work and invites them in.
+
+If they fail the test, nothing happens, except the day is lost. There is no threshold for a number of failures to end the endeavor. However, each passing they require the PCs to eat, and the food is scarce in the city.
+
+The characters may stop their attempts at any time.
+
+\reasonBox{
+	Modified formula of running this endeavor (DC 21 on d20 + number of successes) is introduced to represent uncertainty of the cult's reaction. If my math is correct, the PCs have following chances of completing the endeavor: \\
+	14\% after 2nd success \\
+	27\% after 3rd \\
+	41\% after 4th \\
+	56\% after 5th \\
+	69\% after 6th \\
+	80\% after 7th \\
+	If you don't like this idea, feel free to use constant number of successes required, eg. 6.
+}
+
+\subsubsection{Criminal's Curiosity}
+
+After the 3rd success of the endeavor, the characters are approached by some shady individuals. They are sent by one of Kholinar's crime lords. They offer the characters help getting them behind the monastery walls for a right price. 
+
+The characters may choose to ally with them. That will get them easier time in \fullref{ssec:cityEscapePlanSneak} endeavor, but the paid cost will not allow them to join the cult.
+
+
+\subsubsection{Cult's Attention}
+
+When the characters succeed the endeavor, they will get a note from the cult. In it, there will be an invitation to the revelry and the price for it. The price must relate to the way the characters got their attention (eg. they must pay food if they used food as a means of the endeavor).
+
+\reasonBox{
+	By pure coincidence, the Crime Lords and the \npcFractionCult{} demand the same price. The PCs must choose who will they ally in this endeavor.
+}
+
+\spoilerBox{
+	\npcShallan{} attempting to join the cult revelry is described in \bookOB{}: Chapter 72. Rockfall and Chapter 74. Swiftspren.
+}
+
+
+
+
+\subsection{Talking Their Way In}
+
+The characters may attempt their smooth-talking skills to convince the guards (see \fullref{sec:revelryGates}) to let them in. You can run this as a conversation. During the conversation, only \enemyRevelerMasked{} will talk, other guards will remain silent.
+
+\conversationDefence{\enemyRevelerMasked{}}{14}{15}{3}
+They are devoted to the cult and they want it to spread, but they are careful not to allow anyone dangerous inside.
+
+\conversationEnd{\enemyRevelerMasked{}}{2}
+
+If the conversation doesn't go as planned and the characters fail to leave the area, the guards will attack them. Proceed to \fullref{ssec:cityEscapePlanForce}.
+
+
+
+
+\subsection{Sneak Behind Their Backs}
+\label{ssec:cityEscapePlanSneak}
+
+If the characters prefer stealthy approach, they can decide to enter quietly. You can run this as an endeavor. However, if they are detected, proceed immediately to \fullref{ssec:cityEscapePlanForce}.
+
+If the characters decided to join forces with \npcFractionCrime{}, they will help them in this endeavor - all PC's tests are made with an advantage.
+
+Potential approaches may include:
+
+\scriptedOption{Sneak next to the guards.}{
+	A PC may attempt a \skillStealth{} test against \enemyRevelerMasked{}'s \skillPerception{} test to act without being spotted.
+}
+
+\scriptedOption{Climb the walls.}{
+	Any PC attempting the climb must pass \skillCheck{15}{\skillAthletics{}}. Any character failing the test falls and takes amount of damage equal to the difference between their test's result and the DC.
+}
+
+\scriptedOption{Search for hidden passage.}{
+	With a \skillCheck{14}{\skillPerception{}} a PC may find a hidden gate somewhere in the wall.
+}
+
+\scriptedOption{Open locked doors.}{
+	If there are some doors that need opening, a \skillCheck{18}{\skillThievery{}} may help with that.
+}
+
+\scriptedOption{Radiant powers.}{
+	Fly above the wall, walk through it or just appear behind it - the Radiants may find easier solutions than tedious climbing.
+}
+
+\subsubsection{\pursuitResolveHeader}
+
+\pursuitReq{7}{3}
+
+If the characters succeed, they can enter the Revelry. Proceed to \fullref{ssec:revelryVillage}.
+
+If the endeavor fails, the party is attacked - proceed to \fullref{ssec:cityEscapePlanForce}.
+
+
+
+
+
+\subsection{Brute Force}
+\label{ssec:cityEscapePlanForce}
+
+The characters may decide to deal with the guards in a quick and hostile way. The cultists will fight to the end.
+
+If the characters are pushed into that solution due to their failures in other attempts (eg. \fullref{ssec:cityEscapePlanSneak}) double the number of the guards as a consequence.

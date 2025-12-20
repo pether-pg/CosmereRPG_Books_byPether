@@ -1,0 +1,26 @@
+\label{enemyRevelerMusical}
+
+% From Reveler of Ashertmarn
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyRevelerMusicalName}{2}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{3}{3}{3}{1}{1}{4}{38 (31–45)}{3}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsMovement[30 ft.] \\
+	\enemyStatblockSkillsSenses[10 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +5, Athletics +5, Light Weaponry +6]
+	\enemyStatblockSkillsSpiritual[Deception +7, Leadership +7, Persuasion +7]
+	\enemyStatblockSkillsLanguages[alethi]
+	]
+}{	
+	\enemyStatblockFeature{In Harmony}{The reveler gains advantage on all of their tests if they can hear a music playing for at least a full round without interruptions.} \\
+}{
+	\enemyStatblockAction{Strike: Knife}{Attack +6, reach 5 ft., one target. The reveler gains an advantage on their first Knife attack during a scene. Graze: 2 (1d4) keen damage. Hit: 8 (1d4 + 6) keen damage. }\\
+	
+	\enemyStatblockAction{Shared Dance}{The reveler makes an Agility test against a target within 5 feet of them, opposed by the target’s choice of Athletics or Agility. If the reveler succeeds, they can move up to 30 ft. without provoking reactive strikes, dragging the target with them.} \\
+	
+	\enemyStatblockAction{Rhythmic Impulse (Costs 1 Focus)}{The reveler chooses up to two targets they can influence within 60 feet. Those characters must each make a DC 15 Discipline test. On a failure, the only actions the target can take are: dancing and playing on a musical instrument.} \\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Eerie Music}{The reveler plays music on their flute until their next turn. Each enemy who can hear it must pass \skillCheck{15}{\skillDiscipline} or looses 1 Focus. Any character who attempts the test is immune to other Eerie Music actions this round.} \\
+}

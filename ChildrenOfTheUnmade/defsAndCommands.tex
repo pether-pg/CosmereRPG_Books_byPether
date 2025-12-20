@@ -1,0 +1,598 @@
+% Basic
+
+\newcommand{\fullref}[1]{\ref{#1}.~"\nameref{#1}"}
+
+% Colors and definitions
+
+\def \useAI{true}
+
+\definecolor{goldStats}{RGB}{208, 164, 82}
+\definecolor{yellowQuote}{RGB}{245, 236, 221}
+\definecolor{yellowRoleplay}{RGB}{244, 239, 233}
+\definecolor{grayReason}{RGB}{200, 200, 200}
+\definecolor{blueRadiance}{RGB}{30, 60, 96}
+\definecolor{redSpoiler}{RGB}{200, 0, 0}
+
+% Art and graphics
+
+\newcommand{\includeCreditedGraphics}[3]{\ifthenelse{\equal{\useAI}{false} \AND \equal{#3}{AI}}{}{\includegraphics[#1]{#2}}}
+
+\newcommand{\creditedArtFigure}[5]{
+	\ifthenelse{\equal{\useAI}{false} \AND \equal{#3}{AI}}{}{
+		\begin{figure}[h]
+			\centering
+			\includegraphics[#1]{#2}
+			\caption{#4}
+			\label{#5}
+		\end{figure}
+	}
+}
+
+
+% Official Books
+
+\newcommand{\cosmereRPG}[0]{Cosmere RPG}
+\newcommand{\handbook}[0]{\textit{Stormlight Handbook}}
+\newcommand{\bookWorldGuide}[0]{\textit{Stormlight World Guide}}
+\newcommand{\bookWOR}[0]{\textit{"Words of Raidiance"}}
+\newcommand{\bookOB}[0]{\textit{"Oathbringer"}}
+\newcommand{\bookWAT}[0]{\textit{"Wind And Truth"}}
+\newcommand{\bookSA}[0]{\textit{"Stormlight Archive"}}
+
+% Names
+
+\newcommand{\npc}[2][u]{\hyperref[personae]{#2}\ifthenelse{\equal{#1}{f}}{ (she/her)}{\ifthenelse{\equal{#1}{m}}{ (he/him)}{}}}
+
+% Official Characters
+
+\newcommand{\npcOdium}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Odium}}{\npc{Odium}}}
+
+% Unmade
+
+\newcommand{\npcThrill}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{Nergaoul}}{\npc{Nergaoul}}}
+\newcommand{\npcYeligNar}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{Yelig-nar}}{\npc{Yelig-nar}}}
+\newcommand{\npcDustmother}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Chemoarish}}{\npc{Chemoarish}}}
+\newcommand{\npcMidnightMother}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Re-Shephir}}{\npc{Re-Shephir}}}
+\newcommand{\npcMoelach}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{Moelach}}{\npc{Moelach}}}
+\newcommand{\npcSjaAnat}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Sja-Anat}}{\npc{Sja-Anat}}}
+\newcommand{\npcBlackFisher}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Dai-Gonarthis}}{\npc{Dai-Gonarthis}}}
+\newcommand{\npcHeartRevel}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{Ashertmarn}}{\npc{Ashertmarn}}}
+\newcommand{\npcMishram}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Ba-Ado-Mishram}}{\npc{Ba-Ado-Mishram}}}
+
+\newcommand{\npcThrillTitle}{Thrill}
+\newcommand{\npcYeligNarTitle}{Blightwind}
+\newcommand{\npcDustmotherTitle}{Dustmother}
+\newcommand{\npcMidnightMotherTitle}{Midnight Mother}
+\newcommand{\npcSjaAnatTitle}{Taker of Secrets}
+\newcommand{\npcBlackFisherTitle}{Black Fisher}
+\newcommand{\npcHeartRevelTitle}{Heart of the Revel}
+
+% Monarchs
+\newcommand{\npcQueenName}{Aesudan}
+\newcommand{\npcQueen}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Queen \npcQueenName{}}}{\npc{Queen \npcQueenName{}}}}
+\newcommand{\npcDeadKingName}{Gavilar}
+\newcommand{\npcDeadKing}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{King \npcDeadKingName{}}}{\npc{King \npcDeadKingName{}}}}
+\newcommand{\npcTaravangian}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{King Taravangian}}{\npc{King Taravangian}}}
+\newcommand{\npcElhokar}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{King Elhokar}}{\npc{King Elhokar}}}
+ % Ardents
+\newcommand{\npcRebelArdent}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Pai}}{\npc{Pai}}}
+\newcommand{\npcRevelerGeneral}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Kishi}}{\npc{Kishi}}}
+\newcommand{\npcRevelerGuide}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Kharat}}{\npc{Kharat}}}
+% Wall Guard
+\newcommand{\npcHighmarshal}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Highmarshal Azure}}{\npc{Highmarshal Azure}}}
+\newcommand{\npcSoulcaster}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Ithi}}{\npc{Ithi}}}
+% Singers
+\newcommand{\npcSingerWorkerGranM}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Nal}}{\npc{Nal}}}
+\newcommand{\npcSingerWorkerGranF}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Tir}}{\npc{Tir}}}
+\newcommand{\npcSingerWouned}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Rishai}}{\npc{Rishai}}}
+\newcommand{\npcSingerEnvoy}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Serin}}{\npc{Serin}}}
+% Characters
+\newcommand{\npcShallan}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Shallan}}{\npc{Shallan}}}
+\newcommand{\npcDalinar}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Dalinar}}{\npc{Dalinar}}}
+\newcommand{\npcHoid}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Hoid}}{\npc{Hoid}}}
+% Custom
+\newcommand{\npcGrandmaName}{Veda}
+\newcommand{\npcGrandma}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Gran-gran}}{\npc{Gran-gran}}}
+\newcommand{\npcLockedArdent}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Liha}}{\npc{Liha}}}
+\newcommand{\npcTroublemaker}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Chanri}}{\npc{Chanri}}}
+
+
+\newcommand{\npcFractionPalace}{Royal Palace}
+\newcommand{\npcFractionSingers}{Singers}
+\newcommand{\npcFractionCult}{Cult of Moments}
+\newcommand{\npcFractionWall}{Wall Guards}
+\newcommand{\npcFractionCrime}{Crime Lords}
+
+
+% Enemies
+
+\newcommand{\enemyReanimatedRemainsName}{Reanimated Remains}
+\newcommand{\enemyQueensGuardName}{False Radiant}
+\newcommand{\enemyQueensGuardLeaderName}{False Radiant Leader}
+% City
+\newcommand{\enemyAxehoundName}{Hungry Axehound}
+\newcommand{\enemyRioterName}{Rioter}
+% The Wall
+\newcommand{\enemyWallGuardName}{Wall Guard}
+\newcommand{\enemyWallGuardHighmarshalName}{Highmarshal Azure}
+\newcommand{\enemySoulcasterName}{Verdant Soulcaster Savant}
+% Cultists
+\newcommand{\enemyCultistName}{Cultist}
+\newcommand{\enemyCultistOfMomentsName}{Cultist of Moments}
+\newcommand{\enemyRevelerMaskedName}{Masked Reveler}
+\newcommand{\enemyRevelerSadisticName}{Sadistic Reveler}
+\newcommand{\enemyRevelerDrinkingName}{Bibulous Reveler}
+\newcommand{\enemyRevelerWealthyName}{Wealthy Reveler}
+\newcommand{\enemyRevelerMusicalName}{Musical Reveler}
+\newcommand{\enemyHeartOfTheRevelName}{\npcHeartRevelTitle}
+% Singer
+\newcommand{\enemyPrshmenName}{Docile Parshmen}
+\newcommand{\enemySingerWarformName}{Newborn Warform}
+\newcommand{\enemySingerNimbleformName}{Newborn Nimbleform}
+\newcommand{\enemySingerDireformName}{Newborn Direform Regal}
+\newcommand{\enemySingerStormformName}{Newborn Stormform Regal}
+\newcommand{\enemySingerEnvoyformName}{Newborn Envoyform Regal}
+\newcommand{\enemySingerHeavenlyOneName}{Newborn Heavenly One}
+
+\newcommand{\enemy}[1]{\hyperref[chap:enemies]{\textbf{#1}}}
+\newcommand{\enemyReanimatedRemains}{\enemy{\hyperref[enemyReanimatedRemains]{\enemyReanimatedRemainsName}}}
+\newcommand{\enemyQueensGuard}{\enemy{\hyperref[enemyQueensGuard]{\enemyQueensGuardName}}}
+\newcommand{\enemyQueensGuardLeader}{\enemy{\hyperref[enemyQueensGuardLeader]{\enemyQueensGuardLeaderName}}}
+% City
+\newcommand{\enemyAxehound}{\enemy{\hyperref[enemyAxehound]{\enemyAxehoundName}}}
+\newcommand{\enemyRioter}{\enemy{\hyperref[enemyRioter]{\enemyRioterName}}}
+\newcommand{\enemyWallGuard}{\enemy{\hyperref[enemyWallGuard]{\enemyWallGuardName}}}
+\newcommand{\enemySoulcaster}{\enemy{\hyperref[enemySoulcaster]{\enemySoulcasterName}}}
+\newcommand{\enemyWallGuardHighmarshal}{\enemy{\hyperref[enemyWallGuardHighmarshal]{\enemyWallGuardHighmarshalName}}}
+% Cultists
+\newcommand{\enemyCultist}{\enemy{\hyperref[enemyCultistOfMoments]{\enemyCultistName}}}
+\newcommand{\enemyCultistOfMoments}{\enemy{\hyperref[enemyCultistOfMoments]{\enemyCultistOfMomentsName}}}
+\newcommand{\enemyRevelerMasked}{\enemy{\hyperref[enemyRevelerMasked]{\enemyRevelerMaskedName}}}
+\newcommand{\enemyRevelerSadistic}{\enemy{\hyperref[enemyRevelerSadistic]{\enemyRevelerSadisticName}}}
+\newcommand{\enemyRevelerDrinking}{\enemy{\hyperref[enemyRevelerDrinking]{\enemyRevelerDrinkingName}}}
+\newcommand{\enemyRevelerWealthy}{\enemy{\hyperref[enemyRevelerWealthy]{\enemyRevelerWealthyName}}}
+\newcommand{\enemyRevelerMusical}{\enemy{\hyperref[enemyRevelerMusical]{\enemyRevelerMusicalName}}}
+\newcommand{\enemyHeartOfTheRevel}{\enemy{\hyperref[enemyHeartOfTheRevel]{\enemyHeartOfTheRevelName}}}
+% Singer
+\newcommand{\enemyPrshmen}{\enemy{\hyperref[enemyPrshmen]{\enemyPrshmenName}}}
+\newcommand{\enemySingerWarform}{\enemy{\hyperref[enemySingerWarform]{\enemySingerWarformName}}}
+\newcommand{\enemySingerNimbleform}{\enemy{\hyperref[enemySingerNimbleform]{\enemySingerNimbleformName}}}
+\newcommand{\enemySingerDireform}{\enemy{\hyperref[enemySingerDireform]{\enemySingerDireformName}}}
+\newcommand{\enemySingerStormform}{\enemy{\hyperref[enemySingerStormform]{\enemySingerStormformName}}}
+\newcommand{\enemySingerEnvoyform}{\enemy{\hyperref[enemySingerEnvoyform]{\enemySingerEnvoyformName}}}
+\newcommand{\enemySingerHaevenlyOne}{\enemy{\hyperref[enemySingerHeavenlyOne]{\enemySingerHeavenlyOneName}}}
+% External
+\newcommand{\enemyExpert}{\textbf{Expert Citizen} \textit{(see \bookWorldGuide{})}}
+
+\newcommand{\conversationDefence}[4]{#1 has a Cognitive defense of #2, a Spiritual defense of #3, and #4 focus.}
+
+\newcommand{\conversationEnd}[2]{If #1’s test equals or exceeds the Spiritual defense of a PC, that PC either must spend #2 focus to resist influence or must back down from the conversation. }
+
+\newcommand{\loot}[1]{\hyperref[chap:items]{\textit{\textbf{#1}}}}
+
+\newcommand{\lootDustcaster}{\loot{Dustcaster}}
+\newcommand{\lootGateOpener}{\loot{Black Scallop}}
+\newcommand{\lootHighmarshalsBlade}{\loot{Azure's Blade}}
+
+
+
+% Abilities, Skills, Checks
+
+\newcommand{\skillCheck}[2]{DC~#1~#2 check}
+\newcommand{\skillTreeClimb}{\skillCheck{12}{Athletics}}
+
+\newcommand{\skillStrength}{Strength}
+\newcommand{\skillAthletics}{Athletics}
+\newcommand{\skillStealth}{Stealth}
+\newcommand{\skillThievery}{Thievery}
+
+\newcommand{\skillCrafting}{Crafting}
+\newcommand{\skillDeduction}{Deduction}
+\newcommand{\skillDiscipline}{Discipline}
+\newcommand{\skillIntimiation}{Intimidation}
+
+\newcommand{\skillDeception}{Deception}
+\newcommand{\skillInsight}{Insight}
+\newcommand{\skillLeadership}{Leadership}
+\newcommand{\skillPerception}{Perception}
+\newcommand{\skillPersuasion}{Persuasion}
+\newcommand{\skillSurvival}{Survival}
+
+\newcommand{\exhausted}[1][-1]{Exhausted [#1]}
+\newcommand{\restrained}{Restrained}
+\newcommand{\unconscious}{Unconscious}
+
+\newcommand{\pursuitResolveHeader}{Resolving the Endeavor}
+\newcommand{\pursuitReq}[2]{The endeavor succeeds if the party accrues #1 successes before #2 failures, or if they otherwise complete the objective.}
+
+\newcommand{\ability}[2]{
+	\vspace{0.2cm}
+	\fcolorbox{goldStats}{white}{
+		\parbox{7cm}{
+			\noindent \textbf{#1.}#2
+		}
+	}
+	\vspace{0.2cm}
+}
+
+\newcommand{\abilityVinesName}[1][N]{\hyperref[ssec:ruleVines]{Enhancing Vines [#1]}}
+\newcommand{\abilityVinesTextShort}[1][N]{This creature has +#1 bonus to Strength and all its derivatives.}
+\newcommand{\abilityVinesText}[1][N]{\abilityVinesTextShort[#1] \textit{(Bonus is included in the stat block.)} After death, it will be reanimated with \abilityHuskName[#1]{} ability, unless it already has one.}
+\newcommand{\abilityVines}[1][N]{
+	\ability{\abilityVinesName[#1]}{
+		\abilityVinesText[#1]
+	}
+}
+
+\newcommand{\abilityHuskName}[1][N]{\hyperref[ssec:ruleHusk]{Reanimated Husk [#1]}}
+\newcommand{\abilityHuskText}[1][N]{This creature's Intelligence, Willpower and Focus drop to 0. When this creature dies, roll #1 Plot Die(s). For each Complication rolled, spawn \enemyReanimatedRemains{} onto the battlefield.}
+\newcommand{\abilityHusk}[1][N]{
+	\ability{\abilityHuskName[#1]}{
+		\abilityHuskText[#1]{}
+	}
+}
+
+% Talents
+
+\newcommand{\talentWindrunnerKeyName}{Keep the Momentum!}
+\newcommand{\talentWindrunnerLashOutName}{Lash Out}
+\newcommand{\talentWindrunnerBerserkName}{Berseker Rage}
+\newcommand{\talentWindrunnerEnhanceName}{Invested Enhancement}
+\newcommand{\talentWindrunnerStrikeName}{Martial Experience}
+
+\newcommand{\talentSkybreakerLeapName}{Storm Leap}
+\newcommand{\talentSkybreakerShieldName}{Lightning Shield}
+\newcommand{\talentSkybreakerBoltName}{Bolt of Lightning}
+\newcommand{\talentSkybreakerGraspName}{Shocking Grasp}
+\newcommand{\talentSkybreakerStormName}{Summon Storm}
+
+\newcommand{\talentDustbringerDecayName}{Decaying Touch}
+\newcommand{\talentDustbringerDrainName}{Drain Light}
+\newcommand{\talentDustbringerAfflictionName}{Spreading Decay}
+\newcommand{\talentDustbringerUnhealableName}{Chop To Pieces}
+\newcommand{\talentDustbringerLifestealName}{Parasitic Relation}
+
+\newcommand{\talentEdgedancerKeyName}{Sprouting Vines}
+\newcommand{\talentEdgedancerEnhanceName}{Enhancing Vines}
+\newcommand{\talentEdgedancerReanimateName}{Reanimating Vines}
+\newcommand{\talentEdgedancerRemainsName}{Reanimate Remains}
+\newcommand{\talentEdgedancerPuppeteerName}{Puppeteering Vines}
+
+\newcommand{\talentTruthwatcherFutureSightName}{Future Sight}
+\newcommand{\talentTruthwatcherAlterFortuneName}{Alter Fortune}
+\newcommand{\talentTruthwatcherGlimpseFutureName}{Glimpse the Future}
+\newcommand{\talentTruthwatcherSearchPastName}{Search the Past}
+\newcommand{\talentTruthwatcherVisionVoidName}{Vision Void}
+
+\newcommand{\talentLightweaverKeyName}{Interpret Body Language}
+\newcommand{\talentLightweaverReadSecretsName}{Uncover Secrets}
+\newcommand{\talentLightweaverDetermineOthersName}{Influential Tip}
+\newcommand{\talentLightweaverDetectThoughtsName}{Decrypt Thoughts}
+\newcommand{\talentLightweaverSuggestionName}{Suggestion}
+
+\newcommand{\talentElsecallerKeyName}{Perfected Body}
+\newcommand{\talentElsecallerDirgeName}{Grieving Dirge}
+\newcommand{\talentElsecallerMistyStepName}{Shadow Walk}
+\newcommand{\talentElsecallerDragName}{Drag Through Shadows}
+\newcommand{\talentElsecallerRangeName}{Long Shadow}
+
+\newcommand{\talentWillshaperFreeMoveName}{Freedom of Movement}
+\newcommand{\talentWillshaperBurstName}{Action Burst}
+\newcommand{\talentWillshaperCallName}{Call to the Revel}
+\newcommand{\talentWillshaperImpulseName}{Hedonistic Impulse}
+\newcommand{\talentWillshaperInhibitionsName}{Eroding Inhibitions}
+\newcommand{\talentWillshaperFiremossName}{Firemoss}
+
+\newcommand{\talentStonewardKeyName}{Double Trouble}
+\newcommand{\talentStonewardAddOwnPlotName}{Daring Opportunist}
+\newcommand{\talentStonewardAddOthersPlotName}{Troublemaker}
+\newcommand{\talentStonewardSilveryBarbsName}{Not Today!}
+\newcommand{\talentStonewardDisadvantageOthersName}{Infectious Misfortune}
+
+\newcommand{\corruptedResistanceDC}{DC equal to 5 + 5 for each Enlightened talent taken}
+\newcommand{\corruptedRulesChapTitle}{Enlightened Radiants Rules}
+\newcommand{\seeCorruptedRules}{\textit{(see Appendix \ref{chap:corruptedRules}: \hyperref[chap:corruptedRules]{\corruptedRulesChapTitle{}})}}
+
+
+
+% Misc
+
+\newcommand{\corruptedBelief}[2]{
+	\begin{center}
+		\textit{\sout{#1}} \\
+		\textit{#2}
+	\end{center}
+}
+
+\newcommand{\talent}[5]{
+	\LARGE \noindent #1 \vspace{0.15cm} \normalsize \\	
+	\noindent
+	\textbf{Prerequisite:} #2 \\
+	\textbf{Activation:} #3 \\
+	\noindent \color{gray} \textit{#4} \\
+	\noindent \color{black} #5 \\
+	\par
+}
+
+% Boxes
+
+\newcommand{\quoteBox}[1]{
+	\vspace{0.2cm}
+	\colorbox{yellowQuote}{
+		\parbox{7cm}{#1}
+	}
+	\vspace{0.2cm}
+}
+
+\newcommand{\reasonBox}[1]{
+	\vspace{0.2cm}
+	\colorbox{grayReason}{		
+		\parbox{7cm}{\textit{#1}}
+	}
+	\vspace{0.2cm}
+}
+
+\newcommand{\coloredBox}[5]{	
+	\begin{minipage}{7cm}
+		\vspace{0.2cm}
+		\noindent
+		\fcolorbox{#1}{#1}{
+			\color{#3}
+			\begin{tabular}{p{7cm}}
+				\textbf{#4}
+			\end{tabular}		
+		}\par
+		\vspace{-0.15cm}
+		\noindent
+		\fcolorbox{#1}{#2}{
+			\begin{tabular}{p{7cm}}
+				#5
+			\end{tabular}
+		}
+		\vspace{0.2cm}
+	\end{minipage}
+}
+
+\newcommand{\roleplayBox}[2]{
+	\coloredBox{goldStats}{yellowRoleplay}{black}{Roleplaying #1}{#2}
+}
+
+\newcommand{\roleplayTips}[4]{
+	\vspace{0.1cm}
+	\textbf{Characteristics:} #1\\
+	\textbf{Goal:} #2\\
+	\textbf{Appearance:} #3 \\ \\
+	#4
+}
+
+\newcommand{\blueBox}[2]{
+	\coloredBox{blueRadiance}{white}{white}{#1}{#2}
+}
+
+\newcommand{\blackBox}[2]{
+	\coloredBox{black}{white}{white}{#1}{#2}
+}
+
+\newcommand{\redBox}[2]{
+	\coloredBox{redSpoiler}{white}{white}{#1}{#2}
+}
+
+\newcommand{\tacticsBox}[1]{
+	\blueBox{Tactics}{#1}
+}
+
+\newcommand{\ptrBox}[1]{
+	\blueBox{Path to Radiance}{#1}
+}
+
+\newcommand{\corruptedBox}[1]{
+	\blackBox{Path to Enlightement}{#1}
+}
+
+\newcommand{\spoilerBox}[1]{
+	\redBox{Spoiler Info}{#1}
+}
+
+\newcommand{\scriptedOption}[2]{
+	\begin{adjustwidth}{0cm}{0cm} \begin{minipage}{8.6cm}
+		\textbf{\newline #1}
+		\begin{adjustwidth}{1cm}{0cm}		
+			#2
+		\end{adjustwidth}
+	\end{minipage} \end{adjustwidth}
+}
+
+\newcommand{\eventComplication}[2]{
+	\parbox{8cm}{	
+		\fcolorbox{redSpoiler}{redSpoiler}{			
+			\begin{tabular}{p{8cm}}				
+				\color{white} \centering \textbf{EVENT} \\
+			\end{tabular}
+		}\par
+		\vspace{-0.5cm}
+		\noindent
+		\begin{adjustwidth}{0.5cm}{0cm}
+			\fcolorbox{goldStats}{white}{
+			\begin{tabular}{p{7cm}}
+				\footnotesize \centering Triggers when the final Complication slot is filled. \normalsize \\
+				\vspace{0.15cm}
+				#2
+				
+				\vspace{0.25cm}
+				\LARGE {#1}
+				\vspace{0.25cm}
+			\end{tabular}
+			}
+		\end{adjustwidth}
+	}
+}
+
+\newcommand{\iconCompEvent}{
+	\fcolorbox{redSpoiler}{white}{\iconComp[1cm]}
+}
+
+
+\newcommand{\enemyStatBlock}[5]{
+	\begin{adjustwidth}{0cm}{0cm}
+		\fcolorbox{goldStats}{white}{
+			\parbox{8.4cm}{
+				\vspace{0.2cm}
+				#1	% Name and types
+				\par			
+				#2	% Stat Table
+				#3	% Skills
+				
+				\begin{center} \MakeUppercase{\textbf{Features}} \end{center}
+				{\color{goldStats} \hrule \vspace{0.5cm} }
+				#4 % Features
+				
+				\begin{center} \MakeUppercase{\textbf{Actions}} \end{center}
+				{\color{goldStats} \hrule \vspace{0.5cm} } 
+				#5 % Actions
+			}
+		}
+	\end{adjustwidth}
+}
+
+\newcommand{\enemyStatBlockTest}{
+	\enemyStatBlock{
+		\enemyStatBlockHeader{\enemyAxehound}{1}{Minion}{Small Animal}
+	}{
+		\enemyStatBlockStats{1}{2}{3}{4}{5}{6}{7}{8}{9}
+	}{
+		\enemyStatBlockSkills
+	}{
+		Feature 1\\
+		Feature 2\\
+	}{
+		Action 1\\
+		Action 2\\
+	}
+}
+
+\newcommand{\enemyStatBlockHeader}[4]{
+	\textbf{\LARGE #1} \\
+	\textit{Tier #2 #3 - #4} \\
+}
+
+\newcommand{\enemyStatBlockStats}[9]{
+	\fcolorbox{goldStats}{goldStats}{
+		\color{white} 	
+		\begin{tabular}{p{2.2cm} p{2.2cm} p{2.21cm}}
+			\centering \textbf{P\scriptsize HYSICAL} & 
+			\centering \textbf{C\scriptsize OGNITIVE} & 
+			\centering \textbf{S\scriptsize PIRITUAL}
+		\end{tabular}
+	}
+	
+	\vspace{-0.2cm}
+	\fcolorbox{goldStats}{white}{\begin{tabular}{p{0.30cm} p{0.65cm} p{0.30cm} p{0.30cm} p{0.65cm} p{0.30cm} p{0.44cm} p{0.65cm} p{0.3cm} p{0.01cm}}
+		
+		\begin{tabular}{l} \footnotesize Str \\ #1 \end{tabular}
+		&
+		\fcolorbox{goldStats}{white}{\centering \begin{tabular}{p{0.5cm}} \centering \footnotesize Def \\ \centering \normalsize \the \numexpr 10 + #1 + #2\relax \end{tabular}}
+		&
+		\begin{tabular}{c} \footnotesize Spd \\ #2 \end{tabular}
+		&
+		\begin{tabular}{c} \footnotesize Int \\ #3 \end{tabular}
+		&
+		\fcolorbox{goldStats}{white}{\centering \begin{tabular}{p{0.5cm}} \centering \footnotesize Def \\ \centering \normalsize \the \numexpr 10 + #3 + #4\relax \end{tabular}}
+		&
+		\begin{tabular}{c} \footnotesize Wil \\ #4 \end{tabular}
+		&
+		\begin{tabular}{c} \footnotesize Awa \\ #5 \end{tabular}
+		&
+		\fcolorbox{goldStats}{white}{\centering \begin{tabular}{p{0.5cm}} \centering \footnotesize Def \\ \centering \normalsize \the \numexpr 10 + #5 + #6\relax \end{tabular}}
+		&
+		\begin{tabular}{c} \footnotesize Pre \\ #6 \end{tabular}
+		& \\
+
+	\end{tabular}}
+
+	\vspace{0.2cm}
+
+	\textbf{Health:} #7 \hfill
+	\textbf{Focus:} #8 \hfill
+	\textbf{Intesture:} #9
+	\\
+}
+
+\newcommand{\enemyStatBlockSkills}[1][
+	\enemyStatblockSkillsDeflect
+	\enemyStatblockSkillsMovement
+	\enemyStatblockSkillsSenses
+	\enemyStatblockSkillsImmunities
+	\enemyStatblockSkillsPhysical
+	\enemyStatblockSkillsCognitive
+	\enemyStatblockSkillsSpiritual
+	\enemyStatblockSkillsLanguages
+]{
+	{\color{goldStats} \hrule \vspace{0.5cm} } 			
+	#1
+}
+
+\newcommand{\enemyStatblockSkillsDeflect}[1][0 (none)]{
+	\textbf{Deflect:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsMovement}[1][0 ft.]{
+	\textbf{Movement:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsSenses}[1][(none)]{
+	\textbf{Senses:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsImmunities}[1][(none)]{
+	\textbf{Immunities:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsPhysical}[1][(none)]{
+	\textbf{Physical Skills:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsCognitive}[1][(none)]{
+	\textbf{Cognitive Skills:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsSpiritual}[1][(none)]{
+	\textbf{Spiritual Skills:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsSurges}[1][(none)]{
+	\textbf{Surges:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsLanguages}[1][(none)]{
+\textbf{Languages:} #1
+}
+
+\newcommand{\enemyStatblockFeature}[2]{\textbf{#1.} #2}
+
+\newcommand{\enemyStatblockFeatureMinion}{\enemyStatblockFeature{Minion}{This creature's attacks can’t critically hit, and they’re immediately defeated when they suffer an injury}}
+
+\newcommand{\enemyStatblockFeatureNewborn}{\enemyStatblockFeature{Newborn}{When this singer rolls a Complication, they become Disoriented until their next turn.}}
+
+\newcommand{\enemyStatblockFeatureBoss}{\enemyStatblockFeature{Boss}{This creature can take both a fast turn and a slow turn each round. After an enemy finishes a turn, this creature can spend 1 focus to immediately use an extra \iconAction{} or \iconFreeAction{}. Additionally, they can spend 1 focus on their turn to remove a condition from themself.}}
+
+\newcommand{\enemyStatblockAction}[3][\iconAction{}]{#1 \textbf{#2.} #3}
+
+% Opportunities, Complication
+
+\newcommand{\iconOpp}[1][10pt]{\includegraphics[height=#1]{icons/opportunity.png}}
+\newcommand{\iconComp}[1][10pt]{\includegraphics[height=#1]{icons/complication.png}}
+\newcommand{\iconAction}[1][10pt]{\includegraphics[height=#1]{icons/action.png}}
+\newcommand{\iconActionDouble}[1][10pt]{\includegraphics[height=#1]{icons/actionDouble.png}}
+\newcommand{\iconFreeAction}[1][10pt]{\includegraphics[height=#1]{icons/freeAction.png}}
+\newcommand{\iconReaction}[1][10pt]{\includegraphics[height=#1]{icons/reaction.png}}
+\newcommand{\iconSpecial}[1][10pt]{\includegraphics[height=#1]{icons/activationSpecial.png}}
+\newcommand{\iconConstant}[1][10pt]{\includegraphics[height=#1]{icons/activationConstant.png}}
+
+\newcommand{\oppCompHead}{\textbf{Result} & \textbf{Example}\\ \hline }
+\newcommand{\oppCompRow}[2]{\vfill #1 \vfill & \color{black} #2\\}
+\newcommand{\oppCompTable}[1]{
+	\begin{tabular}{p{1cm} p{6cm}}
+		\oppCompHead
+		#1
+	\end{tabular}
+}

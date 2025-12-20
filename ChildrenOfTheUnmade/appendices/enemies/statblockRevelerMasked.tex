@@ -1,0 +1,25 @@
+\label{enemyRevelerMasked}
+
+% From Reveler of Ashertmarn + Socialite
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyRevelerMaskedName}{2}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{3}{3}{3}{1}{1}{4}{38 (31–45)}{3}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsMovement[30 ft.] \\
+	\enemyStatblockSkillsSenses[10 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +5, Athletics +5, Light Weaponry +6]
+	\enemyStatblockSkillsCognitive[Intimidation +7]
+	\enemyStatblockSkillsSpiritual[Deception +7, Leadership +7]
+	\enemyStatblockSkillsLanguages[alethi]
+	]
+}{	
+	\enemyStatblockFeature{Pale Mask}{Insight test against the reveler are made with disadvantage. The reveler's gains an advantage on Intimidation tests.} \\
+}{
+	\enemyStatblockAction{Strike: Knife}{Attack +6, reach 5 ft., one target. The reveler gains an advantage on their first Knife attack during a scene. Graze: 2 (1d4) keen damage. Hit: 8 (1d4 + 6) keen damage. }\\
+	
+	\enemyStatblockAction{Guards! Guards! (Costs 1 Focus)}{The reveler makes a \skillLeadership{} test. For each 5 scores reached, one \enemyCultistOfMoments{} (of random kind) joins the scene.} \\
+	
+	\enemyStatblockAction[\iconReaction{}]{Down the Grapevine}{When a character rolls a Complication during a conversation, the reveler reveals they know a compromising secret about one of the characters involved in that conversation.}
+}

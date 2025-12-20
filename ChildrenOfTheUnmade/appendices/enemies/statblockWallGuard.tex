@@ -1,0 +1,30 @@
+\label{enemyWallGuard}
+
+% From Guard
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyWallGuardName}{1}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{3}{1}{1}{2}{3}{1}{24 (19–29)}{4}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[2 (chainmail)] \\
+	\enemyStatblockSkillsMovement[25 ft.]
+	\enemyStatblockSkillsSenses[20 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Athletics +5, Heavy Weaponry +5]
+	\enemyStatblockSkillsCognitive[Discipline +4, Intimidation +4]
+	\enemyStatblockSkillsSpiritual[Insight +4, Perception +5]
+	\enemyStatblockSkillsLanguages[alethi]
+	]
+}{	
+	\enemyStatblockFeature{Raise the Alert}{After an enemy the guard can sense within 60 feet of them fails a Stealth test, or after the guard succeeds on a test to notice that enemy, this guard and each allied guard who can sense that enemy gain the Focused condition until the end of the scene.} \\
+	
+	\enemyStatblockFeature{Defend the Wall}{While on the wall or any related areas, the guard can use Brace action as \iconFreeAction{}.}\\
+}{
+	\enemyStatblockAction{Strike: Longspear}{Attack +5, reach 10 ft., one target. Graze: 4 (1d8) keen damage. Hit: 9 (1d8 + 5) keen damage, and the guard can spend 1 Focus to knock the target Prone.}\\
+	
+	\enemyStatblockAction[\iconActionDouble]{Strike: Crossbow}{Attack +5, range 100/400 ft., one target. Graze: 4 (1d8) keen damage. Hit: 9 (1d8 + 5) keen damage.}\\
+	
+	\enemyStatblockAction[\iconActionDouble]{Debilitate (Costs 2 Focus)}{Attack +5, reach 5 ft., one Prone target. Graze: 9 (2d8) impact damage. Hit: 14 (2d8 + 5) impact damage.}\\
+	
+	\enemyStatblockAction[\iconFreeAction]{Work as One (Costs 1 Focus)}{After the guard hits with an attack, they choose an ally they can influence, urging them to advance. That ally can immediately Disengage (no action required).}\\
+}

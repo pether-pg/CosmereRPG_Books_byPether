@@ -1,0 +1,26 @@
+\label{enemyRevelerSadistic}
+
+% From Reveler of Ashertmarn
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyRevelerSadisticName}{2}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{3}{3}{3}{1}{1}{4}{38 (31–45)}{3}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsMovement[30 ft.] \\
+	\enemyStatblockSkillsSenses[10 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +5, Athletics +5, Light Weaponry +6]
+	\enemyStatblockSkillsSpiritual[Deception +7, Leadership +7, Persuasion +7]
+	\enemyStatblockSkillsLanguages[alethi]
+	]
+}{	
+	\enemyStatblockFeature{Ecstatic Pain}{Each time the reveler is dealt damage, they recover 1 Focus.} \\
+}{
+	\enemyStatblockAction{Strike: Whip}{Attack +6, reach 20 ft., one target. Graze: 2 (1d4) keen damage. Hit: 8 (1d4~+~6) keen damage. If the attack hits a Restrained target, the reveler can spend up to 3 Focus. For each Focus spent, they roll additional 1d4 and add its value to the total damage. }\\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Choke}{The reveler makes an Athletics test against a target within 5 feet of them, opposed by the target’s choice of Athletics or Agility. If the target is Restrained, the reveler's test gains an advantage. If the reveler succeeds, they deal 11 (2d10) vital damage to the target.} \\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Bond}{The reveler makes an Athletics test against a target within 5 feet of them, opposed by the target’s choice of Athletics or Agility. If the reveler succeeds, the target is Restrained.} \\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Call to the Revel}{The reveler makes a Persuasion test opposed by the Discipline test of a character they can influence within 90 feet. If the reveler succeeds, the target loses 2 focus, and the first action the target takes on their next turn must be the Move action to approach the reveler by the most direct route. They can’t willingly move away from the reveler on that turn.}
+}

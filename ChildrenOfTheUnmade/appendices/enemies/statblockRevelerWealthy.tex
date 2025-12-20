@@ -1,0 +1,24 @@
+\label{enemyRevelerWealthy}
+
+% From Reveler of Ashertmarn
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyRevelerWealthyName}{2}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{3}{3}{3}{1}{1}{4}{38 (31–45)}{3}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsMovement[30 ft.] \\
+	\enemyStatblockSkillsSenses[10 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +5, Athletics +5, Light Weaponry +6]
+	\enemyStatblockSkillsSpiritual[Deception +7, Leadership +7, Persuasion +7]
+	\enemyStatblockSkillsLanguages[alethi]
+	]
+}{	
+	\enemyStatblockFeature{Rich}{The reveler owns 10d10 marks worth of spheres that can be taken from them after they are defeated. \textit{(on top of anything used for abilities)} } \\
+}{
+	\enemyStatblockAction{Strike: Sphere Pouch}{Attack +6, range 20/60~ft., one target. Graze: 2 (1d4) impact damage. Hit: 8 (1d4 + 6) impact damage. Regardless if the attack hits, until the end of next round, a character standing within 5 ft. of the target can spend 1 Focus as \iconActionDouble{} to gather 1d10 marks from the ground. }\\
+	
+	\enemyStatblockAction{Impulse to Breath Light (Costs 1 Focus)}{The reveler chooses up to two targets they can influence within 60 feet. Those characters must each make a DC 15 Discipline test. On a failure, the only actions the target can take is Breathe Stormlight action (causing all spheres within 10 feet of them to become dun in addition to the usual effects).} \\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Bribe}{Target character may attempt \skillCheck{15}{\skillDiscipline}. If the character fails or decides not to take the test, they earn 1d10 marks, but they must strike one of their allies during next round.} \\
+}

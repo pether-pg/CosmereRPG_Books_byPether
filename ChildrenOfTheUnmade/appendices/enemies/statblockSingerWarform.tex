@@ -1,0 +1,31 @@
+\label{enemySingerWarform}
+
+% From Warform Singer
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemySingerWarformName}{1}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{3}{1}{1}{2}{2}{2}{24 (20–28)}{4}{0}
+}{
+	
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[2 (carapace)] \\
+	\enemyStatblockSkillsMovement[25 ft.]
+	\enemyStatblockSkillsSenses[10 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Athletics +5, Heavy Weaponry +4, Light Weaponry +3]
+	\enemyStatblockSkillsCognitive[Discipline +5, Intimidation +4]
+	\enemyStatblockSkillsSpiritual[Leadership +4, Perception +4]
+	\enemyStatblockSkillsLanguages[alethi]
+	]
+}{	
+	\enemyStatblockFeature{External Carapace}{The warform can use their carapace like a shield, allowing them to use the Brace action.} \\
+	
+	\enemyStatblockFeature{Martial Experience}{The warform can use their Strike action twice on their turn.} \\
+	
+	\enemyStatblockFeatureNewborn{} \\
+}{
+	\enemyStatblockAction{Strike: Axe}{Attack +4, reach 5 ft., one target. The warform can jump up to 10 feet before or after making this attack. Graze: 3 (1d6) keen damage. Hit: 7 (1d6+ 4) keen damage.}\\
+	
+	\enemyStatblockAction{Strike: Shortbow}{Attack +3, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 6 (1d6 + 3) keen damage.}\\
+	
+	\enemyStatblockAction[\iconReaction{}]{Warpair Coordination (Costs 1 Focus)}{After another warform within 5 feet of this warform takes the Move action, this warform moves up to their movement rate, ending their movement within 5 feet of the other warform.}\\
+}

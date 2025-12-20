@@ -1,0 +1,39 @@
+\label{enemySingerDireform}
+
+% From Heavenly One
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemySingerHeavenlyOneName}{3}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{3}{5}{1}{4}{6}{2}{58 (46–70)}{6}{8}
+}{
+\footnotesize
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[1 (carapace)] \\
+	\enemyStatblockSkillsMovement[40 ft., fly 30 ft.]
+	\enemyStatblockSkillsSenses[50 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +9, Heavy Weaponry +7, Light
+	Weaponry +9]
+	\enemyStatblockSkillsCognitive[Discipline +8, Intimidation +8]
+	\enemyStatblockSkillsSpiritual[Leadership +6, Perception +10, Survival +10]
+	\enemyStatblockSkillsSurges[Gravitation +10 (4 ranks)]
+	\enemyStatblockSkillsLanguages[Dawnchant, alethi]
+	]
+}{	
+	\enemyStatblockFeature{Invariable Flight}{The Fused can only fly using the Move action once per turn.} \\
+	
+	\enemyStatblockFeature{Harry the Foe}{When the Fused hits with an attack immediately after flying at least 15 feet, the target loses 1 focus.} \\
+	
+	\enemyStatblockFeatureNewborn{} \\
+	
+	\enemyStatblockFeature{Skyborn}{The Fused doesn’t trigger Reactive Strikes while flying.}
+}{
+	\enemyStatblockAction{Strike: Raysium Lance}{Attack +9, reach 10 ft., one target. Graze: 4 (1d8) keen damage. Hit: 16 (1d8 + 12) keen damage, and the target loses 1 Investiture.}\\
+	
+	\enemyStatblockAction{Surge of Gravitation (Costs 1 Investiture)}{The Fused performs a Basic Lashing on a Huge (15-foot) or smaller character or non-Invested object within their reach that isn’t being worn or carried. An object Lashed in this way moves up to 30 feet in any direction. An ally Lashed in this way gains a 30-foot flying rate and Invariable Flight feature until the end of the Fused’s next turn. \\
+	To Lash an enemy, the Fused makes a Gravitation test against the enemy’s Physical defense. On a success, they move the target up to 30 feet in any direction, and the target becomes Restrained until the start of the Fused’s next turn. \\
+	If a Lashed object collides with a character, or if a Lashed enemy collides with an object or surface during this movement, the character takes 20 (2d10 + 9) damage of a type appropriate to the object or surface.}\\
+	
+	\enemyStatblockAction[\iconFreeAction{}]{Regenerate (Costs 1 Investiture)}{The Heavenly One recovers 6 (1d6 + 3) health.}\\
+	
+	\enemyStatblockAction[\iconReaction{}]{Reflexive Strike}{Before an enemy voluntarily moves while within 10 feet of the Fused, the Fused uses their Raysium Lance action against them.}\\
+}

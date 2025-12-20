@@ -1,0 +1,31 @@
+\label{enemyCultistOfMoments}
+
+% From Swordmaster Ardent
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyCultistOfMomentsName}{1}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{1}{3}{0}{1}{3}{3}{22 (18-26)}{3}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsMovement[30 ft.] \\
+	\enemyStatblockSkillsSenses[20 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Athletics +5, Light Weaponry +5]
+	\enemyStatblockSkillsCognitive[Discipline +3, Lore +2]
+	\enemyStatblockSkillsSpiritual[Insight +5, Perception +4]
+	\enemyStatblockSkillsLanguages[alethi]
+	]
+}{	
+	\enemyStatblockFeature{Spren Cult}{The Cultist wears outfit to represent one of the spren. That gives them one of the actions below: Wind, Fire, Pain, Shock or Anticipation.} \\
+}{
+	\enemyStatblockAction{Strike: Wind}{Attack +5, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 7 (1d4 + 5) keen damage. The \enemyCultistName{} can move up to their speed as a part of this action without provoking reactive strikes. }\\
+	
+	\enemyStatblockAction{Strike: Fire}{Attack +5, reach 5 ft., one target. Graze: 2 (1d4) energy damage. Hit: 7 (1d4 + 5) energy damage and the attack ignites any flammable items.}\\
+	
+	\enemyStatblockAction{Strike: Pain}{Attack +5, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 7 (1d4 + 5) keen damage and the target is Afflicted [1d4 keen] until the target regains at least 1 Health.}\\
+	
+	\enemyStatblockAction{Strike: Shock}{Attack +5, reach 30/120 ft., one target. Graze: 2 (1d4) keen damage. Hit: 7 (1d4 + 5) keen damage and the target looses 1 Focus.}\\
+	
+	\enemyStatblockAction{Strike: Anticipation}{Attack +5, reach 20 ft., one target. Graze: 2 (1d4) keen damage. Hit: 7 (1d4 + 5) keen damage and the target is Restrained until \enemyCultistName{} uses this action again.}\\
+	
+	\enemyStatblockAction{Anticipation - Pull}{If the \enemyCultistName{} Restrained an enemy with their attack, they can make an opposed \skillAthletics{} check. On a success, the \enemyCultistName{} pulls the Restrained enemy up to 10 feet towards themselves.} \\
+}

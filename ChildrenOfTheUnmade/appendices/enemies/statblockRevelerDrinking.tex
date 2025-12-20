@@ -1,0 +1,24 @@
+\label{enemyRevelerDrinking}
+
+% From Reveler of Ashertmarn
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyRevelerDrinkingName}{2}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{3}{3}{3}{1}{1}{4}{38 (31–45)}{3}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsMovement[30 ft.] \\
+	\enemyStatblockSkillsSenses[10 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +5, Athletics +5, Light Weaponry +6]
+	\enemyStatblockSkillsSpiritual[Deception +7, Leadership +7, Persuasion +7]
+	\enemyStatblockSkillsLanguages[alethi]
+	]
+}{	
+	\enemyStatblockFeature{Eroding Inhibitions}{Each character in the scene with the reveler who has 3 remaining focus or less gains a disadvantage on Discipline tests (including the reveler themself).} \\
+}{
+	\enemyStatblockAction{Strike: Wine Glass}{Attack +6, reach 5 ft. or range 20/60 ft., one target. Graze: 2 (1d4) keen damage. Hit: 8 (1d4 + 6) keen damage, and the target loses 1 Focus. }\\
+	
+	\enemyStatblockAction{Hedonistic Impulse (Costs 1 Focus)}{The reveler chooses up to two targets they can influence within 60 feet. Those characters must each make a DC 15 Discipline test. On a failure, the only actions the target can take are: moving closer to food and wine or consuming those. At the end of each round, the affected characters can repeat the test; on a success the effect ends.} \\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Call to the Revel}{The reveler makes a Persuasion test opposed by the Discipline test of a character they can influence within 90 feet. If the reveler succeeds, the target loses 2 focus, and the first action the target takes on their next turn must be the Move action to approach the reveler by the most direct route. They can’t willingly move away from the reveler on that turn.}
+}
