@@ -66,18 +66,22 @@ Enlightened Edgedancers can be tempted to hurt, maim or even kill other creature
 	\enemyStatBlockStats{3}{1}{0}{0}{2}{0}{10 (8–12)}{0}{0} % STR: 2+1, WIL: 1->0, HP: 9+1
 }{
 	\enemyStatBlockSkills[
-	\enemyStatblockSkillsMovement[25 ft.]
+	\enemyStatblockSkillsMovement[25 ft.] \\
 	\enemyStatblockSkillsSenses[10 ft. (touch)]
 	\enemyStatblockSkillsPhysical[Stealth +3]
 	\enemyStatblockSkillsSpiritual[Survival +4]
 	\enemyStatblockSkillsLanguages
 	]
 }{
-	\enemyStatblockFeature{\abilityVinesName[1]}{\abilityVinesText[1]} \\
+	\enemyStatblockFeature{Unedad}{This creature is immune to vital damage.} \\
 	
-	\enemyStatblockFeature{\abilityHuskName[1]}{\abilityHuskText[1]} \\
+	\enemyStatblockFeature{Plant}{This creature suffers double energy damage from fire sources.} \\
+	
+	\enemyStatblockFeature{Rugged Camouflage}{An undetected \enemyReanimatedRemainsName{} gain an advantage on attack tests. While the creature is motionless, they’re almost indistinguishable from a normal plant, requiring a successful DC 14 Survival test to identify them. This test gains a disadvantage when the creature is in cover or in an area where the other character’s primary sense is obscured.} \\
 	
 	\enemyStatblockFeatureMinion \\
 }{
 	\enemyStatblockAction{Strike: Slam}{Attack +3, reach 5 ft., one target. Hit: 5 (1d4 + 3) keen damage.}\\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Take Root}{The creature's Movement drops to 0 and it cannot be moved by enemy actions for as long the creature chooses to be rooted. At the end of each round the creature is rooted in place, it recovers 1d4 Health.}
 }
