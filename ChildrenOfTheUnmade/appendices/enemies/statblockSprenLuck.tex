@@ -1,0 +1,28 @@
+\label{enemyLuckspren}
+
+% Based on Ryshadium
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyLucksprenName}{2}{Rival}{Large Entity}
+}{
+	\enemyStatBlockStats{4}{5}{1}{2}{4}{1}{48 (38–58)}{4}{0}
+}{
+	\enemyStatBlockSkills[
+		\enemyStatblockSkillsMovement[fly 40 ft.] \\
+		\enemyStatblockSkillsSenses[20 ft. (sight)]
+		\enemyStatblockSkillsPhysical[Agility +8, Athletics +7]
+		\enemyStatblockSkillsSpiritual[Insight +7, Perception +6]
+		\enemyStatblockSkillsLanguages[(none)]
+	]
+}{
+	\enemyStatblockFeatureSprenHunger{} \\
+	
+	\enemyStatblockFeatureSprenDeath{} \\
+}{
+	\enemyStatblockAction{Strike: Head}{Attack +7, reach 10 ft., one target. Graze: 5 (1d10) impact damage. Hit: 12 (1d10 + 7) impact damage.}\\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Tail}{Attack +7, reach 10 ft., one target. Graze: 4 (1d8) impact damage. Hit: 11 (1d8 + 7) impact damage, and the target is knocked back 15 feet.} \\
+	
+	\enemyStatblockAction{Charge}{The spren moves up to 40 feet in a straight line without triggering Reactive Strikes. When it does, it can move through the spaces of unwilling characters. Enemies in this line must succeed on a DC 17 Athletics test or be knocked Prone and take 11 (2d10) impact damage as they are being rammed through.} \\
+	
+	\enemyStatblockAction[\iconReaction{}]{Danger Sense (Costs 2 Focus)}{Before the spren’s  rider is attacked by an enemy the spren can sense, the spren can increase the rider’s Physical defense by 5 against the attack if the rider is within 5 feet of the spren.}
+}

@@ -1,0 +1,385 @@
+\section{Celebrant}
+\label{sec:celebrant}
+
+Celebrant is rather big spren city in the Cognitive Realm. The characters can explore the city and the surrounding island. 
+
+Their main objective should be to find a ship that will take them to \locationFidelity{}, but they can engage with local sidequests if they have more time.
+
+
+\subsection{Money Exchange}
+
+If the characters fear for their Stormlight running out, they can visit the Money Exchange. Spren here have perfect gemstones they use to store the Investure indefinitely. 
+
+The party can give the Stormlight to them and receive a credit ticket to be used as money in the city. They can also exchange those credits back for Stormlight, eg. if a Radiant wanted to have some spare Investure.
+
+\spoilerBox{
+	Celebrant moneychangers are referenced in \bookOB{}, Chapter 99. Reachers.
+}
+
+
+
+\subsection{Dark Alley}
+\label{ssec:celebrantAlley}
+
+While walking on the streets of Celebrant, the party might meet with a Ghostblood agent. To start the encounter, read the following:
+
+\quoteBox{
+	Suddenly, you feel you're being watched. You turn back to see a man in a dark cloak observing you from a narrow alley. When he realizes he was spotted, he turns and starts walking back.
+}
+
+If the characters decide to follow him, add the following:
+
+\quoteBox{
+	You quickly catch up to the man. It's a short human, one of the few in the Celebrant. On an arm, he has a strange, triangular tattoo. \\ \\
+	"Rusts! There are no proper shadows to hide in this place!", he curses.
+}
+
+\npcGhostbloodScout[s]{} is a \enemyGhostbloodScout{} on his post here in the Cognitive Realm. His job is to report anything suspicious and unusual. If any of the characters bonded an Enlightened Spren, he will try to learn more about them.
+
+\subsubsection{Trading Information}
+
+If an Enlightened Spren travels with the party, \npcGhostbloodScout{} will try to learn more about them. He will offer to trade this information for a off-book ship that will sail nearby Celebrant soon.
+
+If the characters agree and they share what they know about \npcSjaAnat{} and her children, \npcGhostbloodScout{} will tell them about a Shadesmar pirates who will sail to their secret cove on the island in four days. 
+
+\subsubsection{Friendly Favor}
+
+If the characters sided with Ghostblood criminals before (eg during \fullref{ssec:cityEscapePlanCriminals}), if the characters decided to trade information with him, \npcGhostbloodScout{} will also give the party \lootScadrialCoin{}, saying: 
+
+"Pay with that to the pirates. They are not friends and cannot be trusted, but they will respect it."
+
+\subsubsection{Treasure}
+
+\enemyGhostbloodScout{} will not attempt to start a fight with the party, but he will fight to the death if attacked. After killing him, a character can find 2d10 \lootScadrialCoin{}s and a \lootSeonTube{}.
+
+
+
+\subsection{Port}
+
+Here, the characters can ask about ship sailing south. The port administrator will answer all their questions. He can provide the schedule, but for the details, the PCs must ask ships' captains.
+
+Overall, the party can choose between:
+
+\subsubsection{Honorspren}
+
+Honorspren sea patrol stopped here for a resupply. \npcHonorsprenCaptain{} expects they will sail back to \locationFidelity{} in 2 days.
+
+They do not take passengers, but in a Conversation with \npcHonorsprenCaptain{} the party might influence his assessment.
+
+\npcHonorsprenCaptain{} is a \enemySprenCaptain{}. \conversationDefence{He}{17}{15}{5}
+
+Just like all Honorspren, he is strict and obeys orders. All attempts to influence him gain disadvantage unless a character makes an argument that aligns with his duties. 
+
+He is a sworn enemy to \npcOdium{} and he will not hide his disdain to spren Enlightened with \npcOdium{}'s influence, but the party might convince him to bring them as prisoners to \locationFidelity{} for questioning.
+
+\conversationEnd{\npcHonorsprenCaptain{}}{1}
+
+\subsubsection{Peakspren}
+
+\npcPeaksprenCaptain{} who commands a Peakspren vessel will allow humans on her ship. She offers a cabin adapted for human needs for a price of 50 marks. They sail in 3 days.
+
+\subsubsection{Shadesmar Pirates}
+
+Spen in port don't know about this ship, the party can learn about it from \fullref{ssec:celebrantAlley}. 
+
+The ship sails in 4 days. The PCs can board it for free and work for the time of travel as a price, though it would be advised to give them \lootScadrialCoin{} if the party has one.
+
+\subsubsection{Other Ships}
+
+The port is full of other ships as well, but they are not sailing in the direction that would benefit the party. If the party wishes to talk with other captains, feel free to add more spren or human NPCs and their ships.
+
+
+
+\subsection{Marketplace}
+
+Here, the characters can buy food and other supplies. Assume anything the players wish to purchase can be found in various traders' stock. 
+
+Everything in Shadesmar marketplaces costs Investure to buy. The party can sell their equipment to earn more of it.
+
+\subsubsection{Additional Work}
+
+If the PCs are lacking money, they can find a job in the port. Full day of work pays 5 marks of Stormlight per character. The salary is paid in Celebrant credits - it's worthless if transported to the Physical Realm.
+
+\subsubsection{Sailor's Gossip}
+
+If the party is listening carefully for any gossips on the marketplace, they may hear a Reacher complaining about their runaway Mandra. It is common for them to be pulled into the Physical Realm, but this one seems to have broken its harness and fly away.
+
+If the characters wish to investigate this lead, it may help them start \fullref{ssec:celebrantLuckspren} encounter.
+
+
+
+\subsection{Cultivationspren's Painting}
+\label{ssec:celebrantPainter}
+
+Start this encounter by reading the following:
+
+\quoteBox{
+	You see an art stand with many human portraits, most of them depicting Shin people in odd, outlandish clothing. However, one of the paintings catches your attention:\\ \\	
+	It is made in a very unique technique, painted with thick, vine-like brush strokes. It shows a spren with bronze skin, looking longingly into the black horizon. \\ \\	
+	"Hi there!", a cultivationspren greets you. "Would you like to buy a painting?"
+}
+
+\npcCultivationsprenPainter[s]{} is a cultivationspren \enemyExpert{}. She buys and sells off-world paintings, sometimes adding her own creation to the stock. She is excited to see the characters and is eager to show her stock and answer any questions:
+
+\scriptedOption{Who is on this painting?}{
+	Oh, that is our local deadeye. Do you like the painting? I made it!
+}
+
+\scriptedOption{Where can we find it? The deadeye.}{
+	"Her", not "it". Why would you need to know that? She suffered enough, let her rest.
+}
+
+\scriptedOption{How much for the painting?}{
+	Off-world art prices varies from 100 to 500 broams, that would be 400-2000 marks. The one I made I can sell for 100 marks.
+}
+
+\scriptedOption{Have you ever painted a human?}{
+	That would be exciting! But no, there are few of them on this side, and those who are here have no time for those things...
+}
+
+\scriptedOption{Would you like me to be your model?}{
+	Really? Oh yes, that would be amazing! You would need to sit really still for an entire day, but I can pay you 20 marks for your trouble!
+}
+
+\subsubsection{Deadeye's Location}
+
+\npcCultivationsprenPainter{} does not wish to tell where the party can find the deadeye. If a PC decides to buy the painting, she will tell them more about it.
+
+The party can also attempt to convince her to share this information during a Conversation.
+
+\conversationDefence{\npcCultivationsprenPainter{}}{15}{14}{4}
+
+She loves art and lives to create and sell it. Any attempts to influence her gain disadvantage unless the PC shows shared passion for it - by either buying her paintings or helping her paint one.
+
+\conversationEnd{\npcCultivationsprenPainter{}}{1}
+
+\spoilerBox{
+	Kaladin browsing paintings in a similar shop in Celebrant is described in \bookOB{}, Chapter 102. Celebrant.
+}
+
+
+\subsection{Exploring the Island}
+\label{ssec:celebrantExplore}
+
+If the party wishes, they can leave the city and explore the outskirts. If they are scouting without any specific direction or knowledge about the island, ask them for a \skillCheck{20}{\skillSurvival{}}. 
+
+If they succeed, they will find something interesting. Roll d12 to determine what is it:
+
+\begin{itemize}
+	\item 1-4: A lone spren standing on a cliff \\ \textit{(see \fullref{ssec:celebrantDeadeye})} 
+	\item 5-8: A strange glimmer on the sky \\ \textit{(see \fullref{ssec:celebrantStarspren})}
+	\item 9-12: A mandra entangled in glassy bush \\ \textit{(see \fullref{ssec:celebrantLuckspren})}
+\end{itemize}
+
+Searching the island takes a whole day. The test can be repeated after a Long Rest.
+
+\reasonBox{
+	If you have specified ideas on progression rewards for your players, don't roll the dice. Pick one of the results instead.
+}
+
+
+
+\subsection{Stranded Deadeye}
+\label{ssec:celebrantDeadeye}
+
+The party might have learned about a deadeye located on the island. If they wish to rescue her, that will take several steps:
+
+\subsubsection{Searching for the Spren}
+
+The party might have randomly find the spren while their island exploration (see \fullref{ssec:celebrantExplore}). 
+
+However if they are aware of the deadeye existence and her general location, if the party searches for her, don't roll for a random encounter during the exploration and allow them to find what they are looking for (assuming they succeeded on a \skillSurvival{} test).
+
+If the painter shared exact location of the spren, the party can skip this step and assume the party already knows the way.
+
+\subsubsection{Reaching the Spren}
+
+The deadeye is stranded on top of a cliff. It will take an Endeavor to get there. \pursuitReq{6}{4}
+
+Potential approaches may include:
+
+\scriptedOption{Searching for the best path}{
+	A PC can attempt \skillCheck{18}{\skillSurvival{}} to scout for a better path.
+}
+
+\scriptedOption{Improvise a climbing equipment}{
+	A PC can attempt \skillCheck{17}{\skillCrafting{}} to create improvised climbing equipment from things they have.
+}
+
+\scriptedOption{Use an actual climbing equipment}{
+	If the party previously obtained a climbing equipment, they can make \skillCheck{12}{\skillAthletics{} or \skillAgility{}} to use it.
+}
+
+\scriptedOption{Help with your expertise}{
+	Does a character know how to best climb those? They can attempt a \skillCheck{16}{\skillLore{}} to see.
+}
+
+\scriptedOption{Climbing obsidian cliff}{
+	The surface is glassy and hard to climb. If a PC fails a \skillCheck{21}{\skillAthletics{} or \skillAgility{}} they will fall and hurt themselves for an amount of Health equal to the difference between their test's result and the required threshold.
+}
+
+\subsubsection{Extracting the Spren}
+
+Once the party reaches the top of the cliffs, they will see that the path between them and the deadeye is guearded by four \enemyAngerSpren{}s, who still remain in the area after the burning of the Rift.
+
+During the fight, each time a character is wounded by the\enemyAngerSpren{} for the first time, they attract a \enemyPainSpren{} who will join the fight next round, attacking that PC.
+
+The spren will not pursue fleeing characters, but they will fight to the end and it is impossible to leave this area with the deadeye without defeating them.
+
+\subsubsection{Claiming the Spren}
+
+Once all the hostile spren on the cliff are defeated, the party can safely approach the deadeye. It's a female Reacher standing on the edge and looking at the endless bead ocean. After the party interacts with her, she will start following them.
+
+Other spren in are not fond of people using corpses as weapons, so having a deadeye in the party might harm some of the relations and interactions with other NPCs in Shadesmar.
+
+ If the party manages to exit the Cognitive Realm with her on their side, she will manifest as a Shardblade in the Physical Realm.
+ 
+ \reasonBox{
+ 	In most adventures rewarding the party with a Shardblade seems to be more natural in the Physical Realm. I like how Shadesmar offers different approach to that reward and it would seem to be a wasted opportunity if I did it the same way as always. \\ \\
+ 	Try to make sure your party is aware of a deadeye located somewhere on the island before they leave it.
+ }
+
+
+
+
+\subsection{Hunting for Starspren}
+\label{ssec:celebrantStarspren}
+
+The party might have found the trail to the starspren during \fullref{ssec:celebrantExplore}. When they do, read the following:
+
+\quoteBox{
+	For a quick moment, you see a glimmering distortion in the air. It shimmers for a second before disappearing. \\ \\
+	Perhaps from a better spot you will be able to find what's the source of it...?
+}
+
+The party may attempt to find the mysterious source of the glimmering. It would take them a whole day. You can run this search as an Endeavor.
+
+Use your own judgment for difficulty checks in the Endeavor tests. Try to keep them in the range of 14-20 (when in doubt, you can use 12 + 2d4 formula).
+
+\pursuitReq{8}{4} When the party succeeds and finds the starspren, read the following:
+
+\quoteBox{
+	From this angle you can see it clearly: a huge spren, like a greatshell with a long neck and multiple sets of wings. Bright points shine from within an ashen carapace, like a stars in a constellation. \\ \\
+	The starspren notices you watching it. It twists and whirls, only to take a dramatic pose for you to admire.
+}
+
+All characters who were able to catch the starspren receive Focused condition until they leave Celebrant.
+
+\spoilerBox{
+	Adolin showing Shallan a starspren is described in \bookROW{}, Chapter 34. A Flame Never Extinguished
+}
+
+
+
+\subsection{Mandra Whisperer}
+\label{ssec:celebrantLuckspren}
+
+When you start this scene, read the following:
+
+\quoteBox{
+	In a thick, glassy, bush in front of you, there is a mandra entangled in a thorny vines. You see deep cuts on the poor beast's skin, with tendrils of smoky light evaporating from them. \\ \\
+	The beast struggles an writhes, visibly terrified of the angerspren circling around it.
+}
+
+Three \enemyAngerSpren{}s are hunting for a Restrained \enemyLuckspren{}. If they are attacked, they will fight to the end. 
+
+\subsubsection{Freeing the Mandra}
+
+If the party defeat the angerspren, they will be able to free the Mandra from the vines. They will need to attempt \skillCheck{30}{\skillThievery} to untangle glassy branches safely. 
+
+If a character fails the check, they manage to free the spren, but they take piercing damage equal to the difference between their result an the check threshold.
+
+\subsubsection{How to Train Your Mandra}
+\label{ssec:celebrantLucksprenTame}
+
+After freeing the spren, the party might wish to tend to its wounds and take care of it. They might even wish to tame and train it. You can run this process as an Endeavor happening in parallel to the main plot.
+
+During each rest, the PC may spend some time with the spren. Each time, based on actions, allow player to take a single check with related skill. On average, those tests should have a DC around 20, but use your own judgment each time. Those checks gain advantage if the PC "feeds" the spren with Stormlight during them.
+
+The Endeavor succeeds if the PC accumulates 6 successes in total. There is no threshold for the amount of failures, but the party is constrained with their available time and resources. Upon success, proceed to \fullref{ssec:celebrantLucksprenReward}.
+
+\subsubsection{Reward}
+\label{ssec:celebrantLucksprenReward}
+
+The mandra is healed, and during the time the party cared for it, it started considering them it's pack. It Connects to one of the PCs who treated it.
+
+Outside of the Physical Realm (in this chapter and in \nameref{chap:chapter10}) the player will be able to mount it and ride into battle. It uses \enemyLuckspren{} stat block.
+
+In the Physical Realm, it has no substance to carry the rider, but it will appear as a luckspren flying around the PC, granting them disadvantage on any fall damage they would suffer.
+
+\reasonBox{Treat the mandra as a Ryshadium-like reward. Their stat blocks are very similar for this reason.}
+
+\reasonBox{If you suspect the player who is to receive the reward is more equestrian guy than flying beast guy, you can replace the mandra in this encountery with a musicspren. Assume their stat block is the same, except they don't fly. In the Physical Realm, allow it to grant advantage on music tests instead.}
+
+
+
+
+\subsection{Icy Cultivationspren}
+\label{ssec:celebrantIceCultivationspren}
+
+Start this encounter by reading the following:
+
+\quoteBox{
+	A strange figure captures your eyes: he looks like a cultivationspren, though his skin's fern-like vines have much more pale blue hue. From among them, where usually one could expect crystals, there grow sharp icicles. \\ \\
+	Next to him walks a spren looking like a shelled animal bristled with icy spikes on it's shell and paws.
+}
+
+\npcIceCultivationsprenTrader{} is a \enemyTrueSpren{} Cultivationspren from Frostland regions. He is accompanied by his pet \enemyFrostSpren{}.
+
+If the characters start a conversation he will answer their questions:
+
+\scriptedOption{Who are you?}{
+	\npcIceCultivationsprenTrader{}, a trader from the icy south. Nice to meet you!
+}
+
+\scriptedOption{Why are you different?}{
+	Why, that's a rude thing to say... Especially coming from someone, whose kind is rather rare in those lands...
+}
+
+\scriptedOption{Are you a cultivationspren?}{
+	Well, yes, of course I am. Oh, you must have never seen a cultivationspren from the south, am I right? 
+}
+
+\scriptedOption{I thought you are always green?}{
+	Well, you people can have different skin colors, why can't we? Frosty ferns are not uncommon for cultivationspren in my homeland.
+}
+
+\scriptedOption{How can we get south? Can you take us?}{
+	Oh, I'm sorry, but my trail continues north. You should search for a ship in the port.
+}
+
+\subsubsection{Before Leaving}
+
+If the party shared their plans to go south, before they leave read the following:
+
+\quoteBox{
+	You are about to leave, when \npcIceCultivationsprenTrader{} calls: "Hey, could you wait one minute?" He starts writing something on a parchment before sealing it and giving it to you. \\ \\
+	"If you are in \locationFidelity{}, can you please give this letter to my sister?", he asks. "She is a gardener there, you will not mistake her for anyone else."
+}
+
+If the characters agree, they will get the envelope addressed to \npcIceCultivationsprenGardener{}. The letter is sealed with icy, crystalline seal. If the characters decide to break the seal, they will have trouble to fix it later, but they can read the letter:
+
+\quoteBox{
+	Dear sister! \\
+	You were right, as always. It has started. We shouldn't have stopped you. Those are nice humans, go with them, perhaps it is not too late...
+}
+
+\reasonBox{
+	Though it is stated that there are different cultures among the spren of one kind, \bookSA{} never shows one with different features, eg. the color of spren's skin. I added it here to ensure Shadesmar is always a mystery, with unknown elements to explore, that can surprise even those, who read all the books. 
+}
+
+\reasonBox{
+	Icy cultivationspren are not cannon. Feel free to skip this encounter if your group highly values lore accuracy in your games. It is not essential for the plot.
+}
+
+\reasonBox{
+	\enemyFrostSpren{} are never shown in the Cognitive Realm in the books. It is never confirmed how do they look in here. My interpretation of their anatomy is not cannon, feel free not to include it in this encounter or change it's appearance.
+}
+
+
+
+\subsection{Sailing Away}
+
+Once the characters board a ship sailing south, they will leave Celebrant never to return. Advance them to level~7 before proceeding to the next part of their journey.
+
+

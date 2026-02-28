@@ -1,0 +1,30 @@
+\label{enemySprenPirate}
+
+
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemySprenPirateName}{2}{Rival}{Medium Humanoid Entity}
+}{
+	\enemyStatBlockStats{3}{2}{3}{2}{3}{1}{45 (39–51)}{4}{0}
+}{
+	\enemyStatBlockSkills[
+		\enemyStatblockSkillsDeflect[2 (chain)] \\
+		\enemyStatblockSkillsMovement[30 ft.]
+		\enemyStatblockSkillsSenses[20 ft. (sight)]
+		\enemyStatblockSkillsPhysical[Athletics +6, Heavy Weaponry +6]
+		\enemyStatblockSkillsCognitive[Discipline +4, Intimidation +4]
+		\enemyStatblockSkillsSpiritual[Leadership +3, Perception +5]
+		\enemyStatblockSkillsLanguages[defined by culture]
+	]
+}{
+	\enemyStatblockFeature{Splinter of a God}{The spren gains unique abilities based on their type.} \\
+	
+	\enemyStatblockFeature{Rider [\enemyLucksprenName{}]}{When this spren is riding on its mount, they can share the space, but the spren cannot take Move action. Instead, when their mount moves, they move with it.} \\
+	
+	\enemyStatblockFeatureSprenDeath{} \\
+}{
+	\enemyStatblockAction{Strike: Axe}{Attack +6, reach 5 ft. or range 20/60 ft., one target. Graze: 3 (1d6) keen damage. Hit: 9 (1d6 + 6) keen damage.}\\
+	
+	\enemyStatblockAction{Grappling Hook}{Attack +6, range 80/320 ft., one target. Graze: 2 (1d4) keen damage. Hit:~8~(1d4~+~6) keen damage and the spren becomes connected to the target. As long the target is connected this way, they gain Pull the Rope action (see below) and they can spend \iconActionDouble{} to free themselves from the connection.}\\
+	
+	\enemyStatblockAction{Pull the Rope (Costs 1 Focus)}{Make an opposed \skillAthletics{} check with a target connected to you with a Grappling Hook. If you win, pull the target 10 ft. towards you. This can eg. dismount characters or make them fall overboard. The check gains an advantage if you or your mount are bigger than the target.}
+}

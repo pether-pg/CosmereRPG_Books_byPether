@@ -1,0 +1,26 @@
+\label{enemyPainSpren}
+
+% Based on Painspren
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyPainSprenName}{1}{Minion}{Small Entity}
+}{
+	\enemyStatBlockStats{1}{3}{0}{3}{0}{0}{12 (9–15)}{5}{X}
+}{
+	\enemyStatBlockSkills[
+		\enemyStatblockSkillsMovement[30 ft.] \\
+		\enemyStatblockSkillsSenses[5 ft. (sight)]
+		\enemyStatblockSkillsPhysical[Agility +5]
+		\enemyStatblockSkillsSpiritual[Perception +2]
+		\enemyStatblockSkillsLanguages[(none)]
+	]
+}{
+	\enemyStatblockFeatureMinion{} \\
+	
+	\enemyStatblockFeatureSprenHunger{} \\
+
+	\enemyStatblockFeatureSprenDeath{} \\
+}{
+	\enemyStatblockAction[\iconActionDouble{}]{Grip Enemy}{Attack +3, reach 5 ft., one target. Graze: 2 (1d4) impact damage. Hit: 5 (1d4 + 3) impact damage, and the spren can spend 1 Focus to attach to the target, making them Restrained while the spren remains within 5 feet of them. At the start of this Restrained target’s turn, they take 2 (1d4) vital damage from each attached painspren. The Restrained target or a character who can reach them can make a DC 10 Discipline test as \iconAction{}, freeing the target from one attached spren on a success. While attached to a target, the spren can’t use their Grip Enemy action.}\\
+	
+	\enemyStatblockAction[\iconReaction{}]{Painsense}{After a character within 60 feet of the spren takes damage, the spren moves up to 10 feet toward them.}
+}

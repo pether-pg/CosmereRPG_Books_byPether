@@ -36,6 +36,7 @@
 \newcommand{\bookWorldGuide}[0]{\textit{Stormlight World Guide}}
 \newcommand{\bookWOR}[0]{\textit{"Words of Raidiance"}}
 \newcommand{\bookOB}[0]{\textit{"Oathbringer"}}
+\newcommand{\bookROW}[0]{\textit{"Rhytm of War"}}
 \newcommand{\bookWAT}[0]{\textit{"Wind And Truth"}}
 \newcommand{\bookSA}[0]{\textit{"Stormlight Archive"}}
 
@@ -95,13 +96,27 @@
 \newcommand{\npcGrandma}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Gran-gran}}{\npc{Gran-gran}}}
 \newcommand{\npcLockedArdent}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Liha}}{\npc{Liha}}}
 \newcommand{\npcTroublemaker}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Chanri}}{\npc{Chanri}}}
+% Shadesmar
+\newcommand{\npcSprenGuide}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Echo}}{\npc{Echo}}}
+\newcommand{\npcFortuneReader}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Riino}}{\npc{Riino}}}
+\newcommand{\npcGhostbloodScout}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Steel}}{\npc{Steel}}}
+\newcommand{\npcIceCultivationsprenTrader}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Hoarfrost}}{\npc{Hoarfrost}}}
+\newcommand{\npcIceCultivationsprenGardener}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Floe}}{\npc{Floe}}}
+\newcommand{\npcCultivationsprenPainter}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Dew}}{\npc{Dew}}}
+\newcommand{\npcHonorsprenCaptain}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Captain Gale}}{\npc{Captain Gale}}}
+\newcommand{\npcPeaksprenCaptain}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Captain Ava}}{\npc{Captain Ava}}}
+\newcommand{\npcCrypticCaptain}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Captain Chart}}{\npc{Captain Chart}}}
 
+\newcommand{\locationFidelity}{Unyielding Fidelity}
+\newcommand{\locationKharbranth}{Kharbranth}
+\newcommand{\locationPerpendicularity}{Perpendicularity}
 
 \newcommand{\npcFractionPalace}{Royal Palace}
 \newcommand{\npcFractionSingers}{Singers}
 \newcommand{\npcFractionCult}{Cult of Moments}
 \newcommand{\npcFractionWall}{Wall Guards}
 \newcommand{\npcFractionCrime}{Crime Lords}
+\newcommand{\npcFractionGhostbloods}{Ghostbloods}
 
 
 % Enemies
@@ -133,6 +148,22 @@
 \newcommand{\enemySingerStormformName}{Newborn Stormform Regal}
 \newcommand{\enemySingerEnvoyformName}{Newborn Envoyform Regal}
 \newcommand{\enemySingerHeavenlyOneName}{Newborn Heavenly One}
+% Ghostbloods
+\newcommand{\enemyGhostbloodScoutName}{Ghostblood Scout}
+% Shadesmar
+\newcommand{\enemyTrueSprenName}{True Spren}
+\newcommand{\enemySprenPirateName}{Spren Pirate}
+\newcommand{\enemyMandraRiderName}{Mandra Rider}
+\newcommand{\enemySprenCaptainName}{Spren Captain}
+\newcommand{\enemyAnticipationSprenName}{Feral Anticipationspren}
+\newcommand{\enemyFrostSprenName}{Feral Coldspren}
+\newcommand{\enemyAngerSprenName}{Feral Angerspren}
+\newcommand{\enemyPainSprenName}{Feral Painspren}
+\newcommand{\enemyFearSprenName}{Feral Fearspren}
+\newcommand{\enemyLucksprenName}{Feral Mandra}
+\newcommand{\enemyMusicsprenName}{Feral Musicspren}
+
+
 
 \newcommand{\enemy}[1]{\hyperref[chap:enemies]{\textbf{#1}}}
 \newcommand{\enemyReanimatedRemains}{\enemy{\hyperref[enemyReanimatedRemains]{\enemyReanimatedRemainsName}}}
@@ -161,6 +192,21 @@
 \newcommand{\enemySingerStormform}{\enemy{\hyperref[enemySingerStormform]{\enemySingerStormformName}}}
 \newcommand{\enemySingerEnvoyform}{\enemy{\hyperref[enemySingerEnvoyform]{\enemySingerEnvoyformName}}}
 \newcommand{\enemySingerHaevenlyOne}{\enemy{\hyperref[enemySingerHeavenlyOne]{\enemySingerHeavenlyOneName}}}
+% Ghostbloods
+\newcommand{\enemyGhostbloodScout}{\enemy{\hyperref[enemyGhostbloodScout]{\enemyGhostbloodScoutName}}}
+% Shadesmar
+\newcommand{\enemyTrueSpren}{\enemy{\hyperref[enemyTrueSpren]{\enemyTrueSprenName}}}
+\newcommand{\enemySprenPirate}{\enemy{\hyperref[enemySprenPirate]{\enemySprenPirateName}}}
+\newcommand{\enemyMandraRider}{\enemy{\hyperref[enemyMandraRider]{\enemyMandraRiderName}}}
+\newcommand{\enemySprenCaptain}{\enemy{\hyperref[enemySprenCaptain]{\enemySprenCaptainName}}}
+\newcommand{\enemyFrostSpren}{\enemy{\hyperref[enemyFrostSpren]{\enemyFrostSprenName}}}
+\newcommand{\enemyAngerSpren}{\enemy{\hyperref[enemyAngerSpren]{\enemyAngerSprenName}}}
+\newcommand{\enemyPainSpren}{\enemy{\hyperref[enemyPainSpren]{\enemyPainSprenName}}}
+\newcommand{\enemyFearSpren}{\enemy{\hyperref[enemyFearSpren]{\enemyFearSprenName}}}
+\newcommand{\enemyAnticipationSpren}{\enemy{\hyperref[enemyAnticipationSpren]{\enemyAnticipationSprenName}}}
+\newcommand{\enemyLuckspren}{\enemy{\hyperref[enemyLuckspren]{\enemyLucksprenName}}}
+\newcommand{\enemyMusicspren}{\enemy{\hyperref[enemyMusicspren]{\enemyMusicsprenName}}}
+
 % External
 \newcommand{\enemyExpert}{\textbf{Expert Citizen} \textit{(see \bookWorldGuide{})}}
 
@@ -173,6 +219,11 @@
 \newcommand{\lootDustcaster}{\loot{Dustcaster}}
 \newcommand{\lootGateOpener}{\loot{Black Scallop}}
 \newcommand{\lootHighmarshalsBlade}{\loot{Azure's Blade}}
+\newcommand{\lootScadrialCoin}{\loot{Foreign Coin}}
+\newcommand{\lootSeonTube}{\loot{Strange Cube}}
+\newcommand{\lootHemalurgicNail}{\loot{Spiky Earring}}
+\newcommand{\lootForgerySeal}{\loot{Training Seal}}
+\newcommand{\lootWhiteSand}{\loot{Vial of Sand}}
 
 
 
@@ -183,9 +234,11 @@
 
 \newcommand{\skillStrength}{Strength}
 \newcommand{\skillAthletics}{Athletics}
+\newcommand{\skillAgility}{Agility}
 \newcommand{\skillStealth}{Stealth}
 \newcommand{\skillThievery}{Thievery}
 
+\newcommand{\skillLore}{Lore}
 \newcommand{\skillCrafting}{Crafting}
 \newcommand{\skillDeduction}{Deduction}
 \newcommand{\skillDiscipline}{Discipline}
@@ -209,7 +262,7 @@
 	\vspace{0.2cm}
 	\fcolorbox{goldStats}{white}{
 		\parbox{7cm}{
-			\noindent \textbf{#1.}#2
+			\noindent \textbf{#1.} #2
 		}
 	}
 	\vspace{0.2cm}
@@ -229,6 +282,22 @@
 \newcommand{\abilityHusk}[1][N]{
 	\ability{\abilityHuskName[#1]}{
 		\abilityHuskText[#1]{}
+	}
+}
+
+\newcommand{\abilityFutureKnowledgeName}[1][N]{\hyperref[ssec:ruleDiagram]{Forbidden Knowledge [#1]}}
+\newcommand{\abilityFutureKnowledgeText}[1][N]{Roll #1d20 and note the results. As a \iconReaction{}, the character can spend one of those results to replace any d20 roll with it. Roll new set of d20s each time the character gins access to the source of the knowledge.}
+\newcommand{\abilityFutureKnowledge}[1][N]{
+	\ability{\abilityFutureKnowledgeName[#1]}{
+		\abilityFutureKnowledgeText[#1]{}
+	}
+}
+
+\newcommand{\abilitySprenName}{\hyperref[ssec:ruleSpren]{Spren}}
+\newcommand{\abilitySprenText}{This creature cannot be killed with normal methods. Instead, if its Health drops to 0, the creature ceases fighting and flees the scene.}
+\newcommand{\abilitySpren}{
+	\ability{\abilitySprenName}{
+		\abilitySprenText{}
 	}
 }
 
@@ -572,6 +641,10 @@
 \newcommand{\enemyStatblockFeatureMinion}{\enemyStatblockFeature{Minion}{This creature's attacks can’t critically hit, and they’re immediately defeated when they suffer an injury}}
 
 \newcommand{\enemyStatblockFeatureNewborn}{\enemyStatblockFeature{Newborn}{When this singer rolls a Complication, they become Disoriented until their next turn.}}
+
+\newcommand{\enemyStatblockFeatureSprenHunger}{\enemyStatblockFeature{Spren Attraction}{The spren can sense the phenomenon it is named for or the use of Investiture within 5 miles of them. }}
+
+\newcommand{\enemyStatblockFeatureSprenDeath}{\enemyStatblockFeature{\abilitySprenName}{\abilitySprenText}}
 
 \newcommand{\enemyStatblockFeatureBoss}{\enemyStatblockFeature{Boss}{This creature can take both a fast turn and a slow turn each round. After an enemy finishes a turn, this creature can spend 1 focus to immediately use an extra \iconAction{} or \iconFreeAction{}. Additionally, they can spend 1 focus on their turn to remove a condition from themself.}}
 

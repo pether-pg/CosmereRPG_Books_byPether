@@ -1,0 +1,29 @@
+\label{enemyAnticipationSpren}
+
+% Khornak
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyAnticipationSprenName}{1}{Rival}{Medium Entity}
+}{
+	\enemyStatBlockStats{3}{2}{0}{2}{2}{0}{26 (20–32)}{4}{0}
+}{
+	\enemyStatBlockSkills[
+		\enemyStatblockSkillsDeflect[2 (thick skin)]\\
+		\enemyStatblockSkillsMovement[25 ft., swim 30 ft.] 
+		\enemyStatblockSkillsSenses[10 ft. (sight)]
+		\enemyStatblockSkillsPhysical[Athletics +5, Stealth +4]
+		\enemyStatblockSkillsSpiritual[Perception +3, Survival +4]
+		\enemyStatblockSkillsLanguages[(none)]
+	]
+}{	
+	\enemyStatblockFeatureSprenHunger{} \\
+	
+	\enemyStatblockFeatureSprenDeath{} \\
+}{
+	\enemyStatblockAction{Strike: Tongue Whip}{Attack +5, reach 5 ft., one target. Graze: 2 (1d4) impact damage. Hit: 7 (1d4 + 5) impact damage, and the target becomes Restrained by the spren’s tongue while the spren remains within 5 feet of them. As \iconActionDouble{}, the target or a character who can reach them can make a DC 16 Agility or Athletics test, ending the Restrained condition on a success. \\
+	While the spren is restraining this target, the spren can’t make another Tongue Whip attack.}\\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Nibble}{Attack +5, reach 5 ft., one target. Graze: 4 (1d8) impact damage. Hit: 9 (1d8 + 5) impact damage. The spren can only use this action on a target it is restraining. } \\
+	
+	\enemyStatblockAction{Tongue Sweep}{Attack +5, reach 5 ft., one target. The spren can spend up to 2 Focus to target that many additional targets with the same attack. Graze: 3 (1d6) impact damage. Hit: 8 (1d6 + 5) impact damage, and the target must succeed on a DC 15 Athletics test or be knocked Prone. \\
+	While the spren is restraining an enemy, the spren can’t make this action.}
+}

@@ -1,0 +1,29 @@
+\label{enemyFearSpren}
+
+% Skyeel + Painspren + custom
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyFearSprenName}{1}{Minion}{Small Entity}
+}{
+	\enemyStatBlockStats{2}{3}{0}{3}{1}{0}{12 (9–15)}{3}{0}
+}{
+	\enemyStatBlockSkills[
+		\enemyStatblockSkillsMovement[30 ft., swim 30 ft.] \\
+		\enemyStatblockSkillsSenses[20 ft. (sight)]
+		\enemyStatblockSkillsPhysical[Agility +4, Stealth +4]
+		\enemyStatblockSkillsCognitive[Intimidation +4]
+		\enemyStatblockSkillsSpiritual[Perception +2]
+		\enemyStatblockSkillsLanguages[(none)]
+	]
+}{	
+	\enemyStatblockFeatureMinion{} \\
+	
+	\enemyStatblockFeatureSprenHunger{} \\
+	
+	\enemyStatblockFeatureSprenDeath{} \\
+}{
+	\enemyStatblockAction{Strike: Antennae}{Attack +4, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 6 (1d4 + 4) keen damage. If the target is Frightened, they loose 1 Focus, or, if they are out of Focus, they suffer double damage.} \\
+
+	\enemyStatblockAction[\iconActionDouble{}]{Intensify Fear}{Make an Intimidation check against the Cognitive Defense of a target that fears something. If you succeed, the target becomes Frightened: they are Restrained and their attacks against the target they fear gain disadvantage.}\\
+	
+	\enemyStatblockAction[\iconReaction{}]{Fearsense}{After a character within 60 feet of the spren looses Focus involuntarily, the spren moves up to 10 feet toward them.}
+}

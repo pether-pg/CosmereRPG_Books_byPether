@@ -1,0 +1,29 @@
+\label{enemyFrostSpren}
+
+% Whitespine + custom
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyFrostSprenName}{2}{Rival}{Large Entity}
+}{
+	\enemyStatBlockStats{4}{3}{0}{2}{4}{0}{42 (33–51)}{4}{0}
+}{
+	\enemyStatBlockSkills[
+		\enemyStatblockSkillsDeflect[10 (thick ice)]\\
+		\enemyStatblockSkillsMovement[25 ft., swim 30 ft.] 
+		\enemyStatblockSkillsSenses[10 ft. (sight)]
+		\enemyStatblockSkillsPhysical[Athletics +5, Stealth +4]
+		\enemyStatblockSkillsSpiritual[Perception +3, Survival +4]
+		\enemyStatblockSkillsLanguages[(none)]
+	]
+}{
+	\enemyStatblockFeatureSprenHunger{} \\
+	
+	\enemyStatblockFeatureSprenDeath{} \\
+	
+	\enemyStatblockFeature{Icicle Carapace}{After an enemy within 5 feet of the spren grazes it with a weapon attack, that enemy takes 3 (1d6) keen damage. } \\
+	
+	\enemyStatblockFeature{Crushing Ice}{Each time an enemy hits the spren, they can reduce its Deflect value by 1 (up to 0) instead of dealing damage. As long the spren's Deflect value is 0, all attacks against it gain advantage on damage dice.}
+}{
+	\enemyStatblockAction{Strike: Frost Bite}{Attack +7, reach 5 ft., one target. Graze: 3 (1d6) keen damage. Hit: 10 (1d6 + 7) keen damage, and the spren can spend 1 Focus to make the target Afflicted [1d4 energy] until the target regains at least 1 Health.}\\
+	
+	\enemyStatblockAction{Hail}{Attack +7, reach 5 ft., one target. Graze: 5 (1d10) impact damage. Hit: 12 (1d10 + 7) impact damage. If the spren hits with this attack immediately after moving at least 15 feet, the target takes an extra impact damage equal to the spren's Deflect value and the target must succeed on a DC 14 Athletics test or be knocked Prone.}
+}

@@ -1,0 +1,30 @@
+\label{enemySprenCaptain}
+
+
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemySprenCaptainName}{3}{Rival}{Medium Humanoid Entity}
+}{
+	\enemyStatBlockStats{2}{4}{4}{3}{4}{1}{47 (37–57)}{5}{0}
+}{
+	\enemyStatBlockSkills[
+		\enemyStatblockSkillsDeflect[2 (chain)] \\
+		\enemyStatblockSkillsMovement[30 ft.]
+		\enemyStatblockSkillsSenses[20 ft. (sight)]
+		\enemyStatblockSkillsPhysical[Agility +8, Light Weaponry +8]
+		\enemyStatblockSkillsCognitive[Discipline +6, Intimidation +6]
+		\enemyStatblockSkillsSpiritual[Leadership +5, Insight +7]
+		\enemyStatblockSkillsLanguages[defined by culture]
+	]
+}{
+	\enemyStatblockFeature{Splinter of a God}{The spren gains unique abilities based on their type.} \\
+	
+	\enemyStatblockFeature{Inspiring Leadership}{When the spren successfully uses the Gain Advantage action, they can choose one ally they can influence. That ally also gains an advantage on the next test they make against the spren’s target.} \\
+	
+	\enemyStatblockFeatureSprenDeath{} \\
+}{
+	\enemyStatblockAction{Strike: Sidesword}{Attack +8, reach 5 ft., one target. Graze: 3 (1d6) keen damage. Hit: 11 (1d6 + 8) keen damage, and the spren can spend 1 Focus to use the Disengage action as \iconFreeAction{}.}\\
+	
+	\enemyStatblockAction{Commanding Authority}{The captain make a \skillLeadership{} test against Spiritual defense of each character they try to influence in the Conversation. For each success against a character, that character looses 1 Focus. } \\
+	
+	\enemyStatblockAction{Intimidating Presence}{During a conversation, the captain makes a Intimidation test against a character’s Cognitive defense. On a success, the target loses 3 Focus.}
+}

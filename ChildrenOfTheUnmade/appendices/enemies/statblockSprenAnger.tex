@@ -1,0 +1,29 @@
+\label{enemyAngerSpren}
+
+% Based on Angerspren
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyAngerSprenName}{2}{Rival}{Medium Entity}
+}{
+	\enemyStatBlockStats{3}{5}{0}{4}{2}{2}{38 (30–46)}{6}{0}
+}{
+	\enemyStatBlockSkills[
+		\enemyStatblockSkillsMovement[50 ft., swim 30 ft.] \\
+		\enemyStatblockSkillsSenses[10 ft. (sight)]
+		\enemyStatblockSkillsPhysical[Agility +8, Athletics +6]
+		\enemyStatblockSkillsCognitive[Intimidation +7]
+		\enemyStatblockSkillsSpiritual[Perception +5]
+		\enemyStatblockSkillsLanguages[(none)]
+	]
+}{
+	\enemyStatblockFeatureSprenHunger{} \\
+	
+	\enemyStatblockFeatureSprenDeath{} \\
+}{
+	\enemyStatblockAction{Strike: Bite}{Attack +8, reach 5 ft., one target. Graze: 5 (1d10) keen damage. Hit: 13 (1d10 + 8) keen damage.}\\
+	
+	\enemyStatblockAction{Rend (2 Focus)}{Use against one enemy the spren have Restrained with its Tail Wrap. That enemy takes 11 (2d10) keen damage at the start of each round while they remain Restrained in this way.}\\
+	
+	\enemyStatblockAction{Pack Instincts}{While within 5 feet of an ally, the spren uses the Gain Advantage action as \iconFreeAction{}.} \\
+	
+	\enemyStatblockAction{Tail Wrap (1 Focus)}{When an enemy triggers a Reactive Strike from the spren, the spren can instead use their tail to attempt to Grapple the enemy as \iconReaction{}, spending focus as if they made a Reactive Strike. While the spren is grappling an enemy in this way, the effect ends if the target is more than 5 feet from the spren, if the target succeeds on a DC 14 Discipline test, or if the spren uses their Tail Wrap against another target.} \\
+}
