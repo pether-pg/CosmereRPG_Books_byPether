@@ -1,0 +1,41 @@
+\documentclass{report}
+
+\title{\Huge The Lost Expedition of \theIsland \\ \vspace{0.5cm} \Large Short Fan-made Adventure in \cosmereRPG}
+
+\author{Pether.pg}
+
+\twocolumn
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{xcolor}
+\usepackage{ifthen}
+\usepackage{changepage} % margins and adjustwidth 
+\usepackage{graphicx} % insert images
+\usepackage{pdfpages} % insert pdfs
+
+\setlength{\columnsep}{20pt} % space between text columns
+
+
+\usepackage{titlesec}	% change how chapters are printed
+\titleformat{\chapter}{}{}{0em}{\bf\LARGE}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+\usepackage{nameref} % for \nameref{label}
+\usepackage{cleveref}
+
+\begin{document}
+	
+	\input{defsAndCommands.tex}
+	
+	\setcounter{chapter}{1}
+	\setcounter{section}{3}
+	\input{chapter_1/safeCamp_sample.tex}	
+\end{document}
