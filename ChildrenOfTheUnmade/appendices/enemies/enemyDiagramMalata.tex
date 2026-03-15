@@ -1,0 +1,48 @@
+\label{enemyDiagramMalata}
+
+
+\enemyStatBlockDouble{
+	\enemyStatBlockHeader{\enemyMalataName{}}{3}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{2}{4}{4}{3}{4}{1}{47 (37–57)}{5}{6}
+}{
+	\enemyStatBlockSkills[
+		\enemyStatblockSkillsDeflect[2 (chain)]
+		\enemyStatblockSkillsMovement[40 ft. (30 ft. while Investiture is 0)]	
+		\enemyStatblockSkillsSenses[20 ft. (sight)]	
+		\enemyStatblockSkillsPhysical[Agility +8, Light Weaponry +8, Stealth +8]
+		\enemyStatblockSkillsCognitive[Discipline +6, Intimidation +6]
+		\enemyStatblockSkillsSpiritual[Leadership +5, Perception +7]
+		\enemyStatblockSkillsSurges[Abrasion +7 (3 ranks), Division +8 (4 ranks)]
+		\enemyStatblockSkillsLanguages[kharbranthian, alethi]
+	]
+}{
+	\enemyStatblockFeature{Slippery}{While she has 1 Investiture or more, Malata can’t be grazed and Reactive Strikes against them gain a disadvantage.} \\
+	
+	\enemyStatblockFeatureFutureKnowledge[2]\\
+}{
+	\enemyStatblockAction{Strike: Shardblade}{Attack +8, reach 5 ft., one target. Graze: 11 (2d10) spirit damage. Hit: 19 (2d10 + 8) spirit damage, and Malata can spend 1 Focus to use the Disengage action as \iconFreeAction{}.}\\
+	
+	\enemyStatblockAction{Strike: Shortbow}{Attack +8, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 11 (1d6 + 8) keen damage.}\\
+	
+	\columnbreak
+	\enemyStatblockAction{Decaying Touch (Costs 1 Investiture)}{Attack +8 vs. Spiritual, reach 10 ft., one target. Graze: 16 (3d10) spirit damage. Hit: 24 (3d10 + 8) spirit damage, and the target must succeed on a DC 14 Agility test or their armor rusts and decays, permanently decreasing its deflect value by 1. Armor damaged in this way can be repaired with proper materials as a downtime activity.}\\
+	
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Burst of Flame (Costs 2 Investiture)}{Malata emits a burst of fire that deals 6 (1d12) energy damage to each character within 10 feet of them and sets unattended objects in that area ablaze. Additionally, Malata can spend 1 Focus or more to shower sparks onto that number of enemies within 30 feet of them; each target must succeed on a DC 14 Agility test or lose one \iconAction{} on their next turn.}\\
+	
+	\enemyStatblockAction{Eroding Escape (Costs 1 Investiture)}{Malata targets herself or an ally in reach, ending one condition on them that is either applying the Immobilized condition, the Restrained condition, or a disadvantage on any physical test.}\\
+	
+	\enemyStatblockAction[\iconFreeAction{}]{Regenerate (Costs 1 Investiture)}{Malata recovers 6 (1d6 + 3) health. She can use this free action even while Unconscious or otherwise prevented from using actions.}\\
+	
+	\enemyStatblockAction[\iconFreeAction{}]{Skate (Costs 1 Focus)}{Malata moves up to her movement rate.} \\
+	
+	\begin{center} \MakeUppercase{\textbf{Opportunities and Complications}} \end{center}
+	{\color{goldStats} \hrule \vspace{0.5cm} }
+	
+	The following options are available when an enemy gains an Opportunity or Complication during a scene with Malata:
+	
+	\scriptedOption{Opportunity}{An enemy can spend \iconOpp{} to prevent Malata from using their Burst of Flame and Regenerate actions until the end of Malata’s next turn.}
+	
+	\scriptedOption{Complication}{The GM can spend \iconComp{} from an enemy’s test to remove the Investiture cost from Malata’s Decaying Touch action and Skate free action until the end of Malata’s next turn.}
+}

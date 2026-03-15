@@ -1,0 +1,27 @@
+\label{enemyDiagramSurgeon}
+
+% From Socialite
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyDiagramSurgeonName{}}{2}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{2}{2}{5}{3}{3}{2}{38 (30-46)}{5}{0}
+}{
+	\enemyStatBlockSkills[
+		\enemyStatblockSkillsMovement[25 ft.] \\		
+		\enemyStatblockSkillsSenses[10 ft. (sight)]	
+		\enemyStatblockSkillsPhysical[Athletics +6]
+		\enemyStatblockSkillsCognitive[Deduction +8, Lore +8, Medicine~+8]
+		\enemyStatblockSkillsSpiritual[Insight +5, Persuasion +5]
+		\enemyStatblockSkillsLanguages[kharbranthian, alethi]
+	]
+}{	
+	\enemyStatblockFeatureFutureKnowledge[2]{} \\
+}{
+	\enemyStatblockAction{Strike: Unarmed Attack}{Attack +6, reach 5 ft., one target. Graze: 1 impact damage. Hit:~7~(1~+~6) impact damage, and the surgeon can spend \iconOpp{} or 1~Focus to apply \exhausted[2] on the target.}\\
+	
+	\enemyStatblockAction{Doctor's Order}{The surgeon makes a Medicine check against the target's Spiritual Defense. The test gains an advantage, unless the target has all Health remaining. Raise stakes if the target suffers from injury. On a success, that character must spend 1 Focus or back down from the conversation.} \\
+	
+	\enemyStatblockAction{First Aid (Costs 1 Focus)}{The surgeon makes a \skillCheck{15}{\skillMedicine}. On a success, a willing target recovers 1d10 + 5 Health and gains disadvantage an all future tests to influence the surgeon in a Conversation. } \\
+	
+	\enemyStatblockAction{Professional Care (Costs 2 Focus)}{The surgeon makes a \skillCheck{10}{\skillMedicine}. On a success, they remove one condition caused by an injury from a willing target and the target cannot attempt to influence the surgeon in a future Conversations. The target can spend 1 Focus to ignore this effect for a single contribution. }
+}

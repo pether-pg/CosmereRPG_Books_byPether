@@ -34,6 +34,7 @@
 \newcommand{\cosmereRPG}[0]{Cosmere RPG}
 \newcommand{\handbook}[0]{\textit{Stormlight Handbook}}
 \newcommand{\bookWorldGuide}[0]{\textit{Stormlight World Guide}}
+\newcommand{\bookWOK}[0]{\textit{"Way of Kings"}}
 \newcommand{\bookWOR}[0]{\textit{"Words of Raidiance"}}
 \newcommand{\bookOB}[0]{\textit{"Oathbringer"}}
 \newcommand{\bookROW}[0]{\textit{"Rhytm of War"}}
@@ -91,6 +92,7 @@
 \newcommand{\npcShallan}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Shallan}}{\npc{Shallan}}}
 \newcommand{\npcDalinar}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Dalinar}}{\npc{Dalinar}}}
 \newcommand{\npcHoid}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Hoid}}{\npc{Hoid}}}
+\newcommand{\npcMalata}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Malata}}{\npc{Malata}}}
 % Custom
 \newcommand{\npcGrandmaName}{Veda}
 \newcommand{\npcGrandma}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Gran-gran}}{\npc{Gran-gran}}}
@@ -106,10 +108,24 @@
 \newcommand{\npcHonorsprenCaptain}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Captain Gale}}{\npc{Captain Gale}}}
 \newcommand{\npcPeaksprenCaptain}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Captain Ava}}{\npc{Captain Ava}}}
 \newcommand{\npcCrypticCaptain}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Captain Chart}}{\npc{Captain Chart}}}
+% Kharbranth
+\newcommand{\npcWoundedTrader}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Tareh}}{\npc{Tareh}}}
+\newcommand{\npcGhostbloodWounded}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Ferrum}}{\npc{Ferrum}}}
+\newcommand{\npcKharbranthNoble}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{Sartvian}}{\npc{Sartvian}}}
+\newcommand{\npcOrphanSick}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Kina}}{\npc{Kina}}}
+\newcommand{\npcOrphanHomeless}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Dor}}{\npc{Dor}}}
+\newcommand{\npcDiagramSurgeon}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Telvash}}{\npc{Telvash}}}
+\newcommand{\npcDiagramAarchivist}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Arvia}}{\npc{Arvia}}}
+\newcommand{\npcVedenArtifabrian}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Dorlivana}}{\npc{Dorlivana}}}
+
+\newcommand{\sicknessOrphanName}{Weeping Fever}
 
 \newcommand{\locationFidelity}{Unyielding Fidelity}
 \newcommand{\locationKharbranth}{Kharbranth}
+\newcommand{\locationPalanaeum}{Palanaeum}
 \newcommand{\locationPerpendicularity}{Perpendicularity}
+\newcommand{\locationUrithiru}{Urithiru}
+
 
 \newcommand{\npcFractionPalace}{Royal Palace}
 \newcommand{\npcFractionSingers}{Singers}
@@ -162,7 +178,14 @@
 \newcommand{\enemyFearSprenName}{Feral Fearspren}
 \newcommand{\enemyLucksprenName}{Feral Mandra}
 \newcommand{\enemyMusicsprenName}{Feral Musicspren}
-
+% Beasts
+\newcommand{\enemyWhitespineName}{Wild Whitespine}
+% Kharbranth
+\newcommand{\enemyDiagramScribeName}{Diagram Scribe}
+\newcommand{\enemyDiagramSurgeonName}{\locationKharbranth{} Surgeon }
+\newcommand{\enemyDiagramMuscleName}{Diagram Muscle}
+\newcommand{\enemyMalataName}{\npcMalata{} the Dustbringer}
+\newcommand{\enemyTaravangianName}{King Taravangian}
 
 
 \newcommand{\enemy}[1]{\hyperref[chap:enemies]{\textbf{#1}}}
@@ -206,6 +229,16 @@
 \newcommand{\enemyAnticipationSpren}{\enemy{\hyperref[enemyAnticipationSpren]{\enemyAnticipationSprenName}}}
 \newcommand{\enemyLuckspren}{\enemy{\hyperref[enemyLuckspren]{\enemyLucksprenName}}}
 \newcommand{\enemyMusicspren}{\enemy{\hyperref[enemyMusicspren]{\enemyMusicsprenName}}}
+% Beasts
+\newcommand{\enemyWhitespine}{\enemy{\hyperref[enemyWhitespine]{\enemyWhitespineName}}}
+% Kharbranth
+\newcommand{\enemyDiagramScribe}{\enemy{\hyperref[enemyDiagramScribe]{\enemyDiagramScribeName}}}
+\newcommand{\enemyDiagramSurgeon}{\enemy{\hyperref[enemyDiagramSurgeon]{\enemyDiagramSurgeonName}}}
+\newcommand{\enemyDiagramMuscle}{\enemy{\hyperref[enemyDiagramMuscle]{\enemyDiagramMuscleName}}}
+\newcommand{\enemyMalata}{\enemy{\hyperref[enemyDiagramMalata]{\enemyMalataName}}}
+\newcommand{\enemyTaravangian}{\enemy{\hyperref[enemyDiagramTaravangian]{\enemyTaravangianName}}}
+
+
 
 % External
 \newcommand{\enemyExpert}{\textbf{Expert Citizen} \textit{(see \bookWorldGuide{})}}
@@ -243,6 +276,7 @@
 \newcommand{\skillDeduction}{Deduction}
 \newcommand{\skillDiscipline}{Discipline}
 \newcommand{\skillIntimiation}{Intimidation}
+\newcommand{\skillMedicine}{Medicine}
 
 \newcommand{\skillDeception}{Deception}
 \newcommand{\skillInsight}{Insight}
@@ -298,6 +332,14 @@
 \newcommand{\abilitySpren}{
 	\ability{\abilitySprenName}{
 		\abilitySprenText{}
+	}
+}
+
+\newcommand{\abilityTaravangianBoonName}{\hyperref[ssec:ruleBoon]{The Boon and the Curse}}
+\newcommand{\abilityTaravangianBoonText}{At beginning of day, roll 2d6. Change this character's Intelligence by +X-7 and Awareness by +7-X, where X is the result of the roll. That affects the character's Defenses and skills. }
+\newcommand{\abilityTaravangianBoon}{
+	\ability{\abilityTaravangianBoonName}{
+		\abilityTaravangianBoonText{}
 	}
 }
 
@@ -523,6 +565,30 @@
 	\end{adjustwidth}
 }
 
+\newcommand{\enemyStatBlockDouble}[5]{
+	\begin{adjustwidth}{0cm}{0cm}
+		\fcolorbox{goldStats}{white}{
+			\parbox{17.8cm}{
+				\begin{multicols}{2}
+				\vspace{0.2cm}
+				#1	% Name and types
+				\par			
+				#2	% Stat Table
+				#3	% Skills
+
+				\begin{center} \MakeUppercase{\textbf{Features}} \end{center}
+				{\color{goldStats} \hrule \vspace{0.5cm} }
+				#4 % Features
+				
+				\begin{center} \MakeUppercase{\textbf{Actions}} \end{center}
+				{\color{goldStats} \hrule \vspace{0.5cm} } 
+				#5 % Actions
+				\end{multicols}
+			}
+		}
+	\end{adjustwidth}
+}
+
 \newcommand{\enemyStatBlockTest}{
 	\enemyStatBlock{
 		\enemyStatBlockHeader{\enemyAxehound}{1}{Minion}{Small Animal}
@@ -629,7 +695,7 @@
 }
 
 \newcommand{\enemyStatblockSkillsSurges}[1][(none)]{
-	\textbf{Surges:} #1 \\
+	\textbf{Surge Skills:} #1 \\
 }
 
 \newcommand{\enemyStatblockSkillsLanguages}[1][(none)]{
@@ -646,7 +712,13 @@
 
 \newcommand{\enemyStatblockFeatureSprenDeath}{\enemyStatblockFeature{\abilitySprenName}{\abilitySprenText}}
 
+\newcommand{\enemyStatblockFeatureFutureKnowledge}[1][N]{\enemyStatblockFeature{\abilityFutureKnowledgeName[#1]}{\abilityFutureKnowledgeText[#1]}}
+
+\newcommand{\enemyStatblockFeatureTaravangianBoon}{\enemyStatblockFeature{\abilityTaravangianBoonName}{\abilityTaravangianBoonText}}
+
 \newcommand{\enemyStatblockFeatureBoss}{\enemyStatblockFeature{Boss}{This creature can take both a fast turn and a slow turn each round. After an enemy finishes a turn, this creature can spend 1 focus to immediately use an extra \iconAction{} or \iconFreeAction{}. Additionally, they can spend 1 focus on their turn to remove a condition from themself.}}
+
+\newcommand{\enemyStatblockFeatureBossConversation}{\enemyStatblockFeature{Boss (Conversation)}{This character makes a contribution twice in a conversation round: once after more than a half of enemies made their contribution, and the second time after all of them contributed. \\ After an enemy finishes a turn, the character can spend 1 Focus to immediately use an extra  \iconAction{} or  \iconFreeAction{}. Additionally, they can spend 1 Focus on their turn to remove a condition from themself.} \\}
 
 \newcommand{\enemyStatblockAction}[3][\iconAction{}]{#1 \textbf{#2.} #3}
 
