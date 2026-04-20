@@ -1,0 +1,38 @@
+\label{enemyMidnightTwin}
+
+
+
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyMidnightTwin{}}{3}{Boss}{Large Essence}
+}{
+	\enemyStatBlockStats{5}{4}{2}{5}{5}{3}{156 (126-186)}{7}{0}
+}{
+	\footnotesize
+	\enemyStatBlockSkills[		
+		\enemyStatblockSkillsMovement[30 ft.] \\
+		\enemyStatblockSkillsSenses[20 ft. (smell)]
+		\enemyStatblockSkillsImmunities[Restrained]
+		\enemyStatblockSkillsPhysical[Agility +8, Athletics +9]
+		\enemyStatblockSkillsSpiritual[Deception +5, Perception +8, Survival +9]
+		\enemyStatblockSkillsLanguages[\textit{(none)}]
+	]
+}{
+	\enemyStatblockFeatureBoss{} \\
+	
+	\enemyStatblockFeature{Amorphous}{This creature can move through a space as narrow as 1 inch wide.} \\
+	
+	\enemyStatblockFeature{Fear of Lightweaving}{If a character uses the Illumination surge while within 60 feet of this creature, it gains a disadvantage on attack rolls until the end of its next turn.} \\
+	
+	\enemyStatblockFeature{Entwined}{When this creature is slain, spawn two \enemyMidnightAssassin{}s into the fight.}
+	
+}{
+	\enemyStatblockAction{Strike: Formed Weapon}{Attack +9, reach 10 ft., one target. Graze: 4 (1d8) impact or keen damage. Hit: 16 (1d8 + 12) impact or keen damage, and this creature can spend 1 Focus to inflict one of the following conditions on the target: Afflicted [1d8 damage of the same type], Disoriented, Prone, or Slowed.}\\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Strike: Whirling Blades (Costs 1 Focus)}{All creatures within 10 ft. must pass a \skillCheck{19}{\skillAgility} or take 16 (1d8 + 12) keen damage.} \\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Uncanny Nature}{The creature’s mannerisms unsettle its foes. Each enemy within 5 feet of this creature must succeed on a DC 14 Discipline test or lose 1 Focus.} \\
+	
+	\enemyStatblockAction[\iconReaction{}]{Mimic Violence}{After a character this creature can sense within 60 feet of it uses a free action or an action that costs no more than \iconAction{}, the creature crudely copies the same action, choosing a new target if it wishes. \\
+	The creature must be able to reasonably shift its form to mimic any objects or forces essential to that action, it can’t use an action requiring Investiture, and it must spend Focus if required by that action.}
+}
+\normalsize

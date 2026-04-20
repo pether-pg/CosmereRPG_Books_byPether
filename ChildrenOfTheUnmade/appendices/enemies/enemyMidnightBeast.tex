@@ -1,0 +1,29 @@
+\label{enemyMidnightBeast}
+
+
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyMidnightBeastName{}}{2}{Minion}{Medium Essence}
+}{
+	\enemyStatBlockStats{4}{3}{0}{3}{3}{1}{28 (24-32)}{5}{0}
+}{
+	\enemyStatBlockSkills[
+		\enemyStatblockSkillsMovement[30 ft.] \\
+		\enemyStatblockSkillsSenses[20 ft. (smell)]
+		\enemyStatblockSkillsImmunities[Restrained]
+		\enemyStatblockSkillsPhysical[Agility +6, Athletics +7]
+		\enemyStatblockSkillsSpiritual[Deception +3, Perception +5, Survival +6]
+		\enemyStatblockSkillsLanguages[\textit{(none)}]
+	]
+}{
+	\enemyStatblockFeature{Amorphous}{This creature can move through a space as narrow as 1 inch wide.} \\
+	
+	\enemyStatblockFeature{Fear of Lightweaving}{If a character uses the Illumination surge while within 60 feet of this creature, it gains a disadvantage on attack rolls until the end of its next turn.} \\
+	
+	\enemyStatblockFeatureMinion{}
+}{
+	\enemyStatblockAction{Strike: Formed Weapon}{Attack +7, reach 5 ft., one target. Graze: 2 (1d4) impact or keen damage. Hit: 9 (1d4 + 7) impact or keen damage, and this creature can spend 1 Focus to inflict one of the following conditions on the target: Afflicted [1d4 damage of the same type], Disoriented, Prone, or Slowed.}\\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Uncanny Nature}{The creature’s mannerisms unsettle its foes. Each enemy within 5 feet of this creature must succeed on a DC 14 Discipline test or lose 1 Focus.} \\
+	
+	\enemyStatblockAction{Wild Mimicry}{This creature impersonates a Small or Medium animal it can sense. When it does, it gains all of its Features and Actions. It uses it's own attributes and skill ranks for all of them \textit{(eg. its strikes always gain +7 attack and damage bonus from \skillAthletics{} instead of whatever value the creature had)}.}
+}

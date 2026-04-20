@@ -1,0 +1,28 @@
+\label{enemyQueensGuardLeader}
+
+% From Elite Shardbearer + Brightlord
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyQueensGuardLeaderName}{3}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{4}{4}{1}{5}{3}{4}{50 (40–60)}{7}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[4 (full plate)] \\
+	\enemyStatblockSkillsMovement[30 ft.]
+	\enemyStatblockSkillsSenses[20 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +8, Heavy Weaponry +8, Light Weaponry +8]
+	\enemyStatblockSkillsCognitive[Discipline +8, Intimidation +9]
+	\enemyStatblockSkillsSpiritual[Leadership +9, Perception +7, Persuasion +8]
+	\enemyStatblockSkillsLanguages[alethi]
+	]
+}{
+	\enemyStatblockFeature{Inspiring Leadership}{When the \enemyQueensGuardLeaderName{} successfully uses the Gain Advantage action, they can choose one ally they can influence. That ally also gains an advantage on the next test they make against the \enemyQueensGuardLeaderName{}’s target.} \\
+}{
+	\enemyStatblockAction{Strike: Greatsword}{Attack +8, reach 5 ft., one target. Graze: 5 (1d10) keen damage. Hit: 13 (1d10 + 8) keen damage and the \enemyQueensGuardLeaderName{} can spend \iconOpp{} to cause the target to immediately suffer an injury.}\\
+	
+	\enemyStatblockAction{Test Blow}{Attack +8, reach 5 ft., one target. Graze: no effect. Hit: The target takes no damage, but their Physical defense is reduced by 2 until the end of their next turn.} \\
+	
+	\enemyStatblockAction{Influential Instruction (Costs X Focus)}{The \enemyQueensGuardLeaderName{} spends 1 Focus or more to influence that many allies. Each target can choose one of their defenses to increase by 2 until the end of the \enemyQueensGuardLeaderName{}’s next turn.} \\
+	
+	\enemyStatblockAction[\iconReaction{}]{Bulwark of Discipline}{When an enemy targets the \enemyQueensGuardLeaderName{} or their ally with an effect that causes the target to lose Focus, the target can reduce the amount of Focus lost by 1d4.}
+}

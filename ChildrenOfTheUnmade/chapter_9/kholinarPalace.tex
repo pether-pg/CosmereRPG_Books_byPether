@@ -1,0 +1,144 @@
+\section{Royal Palace}
+\label{sec:kholinarPalace}
+
+You can run this location as a dungeon filled with enemies. The exact list of rooms in this dungeon is listed in \fullref{sec:kholinarPalaceRooms}.
+
+Overall, in this dungeon, all rules listed below are taking place.
+
+
+\subsection{Entry Points}
+
+The PCs can enter the Palace using one of three ways:
+
+\begin{itemize}
+	\item \fullref{ssec:kholinarPalaceRoomsMainGate}
+	\item \fullref{ssec:kholinarPalaceRoomsSecretEntrance}
+	\item \fullref{ssec:kholinarPalaceRoomsSunwalk}
+\end{itemize}
+
+When the party approaches the Palace, advance the PCs to level 13 and proceed to \fullref{sec:kholinarPalaceRooms}.
+
+
+
+\subsection{Objectives}
+
+The main objective for the PCs should be defeating \npcQueen{} in \fullref{ssec:kholinarPalaceRoomsThroneRoom}.
+
+If the party travels with more NPCs, they will have the objective of their own - freeing \npcGavinor{} from his room  (see \fullref{ssec:kholinarPalaceRoomsGavinorsRoom}) and clearing the access to \fullref{ssec:kholinarPalaceRoomsSunwalk}.
+
+The PCs can treat NPCs' goals as their secondary objectives. As long as they follow with their realization, the NPCs will travel with them allowing to use \fullref{ssec:kholinarPalaceOpportunities}. 
+
+The NPCs will not attempt to fight \npcQueen{} before their goals are reached and they will flee once \fullref{ssec:singerSiegeEvent} triggers.
+
+
+
+\subsection{Resting}
+
+Making a Short Rest immediately triggers \fullref{ssec:singerSiegeEvent} once it ends. Warn the PCs about it before they begin it, so they could consider alternative solutions.
+
+This does not include \fullref{ssec:kholinarPalaceRoomsDining} - the rest in there is considered instantaneous and does not advance the progress of the event.
+
+This area is not safe for Long Rests.
+
+
+
+
+\subsection{Alliance Effects}
+\label{ssec:kholinarPalaceAllianceEffects}
+
+Before entering the Palace, the PCs will have some opportunities to gather allies willing to help them in this assault. Depending on who helps the party, they will grant them the following bonuses:
+
+\subsubsection{The Wall Guard}
+
+If \npcHighmarshal{} is convinced to lend the Wall Guard in the assault, they will assist the PCs with the fight in the halls of the Palace. 
+
+During each combat scene, if the party is allied with the Wall Guard, remove up to two tier 1 enemies or one tier 2 enemy from the fight. Alternatively, you can run each combat scene with two \enemyWallGuard{}s on the PCs side instead.
+
+On top of that, if the PCs succeeded in \fullref{ssec:theWallFinalTask}, add \npcHighmarshal{}'s ability to the pool of available opportunity effects.
+
+\subsubsection{The Cult of Moments}
+
+If the PCs helped in cult recruitment, the cultists will not attack or move against the PCs, but they will not help them with other fights the party might encounter in the Palace.
+
+If the PCs are allied to \npcFractionCult{} after successful \fullref{ssec:theCultOfMomentsFinalTask}, they will allow the party to enter the Palace from \fullref{ssec:kholinarPalaceRoomsSunwalk}.
+
+\subsubsection{Kholinar Criminals}
+
+If the PCs gained respect of the Kholinar underworld, they will learn the locations of \fullref{ssec:kholinarPalaceRoomsGavinorsRoom} and \fullref{ssec:kholinarPalaceRoomsThroneRoom}. On top of that, their scouts will share the intel about \enemyQueensShardbearer{} guarding \npcGavinor{}.
+ 
+If the party succeeded in \fullref{ssec:cloakAndDaggerFinal}, they will also learn about \fullref{ssec:kholinarPalaceRoomsSecretEntrance}.
+
+The criminals will also supply the party with any items they might need for the job, but they will not send additional men to assist them with the fighting.
+
+\subsubsection{Singer Forces}
+
+If the Singers are allied with the PCs, they will not be able to support them from the very beginning as there is entire city between them they must conquer. However, after \fullref{ssec:singerSiegeEvent} triggers, the Singers reach the Palace and can affect the events inside. 
+
+When it happens, if they are allied with the party, remove up to two tier 2 enemies from each combat scene. Alternatively, you may run those scenes with one Fused (eg. \enemySingerHaevenlyOne{}) or two Regals (eg. \enemySingerStormform{}s) on the side of the PCs instead.
+
+
+
+\subsection{Character Powers}
+\label{ssec:kholinarPalaceOpportunities}
+
+During the assault of Kholinar Palace, the PCs are aided by several notable NPCs. For most of the time, they will be busy fighting their own fights, but every now and then, they can support the party in combat.
+
+To make a character help the party, a player must spend \iconOpp{}. When they do, they may choose one of the effects below. Each effect can be invoked only once per combat round.
+
+\scriptedOption{\npcElhokar{} - Shrewd Command}{
+	The PC gets a d6 command die. They can add it to one die roll on their next test.
+}
+
+\scriptedOption{\npcShallan{} - Lightweaving}{
+	\npcShallan{} weaves an illusion of the PC. Until an attack misses them, all attacks against them gain disadvantage and can't graze.
+}
+
+\scriptedOption{\npcAdolin{} - Strike: Shardblade}{
+	Attack +10, any one target. Graze: 9 (2d8) spirit damage. Hit: 22 (2d8 + 10) spirit damage. \\
+	\textit{(assume \npcAdolin{} always has enough Focus to graze)}
+}
+
+\scriptedOption{\npcKaladin{} - Gravitational Slam}{	
+	\npcKaladin{} makes a Gravitation (+8) test against a Physical Defense of an enemy. On a success, it moves towards another enemy. Each of them takes 5 (1d10) impact damage for each 10 ft. the first enemy moved as a result of this ability (with a minimum of 1d10).
+}
+
+\scriptedOption{\npcHighmarshal{} - Shield Up! \\ \textit{(The party must be allied with the Wall Guard)}}{
+	The PC's Physical Defense increases by 2 until the end of the next round.
+}
+
+\scriptedOption{\npcCellarBoy{} - Spreading Decay  \\ \textit{(must be rescued from \fullref{ssec:kholinarPalaceRoomsCellar})}}{
+	Attack +5, any one target. Graze: 7 (2d6) vital damage. Hit: 12 (2d6 + 5) vital damage and the target becomes Afflicted [1d6 vital] for two rounds. \\
+	\textit{(assume \npcCellarBoy{} always has enough Focus to graze)}
+}
+
+
+
+\subsection{Event - Singer Siege}
+
+As the PCs are assaulting the Palace, the Singer forces are besieging the city. Results of the Plot Die can be spent to advance \fullref{ssec:singerSiegeEvent}, indicating their progress to capture the city.
+
+When \fullref{ssec:singerSiegeEvent} triggers, the Singers reach the Palace. All notable NPCs who accompany the party decide to cut their loses and flee through the Sunwalk.
+
+From this point onward, the PCs cannot spend \iconOpp{} to activate the above powers. On top of that, each combat scene now includes additional Singer forces (you can use eg. \enemySingerDireform{}s) that will fight for or against the PCs - depending on their relations with them.
+
+
+
+
+\subsection{Unmade Influence}
+
+\npcQueen{} and all of her force stationing in the Kholinar Palace are under the influence of \npcYeligNar{}, the \npcYeligNarTitle{}. There is unnatural, wrong darkness all around and the people no longer act rationally. The guards cannot be influenced in a Conversation and they will turn hostile against any potential enemy.
+
+On top of that, after the first enemy is killed on the Palace grounds, the PCs might feel a familiar, exciting thrill. It's \npcThrill{} pushing them to keep fighting. If a PC accepts its influence, the following rule applies to them until the end of the chapter:
+
+\scriptedOption{Thrill of Murder}{
+	Raise Stakes each time a melee attack is made. On a \iconComp{}, add +3 to that d20 roll and that attack grazes all characters adjacent to both the attacker and the defender (without spending focus).
+}
+
+\corruptedBox{
+	Entering the Palace under the influence of \npcYeligNar{}, the \npcYeligNarTitle{} may expedite an Enlightened Skybreaker \seeCorruptedRules{}.
+}
+
+\corruptedBox{
+	Fighting  in an area influenced by \npcThrill{}, the \npcThrillTitle{} may expedite an Enlightened Windrunner \seeCorruptedRules{}.
+}
+

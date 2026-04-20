@@ -1,0 +1,38 @@
+\label{enemyQueensShardbearer}
+
+% From Elite Shardbearer
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyQueensShardbearerName}{3}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{5}{6}{1}{5}{3}{4}{55 (44–66)}{7}{0}
+}{
+\footnotesize
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[5 (Shardplate)] \\
+	\enemyStatblockSkillsMovement[40 ft. (30 ft. without Shardplate)]
+	\enemyStatblockSkillsSenses[20 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +10*, Heavy Weaponry +10*, Light Weaponry +10*]
+	\enemyStatblockSkillsCognitive[Discipline +8, Intimidation +9]
+	\enemyStatblockSkillsSpiritual[Leadership +9, Perception +7, Persuasion +8]
+	\enemyStatblockSkillsLanguages[alethi]
+	]
+}{	
+	\enemyStatblockFeature{Shardplate (4 Charges)}{Before taking damage, the guard can expend a charge (no action required) to increase their deflect value against that damage by 10. While the armor has charges, all Invested tests against the guard gain a disadvantage, and the armor’s deflect value applies to all damage types. After the armor runs out of charges, the guard’s Strength, Speed and related skills and modifiers are reduced by 2 (see - *).} \\
+	
+	\enemyStatblockFeature{Breakable Armor}{After the guard is hit by an attack, the attacker can spend \iconOpp{} to cause their Shardplate to lose 1 charge.} \\
+}{
+	\enemyStatblockAction{Strike: Warhammer}{Attack +10*, reach 5 ft., one target. Graze: 11 (2d10) impact damage. Hit: 20* (2d10 + 10*) impact damage.}\\
+	
+	\enemyStatblockAction{Test Blow}{Attack +10*, reach 5 ft., one target. Graze: no effect. Hit: The target takes no damage, but their Physical defense is reduced by 2 until the end of their next turn.} \\
+	
+	\enemyStatblockAction{Change Stance (Costs 1 Focus)}{The guard shifts into one of the stances and related effects: \\
+	\textbf{Bloodstance.} The guard’s Opportunity range increases by 2, and their all defenses decrease by 2. \\
+	\textbf{Flamestance.} While there’s only one enemy within 5 feet of the guard and no allies within 5 feet of them or that enemy, the guard can use \iconFreeAction[8pt]{} to gain \iconAction[8pt]{}.They can spend it only on the Gain Advantage action or on an action that includes an attack test. \\
+	\textbf{Ironstance.} After an enemy within 5 feet of the guard misses or grazes them with an attack, the guard can use the Reactive Strike reaction against them.
+	} \\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Distracting Banter}{The guard baits their enemy into a smug repartee, making an opposed Intimidation test against the target’s Discipline. If the guard succeeds, the target loses 1d4 Focus.} \\
+	
+	\enemyStatblockAction[\iconReaction{}]{Stand Firm (Costs 1 Focus)}{Before the guard is unwillingly moved or knocked Prone, they ignore that effect.}
+}
+\normalsize

@@ -1,0 +1,24 @@
+\label{enemySkyeel}
+
+
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemySkyeelName{}}{1}{Minion}{Medium Animal}
+}{
+	\enemyStatBlockStats{2}{3}{0}{1}{3}{0}{12 (9–15)}{3}{0}
+}{
+	\enemyStatBlockSkills[
+		\enemyStatblockSkillsMovement[10 ft., fly 30 ft.,]\\
+		\enemyStatblockSkillsSenses[20 ft. (sight)]
+		\enemyStatblockSkillsPhysical[Agility +4, Stealth +4]
+		\enemyStatblockSkillsSpiritual[Perception +5, Survival +4]
+		\enemyStatblockSkillsLanguages
+	]
+}{
+	\enemyStatblockFeature{Enhanced Senses}{The skyeel gains an advantage on non-attack tests that rely on smell.} \\
+		
+	\enemyStatblockFeatureMinion{}
+}{
+	\enemyStatblockAction{Strike: Bite}{Attack +4, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 6 (1d4 + 4) keen damage, and if the target is Medium or smaller, the skyeel can spend 1 Focus to wrap its body around the target. If it does, the target becomes Restrained, the skyeel attaches to the target, and the skyeel can’t use their Bite against a different target until they release the current one. As \iconAction{}, the Restrained target or a character within 5 feet of them can make a DC 12 Athletics test, forcing the skyeel to release the target on a success.}\\
+
+	\enemyStatblockAction[\iconActionDouble{}]{Dive Bomb}{The skyeel flies up to 60 feet toward a target they can sense on the ground, then uses its Bite against the target. This attack gains an advantage. After the skyeel uses this action, it can’t fly again until the end of the scene.}
+}

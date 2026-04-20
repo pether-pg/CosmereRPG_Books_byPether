@@ -1,0 +1,30 @@
+\label{enemyWhitespine}
+
+% Whitespine + custom
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyWhitespineName}{2}{Rival}{Large Animal}
+}{
+	\enemyStatBlockStats{4}{3}{0}{2}{4}{0}{42 (33–51)}{4}{0}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[1 (carpace)]\\
+	\enemyStatblockSkillsMovement[60 ft.] 
+	\enemyStatblockSkillsSenses[40 ft. (smell)]
+	\enemyStatblockSkillsPhysical[Agility +6, Athletics +7, Stealth +6]
+	\enemyStatblockSkillsCognitive[Intimidation +5]
+	\enemyStatblockSkillsSpiritual[Perception +6, Survival +6]
+	\enemyStatblockSkillsLanguages[(none)]
+	]
+}{
+	\enemyStatblockFeature{Enhanced Senses}{The whitespine gains an advantage on non-attack tests that rely on smell.} \\
+	
+	\enemyStatblockFeature{Spined Carapace}{After an enemy within 5 feet of the whitespine grazes them with a weapon attack, that enemy takes 3 (1d6) keen damage.} \\
+	
+	\enemyStatblockFeature{Wild Frenzy}{This creature cannot flee from the combat.}\\
+}{
+	\enemyStatblockAction{Strike: Claws}{Attack +7, reach 5 ft., one target. Graze: 3 (1d6) keen damage. Hit: 10 (1d6 + 7) keen damage, and the whitespine can spend 1 Focus to make the target Afflicted [1d4 vital] until the target regains at least 1 Health.}\\
+	
+	\enemyStatblockAction{Goring Tusks}{Attack +7, reach 5 ft., one target. Graze: 5 (1d10) impact damage. Hit: 12 (1d10 + 7) impact damage. If the whitespine hits with this attack immediately after moving at least 15 feet, the target takes an extra 5 (1d10) impact damage and the target must succeed on a DC 14 Athletics test or be knocked Prone.}
+	
+	\enemyStatblockAction{Pheromone Release (Costs 1 Focus)}{The whitespine releases foul pheromones. Each non-whitespine character within 10 feet of them must succeed on a DC 15 Discipline test or become Stunned until the end of the whitespine’s next turn.}
+}

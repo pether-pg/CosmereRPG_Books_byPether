@@ -1,0 +1,85 @@
+\section{Dark Tunnels}
+\label{sec:darkTunnels}
+
+Dark tunnels represent the dangerous and unknown part of \locationUrithiru{}. The party will need to descend into them to find the entrance to \fullref{sec:middnightMother} and proceed with the plot of the chapter. 
+
+You can also use this location as a destination on various quests from potential patrons and allies.
+
+\subsection{Traveling Through the Darkness}
+
+You can run this part as an infinite dungeon crawl. At each point, the party has two choices: go deeper or turn back. Each time they make a move in any direction, they risk an encounter with \npcMidnightMother{}'s children.
+
+\subsubsection{Goal - Source of the Wrongness}
+
+You can run a search for \fullref{sec:middnightMother} as a modified Endeavor. To finish it, the party must accumulate 5 successes. There is no failing threshold and the party may attempt it as much as they want, each time  risking an encounter with enemies.
+
+\subsubsection{Entrance Point}
+
+The party can start their search from any place in \locationUrithiru{} that is away from uninhabited parts of the Tower. Here, the tunnels are dark, but in a wrong way...
+
+The starting Distance of the descend is 0. Each time the party moves deeper into the Tower, increase the Distance by 1, each time they successfully go back - decrease it by 1. The party can leave the tunnels when they reach the Distance of 0 again.
+
+\subsubsection{Action - Descend into Darkness}
+
+The party can descend deeper into the tunnels. Each time they do, increase their Distance by 1 and ask one of the PCs how do they search for the source of evil and wrongness. 
+
+Choose a skill that best matches the PC's attempt. That PC makes a skill test with a DC equal to 30 minus current Distance value. On a success, mark one success on their current Endeavor. On a failure nothing happens.
+
+After the skill test, roll for a random encounter - see \fullref{ssec:darkTunnelsEncounters}.
+
+\reasonBox{
+	If you want tests' DCs more varied, use starting DC value of 27 + 1d6 instead of constant 30. Each time decrease the value by current Distance.
+}
+
+\subsubsection{Action - Return}
+
+The PCs can decide to abandon their current attempt to investigate the tunnels as it is time to go back to safety an lick their wounds. To do that, a PC must make a \skillCheck{15}{\skillDeduction{} \textit{(or other skill)}}.
+
+On a success, decrease their Distance by 1. If they reached the Distance of 0, they can exit the tunnels. Do not erase their Endeavor successes - allow them to continue another day.
+
+After the skill test, roll for a random encounter - see \fullref{ssec:darkTunnelsEncounters}.
+
+\subsubsection{Random Encounters}
+\label{ssec:darkTunnelsEncounters}
+
+To determine a random encounter, roll d20 and reduce the result by current Distance Value and the number of complications accumulated on \fullref{ssec:chapter8runningEvent}. Compare the result with the table below: \\
+
+\small
+\noindent
+\begin{tabular}{c l}
+	d20 & Encounter \\ \hline
+	1+  & \textit{(none)} \\
+	0   & Each PC looses 1 Focus. \\
+	-1  & 1x \enemyMidnightBeast{} \\
+	-2  & 1d4 \enemyMidnightBeast{}s \\
+	-3  & 1d6 \enemyMidnightBeast{}s \\
+	-4  & 1x \enemyMidnightAssassin{} \\
+	-5  & 2x \enemyMidnightAssassin{} \\
+	-6  & 1x \enemyMidnightAssassin{} + 1d4 \enemyMidnightBeast{}s \\
+	-7  & 1d4 \enemyMidnightAssassin{}s + 1d4 \enemyMidnightBeast{}s \\
+	-8  & 1d6 \enemyMidnightAssassin{}s + 1d4 \enemyMidnightBeast{}s \\
+	-9  & 1d6 \enemyMidnightAssassin{}s + 1d6 \enemyMidnightBeast{}s \\
+	-10 & 1d6 \enemyMidnightAssassin{}s + 1d8 \enemyMidnightBeast{}s \\
+	-11 & \enemyMidnightTwin{} \\
+	-12 & \enemyMidnightTwin{} + 1d4 \enemyMidnightBeast{}s \\
+	-13 & \enemyMidnightTwin{} + 1d6 \enemyMidnightBeast{}s \\
+	-14 & \enemyMidnightTwin{} + 1d8 \enemyMidnightBeast{}s \\
+	... & \enemyMidnightTwin{} + 1d4 \enemyMidnightAssassin{}s \\
+\end{tabular}
+\normalsize
+
+\subsubsection{Opportunities and Complications}
+
+During this crawl, you can spend Opportunities and Complications on following effects: \\
+
+\scriptedOption{Modify Distance}{
+	The PCs can spend \iconOpp{} to modify Distance value by 1. The GM can spend \iconComp{} to increase it by 1.
+}
+
+\scriptedOption{Affect Encounter Chance}{
+	The PCs can spend \iconOpp{} to ensure the next roll to determine random encounter gains advantage. The GM can spend \iconComp{} to give it disadvantage.
+}
+
+\scriptedOption{Advance Event}{
+	Once per Long Rest, the GM can spend \iconComp{} to progress \fullref{ssec:chapter8runningEvent}.
+}

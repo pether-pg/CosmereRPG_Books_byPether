@@ -69,6 +69,8 @@
 \newcommand{\npcBlackFisherTitle}{Black Fisher}
 \newcommand{\npcHeartRevelTitle}{Heart of the Revel}
 
+\newcommand{\npcMidnightMotherFull}{\npcMidnightMother{}, the \npcMidnightMotherTitle{}}
+
 % Monarchs
 \newcommand{\npcQueenName}{Aesudan}
 \newcommand{\npcQueen}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Queen \npcQueenName{}}}{\npc{Queen \npcQueenName{}}}}
@@ -90,14 +92,25 @@
 \newcommand{\npcSingerEnvoy}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Serin}}{\npc{Serin}}}
 % Characters
 \newcommand{\npcShallan}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Shallan}}{\npc{Shallan}}}
+\newcommand{\npcVeil}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Veil}}{\npc{Veil}}}
+\newcommand{\npcRadiant}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Brightness Radiant}}{\npc{Brightness Radiant}}}
 \newcommand{\npcDalinar}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Dalinar}}{\npc{Dalinar}}}
+\newcommand{\npcAdolin}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Adolin}}{\npc{Adolin}}}
+\newcommand{\npcRenarin}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Renarin}}{\npc{Renarin}}}
+\newcommand{\npcJasnah}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Jasnah}}{\npc{Jasnah}}}
+\newcommand{\npcNavani}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Navani}}{\npc{Navani}}}
+\newcommand{\npcGavinor}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Gavinor}}{\npc{Gavinor}}}
+\newcommand{\npcKaladin}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Kaladin}}{\npc{Kaladin}}}
+\newcommand{\npcAmaram}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Meridas Amaram}}{\npc{Meridas Amaram}}}
 \newcommand{\npcHoid}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Hoid}}{\npc{Hoid}}}
 \newcommand{\npcMalata}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Malata}}{\npc{Malata}}}
-% Custom
+% Kholinar
 \newcommand{\npcGrandmaName}{Veda}
 \newcommand{\npcGrandma}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Gran-gran}}{\npc{Gran-gran}}}
 \newcommand{\npcLockedArdent}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Liha}}{\npc{Liha}}}
 \newcommand{\npcTroublemaker}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Chanri}}{\npc{Chanri}}}
+\newcommand{\npcCellarBoy}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Arin}}{\npc{Arin}}}
+\newcommand{\npcGhostbloodBoss}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Big Al}}{\npc{Big Al}}}
 % Shadesmar
 \newcommand{\npcSprenGuide}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Echo}}{\npc{Echo}}}
 \newcommand{\npcFortuneReader}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Riino}}{\npc{Riino}}}
@@ -118,6 +131,8 @@
 \newcommand{\npcDiagramAarchivist}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Arvia}}{\npc{Arvia}}}
 \newcommand{\npcVedenArtifabrian}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Dorlivana}}{\npc{Dorlivana}}}
 
+
+
 \newcommand{\sicknessOrphanName}{Weeping Fever}
 
 \newcommand{\locationFidelity}{Unyielding Fidelity}
@@ -125,6 +140,7 @@
 \newcommand{\locationPalanaeum}{Palanaeum}
 \newcommand{\locationPerpendicularity}{Perpendicularity}
 \newcommand{\locationUrithiru}{Urithiru}
+\newcommand{\locationVedenar}{Vedenar}
 
 
 \newcommand{\npcFractionPalace}{Royal Palace}
@@ -138,8 +154,11 @@
 % Enemies
 
 \newcommand{\enemyReanimatedRemainsName}{Reanimated Remains}
+% Kholinar Palace
 \newcommand{\enemyQueensGuardName}{False Radiant}
 \newcommand{\enemyQueensGuardLeaderName}{False Radiant Leader}
+\newcommand{\enemyQueensShardbearerName}{Shardbearer Guard}
+\newcommand{\enemyQueenAesudanName}{Queen Aesudan}
 % City
 \newcommand{\enemyAxehoundName}{Hungry Axehound}
 \newcommand{\enemyRioterName}{Rioter}
@@ -166,6 +185,8 @@
 \newcommand{\enemySingerHeavenlyOneName}{Newborn Heavenly One}
 % Ghostbloods
 \newcommand{\enemyGhostbloodScoutName}{Ghostblood Scout}
+\newcommand{\enemyGhostbloodThugName}{Ghostblood Thug}
+\newcommand{\enemyGhostbloodBossName}{Ghostblood Boss}
 % Shadesmar
 \newcommand{\enemyTrueSprenName}{True Spren}
 \newcommand{\enemySprenPirateName}{Spren Pirate}
@@ -180,18 +201,26 @@
 \newcommand{\enemyMusicsprenName}{Feral Musicspren}
 % Beasts
 \newcommand{\enemyWhitespineName}{Wild Whitespine}
+\newcommand{\enemySkyeelName}{Mountain Skyell}
 % Kharbranth
 \newcommand{\enemyDiagramScribeName}{Diagram Scribe}
 \newcommand{\enemyDiagramSurgeonName}{\locationKharbranth{} Surgeon }
 \newcommand{\enemyDiagramMuscleName}{Diagram Muscle}
 \newcommand{\enemyMalataName}{\npcMalata{} the Dustbringer}
 \newcommand{\enemyTaravangianName}{King Taravangian}
+% Urithiru
+\newcommand{\enemyMidnightBeastName}{Midnight Beast}
+\newcommand{\enemyMidnightAssassinName}{Midnight Assassin}
+\newcommand{\enemyMidnightTwinName}{Midnight Twin}
 
 
 \newcommand{\enemy}[1]{\hyperref[chap:enemies]{\textbf{#1}}}
 \newcommand{\enemyReanimatedRemains}{\enemy{\hyperref[enemyReanimatedRemains]{\enemyReanimatedRemainsName}}}
+
 \newcommand{\enemyQueensGuard}{\enemy{\hyperref[enemyQueensGuard]{\enemyQueensGuardName}}}
 \newcommand{\enemyQueensGuardLeader}{\enemy{\hyperref[enemyQueensGuardLeader]{\enemyQueensGuardLeaderName}}}
+\newcommand{\enemyQueensShardbearer}{\enemy{\hyperref[enemyQueensShardbearer]{\enemyQueensShardbearerName}}}
+\newcommand{\enemyQueenAesudan}{\enemy{\hyperref[enemyQueenAesudan]{\enemyQueenAesudanName}}}
 % City
 \newcommand{\enemyAxehound}{\enemy{\hyperref[enemyAxehound]{\enemyAxehoundName}}}
 \newcommand{\enemyRioter}{\enemy{\hyperref[enemyRioter]{\enemyRioterName}}}
@@ -217,6 +246,8 @@
 \newcommand{\enemySingerHaevenlyOne}{\enemy{\hyperref[enemySingerHeavenlyOne]{\enemySingerHeavenlyOneName}}}
 % Ghostbloods
 \newcommand{\enemyGhostbloodScout}{\enemy{\hyperref[enemyGhostbloodScout]{\enemyGhostbloodScoutName}}}
+\newcommand{\enemyGhostbloodThug}{\enemy{\hyperref[enemyGhostbloodThug]{\enemyGhostbloodThugName}}}
+\newcommand{\enemyGhostbloodBoss}{\enemy{\hyperref[enemyGhostbloodBoss]{\enemyGhostbloodBossName}}}
 % Shadesmar
 \newcommand{\enemyTrueSpren}{\enemy{\hyperref[enemyTrueSpren]{\enemyTrueSprenName}}}
 \newcommand{\enemySprenPirate}{\enemy{\hyperref[enemySprenPirate]{\enemySprenPirateName}}}
@@ -231,13 +262,17 @@
 \newcommand{\enemyMusicspren}{\enemy{\hyperref[enemyMusicspren]{\enemyMusicsprenName}}}
 % Beasts
 \newcommand{\enemyWhitespine}{\enemy{\hyperref[enemyWhitespine]{\enemyWhitespineName}}}
+\newcommand{\enemySkyeel}{\enemy{\hyperref[enemySkyeel]{\enemySkyeelName}}}
 % Kharbranth
 \newcommand{\enemyDiagramScribe}{\enemy{\hyperref[enemyDiagramScribe]{\enemyDiagramScribeName}}}
 \newcommand{\enemyDiagramSurgeon}{\enemy{\hyperref[enemyDiagramSurgeon]{\enemyDiagramSurgeonName}}}
 \newcommand{\enemyDiagramMuscle}{\enemy{\hyperref[enemyDiagramMuscle]{\enemyDiagramMuscleName}}}
 \newcommand{\enemyMalata}{\enemy{\hyperref[enemyDiagramMalata]{\enemyMalataName}}}
 \newcommand{\enemyTaravangian}{\enemy{\hyperref[enemyDiagramTaravangian]{\enemyTaravangianName}}}
-
+% Urithiru
+\newcommand{\enemyMidnightBeast}{\enemy{\hyperref[enemyMidnightBeast]{\enemyMidnightBeastName}}}
+\newcommand{\enemyMidnightAssassin}{\enemy{\hyperref[enemyMidnightAssassin]{\enemyMidnightAssassinName}}}
+\newcommand{\enemyMidnightTwin}{\enemy{\hyperref[enemyMidnightTwin]{\enemyMidnightTwinName}}}
 
 
 % External

@@ -1,0 +1,29 @@
+\label{enemyMidnightAssassin}
+
+% From Midnight Essence
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyMidnightAssassinName{}}{3}{Rival}{Medium Essence}
+}{
+	\enemyStatBlockStats{5}{4}{1}{4}{4}{2}{52 (42–62)}{6}{0}
+}{
+	\enemyStatBlockSkills[
+		\enemyStatblockSkillsMovement[30 ft.] \\
+		\enemyStatblockSkillsSenses[20 ft. (smell)]
+		\enemyStatblockSkillsImmunities[Restrained]
+		\enemyStatblockSkillsPhysical[Agility +8, Athletics +9]
+		\enemyStatblockSkillsSpiritual[Deception +4, Perception +7, Survival +8]
+		\enemyStatblockSkillsLanguages[\textit{(none)}]
+	]
+}{
+	\enemyStatblockFeature{Amorphous}{This creature can move through a space as narrow as 1 inch wide.} \\
+	
+	\enemyStatblockFeature{Fear of Lightweaving}{If a character uses the Illumination surge while within 60 feet of this creature, it gains a disadvantage on attack rolls until the end of its next turn.} \\
+
+}{
+	\enemyStatblockAction{Strike: Formed Weapon}{Attack +9, reach 10 ft., one target. Graze: 4 (1d8) impact or keen damage. Hit: 16 (1d8 + 12) impact or keen damage, and this creature can spend 1 Focus to inflict one of the following conditions on the target: Afflicted [1d8 damage of the same type], Disoriented, Prone, or Slowed.}\\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Uncanny Nature}{The creature’s mannerisms unsettle its foes. Each enemy within 5 feet of this creature must succeed on a DC 14 Discipline test or lose 1 Focus.} \\
+	
+	\enemyStatblockAction[\iconReaction{}]{Mimic Violence}{After a character this creature can sense within 60 feet of it uses a free action or an action that costs no more than \iconAction{}, the creature crudely copies the same action, choosing a new target if it wishes. \\
+	The creature must be able to reasonably shift its form to mimic any objects or forces essential to that action, it can’t use an action requiring Investiture, and it must spend Focus if required by that action.}
+}
