@@ -104,6 +104,8 @@
 \newcommand{\npcAmaram}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Meridas Amaram}}{\npc{Meridas Amaram}}}
 \newcommand{\npcHoid}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Hoid}}{\npc{Hoid}}}
 \newcommand{\npcMalata}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Malata}}{\npc{Malata}}}
+\newcommand{\npcMelishi}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Melishi}}{\npc{Melishi}}}
+\newcommand{\npcGarith}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Garith}}{\npc{Garith}}}
 % Kholinar
 \newcommand{\npcGrandmaName}{Veda}
 \newcommand{\npcGrandma}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Gran-gran}}{\npc{Gran-gran}}}
@@ -183,10 +185,14 @@
 \newcommand{\enemySingerStormformName}{Newborn Stormform Regal}
 \newcommand{\enemySingerEnvoyformName}{Newborn Envoyform Regal}
 \newcommand{\enemySingerHeavenlyOneName}{Newborn Heavenly One}
+\newcommand{\enemyMishramName}{Avatar of Hatred}
 % Ghostbloods
 \newcommand{\enemyGhostbloodScoutName}{Ghostblood Scout}
+\newcommand{\enemyGhostbloodSmokerName}{Ghostblood Smoker}
 \newcommand{\enemyGhostbloodThugName}{Ghostblood Thug}
 \newcommand{\enemyGhostbloodBossName}{Ghostblood Boss}
+\newcommand{\enemyGhostbloodMraizeName}{Mraize, the Lightweaver}
+\newcommand{\enemyGhostbloodIyatilName}{Iyatil, the Elsecaller}
 % Shadesmar
 \newcommand{\enemyTrueSprenName}{True Spren}
 \newcommand{\enemySprenPirateName}{Spren Pirate}
@@ -212,6 +218,9 @@
 \newcommand{\enemyMidnightBeastName}{Midnight Beast}
 \newcommand{\enemyMidnightAssassinName}{Midnight Assassin}
 \newcommand{\enemyMidnightTwinName}{Midnight Twin}
+% Radiants
+\newcommand{\enemyWindrunnerThirdName}{Windrunner of the Third Ideal}
+\newcommand{\enemyLightweaverShallanName}{Shallan, the Lightweaver}
 
 
 \newcommand{\enemy}[1]{\hyperref[chap:enemies]{\textbf{#1}}}
@@ -244,10 +253,14 @@
 \newcommand{\enemySingerStormform}{\enemy{\hyperref[enemySingerStormform]{\enemySingerStormformName}}}
 \newcommand{\enemySingerEnvoyform}{\enemy{\hyperref[enemySingerEnvoyform]{\enemySingerEnvoyformName}}}
 \newcommand{\enemySingerHaevenlyOne}{\enemy{\hyperref[enemySingerHeavenlyOne]{\enemySingerHeavenlyOneName}}}
+\newcommand{\enemyMishram}{\enemy{\hyperref[enemyMishram]{\enemyMishramName}}}
 % Ghostbloods
 \newcommand{\enemyGhostbloodScout}{\enemy{\hyperref[enemyGhostbloodScout]{\enemyGhostbloodScoutName}}}
+\newcommand{\enemyGhostbloodSmoker}{\enemy{\hyperref[enemyGhostbloodSmoker]{\enemyGhostbloodSmokerName}}}
 \newcommand{\enemyGhostbloodThug}{\enemy{\hyperref[enemyGhostbloodThug]{\enemyGhostbloodThugName}}}
 \newcommand{\enemyGhostbloodBoss}{\enemy{\hyperref[enemyGhostbloodBoss]{\enemyGhostbloodBossName}}}
+\newcommand{\enemyGhostbloodMraize}{\enemy{\hyperref[enemyGhostbloodMraize]{\enemyGhostbloodMraizeName}}}
+\newcommand{\enemyGhostbloodIyatil}{\enemy{\hyperref[enemyGhostbloodIyatil]{\enemyGhostbloodIyatilName}}}
 % Shadesmar
 \newcommand{\enemyTrueSpren}{\enemy{\hyperref[enemyTrueSpren]{\enemyTrueSprenName}}}
 \newcommand{\enemySprenPirate}{\enemy{\hyperref[enemySprenPirate]{\enemySprenPirateName}}}
@@ -273,6 +286,9 @@
 \newcommand{\enemyMidnightBeast}{\enemy{\hyperref[enemyMidnightBeast]{\enemyMidnightBeastName}}}
 \newcommand{\enemyMidnightAssassin}{\enemy{\hyperref[enemyMidnightAssassin]{\enemyMidnightAssassinName}}}
 \newcommand{\enemyMidnightTwin}{\enemy{\hyperref[enemyMidnightTwin]{\enemyMidnightTwinName}}}
+% Radiants
+\newcommand{\enemyWindrunnerThird}{\enemy{\hyperref[enemyWindrunnerThird]{\enemyWindrunnerThirdName}}}
+\newcommand{\enemyLightweaverShallan}{\enemy{\hyperref[enemyLightweaverShallan]{\enemyLightweaverShallanName}}}
 
 
 % External
@@ -292,6 +308,7 @@
 \newcommand{\lootHemalurgicNail}{\loot{Spiky Earring}}
 \newcommand{\lootForgerySeal}{\loot{Training Seal}}
 \newcommand{\lootWhiteSand}{\loot{Vial of Sand}}
+\newcommand{\lootAntiStormlightDagger}{\loot{Anti-Stormlight Dagger}}
 
 
 
@@ -750,6 +767,8 @@
 \newcommand{\enemyStatblockFeatureFutureKnowledge}[1][N]{\enemyStatblockFeature{\abilityFutureKnowledgeName[#1]}{\abilityFutureKnowledgeText[#1]}}
 
 \newcommand{\enemyStatblockFeatureTaravangianBoon}{\enemyStatblockFeature{\abilityTaravangianBoonName}{\abilityTaravangianBoonText}}
+
+\newcommand{\enemyStatblockFeatureInurePoison}{\enemyStatblockFeature{Inured to Poison}{The Ghostblood gains an advantage on tests to resist the effects of poison. Additionally, before the Ghostblood takes vital damage, they reduce it by 2.}}
 
 \newcommand{\enemyStatblockFeatureBoss}{\enemyStatblockFeature{Boss}{This creature can take both a fast turn and a slow turn each round. After an enemy finishes a turn, this creature can spend 1 focus to immediately use an extra \iconAction{} or \iconFreeAction{}. Additionally, they can spend 1 focus on their turn to remove a condition from themself.}}
 

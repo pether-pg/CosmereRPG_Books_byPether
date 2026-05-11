@@ -1,0 +1,55 @@
+\label{enemyGhostbloodMraize}
+
+\enemyStatBlockDouble{
+	\enemyStatBlockHeader{\enemyGhostbloodMraizeName}{3}{Boss}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{4}{5}{2}{3}{5}{5}{200 (180 - 220)}{5}{7}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[1 (leather)] \\
+	\enemyStatblockSkillsMovement[30 ft.]
+	\enemyStatblockSkillsSenses[50 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Athletics +8, Heavy Weaponry +8, Light Weaponry +9]
+	\enemyStatblockSkillsCognitive[Deduction +6, Intimidation +7]
+	\enemyStatblockSkillsSpiritual[Deception +9, Perception +9, Persuasion +9]
+	\enemyStatblockSkillsSurges[Illumination +8 (3 ranks)]
+	\enemyStatblockSkillsLanguages[all]
+	]
+}{
+	\enemyStatblockFeatureBoss{} \\
+	
+	\enemyStatblockFeature{Compelling Leader}{When Mraize successfully uses the Gain Advantage action or gains an Opportunity, he can grant that advantage or Opportunity to one of his allies within 60 feet of him.} \\
+	
+	\enemyStatblockFeature{\talentLightweaverKeyName{}}{Mraize gains an advantage on Insight tests made to interpret the desires or intentions of others.} \\
+	
+	\enemyStatblockFeature{Ruthless}{After Mraize knocks an enemy Prone, he can make an additional Strike against that target as \iconFreeAction{} on that turn (even if he has already used that Strike action).} \\
+	
+	\vfill
+	\columnbreak
+}{
+	\enemyStatblockAction{Strike: Shortsword}{Attack +9, reach 5 ft., one target. Graze: 3 (1d6) keen damage. Hit: 12 (1d6 + 9) keen damage.}\\
+	
+	\enemyStatblockAction{Strike: Anti-Stormlight Knife}{Attack +9, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 11 (1d4 + 9) keen damage. That attack ignores Deflect value of Shardplates. Once per scene, after hitting an enemy, Mraize can infuse them with Anti-Stormlight - until the next Long Rest, if that enemy uses Stormlight Investure, they immediately die. } \\
+	
+	\enemyStatblockAction{Disquiet}{Mraize manipulates their knowledge of an enemy they can influence to unnerve them. If the boss knows one or more of the target’s goals, their purpose, or their obstacle, the target loses 1d4 Focus; otherwise, the target loses 1 Focus.} \\
+	
+	\enemyStatblockAction{\talentLightweaverReadSecretsName{} (Costs 1 Focus)}{Mraize learns one secret of another person.} \\
+	
+	\enemyStatblockAction{\talentLightweaverDetectThoughtsName{} (Costs 1 Investure)}{Mraize learns current thoughts of the target character. If used in combat, that character's actions against Mraize gain disadvantage. Lasts for 3 rounds.} \\
+	
+	\enemyStatblockAction[\iconFreeAction{}]{Regenerate (Costs 1 Investure)}{Mraize recovers 1d6 + 3 Health.} \\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Intimidate (Costs 1 Focus)}{Mraize makes an opposed Intimidation test against the Discipline of a target he can influence. If Mraize succeeds, the target loses 1 Focus and is no longer Focused.} \\
+	\\
+			
+	\begin{center} \MakeUppercase{\textbf{Opportunities and Complications}} \end{center}
+	{\color{goldStats} \hrule \vspace{0.5cm} }
+	
+	The following options are available when an enemy gains an Opportunity or Complication during a scene with \enemyGhostbloodMraizeName{}:
+	
+	\scriptedOption{Opportunity}{An enemy can spend \iconOpp{} to prevent \enemyGhostbloodMraizeName{} from using \lootAntiStormlightDagger{} during his next turn.}
+	
+	\scriptedOption{Complication}{The GM can spend \iconComp{} from an enemy’s test to increase the number of charges in \enemyGhostbloodMraizeName{}'s \lootAntiStormlightDagger{} by 1.}
+}
+\newpage
+~~

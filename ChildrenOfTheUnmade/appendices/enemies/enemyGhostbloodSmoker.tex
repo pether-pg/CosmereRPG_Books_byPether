@@ -1,0 +1,30 @@
+\label{enemyGhostbloodSmoker}
+
+% From Ghostblood Spy
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyGhostbloodSmokerName}{1}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{0}{4}{2}{2}{2}{2}{21 (16–26)}{4}{4}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[1 (leather)] \\
+	\enemyStatblockSkillsMovement[30 ft.]
+	\enemyStatblockSkillsSenses[10 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +5, Light Weaponry +6, Stealth +6]
+	\enemyStatblockSkillsCognitive[Deduction +4, Lore +3]
+	\enemyStatblockSkillsSpiritual[Deception +4, Insight +4]
+	\enemyStatblockSkillsLanguages[defined by region]
+	]
+}{
+	\enemyStatblockFeature{Infiltrator}{The smoker can spend 1 Focus (no action required) to give themself an advantage on a Deception, Insight, or Persuasion test.} \\
+
+	\enemyStatblockFeatureInurePoison{} \\
+}{
+	\enemyStatblockAction{Strike: Dagger}{Attack +6, reach 5 ft. or range 20/60 ft., one target. Graze: 2 (1d4) keen damage. Hit: 8 (1d4 + 6) keen damage.}\\
+	
+	\enemyStatblockAction{Strike: Shortbow}{Attack +6, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 9~(1d6~+~6) keen damage.}\\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Burn Copper (Costs 1 Investure)}{The smoker protects themselves and all characters in 10 ft. radius from being detected with magical means until the smoker's next turn. At the start of each of their turns, the smoker can spend 1 Investiture to maintain this effect for an additional round.} \\
+	
+	\enemyStatblockAction[\iconFreeAction{}]{Coat Weapon (Costs 1 Focus)}{The scout coats either their Dagger or Shortbow in poison. The next enemy hit by an attack with the coated weapon must succeed on a DC 16 Athletics test or take 2d6 vital damage and gain a disadvantage on all tests for 1 minute.}
+}

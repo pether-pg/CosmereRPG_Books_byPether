@@ -1,0 +1,30 @@
+\label{enemyGhostbloodScout}
+
+% From Ghostblood Spy
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyGhostbloodScoutName}{1}{Rival}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{0}{4}{2}{2}{2}{2}{21 (16–26)}{4}{4}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[1 (leather)] \\
+	\enemyStatblockSkillsMovement[30 ft.]
+	\enemyStatblockSkillsSenses[10 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +5, Light Weaponry +6, Stealth +6]
+	\enemyStatblockSkillsCognitive[Deduction +4, Lore +3]
+	\enemyStatblockSkillsSpiritual[Perception +4, Survival +3]
+	\enemyStatblockSkillsLanguages[defined by region]
+	]
+}{
+	\enemyStatblockFeature{Long-Ranged Communication}{The scout owns \lootSeonTube{}, allowing for easy communication with their leader.} \\
+	
+	\enemyStatblockFeatureInurePoison{} \\
+}{
+	\enemyStatblockAction{Strike: Dagger}{Attack +6, reach 5 ft. or range 20/60 ft., one target. Graze: 2 (1d4) keen damage. Hit: 8 (1d4 + 6) keen damage.}\\
+	
+	\enemyStatblockAction{Strike: Shortbow}{Attack +6, range 80/320 ft., one target. Graze: 3 (1d6) keen damage. Hit: 9~(1d6~+~6) keen damage.}\\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Burn Tin (Costs 1 Investure)}{The scout gains Enhanced [Awareness +2] and all their Perception tests gain advantage. The effect lasts until the scout's next turn. At the start of each of their turns, the scout can spend 1 Investiture to maintain this effect for an additional round.} \\
+	
+	\enemyStatblockAction[\iconFreeAction{}]{Coat Weapon (Costs 1 Focus)}{The scout coats either their Dagger or Shortbow in poison. The next enemy hit by an attack with the coated weapon must succeed on a DC 16 Athletics test or take 2d6 vital damage and gain a disadvantage on all tests for 1 minute.}
+}

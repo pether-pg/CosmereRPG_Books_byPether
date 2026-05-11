@@ -1,0 +1,57 @@
+\label{enemyGhostbloodIyatil}
+
+\enemyStatBlockDouble{
+	\enemyStatBlockHeader{\enemyGhostbloodIyatilName}{3}{Boss}{Medium Humanoid}
+}{
+	\enemyStatBlockStats{3}{5}{5}{4}{4}{3}{180 (160 - 200)}{6}{6}
+}{
+	\enemyStatBlockSkills[
+	\enemyStatblockSkillsDeflect[1 (leather)] \\
+	\enemyStatblockSkillsMovement[30 ft.]
+	\enemyStatblockSkillsSenses[20 ft. (sight)]
+	\enemyStatblockSkillsPhysical[Agility +9, Light Weaponry +9, Stealth +9]
+	\enemyStatblockSkillsCognitive[Deduction +9, Intimidation +9]
+	\enemyStatblockSkillsSpiritual[Deception +7, Perception +8, Persuasion +7]
+	\enemyStatblockSkillsSurges[Transportation +8 (3 ranks)]
+	\enemyStatblockSkillsLanguages[all]
+	]
+}{
+	\enemyStatblockFeatureBoss{} \\
+	
+	\enemyStatblockFeature{Compelling Leader}{When Iyatil successfully uses the Gain Advantage action or gains an Opportunity, she can grant that advantage or Opportunity to one of her allies within 60 feet of her.} \\
+	
+	\enemyStatblockFeatureInurePoison{} \\
+	
+	\enemyStatblockFeature{\talentElsecallerKeyName{}}{At the end of her turn, Iyatil can switch between her physical form and a formless, shadowy form by spending 1 Investure. While in her incorporeal form, all attacks made against her Physical Defense gain disadvantage, but she can attack only if she stands in a darkened area.} \\
+	
+	\enemyStatblockFeature{Ruthless}{After Iyatil knocks an enemy Prone, she can make an additional Strike against that target as \iconFreeAction{} on that turn (even if she has already used that Strike action).} \\
+	
+	\vfill
+	\columnbreak
+}{
+	\enemyStatblockAction{Strike: Shortsword}{Attack +9, reach 5 ft., one target. Graze: 3 (1d6) keen damage. Hit: 12 (1d6 + 9) keen damage.}\\
+	
+	\enemyStatblockAction{Strike: Anti-Stormlight Knife}{Attack +9, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 11 (1d4 + 9) keen damage. That attack ignores Deflect value of Shardplates. Once per scene, after hitting an enemy, Iyatil can infuse them with Anti-Stormlight - until the next Long Rest, if that enemy uses Stormlight Investure, they immediately die. } \\
+	
+	\enemyStatblockAction{\talentElsecallerDirgeName{} (Costs 2 Investure)}{Iyatil makes an Intimidation test against the target's Spiritual Defense. On a success, the target becomes \exhausted[-1]. \\
+	While Iyatil is in her incorporeal form, that action costs only 1 Investure.} \\
+	
+	\enemyStatblockAction{\talentElsecallerMistyStepName{} (Costs 1 Investure)}{If Iyatil is standing in a darkened area, she can move to any other darkened place you can see within 60 feet. This does not trigger Reactive Strikes.\\
+	While Iyatil is in her incorporeal form, that action does not require spending Investure.} \\
+	
+	\enemyStatblockAction[\iconFreeAction{}]{Regenerate (Costs 1 Investure)}{Iyatil recovers 1d6 + 3 Health.} \\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Intimidate (Costs 1 Focus)}{Iyatil makes an opposed Intimidation test against the Discipline of a target she can influence. If Iyatil succeeds, the target loses 1 Focus and is no longer Focused.} \\
+	\\
+	
+	\begin{center} \MakeUppercase{\textbf{Opportunities and Complications}} \end{center}
+	{\color{goldStats} \hrule \vspace{0.5cm} }
+	
+	The following options are available when an enemy gains an Opportunity or Complication during a scene with \enemyGhostbloodIyatilName{}:
+	
+	\scriptedOption{Opportunity}{An enemy can spend \iconOpp{} to prevent \enemyGhostbloodIyatilName{} from using \lootAntiStormlightDagger{} during her next turn.}
+	
+	\scriptedOption{Complication}{The GM can spend \iconComp{} from an enemy’s test to increase the number of charges in \enemyGhostbloodIyatilName{}'s \lootAntiStormlightDagger{} by 1.}
+}
+\newpage
+~~ 
