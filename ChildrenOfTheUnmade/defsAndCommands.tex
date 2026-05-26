@@ -106,6 +106,8 @@
 \newcommand{\npcMalata}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Malata}}{\npc{Malata}}}
 \newcommand{\npcMelishi}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Melishi}}{\npc{Melishi}}}
 \newcommand{\npcGarith}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Garith}}{\npc{Garith}}}
+\newcommand{\npcMraize}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Mraize}}{\npc{Mraize}}}
+\newcommand{\npcIyatil}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Iyatil}}{\npc{Iyatil}}}
 % Kholinar
 \newcommand{\npcGrandmaName}{Veda}
 \newcommand{\npcGrandma}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Gran-gran}}{\npc{Gran-gran}}}
@@ -375,7 +377,7 @@
 	}
 }
 
-\newcommand{\abilityFutureKnowledgeName}[1][N]{\hyperref[ssec:ruleDiagram]{Forbidden Knowledge [#1]}}
+\newcommand{\abilityFutureKnowledgeName}[1][N]{\hyperref[ssec:ruleDiagram]{Forbidden Knowledge~[#1]}}
 \newcommand{\abilityFutureKnowledgeText}[1][N]{Roll #1d20 and note the results. As a \iconReaction{}, the character can spend one of those results to replace any d20 roll with it. Roll new set of d20s each time the character gins access to the source of the knowledge.}
 \newcommand{\abilityFutureKnowledge}[1][N]{
 	\ability{\abilityFutureKnowledgeName[#1]}{
