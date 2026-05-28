@@ -35,7 +35,7 @@
 \newcommand{\handbook}[0]{\textit{Stormlight Handbook}}
 \newcommand{\bookWorldGuide}[0]{\textit{Stormlight World Guide}}
 \newcommand{\bookWOK}[0]{\textit{"Way of Kings"}}
-\newcommand{\bookWOR}[0]{\textit{"Words of Raidiance"}}
+\newcommand{\bookWOR}[0]{\textit{"Words of Radiance"}}
 \newcommand{\bookOB}[0]{\textit{"Oathbringer"}}
 \newcommand{\bookROW}[0]{\textit{"Rhytm of War"}}
 \newcommand{\bookWAT}[0]{\textit{"Wind And Truth"}}
@@ -378,7 +378,7 @@
 }
 
 \newcommand{\abilityFutureKnowledgeName}[1][N]{\hyperref[ssec:ruleDiagram]{Forbidden Knowledge~[#1]}}
-\newcommand{\abilityFutureKnowledgeText}[1][N]{Roll #1d20 and note the results. As a \iconReaction{}, the character can spend one of those results to replace any d20 roll with it. Roll new set of d20s each time the character gins access to the source of the knowledge.}
+\newcommand{\abilityFutureKnowledgeText}[1][N]{Roll #1d20 and note the results. As a \iconReaction{}, the character can spend one of those results to replace any d20 roll with it. Roll new set of d20s each time the character gains access to the source of the knowledge.}
 \newcommand{\abilityFutureKnowledge}[1][N]{
 	\ability{\abilityFutureKnowledgeName[#1]}{
 		\abilityFutureKnowledgeText[#1]{}
@@ -394,7 +394,7 @@
 }
 
 \newcommand{\abilityTaravangianBoonName}{\hyperref[ssec:ruleBoon]{The Boon and the Curse}}
-\newcommand{\abilityTaravangianBoonText}{At beginning of day, roll 2d6. Change this character's Intelligence by +X-7 and Awareness by +7-X, where X is the result of the roll. That affects the character's Defenses and skills. }
+\newcommand{\abilityTaravangianBoonText}{At beginning of each day, roll 2d6. Change this character's Intelligence by +X-7 and Awareness by +7-X, where X is the result of the roll. That affects the character's Defenses and skills. }
 \newcommand{\abilityTaravangianBoon}{
 	\ability{\abilityTaravangianBoonName}{
 		\abilityTaravangianBoonText{}
@@ -408,6 +408,7 @@
 \newcommand{\talentWindrunnerBerserkName}{Berseker Rage}
 \newcommand{\talentWindrunnerEnhanceName}{Invested Enhancement}
 \newcommand{\talentWindrunnerStrikeName}{Martial Experience}
+\newcommand{\talentWindrunnerDeclareThreatName}{Declare Threat}
 
 \newcommand{\talentSkybreakerLeapName}{Storm Leap}
 \newcommand{\talentSkybreakerShieldName}{Lightning Shield}
@@ -438,12 +439,14 @@
 \newcommand{\talentLightweaverDetermineOthersName}{Influential Tip}
 \newcommand{\talentLightweaverDetectThoughtsName}{Decrypt Thoughts}
 \newcommand{\talentLightweaverSuggestionName}{Suggestion}
+\newcommand{\talentLightweaverSecretsLureName}{Lure with Secrets}
 
 \newcommand{\talentElsecallerKeyName}{Perfected Body}
 \newcommand{\talentElsecallerDirgeName}{Grieving Dirge}
 \newcommand{\talentElsecallerMistyStepName}{Shadow Walk}
 \newcommand{\talentElsecallerDragName}{Drag Through Shadows}
 \newcommand{\talentElsecallerRangeName}{Long Shadow}
+\newcommand{\talentElsecallerStealLightName}{Steal Light}
 
 \newcommand{\talentWillshaperFreeMoveName}{Freedom of Movement}
 \newcommand{\talentWillshaperBurstName}{Action Burst}
@@ -555,7 +558,7 @@
 }
 
 \newcommand{\corruptedBox}[1]{
-	\blackBox{Path to Enlightement}{#1}
+	\blackBox{Path to Enlightenment}{#1}
 }
 
 \newcommand{\spoilerBox}[1]{
@@ -706,7 +709,7 @@
 
 	\textbf{Health:} #7 \hfill
 	\textbf{Focus:} #8 \hfill
-	\textbf{Intesture:} #9
+	\textbf{Investiture:} #9
 	\\
 }
 
