@@ -1,0 +1,73 @@
+\newpage
+
+\AddToShipoutPictureBG*{%
+	\put(-10,0){
+		\includegraphics[width=1.1\paperwidth,height=\paperheight]{images/background_3_dustbringer.png}
+	}
+}
+
+\begin{tikzpicture}
+	[remember picture]
+
+\node[anchor=north west] (phantom) at(0cm,0cm) {};
+
+\node[anchor=south west] (key) at(\talentKeyAnchorX,\talentKeyAnchorY) {
+	\talentTreeKeyNodeBox
+		{\iconSpecial}
+		{\talentDustbringerDecayName{} (Key)}
+		{Bond an Enlightened ashspren}
+		{Before a character within your reach recovers Health or Focus, you can spend 1 Focus or 1 Investiture to prevent them from doing so.}
+};
+
+\node[anchor=center, draw] (gold) at(\talentFakeGoldAnchorX,\talentFakeGoldAnchorY){X};
+
+\node[anchor=north west] (t1) at(\talentLeftAnchorX,-8cm) {
+	\talentTreeNodeBox
+		{\iconActionDouble}
+		{\talentDustbringerDrainName}
+		{Speak the First Ideal}
+		{A character you touch loses 1d4 Investiture. You regain the same amount of Investiture up to your maximum value.}
+};
+
+\node[anchor=north west] (t2) at(\talentLeftAnchorX,-13.55cm){
+	\talentTreeNodeBox
+		{\iconConstant}
+		{\talentDustbringerLifestealName}
+		{}
+		{Your attacks heal you for half the damage dealt.}
+};
+
+\node[anchor=north west] (t3) at(\talentRightAnchorX,-8cm){
+	\talentTreeNodeBox
+		{\iconConstant}
+		{\talentDustbringerUnhealableName}
+		{Speak the First Ideal}
+		{Whenever you reduce enemy's Health or Focus, their maximum of those is also reduced by the same amount until the character's next Long Rest.}
+};
+
+\node[anchor=north west] (t4) at(\talentRightAnchorX,-13.55cm){
+	\talentTreeNodeBox
+		{\iconAction}
+		{\talentDustbringerAfflictionName}
+		{}
+		{Spend 1 Investiture to make a Division attack against an enemy you can touch. The attack deals 2d4 vital damage. On a hit, they become Afflicted [1d4 vital] for 2 rounds; longer if you spend more Investiture.}
+};
+
+\draw [connector] (key) |- (gold);
+\draw [connector] (gold) ++(0.15,0) -| (t1);
+\draw [connector] (gold) ++(0.15,0) -| (t3);
+\draw [connector] (t1) -- (t2);
+\draw [connector] (t3) -- (t4);
+
+\node[anchor=south west] (enlightened) at(\talentKeyAnchorX,\talentEnlightenedAnchorY) {
+	\talentTreeEnlightenedBox{}
+};
+	
+\end{tikzpicture}
+
+
+
+\newpage
+\clearpage
+
+\ClearShipoutPictureBG

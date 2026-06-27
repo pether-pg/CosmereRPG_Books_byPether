@@ -1,0 +1,73 @@
+\newpage
+
+\AddToShipoutPictureBG*{%
+	\put(-10,0){
+		\includegraphics[width=1.1\paperwidth,height=\paperheight]{images/background_9_stoneward.png}
+	}
+}
+
+\begin{tikzpicture}
+	[remember picture]
+
+\node[anchor=north west] (phantom) at(0cm,0cm) {};
+
+\node[anchor=south west] (key) at(\talentKeyAnchorX,\talentKeyAnchorY) {
+	\talentTreeKeyNodeBox
+		{\iconConstant}
+		{\talentStonewardKeyName{} (Key)}
+		{Bond an Enlightened peakspren}
+		{Whenever you roll with one or more Plot Dice, add additional Plot Die to the roll. You must use \iconComp{} result.}
+};
+
+\node[anchor=center, draw] (gold) at(\talentFakeGoldAnchorX,\talentFakeGoldAnchorY){X};
+
+\node[anchor=north west] (t1) at(\talentLeftAnchorX,-8cm) {
+	\talentTreeNodeBox
+		{\iconSpecial}
+		{\talentStonewardAddOwnPlotName}
+		{Speak the First Ideal}
+		{Whenever you make a roll, you can spend 1 Investiture to add a Plot Die to it.}
+};
+
+\node[anchor=north west] (t2) at(\talentRightAnchorX,-8cm){
+	\talentTreeNodeBox
+		{\iconSpecial}
+		{\talentStonewardAddOthersPlotName}
+		{Speak the First Ideal}
+		{Whenever another character is making a roll, you can spend 1 Investiture to  add a Plot Die to that roll or give an advantage or disadvantage on their Plot Die.}
+};
+
+\node[anchor=north west] (t3) at(\talentLeftAnchorX,-13.95cm){
+	\talentTreeNodeBox
+		{\iconReaction}
+		{\talentStonewardSilveryBarbsName}
+		{}
+		{After an enemy makes a roll, you can spend 1 Investiture before it takes an effect. If you do, the enemy is forced to repeat the roll.}
+};
+
+\node[anchor=north west] (t4) at(\talentRightAnchorX,-13.95cm){
+	\talentTreeNodeBox
+		{\iconConstant}
+		{\talentStonewardDisadvantageOthersName}
+		{}
+		{\talentStonewardKeyName{} talent's effects are added to all rolls made by your allies and enemies. Those characters may spend 1 Focus to ignore this effect.}
+};
+
+\draw [connector] (key) |- (gold);
+\draw [connector] (gold) ++(0.15,0) -| (t1);
+\draw [connector] (gold) ++(0.15,0) -| (t2);
+\draw [connector] (t2) -- (t4);
+\draw [connector] (t2) -| (\talentMidAnchorX,-15.1cm) |- (t3);
+
+\node[anchor=south west] (enlightened) at(\talentKeyAnchorX,\talentEnlightenedAnchorY) {
+	\talentTreeEnlightenedBox{}
+};
+	
+\end{tikzpicture}
+
+
+
+\newpage
+\clearpage
+
+\ClearShipoutPictureBG

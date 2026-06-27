@@ -1,0 +1,73 @@
+\newpage
+
+\AddToShipoutPictureBG*{%
+	\put(-10,0){
+		\includegraphics[width=1.1\paperwidth,height=\paperheight]{images/background_5_truthwatcher.png}
+	}
+}
+
+\begin{tikzpicture}
+	[remember picture]
+
+\node[anchor=north west] (phantom) at(0cm,0cm) {};
+
+\node[anchor=south west] (key) at(\talentKeyAnchorX,\talentKeyAnchorY) {
+	\talentTreeKeyNodeBox
+		{\iconSpecial}
+		{\talentTruthwatcherFutureSightName{} (Key)}
+		{Bond an Enlightened mistspren}
+		{Ask the GM for a vision of the future. If the vision requires interpretation, test Deduction or Illumination. The vision might be unreliable.}
+};
+
+\node[anchor=center, draw] (gold) at(\talentFakeGoldAnchorX,\talentFakeGoldAnchorY){X};
+
+\node[anchor=north west] (t1) at(\talentLeftAnchorX,-8cm) {
+	\talentTreeNodeBox
+		{\iconSpecial}
+		{\talentTruthwatcherGlimpseFutureName}
+		{Speak the First Ideal}
+		{Once per round after you roll the dice for a test, you can spend 1 or more Investiture to reroll that many of the test’s dice.}
+};
+
+\node[anchor=north west] (t2) at(\talentLeftAnchorX,-13.55cm){
+	\talentTreeNodeBox
+		{\iconReaction}
+		{\talentTruthwatcherAlterFortuneName}
+		{}
+		{Preroll d20s equal to 1 + your tier. You can replace enemy and ally d20 rolls with those values.}
+};
+
+\node[anchor=north west] (t3) at(\talentRightAnchorX,-8cm){
+	\talentTreeNodeBox
+		{\iconSpecial}
+		{\talentTruthwatcherSearchPastName}
+		{Speak the First Ideal}
+		{Choose a past event and make a Lore skill check. If you succeed, you are shown the vision of the event.}
+};
+
+\node[anchor=north west] (t4) at(\talentRightAnchorX,-13.55cm){
+	\talentTreeNodeBox
+		{\iconConstant}
+		{\talentTruthwatcherVisionVoidName}
+		{}
+		{Enemies can't change the dice results of you and your allies. Enemies can't see visions of events influenced by you.}
+};
+
+\draw [connector] (key) |- (gold);
+\draw [connector] (gold) ++(0.15,0) -| (t1);
+\draw [connector] (gold) ++(0.15,0) -| (t3);
+\draw [connector] (t1) -- (t2);
+\draw [connector] (t3) -- (t4);
+
+\node[anchor=south west] (enlightened) at(\talentKeyAnchorX,\talentEnlightenedAnchorY) {
+	\talentTreeEnlightenedBox{}
+};
+	
+\end{tikzpicture}
+
+
+
+\newpage
+\clearpage
+
+\ClearShipoutPictureBG

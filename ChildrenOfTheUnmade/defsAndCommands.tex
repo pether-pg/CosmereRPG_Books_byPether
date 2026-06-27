@@ -6,6 +6,18 @@
 
 \def \useAI{true}
 
+\def \talentNodeWidth{3.5cm}
+\def \talentKeyNodeWidth{6.7cm}
+\def \talentKeyAnchorX{9.0cm}
+\def \talentKeyAnchorY{-5.7cm}
+\def \talentEnlightenedAnchorY{-7.4cm}
+\def \talentFakeGoldAnchorX{12.7cm}
+\def \talentFakeGoldAnchorY{-7cm}
+\def \talentLeftAnchorX{8cm}
+\def \talentRightAnchorX{12.82cm}
+\def \talentMidAnchorX{12.52cm}
+\tikzstyle{connector} = [color=white, sharp corners, line width = 3pt]
+
 \definecolor{goldStats}{RGB}{208, 164, 82}
 \definecolor{yellowQuote}{RGB}{245, 236, 221}
 \definecolor{yellowRoleplay}{RGB}{244, 239, 233}
@@ -409,7 +421,10 @@
 \newcommand{\talentWindrunnerEnhanceName}{Invested Enhancement}
 \newcommand{\talentWindrunnerStrikeName}{Martial Experience}
 \newcommand{\talentWindrunnerDeclareThreatName}{Declare Threat}
+\newcommand{\talentWindrunnerSeeRedName}{See Red}
+\newcommand{\talentWindrunnerRecklessName}{Reckless Frenzy}
 
+\newcommand{\talentSkybreakerRetributionName}{Omen of Retribution}
 \newcommand{\talentSkybreakerLeapName}{Storm Leap}
 \newcommand{\talentSkybreakerShieldName}{Lightning Shield}
 \newcommand{\talentSkybreakerBoltName}{Bolt of Lightning}
@@ -427,6 +442,7 @@
 \newcommand{\talentEdgedancerReanimateName}{Reanimating Vines}
 \newcommand{\talentEdgedancerRemainsName}{Reanimate Remains}
 \newcommand{\talentEdgedancerPuppeteerName}{Puppeteering Vines}
+\newcommand{\talentEdgedancerSpeakWithDeadName}{Speak with Dead}
 
 \newcommand{\talentTruthwatcherFutureSightName}{Future Sight}
 \newcommand{\talentTruthwatcherAlterFortuneName}{Alter Fortune}
@@ -449,6 +465,7 @@
 \newcommand{\talentElsecallerStealLightName}{Steal Light}
 
 \newcommand{\talentWillshaperFreeMoveName}{Freedom of Movement}
+\newcommand{\talentWillshaperAlcoholName}{Horneater White}
 \newcommand{\talentWillshaperBurstName}{Action Burst}
 \newcommand{\talentWillshaperCallName}{Call to the Revel}
 \newcommand{\talentWillshaperImpulseName}{Hedonistic Impulse}
@@ -484,6 +501,39 @@
 	\noindent \color{gray} \textit{#4} \\
 	\noindent \color{black} #5 \\
 	\par
+}
+
+\newcommand{\talentTreeNodeText}[4]{
+	\sffamily
+	#1~{\large \raggedright \textbf{#2}\vspace{0.15cm}\\}
+	\ifstrempty{#3}{}{\color{gray} \textit{Prerequisite: #3}\vspace{0.15cm}\\}
+	\color{black} #4
+}
+
+\newcommand{\talentTreeNodeBox}[4]{
+	\fcolorbox{white}{white}{
+		\parbox{\talentNodeWidth}{
+			\talentTreeNodeText{#1}{#2}{#3}{#4}
+		}
+	}
+}
+
+\newcommand{\talentTreeKeyNodeBox}[4]{
+	\fcolorbox{goldStats}{white}{
+		\parbox{\talentKeyNodeWidth}{
+			\talentTreeNodeText{#1}{#2}{#3}{#4}
+		}
+	}
+}
+
+\newcommand{\talentTreeEnlightenedBox}{
+	\fcolorbox{goldStats}{goldStats}{
+		\parbox{\talentKeyNodeWidth}{
+			\vspace{0.16cm}
+			\color{white} \Large \centering \textbf{ENLIGHTENED} \normalsize 
+			\vspace{0.16cm}
+		}
+	}
 }
 
 % Boxes

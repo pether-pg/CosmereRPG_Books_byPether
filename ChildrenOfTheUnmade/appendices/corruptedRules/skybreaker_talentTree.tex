@@ -1,0 +1,73 @@
+\newpage
+
+\AddToShipoutPictureBG*{%
+	\put(-10,0){
+		\includegraphics[width=1.1\paperwidth,height=\paperheight]{images/background_2_skybreaker.png}
+	}
+}
+
+\begin{tikzpicture}
+	[remember picture]
+
+\node[anchor=north west] (phantom) at(0cm,0cm) {};
+
+\node[anchor=south west] (key) at(\talentKeyAnchorX,\talentKeyAnchorY) {
+	\talentTreeKeyNodeBox
+		{\iconAction}
+		{\talentSkybreakerRetributionName{} (Key)}
+		{Bond an Enlightened highspren}
+		{Spend 1 Focus to make an \skillIntimiation{} test against your enemies. Intimidated enemies gain disadvantage on attacks against you, unless they spend 1 Focus.}
+};
+
+\node[anchor=center, draw] (gold) at(\talentFakeGoldAnchorX,\talentFakeGoldAnchorY){X};
+
+\node[anchor=north west] (t1) at(\talentLeftAnchorX,-8cm) {
+	\talentTreeNodeBox
+		{\iconAction}
+		{\talentSkybreakerLeapName}
+		{Speak the First Ideal}
+		{Spend 1 Investiture to jump up to 60 feet. If you land within 5 feet of an enemy, the you can use the Gain Advantage action as \iconFreeAction{}.}
+};
+
+\node[anchor=north west] (t2) at(\talentLeftAnchorX,-13.55cm){
+	\talentTreeNodeBox
+		{\iconFreeAction}
+		{\talentSkybreakerShieldName{}}
+		{}
+		{After you use the Move action, you become immune to energy damage, and whenever the you are hit with an attack by an enemy within 5 feet of you, they take 1d4 energy damage.}
+};
+
+\node[anchor=north west] (t3) at(\talentRightAnchorX,-8cm){
+	\talentTreeNodeBox
+		{\iconAction}
+		{\talentSkybreakerGraspName}
+		{Speak the First Ideal}
+		{Spend 1 Investiture and make a Division attack. On a success, the enemy becomes Stunned. On a failure they cannot use \iconReaction{} until your next turn.}
+};
+
+\node[anchor=north west] (t4) at(\talentRightAnchorX,-13.55cm){
+	\talentTreeNodeBox
+		{\iconActionDouble}
+		{\talentSkybreakerBoltName}
+		{}
+		{Spend 1 Investiture to make a Division attack against a Physical Defense of a target within 60 feet. That attack gains Disadvantage unless you spend 1 Focus to ignore it. The attack deals 2d4 energy damage.}
+};
+
+\draw [connector] (key) |- (gold);
+\draw [connector] (gold) ++(0.15,0) -| (t1);
+\draw [connector] (gold) ++(0.15,0) -| (t3);
+\draw [connector] (t1) -- (t2);
+\draw [connector] (t3) -- (t4);
+
+\node[anchor=south west] (enlightened) at(\talentKeyAnchorX,\talentEnlightenedAnchorY) {
+	\talentTreeEnlightenedBox{}
+};
+	
+\end{tikzpicture}
+
+
+
+\newpage
+\clearpage
+
+\ClearShipoutPictureBG

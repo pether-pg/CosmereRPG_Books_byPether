@@ -23,15 +23,15 @@ Consumed by their desire for revenge, the Skybreakers often deal massive collate
 
 \subsection{Enlightened Talents}
 
-\talent{\talentSkybreakerGraspName{} (Key)}
+
+\talent{\talentSkybreakerRetributionName{} (Key)}
 		{Bond an Enlightened highspren}
 		{\iconAction}
-		{Your hands are sparkling with small electrical discharges.}
-		{Spend 1 Investiture and make a Division skill check against a Spiritual Defense of an enemy you can touch. On a success, the enemy becomes Stunned. On a failure they cannot use \iconReaction{} until your next turn.}
+		{Your presence feels like an impending punishment.}
+		{Spend 1 Focus and choose a number of characters equal to your tier. Make an \skillIntimiation{} test. Each of those characters with a Cognitive Defense smaller than the result of your test is now afraid of your retribution - each time they make an attack against you, they must spend 1 Focus or the attack is made with disadvantage.}
 
-\newpage
 \talent{\talentSkybreakerLeapName}
-		{Speak the First Ideal, \talentSkybreakerGraspName{} key talent }
+		{Speak the First Ideal, \talentSkybreakerRetributionName{} key talent }
 		{\iconAction}
 		{You fall from the skies, as the lightning made flesh.}
 		{Spend 1 Investiture to jump up to 60 feet. If you land within 5 feet of an enemy, the you can use the Gain Advantage action as \iconFreeAction{}.}
@@ -41,17 +41,18 @@ Consumed by their desire for revenge, the Skybreakers often deal massive collate
 		{\iconFreeAction{}}
 		{Lightning arcs envelop you, shielding from the enemies.}
 		{After you use the Move action, you become electrically charged until the start of your next turn. While charged, you’re immune to energy damage, and whenever the you are hit with an attack by an enemy within 5 feet of you, the attacker takes 1d4 energy damage. The size of the damage die increases with your ranks in Division.}
+		
+\talent{\talentSkybreakerGraspName{}}
+		{Speak the First Ideal, \talentSkybreakerRetributionName{} key talent }
+		{\iconAction}
+		{Your hands are sparkling with small electrical discharges.}
+		{Spend 1 Investiture and make a Division skill check against a Spiritual Defense of an enemy you can touch. On a success, the enemy becomes Stunned. On a failure they cannot use \iconReaction{} until your next turn.}
 
 \talent{\talentSkybreakerBoltName}
-		{Speak the First Ideal, \talentSkybreakerGraspName{} key talent }
+		{\talentSkybreakerGraspName{} talent }
 		{\iconActionDouble}
 		{The lightning dances at the tips of your fingers, waiting to have pointed purpose.}
 		{Spend 1 Investiture to make a Division attack against a Physical Defense of a target within 60 feet. That attack gains Disadvantage unless you spend 1 Focus to ignore it. The attack deals 2d4 energy damage; the size of the damage dice increases with your ranks in Division. \textit{(As usual, if you hit, add your Division modifier. On miss, you can graze for 1 Focus.)}}
-		
-\talent{\talentSkybreakerStormName}
-		{\talentSkybreakerBoltName{} talent}
-		{\iconActionDouble}
-		{Dark clouds gather and the Everstorm yearns to be called down.}
-		{Spend 3 Investiture to summon a lightning storm. As long as the storm is active, at the end of each round, choose N random characters within 60 feet from you (enemies, allies or NPCs), where N is twice your ranks in Division. Each of them is attacked with a \talentSkybreakerBoltName{} \textit{(see above)}, but you cannot spend Focus to remove the disadvantage from the attack. \\
-		During your subsequent turns you can sustain the storm as \iconActionDouble{} by spending 1 Investiture. If you don't, the storm ends. }
 
+
+\input{appendices/corruptedRules/skybreaker_talentTree.tex}

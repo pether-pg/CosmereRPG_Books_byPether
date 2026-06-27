@@ -1,0 +1,74 @@
+\newpage
+
+\AddToShipoutPictureBG*{%
+	\put(-10,0){
+		\includegraphics[width=1.1\paperwidth,height=\paperheight]{images/background_8_willshaper.png}
+	}
+}
+
+\begin{tikzpicture}
+	[remember picture]
+
+\node[anchor=north west] (phantom) at(0cm,0cm) {};
+
+\node[anchor=south west] (key) at(\talentKeyAnchorX,\talentKeyAnchorY) {
+	\talentTreeKeyNodeBox
+		{\iconActionDouble}
+		{\talentWillshaperAlcoholName{} (Key)}
+		{Bond an Enlightened lightspren}
+		{Attacks against you gain a number of disadvantages equal to your tier. Attacks you make gain disadvantage unless you spend Focus.}
+};
+
+\node[anchor=center, draw] (gold) at(\talentFakeGoldAnchorX,\talentFakeGoldAnchorY){X};
+
+\node[anchor=north west] (t1) at(\talentLeftAnchorX,-8cm) {
+	\talentTreeNodeBox
+		{\iconAction}
+		{\talentWillshaperCallName}
+		{Speak the First Ideal}
+		{Make a Persuasion test opposed by a Discipline test of the target to make them lose 2 Focus, and force them to make Move action to approach you.}
+};
+
+\node[anchor=north west] (t2) at(\talentRightAnchorX,-8cm){
+	\talentTreeNodeBox
+		{\iconActionDouble}
+		{\talentWillshaperFiremossName}
+		{Speak the First Ideal}
+		{Regain up to 6 Focus. Can be used only once per scene.}
+};
+
+\node[anchor=north west] (t3) at(\talentLeftAnchorX,-13.95cm){
+	\talentTreeNodeBox
+		{\iconAction}
+		{\talentWillshaperImpulseName}
+		{}
+		{Chooses up to two targets you can influence within 60 feet. Those characters must each make a Discipline test. On a failure, they lose \iconActionDouble{} during their next turn. }
+};
+
+\node[anchor=north west] (t4) at(\talentRightAnchorX,-13.95cm){
+	\talentTreeNodeBox
+		{\iconConstant}
+		{\talentWillshaperInhibitionsName}
+		{}
+		{Your attacks cause the target to lose 1 Focus on hit. At any time you can spend 1 Investiture to cause characters with remaining Focus to have disadvantage on Discipline tests until the end of next round.}
+};
+
+\draw [connector] (key) |- (gold);
+\draw [connector] (gold) ++(0.15,0) -| (t1);
+\draw [connector] (gold) ++(0.15,0) -| (t2);
+\draw [connector] (t1) -- (t3);
+\draw [connector] (t2) -- (t4);
+\draw [connector] (t1) -| (12.6cm,-16.4cm) |- (t4);
+
+\node[anchor=south west] (enlightened) at(\talentKeyAnchorX,\talentEnlightenedAnchorY) {
+	\talentTreeEnlightenedBox{}
+};
+	
+\end{tikzpicture}
+
+
+
+\newpage
+\clearpage
+
+\ClearShipoutPictureBG

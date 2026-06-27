@@ -1,0 +1,73 @@
+\newpage
+
+\AddToShipoutPictureBG*{%
+	\put(-10,0){
+		\includegraphics[width=1.1\paperwidth,height=\paperheight]{images/background_1_windrunner.png}
+	}
+}
+
+\begin{tikzpicture}
+	[remember picture]
+
+\node[anchor=north west] (phantom) at(0cm,0cm) {};
+
+\node[anchor=south west] (key) at(\talentKeyAnchorX,\talentKeyAnchorY) {
+	\talentTreeKeyNodeBox
+		{\iconReaction}
+		{\talentWindrunnerKeyName{} (Key)}
+		{Bond an Enlightened honorspren}
+		{After you reduce a character to 0 Health, you may spend 1 Focus to move towards another hostile character.}
+};
+
+\node[anchor=center, draw] (gold) at(\talentFakeGoldAnchorX,\talentFakeGoldAnchorY){X};
+
+\node[anchor=north west] (t1) at(\talentLeftAnchorX,-8cm) {
+	\talentTreeNodeBox
+		{\iconReaction}
+		{\talentWindrunnerLashOutName}
+		{Speak the First Ideal}
+		{Spend 1 Focus to attack an enemy who just attacked you.}
+};
+
+\node[anchor=north west] (t2) at(\talentLeftAnchorX,-12.85cm){
+	\talentTreeNodeBox
+		{\iconFreeAction}
+		{\talentWindrunnerBerserkName}
+		{}
+		{For 2 Focus, our next Strike targets each character within 5 feet of you and deals an extra 1d6 damage on a hit.}
+};
+
+\node[anchor=north west] (t3) at(\talentRightAnchorX,-8cm){
+	\talentTreeNodeBox
+		{\iconFreeAction}
+		{\talentWindrunnerRecklessName}
+		{Speak the First Ideal}
+		{Your next attack gains an advantage. Until your next turn, attacks against you gain an advantage.}
+};
+
+\node[anchor=north west] (t4) at(\talentRightAnchorX,-12.85cm){
+	\talentTreeNodeBox
+		{\iconSpecial}
+		{\talentWindrunnerSeeRedName}
+		{}
+		{Gain +1 to your attack and damage rolls when you are below 50\% of Health, +3 if you are at 0 Health. Spend Investiture to ignore injuries and falling Unconscious due to having 0 Health.}
+};
+
+\draw [connector] (key) |- (gold);
+\draw [connector] (gold) ++(0.15,0) -| (t1);
+\draw [connector] (gold) ++(0.15,0) -| (t3);
+\draw [connector] (t1) -- (t2);
+\draw [connector] (t3) -- (t4);
+
+\node[anchor=south west] (enlightened) at(\talentKeyAnchorX,\talentEnlightenedAnchorY) {
+	\talentTreeEnlightenedBox{}
+};
+	
+\end{tikzpicture}
+
+
+
+\newpage
+\clearpage
+
+\ClearShipoutPictureBG

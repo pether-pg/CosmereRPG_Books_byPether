@@ -1,0 +1,73 @@
+\newpage
+
+\AddToShipoutPictureBG*{%
+	\put(-50,0){
+		\includegraphics[width=1.1\paperwidth,height=\paperheight]{images/background_7_elsecaller.png}
+	}
+}
+
+\begin{tikzpicture}
+	[remember picture]
+
+\node[anchor=north west] (phantom) at(0cm,0cm) {};
+
+\node[anchor=south west] (key) at(\talentKeyAnchorX,\talentKeyAnchorY) {
+	\talentTreeKeyNodeBox
+		{\iconSpecial}
+		{\talentElsecallerKeyName{} (Key)}
+		{Bond an Enlightened inkspren}
+		{Spend 1 Investiture to enter shadowy form: attacks against your Physical Defense gain disadvantage, you can travel throughs small gaps, but you can attack only from shadows.}
+};
+
+\node[anchor=center, draw] (gold) at(\talentFakeGoldAnchorX,\talentFakeGoldAnchorY){X};
+
+\node[anchor=north west] (t1) at(\talentLeftAnchorX,-8cm) {
+	\talentTreeNodeBox
+		{\iconAction}
+		{\talentElsecallerDirgeName}
+		{Speak the First Ideal}
+		{Spend Investiture to make an Intimidation test to make the target \exhausted[-half of your ranks in Transformation].}
+};
+
+\node[anchor=north west] (t2) at(\talentRightAnchorX,-8cm){
+	\talentTreeNodeBox
+		{\iconAction}
+		{\talentElsecallerStealLightName}
+		{Speak the First Ideal}
+		{Spend 1 Investiture to make an area darkened by unnatural, pitch black shadows. }
+};
+
+\node[anchor=north west] (t3) at(\talentRightAnchorX,-13.55cm){
+	\talentTreeNodeBox
+		{\iconAction}
+		{\talentElsecallerMistyStepName}
+		{}
+		{Spend Investiture to move between darkened places within 60 feet. Until end of turn you may return to your starting location as \iconFreeAction{}. This does not trigger Reactive Strikes. }
+};
+
+\node[anchor=north west] (t4) at(\talentLeftAnchorX,-13.55cm){
+	\talentTreeNodeBox
+		{\iconConstant}
+		{\talentElsecallerDragName}
+		{}
+		{When you are using \talentElsecallerMistyStepName{} talent, you can also transport 1 character standing 5 feet from you. If the target is unwilling, you must first succeed on an Agility test against the target’s Physical defense. }
+};
+
+\draw [connector] (key) |- (gold);
+\draw [connector] (gold) ++(0.15,0) -| (t1);
+\draw [connector] (gold) ++(0.15,0) -| (t2);
+\draw [connector] (t2) -- (t3);
+\draw [connector] (t3) -| (12.6cm,-16.2cm) |- (t4);
+
+\node[anchor=south west] (enlightened) at(\talentKeyAnchorX,\talentEnlightenedAnchorY) {
+	\talentTreeEnlightenedBox{}
+};
+	
+\end{tikzpicture}
+
+
+
+\newpage
+\clearpage
+
+\ClearShipoutPictureBG

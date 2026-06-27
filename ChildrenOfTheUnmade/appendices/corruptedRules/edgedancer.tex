@@ -19,44 +19,56 @@ In the Cognitive Realm, those vines form a full human-like body. The spren wear 
 
 \subsection{Drawbacks and Complications}
 
-Progression and Enlightened talents cause terrible pain on the subjects of those abilities. The GM can request a \skillDiscipline{} check (\corruptedResistanceDC{} by the Edgedancer) from the person being affected by those talents. On a failure, they lose 1 Focus.
+Progression and Enlightened Edgedancer's talents cause a terrible pain. The GM can request a \skillDiscipline{} check (\corruptedResistanceDC{} by the Edgedancer) from the person being affected by those talents. On a failure, they lose 1 Focus.
 
-Enlightened Edgedancers can be tempted to hurt, maim or even kill other creatures only to experiment with their abilities or subject them to their vines and gain more control over them. When the GM tempts an Edgedancer like that, they must pass a Discipline check (\corruptedResistanceDC{}) or spend a Focus point. If they don't, they must take a hostile action against that creature (e.g. make a Strike action).
+Enlightened Edgedancers can be tempted to hurt, maim or even kill other creatures only to experiment with their abilities. When the GM tempts an Edgedancer like that, they must pass a Discipline check (\corruptedResistanceDC{}) or spend a Focus point. If they don't, they must take a hostile action against that creature.
 
-\newpage
 \subsection{Enlightened Talents}
 
 \talent{\talentEdgedancerKeyName{} (Key)}
 		{Bond an Enlightened cultivationspren}
 		{\iconAction}
 		{Under your touch, red vines sprout from the ground.}
-		{Spend 1 Investiture to sprout red rockbud vines. Those are edible and can sustain one person for a day, but you can divide them into multiple smaller portions. If another creature consumes the plants, you can sense a direction and distance to it for a number of days equal to your ranks in Progression.}
+		{Spend 1 Investiture to sprout red rockbud vines which can sustain one person for a day. If another creature consumes the plants, you can sense its location for a number of days equal to your ranks in Progression.}
+	
+\newpage	
+\talent{\talentEdgedancerSpeakWithDeadName{}}
+		{Speak the First Ideal; \talentEdgedancerKeyName{} talent}
+		{\iconAction}
+		{Through the vines the dead can speak with you.}
+		{Spend 1 Investiture to sprout red vines around a dead creature. You Connect to it, allowing you to speak with it as though it was an NPC. You may talk with it even if the creature did not know your language or was incapable of speaking at all.
+			
+		The effect lasts for a number of rounds equal to your number of ranks in Progression. During each of those rounds you may ask the corpse one question. The corpse will answer to the best of its knowledge unless it recognizes you as their killer.}
 		
 \talent{\talentEdgedancerEnhanceName}
-		{\talentEdgedancerEnhanceName{} or \talentEdgedancerRemainsName{} talent}
+		{Speak the First Ideal; \talentEdgedancerKeyName{} talent}
 		{\iconActionDouble}
-		{The vines you fed another person grow, piercing through their skin and entangling their body.}
-		{Choose a creature that was fed with Sprouting Vines talent. You can spend Investiture to accelerate the growth of the vines, which will pierce their skin and grow over their body, granting them bonus Strength. Both Investiture cost and amount of granted Strength are proportional to the size of the creature (1 for Small creatures, 2 for Medium and so on...). \\
-		The bonus affects all Strength derivatives (Physical Defense, Health and skills) and lasts for a number of days equal to your ranks in Progression.}
+		{The vines pierce their skin and enhance their body.}
+		{Choose a creature or a corpse. You can spend Investiture to accelerate the growth of vines, which will pierce their skin and grow over their body, granting them bonus Strength. Both Investiture cost and the amount of bonus Strength granted are proportional to the size of the creature (1~for Small creatures, 2 for Medium and so on).
 		
+		The bonus affects all Strength derivatives (Physical Defense, Health and skills) and lasts for a number of days equal to your ranks in Progression. 
+		
+		If that creature was previously under the effect of \talentEdgedancerKeyName{} talent, this action costs 1 less Investiture.}
+		
+\talent{\talentEdgedancerPuppeteerName}
+		{\talentEdgedancerEnhanceName{} talent}
+		{\iconActionDouble}
+		{Your red vines can overgrow and subdue other creatures}
+		{Touch a creature and spend Investiture to make a Progression check against its Spiritual Defense. If you succeed, you gain control over the creature as your red vines entangle its body and break its spirit.
+			
+		The amount of Investiture required to make a check is proportional to the size of the creature (1 for Small creatures, 2 for Medium and so on).
+			
+		After a number of rounds equal to your ranks in Progression, repeat the Progression check. The creature breaks free if the check fails. }
+	
+\newpage
 \talent{\talentEdgedancerReanimateName}
 		{\talentEdgedancerEnhanceName{} talent}
 		{\iconActionDouble}
-		{Your red vines grow stronger and more capable to puppeteer bigger bodies.}
-		{Choose a dead creature that was under the effect of Enhancing Vines. You may raise its body to fight for you for a number of days equal to your ranks in Progression. A body controlled this way is still granted bonus Strength, but its Intelligence, Willpower and Focus drop to 0. }
+		{Your red vines grow stronger and more capable to puppeteer bodies.}
+		{Spend 1 Investiture and choose a corpse enhanced with \talentEdgedancerEnhanceName{}. You raise its body to fight for you for a number of days equal to your ranks in Progression. 
+		A body controlled this way is still granted bonus Strength from \talentEdgedancerEnhanceName{}, but its Intelligence, Willpower and Focus drop to 0.
 		
-\talent{\talentEdgedancerRemainsName}
-		{Speak the First Ideal; \talentEdgedancerKeyName{} talent}
-		{\iconAction}
-		{The red vines controlled by you can entangle an empty shell or a corpse, reanimating it to fight for you}
-		{Spend 1 Investiture to sprout red vines around small remains of a dead creature. It will rise from the dead and fight for you as a \enemyReanimatedRemains{} for a number of days equal to your ranks in Progression.}
-		
-\talent{\talentEdgedancerPuppeteerName}
-		{\talentEdgedancerEnhanceName{} or \talentEdgedancerRemainsName{} talent}
-		{\iconActionDouble}
-		{Your red vines can overgrow and subdue other creatures}
-		{Touch a creature and spend Investiture to make a Progression check against its Spiritual Defense. If you succeed, you gain control over the creature as your red vines entangle its body and break its spirit. The amount of Investiture required to make a check is proportional to the size of the creature (1 for Small creatures, 2 for Medium and so on...). \\
-		After a number of rounds equal to your ranks in Progression, repeat the Progression check. The creature breaks free if the check fails. }
+		If you choose to reanimate small remains (like a skull or a small pile of carapace), this ability costs no Investiture, but the corpse rises as \enemyReanimatedRemains{}. }
 		
 \newpage
 
@@ -85,3 +97,7 @@ Enlightened Edgedancers can be tempted to hurt, maim or even kill other creature
 	
 	\enemyStatblockAction[\iconActionDouble{}]{Take Root}{The creature's Movement drops to 0 and it cannot be moved by enemy actions for as long the creature chooses to be rooted. At the end of each round the creature is rooted in place, it recovers 1d4 Health.}
 }
+
+
+
+\input{appendices/corruptedRules/edgedancer_talentTree.tex}

@@ -1,0 +1,73 @@
+\newpage
+
+\AddToShipoutPictureBG*{%
+	\put(-10,0){
+		\includegraphics[width=1.1\paperwidth,height=\paperheight]{images/background_4_edgedancer.png}
+	}
+}
+
+\begin{tikzpicture}
+	[remember picture]
+
+\node[anchor=north west] (phantom) at(0cm,0cm) {};
+
+\node[anchor=south west] (key) at(\talentKeyAnchorX,\talentKeyAnchorY) {
+	\talentTreeKeyNodeBox
+		{\iconAction}
+		{\talentEdgedancerKeyName{} (Key)}
+		{Bond an Enlightened cultivationspren}
+		{Spend 1 Investiture to sprout red rockbud vines which can sustain one person for a day. If a creature consumes the plants, you can sense its location.}
+};
+
+\node[anchor=center, draw] (gold) at(\talentFakeGoldAnchorX,\talentFakeGoldAnchorY){X};
+
+\node[anchor=north west] (t1) at(\talentLeftAnchorX,-8cm) {
+	\talentTreeNodeBox
+		{\iconAction}
+		{\talentEdgedancerSpeakWithDeadName}
+		{Speak the First Ideal}
+		{Spend 1 Investiture to sprout red vines around a dead creature. You can speak with it as though it was an NPC.}
+};
+
+\node[anchor=north west] (t2) at(\talentRightAnchorX,-8cm){
+	\talentTreeNodeBox
+		{\iconActionDouble}
+		{\talentEdgedancerEnhanceName}
+		{Speak the First Ideal}
+		{Choose a creature or a corpse. You can spend Investiture to grant them bonus Strength.}
+};
+
+\node[anchor=north west] (t3) at(\talentLeftAnchorX,-13.55cm){
+	\talentTreeNodeBox
+		{\iconActionDouble}
+		{\talentEdgedancerPuppeteerName}
+		{}
+		{Touch a creature and spend Investiture to make a Progression check against its Spiritual Defense. If you succeed, you gain control over the creature.}
+};
+
+\node[anchor=north west] (t4) at(\talentRightAnchorX,-13.55cm){
+	\talentTreeNodeBox
+		{\iconActionDouble}
+		{\talentEdgedancerReanimateName}
+		{}
+		{Spend 1 Investiture and choose a corpse enhanced with \talentEdgedancerEnhanceName{}. You raise its body to fight for you.}
+};
+
+\draw [connector] (key) |- (gold);
+\draw [connector] (gold) ++(0.15,0) -| (t1);
+\draw [connector] (gold) ++(0.15,0) -| (t2);
+\draw [connector] (t2)  -| (\talentMidAnchorX,-15cm) |- (t3.east);
+\draw [connector] (t2) -- (t4);
+
+\node[anchor=south west] (enlightened) at(\talentKeyAnchorX,\talentEnlightenedAnchorY) {
+	\talentTreeEnlightenedBox{}
+};
+	
+\end{tikzpicture}
+
+
+
+\newpage
+\clearpage
+
+\ClearShipoutPictureBG

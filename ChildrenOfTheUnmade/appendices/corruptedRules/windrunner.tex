@@ -28,7 +28,7 @@ Enlightened Windrunners tend to lose themselves in the heat of battle. If they s
 		{Bond an Enlightened honorspren}
 		{\iconReaction}
 		{Don't stop! Don't think! Fight! Keep the momentum!}
-		{Spend 1 Focus to prevent from being moved or knocked Prone.}
+		{After you reduce a character to 0 Health, you may spend 1 Focus to move up to your Speed towards another hostile character.}
 		
 \talent{\talentWindrunnerLashOutName}
 		{Speak the First Ideal; \talentWindrunnerKeyName{} key talent}
@@ -42,15 +42,21 @@ Enlightened Windrunners tend to lose themselves in the heat of battle. If they s
 		{I WILL KILL YOU ALL!!!}
 		{Spend 2 Focus. Your next Strike targets each character within 5 feet of you and deals an extra 3 (1d6) damage on a hit.}
 		
-\talent{\talentWindrunnerDeclareThreatName}
+\talent{\talentWindrunnerRecklessName}
 		{Speak the First Ideal; \talentWindrunnerKeyName{} key talent}
-		{\iconAction}
-		{This light will be the last thing you will see before your death.}
-		{Spend 1 Investiture and choose an enemy. You may move up to your Speed towards the target. Until the end of your next turn, you gain +2 bonus to attack and damage rolls against the target and +2 Physical Defense against their attacks. \\
-		At the end of each of your turns, you can spend 1 Investiture to maintain this effect for an additional round.}
-
-\talent{\talentWindrunnerStrikeName}
-		{\talentWindrunnerEnhanceName{} talent}
-		{\iconConstant}
+		{\iconFreeAction}
 		{Just! Die! Already!}
-		{You can strike an additional time on your turn.}		
+		{Your next attack gains an advantage. Until your next turn, attacks against you gain an advantage.}
+		
+\talent{\talentWindrunnerSeeRedName}
+		{\talentWindrunnerRecklessName{} talent}
+		{\iconSpecial}
+		{My wounds will not stop your death!}
+		{As long as you are below 50\% Health, you gain +1 bonus to attack and damage rolls. This effect increases to +3 when you have 0 Health remaining.
+		
+		You may spend 1 Investiture any number of times to prevent falling Unconscious as a result of having 0 Health, or to ignore a condition caused by an injury. That lasts until the end of the round; at beginning of the next round you may spend more Investiture to prolong this effect. 
+		
+		You cannot use this to prevent death.}		
+
+
+\input{appendices/corruptedRules/windrunner_talentTree.tex}

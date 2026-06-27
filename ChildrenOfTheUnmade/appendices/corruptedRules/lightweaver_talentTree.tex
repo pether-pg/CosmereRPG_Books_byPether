@@ -1,0 +1,74 @@
+\newpage
+
+\AddToShipoutPictureBG*{%
+	\put(-10,0){
+		\includegraphics[width=1.1\paperwidth,height=\paperheight]{images/background_6_lightweaver.png}
+	}
+}
+
+\begin{tikzpicture}
+	[remember picture]
+
+\node[anchor=north west] (phantom) at(0cm,0cm) {};
+
+\node[anchor=south west] (key) at(\talentKeyAnchorX,\talentKeyAnchorY) {
+	\talentTreeKeyNodeBox
+		{\iconConstant}
+		{\talentLightweaverKeyName{} (Key)}
+		{Bond an Enlightened cryptic}
+		{You gain an advantage on Insight tests made to interpret the desires or intentions of others.}
+};
+
+\node[anchor=center, draw] (gold) at(\talentFakeGoldAnchorX,\talentFakeGoldAnchorY){X};
+
+\node[anchor=north west] (t1) at(\talentLeftAnchorX,-8cm) {
+	\talentTreeNodeBox
+		{\iconAction}
+		{\talentLightweaverReadSecretsName}
+		{Speak the First Ideal}
+		{Spend 1 Focus to learn one secret of another person.}
+};
+
+\node[anchor=north west] (t2) at(\talentLeftAnchorX,-13.55cm){
+	\talentTreeNodeBox
+		{\iconAction}
+		{\talentLightweaverDetectThoughtsName}
+		{}
+		{Spend 1 Investiture to determine what exactly a character is thinking.}
+};
+
+\node[anchor=north west] (t3) at(\talentRightAnchorX,-8cm){
+	\talentTreeNodeBox
+		{\iconAction}
+		{\talentLightweaverSecretsLureName}
+		{Speak the First Ideal}
+		{Spend 1 Investiture to make an Illumination test to learn what information or secret is highly coveted by the character.}
+};
+
+\node[anchor=north west] (t4) at(\talentRightAnchorX,-13.55cm){
+	\talentTreeNodeBox
+		{\iconActionDouble}
+		{\talentLightweaverSuggestionName}
+		{}
+		{Spend 1 Investiture and make a Deception or Persuasion test to suggest a reasonable action - the target will be forced to enact it.}
+};
+
+\draw [connector] (key) |- (gold);
+\draw [connector] (gold) ++(0.15,0) -| (t1);
+\draw [connector] (t1) -- (t2);
+\draw [connector] (t1) -| (\talentMidAnchorX,-10cm) |- (t3);
+\draw [connector] (t3) -- (t4);
+\draw [connector] (t2) -| (\talentMidAnchorX,-15cm) |- (t4);
+
+\node[anchor=south west] (enlightened) at(\talentKeyAnchorX,\talentEnlightenedAnchorY) {
+	\talentTreeEnlightenedBox{}
+};
+	
+\end{tikzpicture}
+
+
+
+\newpage
+\clearpage
+
+\ClearShipoutPictureBG
