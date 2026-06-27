@@ -8,6 +8,7 @@
 
 \def \talentNodeWidth{3.5cm}
 \def \talentKeyNodeWidth{6.7cm}
+\def \talentTitleNodeWidth{10cm}
 \def \talentKeyAnchorX{9.0cm}
 \def \talentKeyAnchorY{-5.7cm}
 \def \talentEnlightenedAnchorY{-7.4cm}
@@ -16,6 +17,7 @@
 \def \talentLeftAnchorX{8cm}
 \def \talentRightAnchorX{12.82cm}
 \def \talentMidAnchorX{12.52cm}
+\def \talentTitleAnchorX{8.5cm}
 \tikzstyle{connector} = [color=white, sharp corners, line width = 3pt]
 
 \definecolor{goldStats}{RGB}{208, 164, 82}
@@ -478,6 +480,16 @@
 \newcommand{\talentStonewardSilveryBarbsName}{Not Today!}
 \newcommand{\talentStonewardDisadvantageOthersName}{Infectious Misfortune}
 
+\newcommand{\corruptedBeliefWindrunner}{I will eliminate threat.}
+\newcommand{\corruptedBeliefSkybreaker}{I will seek vengeance.}
+\newcommand{\corruptedBeliefDustbringer}{I will be the master.}
+\newcommand{\corruptedBeliefEdgedancer}{I will never forget, never forgive.}
+\newcommand{\corruptedBeliefTruthwatcher}{I will reveal bleak sooth.}
+\newcommand{\corruptedBeliefLightweaver}{I will uncover their lies.}
+\newcommand{\corruptedBeliefElsecaller}{I will reject imperfection.}
+\newcommand{\corruptedBeliefWillshaper}{I will revel in freedom.}
+\newcommand{\corruptedBeliefStoneward}{I will prove myself needed.}
+
 \newcommand{\corruptedResistanceDC}{DC equal to 5 + 5 for each Enlightened talent taken}
 \newcommand{\corruptedRulesChapTitle}{Enlightened Radiants Rules}
 \newcommand{\seeCorruptedRules}{\textit{(see Appendix \ref{chap:corruptedRules}: \hyperref[chap:corruptedRules]{\corruptedRulesChapTitle{}})}}
@@ -522,6 +534,16 @@
 	\fcolorbox{goldStats}{white}{
 		\parbox{\talentKeyNodeWidth}{
 			\talentTreeNodeText{#1}{#2}{#3}{#4}
+		}
+	}
+}
+
+\newcommand{\talentTreeTitleNodeBox}[2]{
+	\fcolorbox{goldStats}{white}{
+		\parbox{\talentTitleNodeWidth}{
+			\centering
+			\sffamily \Huge \vspace{0.2cm} \textbf{#1}\vspace{0.15cm}\\
+			\large \color{gray} \textit{#2} \vspace{0.15cm}
 		}
 	}
 }

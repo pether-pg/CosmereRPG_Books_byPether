@@ -3,11 +3,18 @@
 \AddToShipoutPictureBG*{%
 	\put(-10,0){
 		\includegraphics[width=1.1\paperwidth,height=\paperheight]{images/background_1_windrunner.png}
+		
 	}
 }
 
 \begin{tikzpicture}
 	[remember picture]
+	
+\node[anchor=center](title) at(\talentTitleAnchorX, 0cm){
+	\talentTreeTitleNodeBox
+		{Enlightened Windrunner}
+		{\corruptedBeliefWindrunner{}}
+};
 
 \node[anchor=north west] (phantom) at(0cm,0cm) {};
 
@@ -62,10 +69,14 @@
 \node[anchor=south west] (enlightened) at(\talentKeyAnchorX,\talentEnlightenedAnchorY) {
 	\talentTreeEnlightenedBox{}
 };
+
 	
 \end{tikzpicture}
 
 
+\begin{textblock*}{4cm}(2cm,10cm)
+	\includegraphics[width=6cm]{images/glyph_1_windrunner_black.png}
+\end{textblock*}
 
 \newpage
 \clearpage
