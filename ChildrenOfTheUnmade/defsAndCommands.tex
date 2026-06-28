@@ -64,13 +64,16 @@
 \newcommand{\npcOdium}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Odium}}{\npc{Odium}}}
 
 % Unmade
+\newcommand{\npcMidnightMotherName}{Re-Shephir}
+\newcommand{\npcSjaAnatName}{Sja-anat}
+\newcommand{\npcYeligNarName}{Yelig-nar}
 
 \newcommand{\npcThrill}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{Nergaoul}}{\npc{Nergaoul}}}
-\newcommand{\npcYeligNar}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{Yelig-nar}}{\npc{Yelig-nar}}}
+\newcommand{\npcYeligNar}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{\npcYeligNarName{}}}{\npc{\npcYeligNarName{}}}}
 \newcommand{\npcDustmother}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Chemoarish}}{\npc{Chemoarish}}}
-\newcommand{\npcMidnightMother}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Re-Shephir}}{\npc{Re-Shephir}}}
+\newcommand{\npcMidnightMother}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcMidnightMotherName{}}}{\npc{\npcMidnightMotherName{}}}}
 \newcommand{\npcMoelach}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{Moelach}}{\npc{Moelach}}}
-\newcommand{\npcSjaAnat}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Sja-Anat}}{\npc{Sja-Anat}}}
+\newcommand{\npcSjaAnat}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcSjaAnatName{}}}{\npc{\npcSjaAnatName{}}}}
 \newcommand{\npcBlackFisher}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Dai-Gonarthis}}{\npc{Dai-Gonarthis}}}
 \newcommand{\npcHeartRevel}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{Ashertmarn}}{\npc{Ashertmarn}}}
 \newcommand{\npcMishram}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Ba-Ado-Mishram}}{\npc{Ba-Ado-Mishram}}}
@@ -90,15 +93,20 @@
 \newcommand{\npcQueen}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Queen \npcQueenName{}}}{\npc{Queen \npcQueenName{}}}}
 \newcommand{\npcDeadKingName}{Gavilar}
 \newcommand{\npcDeadKing}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{King \npcDeadKingName{}}}{\npc{King \npcDeadKingName{}}}}
-\newcommand{\npcTaravangian}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{King Taravangian}}{\npc{King Taravangian}}}
+\newcommand{\npcTaravangianName}{King Taravangian}
+\newcommand{\npcTaravangian}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcTaravangianName{}}}{\npc{\npcTaravangianName{}}}}
 \newcommand{\npcElhokar}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{King Elhokar}}{\npc{King Elhokar}}}
  % Ardents
-\newcommand{\npcRebelArdent}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Pai}}{\npc{Pai}}}
-\newcommand{\npcRevelerGeneral}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Kishi}}{\npc{Kishi}}}
+\newcommand{\npcRebelArdentName}{Pai}
+\newcommand{\npcRebelArdent}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcRebelArdentName{}}}{\npc{\npcRebelArdentName{}}}}
+\newcommand{\npcRevelerGeneralName}{Kishi}
+\newcommand{\npcRevelerGeneral}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcRevelerGeneralName{}}}{\npc{\npcRevelerGeneralName{}}}}
 \newcommand{\npcRevelerGuide}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Kharat}}{\npc{Kharat}}}
 % Wall Guard
-\newcommand{\npcHighmarshal}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Highmarshal Azure}}{\npc{Highmarshal Azure}}}
-\newcommand{\npcSoulcaster}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Ithi}}{\npc{Ithi}}}
+\newcommand{\npcHighmarshalName}{Highmarshal Azure}
+\newcommand{\npcHighmarshal}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcHighmarshalName{}}}{\npc{\npcHighmarshalName{}}}}
+\newcommand{\npcSoulcasterName}{Ithi}
+\newcommand{\npcSoulcaster}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcSoulcasterName{}}}{\npc{\npcSoulcasterName{}}}}
 % Singers
 \newcommand{\npcSingerWorkerGranM}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Nal}}{\npc{Nal}}}
 \newcommand{\npcSingerWorkerGranF}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Tir}}{\npc{Tir}}}
@@ -108,14 +116,22 @@
 \newcommand{\npcShallan}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Shallan}}{\npc{Shallan}}}
 \newcommand{\npcVeil}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Veil}}{\npc{Veil}}}
 \newcommand{\npcRadiant}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Brightness Radiant}}{\npc{Brightness Radiant}}}
-\newcommand{\npcDalinar}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Dalinar}}{\npc{Dalinar}}}
-\newcommand{\npcAdolin}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Adolin}}{\npc{Adolin}}}
-\newcommand{\npcRenarin}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Renarin}}{\npc{Renarin}}}
-\newcommand{\npcJasnah}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Jasnah}}{\npc{Jasnah}}}
-\newcommand{\npcNavani}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Navani}}{\npc{Navani}}}
-\newcommand{\npcGavinor}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Gavinor}}{\npc{Gavinor}}}
-\newcommand{\npcKaladin}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Kaladin}}{\npc{Kaladin}}}
-\newcommand{\npcAmaram}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Meridas Amaram}}{\npc{Meridas Amaram}}}
+\newcommand{\npcDalinarName}{Dalinar}
+\newcommand{\npcDalinar}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcDalinarName{}}}{\npc{\npcDalinarName{}}}}
+\newcommand{\npcAdolinName}{Adolin}
+\newcommand{\npcAdolin}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcAdolinName{}}}{\npc{\npcAdolinName{}}}}
+\newcommand{\npcRenarinName}{Renarin}
+\newcommand{\npcRenarin}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcRenarinName{}}}{\npc{\npcRenarinName{}}}}
+\newcommand{\npcJasnahName}{Jasnah}
+\newcommand{\npcJasnah}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcJasnahName{}}}{\npc{\npcJasnahName{}}}}
+\newcommand{\npcNavaniName}{Navani}
+\newcommand{\npcNavani}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcNavaniName{}}}{\npc{\npcNavaniName{}}}}
+\newcommand{\npcGavinorName}{Gavinor}
+\newcommand{\npcGavinor}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcGavinorName{}}}{\npc{\npcGavinorName{}}}}
+\newcommand{\npcKaladinName}{Kaladin}
+\newcommand{\npcKaladin}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcKaladinName{}}}{\npc{\npcKaladinName{}}}}
+\newcommand{\npcAmaramName}{Meridas Amaram}
+\newcommand{\npcAmaram}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcAmaramName{}}}{\npc{\npcAmaramName{}}}}
 \newcommand{\npcHoid}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Hoid}}{\npc{Hoid}}}
 \newcommand{\npcMalata}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Malata}}{\npc{Malata}}}
 \newcommand{\npcMelishi}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Melishi}}{\npc{Melishi}}}
@@ -124,11 +140,15 @@
 \newcommand{\npcIyatil}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Iyatil}}{\npc{Iyatil}}}
 % Kholinar
 \newcommand{\npcGrandmaName}{Veda}
-\newcommand{\npcGrandma}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Gran-gran}}{\npc{Gran-gran}}}
-\newcommand{\npcLockedArdent}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Liha}}{\npc{Liha}}}
+\newcommand{\npcGrandmaTitle}{Gran-gran}
+\newcommand{\npcGrandma}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcGrandmaTitle{}}}{\npc{\npcGrandmaTitle{}}}}
+\newcommand{\npcLockedArdentName}{Liha}
+\newcommand{\npcLockedArdent}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcLockedArdentName{}}}{\npc{\npcLockedArdentName{}}}}
 \newcommand{\npcTroublemaker}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Chanri}}{\npc{Chanri}}}
-\newcommand{\npcCellarBoy}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Arin}}{\npc{Arin}}}
-\newcommand{\npcGhostbloodBoss}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Big Al}}{\npc{Big Al}}}
+\newcommand{\npcCellarBoyName}{Arin}
+\newcommand{\npcCellarBoy}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcCellarBoyName{}}}{\npc{\npcCellarBoyName{}}}}
+\newcommand{\npcGhostbloodBossName}{Big Al}
+\newcommand{\npcGhostbloodBoss}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcGhostbloodBossName{}}}{\npc{\npcGhostbloodBossName{}}}}
 % Shadesmar
 \newcommand{\npcSprenGuide}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Echo}}{\npc{Echo}}}
 \newcommand{\npcFortuneReader}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Riino}}{\npc{Riino}}}
@@ -141,10 +161,14 @@
 \newcommand{\npcCrypticCaptain}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Captain Chart}}{\npc{Captain Chart}}}
 % Kharbranth
 \newcommand{\npcWoundedTrader}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Tareh}}{\npc{Tareh}}}
-\newcommand{\npcGhostbloodWounded}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Ferrum}}{\npc{Ferrum}}}
-\newcommand{\npcKharbranthNoble}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{Sartvian}}{\npc{Sartvian}}}
-\newcommand{\npcOrphanSick}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Kina}}{\npc{Kina}}}
+\newcommand{\npcGhostbloodWoundedName}{Ferrum}
+\newcommand{\npcGhostbloodWounded}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcGhostbloodWoundedName{}}}{\npc{\npcGhostbloodWoundedName{}}}}
+\newcommand{\npcKharbranthNobleName}{Sartvian}
+\newcommand{\npcKharbranthNoble}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{\npcKharbranthNobleName{}}}{\npc{\npcKharbranthNobleName{}}}}
+\newcommand{\npcOrphanSickName}{Kina}
+\newcommand{\npcOrphanSick}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcOrphanSickName{}}}{\npc{\npcOrphanSickName{}}}}
 \newcommand{\npcOrphanHomeless}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Dor}}{\npc{Dor}}}
+\newcommand{\npcDiagramSurgeonName}{Telvash}
 \newcommand{\npcDiagramSurgeon}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Telvash}}{\npc{Telvash}}}
 \newcommand{\npcDiagramAarchivist}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Arvia}}{\npc{Arvia}}}
 \newcommand{\npcVedenArtifabrian}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Dorlivana}}{\npc{Dorlivana}}}
@@ -368,7 +392,7 @@
 	\vspace{0.2cm}
 	\fcolorbox{goldStats}{white}{
 		\parbox{7cm}{
-			\noindent \textbf{#1.} #2
+			\noindent \sffamily \textbf{#1.} #2
 		}
 	}
 	\vspace{0.2cm}
@@ -506,7 +530,7 @@
 }
 
 \newcommand{\talent}[5]{
-	\LARGE \noindent #1 \vspace{0.15cm} \normalsize \\	
+	\LARGE \noindent \sffamily #1 \vspace{0.15cm} \normalsize \\	
 	\noindent
 	\textbf{Prerequisite:} #2 \\
 	\textbf{Activation:} #3 \\
@@ -601,8 +625,7 @@
 	\coloredBox{goldStats}{yellowRoleplay}{black}{\sffamily Roleplaying #1}{#2}
 }
 
-\newcommand{\roleplayTips}[4]{
-	\vspace{0.1cm}
+\newcommand{\roleplayTips}[4]{	
 	\sffamily \textbf{Characteristics:} #1\\
 	\sffamily \textbf{Goal:} #2\\
 	\sffamily \textbf{Appearance:} #3 \\ \\
@@ -662,8 +685,8 @@
 				\vspace{0.15cm}
 				#2
 				
-				\vspace{0.25cm}
-				\ECFAugie \LARGE {#1} \\ \color{goldStats}\titlerule
+				\vspace{0.25cm} %\ECFAugie
+				\LARGE {#1} \\ \color{goldStats}\titlerule
 				\vspace{0.25cm}
 			\end{tabular}
 			}
