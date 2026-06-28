@@ -563,7 +563,7 @@
 \newcommand{\quoteBox}[1]{
 	\vspace{0.2cm}
 	\colorbox{yellowQuote}{
-		\parbox{7cm}{#1}
+		\parbox{7cm}{\sffamily #1}
 	}
 	\vspace{0.2cm}
 }
@@ -598,27 +598,27 @@
 }
 
 \newcommand{\roleplayBox}[2]{
-	\coloredBox{goldStats}{yellowRoleplay}{black}{Roleplaying #1}{#2}
+	\coloredBox{goldStats}{yellowRoleplay}{black}{\sffamily Roleplaying #1}{#2}
 }
 
 \newcommand{\roleplayTips}[4]{
 	\vspace{0.1cm}
-	\textbf{Characteristics:} #1\\
-	\textbf{Goal:} #2\\
-	\textbf{Appearance:} #3 \\ \\
-	#4
+	\sffamily \textbf{Characteristics:} #1\\
+	\sffamily \textbf{Goal:} #2\\
+	\sffamily \textbf{Appearance:} #3 \\ \\
+	\sffamily #4
 }
 
 \newcommand{\blueBox}[2]{
-	\coloredBox{blueRadiance}{white}{white}{#1}{#2}
+	\coloredBox{blueRadiance}{white}{white}{\sffamily #1}{\sffamily #2}
 }
 
 \newcommand{\blackBox}[2]{
-	\coloredBox{black}{white}{white}{#1}{#2}
+	\coloredBox{black}{white}{white}{\sffamily #1}{\sffamily #2}
 }
 
 \newcommand{\redBox}[2]{
-	\coloredBox{redSpoiler}{white}{white}{#1}{#2}
+	\coloredBox{redSpoiler}{white}{white}{\sffamily #1}{\sffamily #2}
 }
 
 \newcommand{\tacticsBox}[1]{
@@ -663,7 +663,7 @@
 				#2
 				
 				\vspace{0.25cm}
-				\LARGE {#1}
+				\ECFAugie \LARGE {#1} \\ \color{goldStats}\titlerule
 				\vspace{0.25cm}
 			\end{tabular}
 			}
@@ -708,7 +708,7 @@
 				\par			
 				#2	% Stat Table
 				#3	% Skills
-
+				\sffamily
 				\begin{center} \MakeUppercase{\textbf{Features}} \end{center}
 				{\color{goldStats} \hrule \vspace{0.5cm} }
 				#4 % Features
@@ -739,8 +739,8 @@
 }
 
 \newcommand{\enemyStatBlockHeader}[4]{
-	\textbf{\LARGE #1} \\
-	\textit{Tier #2 #3 - #4} \\
+	\textbf{\sffamily \LARGE \bfseries #1} \\
+	\textit{\sffamily Tier #2 #3 - #4} \\
 }
 
 \newcommand{\enemyStatBlockStats}[9]{
@@ -756,29 +756,29 @@
 	\vspace{-0.2cm}
 	\fcolorbox{goldStats}{white}{\begin{tabular}{p{0.30cm} p{0.65cm} p{0.30cm} p{0.30cm} p{0.65cm} p{0.30cm} p{0.44cm} p{0.65cm} p{0.3cm} p{0.01cm}}
 		
-		\begin{tabular}{l} \footnotesize Str \\ #1 \end{tabular}
+		\begin{tabular}{l} \footnotesize \sffamily Str \\ #1 \end{tabular}
 		&
-		\fcolorbox{goldStats}{white}{\centering \begin{tabular}{p{0.5cm}} \centering \footnotesize Def \\ \centering \normalsize \the \numexpr 10 + #1 + #2\relax \end{tabular}}
+		\fcolorbox{goldStats}{white}{\centering \begin{tabular}{p{0.5cm}} \centering \footnotesize \sffamily Def \\ \centering \normalsize \the \numexpr 10 + #1 + #2\relax \end{tabular}}
 		&
-		\begin{tabular}{c} \footnotesize Spd \\ #2 \end{tabular}
+		\begin{tabular}{c} \footnotesize \sffamily Spd \\ #2 \end{tabular}
 		&
-		\begin{tabular}{c} \footnotesize Int \\ #3 \end{tabular}
+		\begin{tabular}{c} \footnotesize \sffamily Int \\ #3 \end{tabular}
 		&
-		\fcolorbox{goldStats}{white}{\centering \begin{tabular}{p{0.5cm}} \centering \footnotesize Def \\ \centering \normalsize \the \numexpr 10 + #3 + #4\relax \end{tabular}}
+		\fcolorbox{goldStats}{white}{\centering \begin{tabular}{p{0.5cm}} \centering \footnotesize \sffamily Def \\ \centering \normalsize \the \numexpr 10 + #3 + #4\relax \end{tabular}}
 		&
-		\begin{tabular}{c} \footnotesize Wil \\ #4 \end{tabular}
+		\begin{tabular}{c} \footnotesize \sffamily Wil \\ #4 \end{tabular}
 		&
-		\begin{tabular}{c} \footnotesize Awa \\ #5 \end{tabular}
+		\begin{tabular}{c} \footnotesize \sffamily Awa \\ #5 \end{tabular}
 		&
-		\fcolorbox{goldStats}{white}{\centering \begin{tabular}{p{0.5cm}} \centering \footnotesize Def \\ \centering \normalsize \the \numexpr 10 + #5 + #6\relax \end{tabular}}
+		\fcolorbox{goldStats}{white}{\centering \begin{tabular}{p{0.5cm}} \centering \footnotesize \sffamily Def \\ \centering \normalsize \the \numexpr 10 + #5 + #6\relax \end{tabular}}
 		&
-		\begin{tabular}{c} \footnotesize Pre \\ #6 \end{tabular}
+		\begin{tabular}{c} \footnotesize \sffamily Pre \\ #6 \end{tabular}
 		& \\
 
 	\end{tabular}}
 
 	\vspace{0.2cm}
-
+	\sffamily
 	\textbf{Health:} #7 \hfill
 	\textbf{Focus:} #8 \hfill
 	\textbf{Investiture:} #9
@@ -796,7 +796,7 @@
 	\enemyStatblockSkillsLanguages
 ]{
 	{\color{goldStats} \hrule \vspace{0.5cm} } 			
-	#1
+	\sffamily #1
 }
 
 \newcommand{\enemyStatblockSkillsDeflect}[1][0 (none)]{

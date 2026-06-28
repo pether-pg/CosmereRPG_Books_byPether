@@ -16,12 +16,35 @@
 \usepackage{eso-pic} % for background images
 \usepackage[absolute,overlay]{textpos} % to set possition of the box \begin{textblock*}
 \usepackage{tikz} % for talent tree graphs
+\usepackage{emerald} % for hand-written ECFAugie
+\usepackage[T1]{fontenc} % for hand-written ECFAugie
 
 \setlength{\columnsep}{20pt} % space between text columns
 
 
 \usepackage{titlesec}	% change how chapters are printed
-\titleformat{\chapter}{}{}{0em}{\bf\LARGE}
+
+\titleformat{\chapter}
+	{\LARGE\bfseries\sffamily\color{blueRadiance}}
+	{}
+	{0em}
+	{}
+\titleformat{\section}
+	{\Large\bfseries\sffamily\color{blueRadiance}}
+	{\thesection}
+	{1em}
+	{}
+	[\color{goldStats}\titlerule]
+\titleformat{\subsection}
+	{\large\bfseries\sffamily\color{blueRadiance}}
+	{\thesubsection}
+	{1em}
+	{}
+\titleformat{\subsubsection}
+	{\bfseries\sffamily}
+	{\thesubsection}
+	{1em}
+	{\color{blueRadiance}}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -34,6 +57,7 @@
 
 \usepackage{nameref} % for \nameref{label}
 \usepackage{cleveref}
+% \renewcommand{\familydefault}{\sfdefault} % change global font to sans-serif, more Cosmere-like
 
 \begin{document}
 	
