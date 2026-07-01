@@ -1,0 +1,223 @@
+\newpage
+\onecolumn
+
+
+\AddToShipoutPictureBG*{%
+	\put(-10,0){
+		\includegraphics[width=1.1\paperwidth,height=\paperheight]{images/background_orange.png}
+		
+	}
+}
+
+\begin{tikzpicture}
+	[remember picture]
+	
+\node[anchor=north west] (pathToKharbranthTrouble) at(-0cm, 0cm) {
+	\discoveryWebNodeBox
+		{\fullref{ssec:pathToKharbranthTrouble}}
+		{}
+		{\fullref{ssec:pathToKharbranthShelter} \\ \fullref{sec:cityHospital}}
+};
+
+\node [anchor=north west] (pathToKharbranthShelter) at(5cm, 0cm){
+	\discoveryWebNodeBox
+		{\fullref{ssec:pathToKharbranthShelter}}
+		{}
+		{\fullref{sec:cityHospital}}
+};
+
+% \draw[connectorDotted] (0cm, -2cm) -- (17.5cm, -2cm);
+
+\node[anchor=north west] (kharbranthRumors) at(6.5cm, -6cm) {
+	\discoveryWebNodeBox
+		{\fullref{ssec:kharbranthRumors}}
+		{}
+		{\fullref{sec:theManor}\\ \fullref{sec:vedenCamp}}
+};
+
+\node[anchor=north west] (kharbranthDarkAlley) at(0cm, -3cm) {
+	\discoveryWebNodeBox
+		{\fullref{ssec:kharbranthDarkAlley}}
+		{}
+		{\fullref{sec:cityHospital}}
+};
+
+\node[anchor=north west] (kharbranthOrphan) at(0cm, -6cm) {
+	\discoveryWebNodeBox
+		{\fullref{ssec:kharbranthOrphan}}
+		{}
+		{\fullref{sec:cityHospital}\\ \fullref{ssec:palanaeumOrphan}} 
+};
+
+\node[anchor=north west] (kharbranthApothecary) at(6.5cm, -9cm) {
+	\discoveryWebNodeBox
+		{\fullref{ssec:kharbranthApothecary}}
+		{}
+		{\fullref{sec:vorinMonastery}\\ \fullref{ssec:taravangianPetition}} 
+};
+
+\node[anchor=north west] (cityHospitalLogs) at(5cm, -3cm) {
+	\discoveryWebNodeBox
+		{\fullref{ssec:cityHospitalLogs}}
+		{}
+		{\fullref{sec:conclaveHospital}}
+};
+
+\node[anchor=north west] (cityHospitalTenseSurgeon) at(9cm, -3cm) {
+	\discoveryWebNodeBox
+		{\fullref{ssec:cityHospitalTenseSurgeon}}
+		{}
+		{\fullref{ssec:kharbranthApothecary}}
+};
+
+\node[anchor=north west] (cityHospitalFollowSurgeon) at(13cm, -3cm) {
+	\discoveryWebNodeBox
+		{\fullref{ssec:cityHospitalFollowSurgeon}}
+		{}
+		{\fullref{sec:graveyard}\\ \fullref{sec:vorinMonastery}\\ \fullref{sec:conclaveHospital}}
+};
+
+\node[anchor=north west] (theManorWidow) at(0cm, -12cm) {
+	\discoveryWebNodeBox
+		{\fullref{ssec:theManorWidow}}
+		{}
+		{\fullref{sec:graveyard}\\ \fullref{sec:conclaveHospital}}
+};
+
+\node[anchor=north west] (vedenCampArtifabrian) at(0cm, -9cm) {
+	\discoveryWebNodeBox
+		{\fullref{ssec:vedenCampArtifabrian}}
+		{}
+		{\fullref{ssec:kharbranthRumors}}
+};
+
+\node[anchor=north west] (vorinMonasteryArdent) at(13cm, -9cm) {
+	\discoveryWebNodeBox
+		{\fullref{ssec:vorinMonasteryArdent}}
+		{}
+		{\fullref{sec:graveyard}\\ \fullref{sec:conclaveHospital}; }
+};
+
+\node[anchor=north west] (vorinMonasterySoulcaster) at(13cm, -12cm) {
+	\discoveryWebNodeBox
+		{\fullref{ssec:vorinMonasterySoulcaster}}
+		{}
+		{\fullref{ssec:conclaveHospitalOil}}
+};
+
+\node[anchor=north west] (graveyard) at(6.5cm, -12cm) {
+	\discoveryWebNodeBox
+		{\fullref{sec:graveyard}}
+		{}
+		{(none)}
+};
+
+\node[anchor=north west] (palanaeum) at(6.5cm, -16cm) {
+	\discoveryWebNodeBox
+		{\fullref{sec:palanaeum}}
+		{}
+		{\fullref{ssec:taravangianPetition}}
+};
+
+\node[anchor=north west] (conclaveHospital) at(13cm, -16cm) {
+	\discoveryWebNodeBox
+		{\fullref{sec:conclaveHospital}}
+		{The party reached the goal!}
+		{(none)}
+	
+};
+
+\node[anchor=north west] (taravangianPetition) at(0cm, -16cm) {
+	\discoveryWebNodeBox
+		{\fullref{ssec:taravangianPetition}}
+		{}
+		{\fullref{sec:palanaeum}\\ \fullref{sec:conclaveHospital}}
+};
+
+\coordinate (troubleHospitalMid) at(4.5cm, -2.5cm);
+\coordinate (orphanHospitalMid) at(4.5cm, -5.5cm);
+\coordinate (orphanLibraryMid) at(4.7cm, -8.8cm);
+\coordinate (alleyRummorsMid) at(5cm, -5cm);
+\coordinate (artifabrianRummorsMid) at(5cm, -9cm);
+\coordinate (widowRummorsMid1) at(5.5cm, -8.5cm);
+\coordinate (widowRummorsMid2) at(5.5cm, -11cm);
+\coordinate (widowConclaveMid) at(6.5cm, -14.7cm);
+\coordinate (followingConclaveMid) at(17.7cm, -12cm);
+\coordinate (followingGraveyardMid) at(11.7cm, -11.5cm);
+\coordinate (logsConclaveMid) at(12.5cm, -5.2cm);
+\coordinate (apothecaryPetitionMid) at(6cm, -15.3cm);
+\coordinate (ardentConclaveMid) at(17.45cm, -12cm);
+\coordinate (petitionConclaveMid) at(8cm, -19cm);
+
+\draw [connectorArrow] (pathToKharbranthTrouble.center) |- (pathToKharbranthShelter.west);
+\draw [connector] (pathToKharbranthTrouble.south) |- (troubleHospitalMid);
+\draw [connectorArrow] (troubleHospitalMid) -| (cityHospitalLogs.north);
+
+\draw [connectorArrow] (pathToKharbranthShelter.south) -- (cityHospitalLogs.north);
+
+\draw [connectorArrow] (kharbranthDarkAlley.center) |- (cityHospitalLogs.west);
+\draw [connectorDashed] (kharbranthDarkAlley.south) |- (alleyRummorsMid);
+\draw [connectorDashedArrow] (alleyRummorsMid) |- (kharbranthRumors.north west);
+
+\draw [connector] (cityHospitalLogs.center) |- (9.2cm, -3.9cm);
+\draw [connector] (cityHospitalLogs.south) |- (logsConclaveMid);
+\draw [connectorArrow] (logsConclaveMid) |- (conclaveHospital.west);
+
+\draw [connector] (cityHospitalTenseSurgeon.center) |- (13.2cm, -3.9cm);
+\draw [connectorArrow] (cityHospitalTenseSurgeon.south) |- (kharbranthApothecary.north east);
+
+\draw [connector] (cityHospitalFollowSurgeon.south west) -| (followingGraveyardMid);
+\draw [connectorArrow] (followingGraveyardMid) |- (graveyard.east);
+\draw [connectorArrow] (cityHospitalFollowSurgeon.south) -- (vorinMonasteryArdent.north);
+\draw [connector] (cityHospitalFollowSurgeon.east) -| (followingConclaveMid);
+\draw [connectorArrow] (followingConclaveMid) |- (conclaveHospital.east);
+
+\draw [connector] (vorinMonasteryArdent.south) -- (vorinMonasterySoulcaster.north);
+\draw [connector] (vorinMonasteryArdent.south) |- (followingGraveyardMid);
+\draw [connector] (vorinMonasteryArdent.east) -| (followingConclaveMid);
+
+% \draw [connectorArrow] (ardentConclaveMid) |- (conclaveHospital.east);
+
+\draw [connector] (kharbranthOrphan.north) |- (orphanHospitalMid);
+\draw [connectorArrow] (orphanHospitalMid) |- (cityHospitalLogs.south west);
+\draw [connectorDashedArrow] (kharbranthOrphan.center) |- (kharbranthRumors.west);
+\draw [connector] (kharbranthOrphan.south) |- (orphanLibraryMid);
+\draw [connectorArrow] (orphanLibraryMid) |- (palanaeum.west);
+
+\draw [connectorArrow] (artifabrianRummorsMid) |- (vedenCampArtifabrian.east);
+\draw [connectorArrow] (artifabrianRummorsMid) |- (kharbranthRumors.south west);
+
+\draw [connector] (kharbranthRumors.south)  |- (widowRummorsMid1);
+\draw [connector] (widowRummorsMid1)  |- (widowRummorsMid2);
+\draw [connectorArrow] (widowRummorsMid2) -| (theManorWidow.north);
+
+\draw [connectorArrow] (theManorWidow.center) |- (graveyard.west);
+\draw [connector] (theManorWidow.south) |- (widowConclaveMid);
+\draw [connectorArrow] (widowConclaveMid) -| (conclaveHospital.north);
+
+
+\draw [connectorArrow] (vorinMonasterySoulcaster.south) -- (conclaveHospital.north);
+
+\draw [connectorArrow] (kharbranthApothecary.center) |- (vorinMonasteryArdent.west);
+\draw [connector] (kharbranthApothecary.west) -| (apothecaryPetitionMid);
+\draw [connectorArrow] (apothecaryPetitionMid) -| (taravangianPetition.north);
+
+\draw [connectorArrowDouble] (4cm, -18.1cm) -| (palanaeum.south);
+\draw [connector] (taravangianPetition.south) |- (petitionConclaveMid);
+\draw [connectorArrow] (petitionConclaveMid) -| (conclaveHospital.south);
+
+\draw [connectorDashedArrow] (13cm, -18.1cm) -| (palanaeum.south);
+
+
+
+\end{tikzpicture}
+
+% kharbranthRumors 
+
+
+
+
+\ClearShipoutPictureBG
+
+\newpage
+\twocolumn
