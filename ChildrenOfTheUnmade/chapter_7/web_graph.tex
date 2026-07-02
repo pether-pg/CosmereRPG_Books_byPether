@@ -2,14 +2,9 @@
 \newpage
 \onecolumn
 
+\pagecolor{blueRadiance}
 
 
-\AddToShipoutPictureBG*{%
-	\put(-10,0){
-		\includegraphics[width=1.1\paperwidth,height=\paperheight]{images/background_redOrange.png}
-		
-	}
-}
 
 \begin{tikzpicture}
 	[remember picture]
@@ -34,7 +29,7 @@
 
 % \draw[connectorDotted] (0cm, -2cm) -- (17.5cm, -2cm);
 
-\node[anchor=north west] (kharbranthRumors) at(6.5cm, -6cm) {
+\node[anchor=north west] (kharbranthRumors) at(0cm, -9cm) {
 	\discoveryWebNodeBox
 		{\fullref{ssec:kharbranthRumors}}
 		{}
@@ -55,7 +50,7 @@
 		{\fullref{sec:cityHospital}} 
 };
 
-\node[anchor=north west] (kharbranthApothecary) at(6.5cm, -9cm) {
+\node[anchor=north west] (kharbranthApothecary) at(6.5cm, -6cm) {
 	\discoveryWebNodeBox
 		{\fullref{ssec:kharbranthApothecary}}
 		{}
@@ -90,7 +85,7 @@
 		{\fullref{sec:graveyard}\\ \fullref{sec:conclaveHospital}}
 };
 
-\node[anchor=north west] (vedenCampArtifabrian) at(0cm, -9cm) {
+\node[anchor=north west] (vedenCampArtifabrian) at(6.5cm, -9cm) {
 	\discoveryWebNodeBox
 		{\fullref{ssec:vedenCampArtifabrian}}
 		{}
@@ -140,6 +135,7 @@
 		{\fullref{sec:palanaeum}\\ \fullref{sec:conclaveHospital}}
 };
 
+\coordinate (alleyOrphanRumorsMid) at(5cm, -7cm);
 \coordinate (troubleHospitalMid) at(4.5cm, -2.5cm);
 \coordinate (logsConclaveMid) at(17.7cm, -2.5cm);
 \coordinate (orphanHospitalMid) at(4.5cm, -5.5cm);
@@ -152,7 +148,7 @@
 \coordinate (followingConclaveMid) at(17.7cm, -12cm);
 \coordinate (followingGraveyardMid1) at(11.7cm, -6.5cm);
 \coordinate (followingGraveyardMid2) at(11.7cm, -11.5cm);
-\coordinate (apothecaryPetitionMid) at(6cm, -15.4cm);
+\coordinate (apothecaryPetitionMid) at(5.6cm, -15.4cm);
 \coordinate (artifabrianOrphanLibraryMid) at(4.6cm, -11cm);
 \coordinate (artifabrianLibraryMid1) at(5.3cm, -11.6cm);
 \coordinate (artifabrianLibraryMid2) at(5.3cm, -15cm);
@@ -167,16 +163,16 @@
 
 \draw [connectorArrow] (kharbranthDarkAlley.center) |- (cityHospitalLogs.west);
 \draw [connectorDashed] (kharbranthDarkAlley.south) |- (alleyRummorsMid);
-\draw [connectorDashedArrow] (alleyRummorsMid) |- (kharbranthRumors.165);
+\draw [connectorDashedArrow] (alleyRummorsMid) |- (kharbranthRumors.20);
 
 \draw [connector] (cityHospitalLogs.center) |- (9.2cm, -3.9cm);
 \draw [connector] (cityHospitalLogs.45) |- (logsConclaveMid);
 \draw [connectorArrow] (logsConclaveMid) |- (conclaveHospital.east);
 
 \draw [connector] (cityHospitalTenseSurgeon.center) |- (13.2cm, -3.9cm);
-\draw [connectorArrow] (cityHospitalTenseSurgeon.south) |- (kharbranthApothecary.15);
+\draw [connectorArrow] (cityHospitalTenseSurgeon.213) -| (kharbranthApothecary.45);
 
-\draw [connector] (cityHospitalFollowSurgeon.230) |- (followingGraveyardMid1);
+\draw [connector] (cityHospitalFollowSurgeon.205) -| (followingGraveyardMid1);
 \draw [connector] (followingGraveyardMid1) -- (followingGraveyardMid2);
 \draw [connectorArrow] (followingGraveyardMid2) |- (graveyard.east);
 \draw [connectorArrow] (cityHospitalFollowSurgeon.south) -- (vorinMonasteryArdent.north);
@@ -185,27 +181,28 @@
 
 \draw [connector] (kharbranthOrphan.10) -| (orphanHospitalMid);
 \draw [connectorArrow] (orphanHospitalMid) |- (cityHospitalLogs.west);
-\draw [connectorDashedArrow] (kharbranthOrphan.center) |- (kharbranthRumors.west);
-\draw [connectorDashed] (kharbranthOrphan.south) |- (orphanLibraryMid);
-\draw [connectorDashedArrow] (orphanLibraryMid) |- (palanaeum.west);
+\draw [connectorDashed] (kharbranthOrphan.east) -| (alleyOrphanRumorsMid);
+% \draw [connectorDashed] (kharbranthOrphan.south) |- (orphanLibraryMid);
+% \draw [connectorDashedArrow] (orphanLibraryMid) |- (palanaeum.west);
 
 \draw [connector] (vorinMonasteryArdent.south) -- (vorinMonasterySoulcaster.north);
-\draw [connector] (vorinMonasteryArdent.230) |- (followingGraveyardMid2);
+\draw [connector] (vorinMonasteryArdent.west) -| (followingGraveyardMid2);
 \draw [connector] (vorinMonasteryArdent.east) -| (followingConclaveMid);
 
 % \draw [connectorArrow] (ardentConclaveMid) |- (conclaveHospital.east);
 
-\draw [connectorArrow] (artifabrianRummorsMid) |- (vedenCampArtifabrian.east);
-\draw [connectorArrow] (artifabrianRummorsMid) |- (kharbranthRumors.195);
+% kharbranthRumors <--> vedenCampArtifabrian
+\draw [connectorArrowDouble] (4cm, -10cm) -- (6.5cm, -10cm);
+% \draw [connectorArrow] (artifabrianRummorsMid) |- (kharbranthRumors.195);
 
 % \draw [connectorDashed] (vedenCampArtifabrian.320) |- (artifabrianLibraryMid1);
 % \draw [connectorDashed] (artifabrianLibraryMid1) -- (artifabrianLibraryMid2);
 % \draw [connectorDashedArrow] (artifabrianLibraryMid2) -| (palanaeum.north);
-\draw [connectorDashed] (vedenCampArtifabrian.320) |- (artifabrianOrphanLibraryMid);
+% \draw [connectorDashed] (vedenCampArtifabrian.320) |- (artifabrianOrphanLibraryMid);
 
-\draw [connector] (kharbranthRumors.south)  |- (widowRummorsMid1);
-\draw [connector] (widowRummorsMid1)  |- (widowRummorsMid2);
-\draw [connectorArrow] (widowRummorsMid2) -| (theManorWidow.north);
+\draw [connectorArrow] (kharbranthRumors.south)  -- (theManorWidow.north);
+% \draw [connector] (widowRummorsMid1)  |- (widowRummorsMid2);
+% \draw [connectorArrow] (widowRummorsMid2) -| (theManorWidow.north);
 
 \draw [connectorArrow] (theManorWidow.center) |- (graveyard.west);
 \draw [connector] (theManorWidow.south) |- (widowConclaveMid);
@@ -215,9 +212,9 @@
 
 \draw [connectorArrow] (vorinMonasterySoulcaster.south) -- (conclaveHospital.north);
 
-\draw [connectorArrow] (kharbranthApothecary.center) |- (vorinMonasteryArdent.west);
+\draw [connectorArrow] (kharbranthApothecary.east) -| (vorinMonasteryArdent.north);
 \draw [connector] (kharbranthApothecary.west) -| (apothecaryPetitionMid);
-\draw [connectorArrow] (apothecaryPetitionMid) -| (taravangianPetition.north);
+\draw [connectorArrow] (apothecaryPetitionMid) |- (taravangianPetition.east);
 
 \draw [connectorArrowDouble] (4cm, -18.1cm) -| (palanaeum.south);
 \draw [connector] (taravangianPetition.south) |- (petitionConclaveMid);
@@ -237,5 +234,8 @@
 
 \ClearShipoutPictureBG
 
-\newpage\fancyfoot[C]{\sffamily \bfseries \color{goldStats} --- \color{blueRadiance} \thepage\ \color{goldStats} --- }
+\newpage
+
+\pagecolor{white}
+\fancyfoot[C]{\sffamily \bfseries \color{goldStats} --- \color{blueRadiance} \thepage\ \color{goldStats} --- }
 \twocolumn
