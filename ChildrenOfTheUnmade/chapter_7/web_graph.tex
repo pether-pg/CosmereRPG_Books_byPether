@@ -52,7 +52,7 @@
 	\discoveryWebNodeBox
 		{\fullref{ssec:kharbranthOrphan}}
 		{}
-		{\fullref{sec:cityHospital}\\ \fullref{ssec:palanaeumOrphan}} 
+		{\fullref{sec:cityHospital}} 
 };
 
 \node[anchor=north west] (kharbranthApothecary) at(6.5cm, -9cm) {
@@ -141,18 +141,19 @@
 };
 
 \coordinate (troubleHospitalMid) at(4.5cm, -2.5cm);
+\coordinate (logsConclaveMid) at(17.7cm, -2.5cm);
 \coordinate (orphanHospitalMid) at(4.5cm, -5.5cm);
 \coordinate (orphanLibraryMid) at(4.6cm, -8.6cm);
 \coordinate (alleyRummorsMid) at(5cm, -5cm);
 \coordinate (artifabrianRummorsMid) at(5cm, -9cm);
 \coordinate (widowRummorsMid1) at(5.5cm, -8.6cm);
-\coordinate (widowRummorsMid2) at(5.5cm, -11cm);
+\coordinate (widowRummorsMid2) at(5.5cm, -11.5cm);
 \coordinate (widowConclaveMid) at(6.5cm, -14.5cm);
 \coordinate (followingConclaveMid) at(17.7cm, -12cm);
 \coordinate (followingGraveyardMid1) at(11.7cm, -6.5cm);
 \coordinate (followingGraveyardMid2) at(11.7cm, -11.5cm);
-\coordinate (logsConclaveMid) at(12.5cm, -5.2cm);
 \coordinate (apothecaryPetitionMid) at(6cm, -15.4cm);
+\coordinate (artifabrianOrphanLibraryMid) at(4.6cm, -11cm);
 \coordinate (artifabrianLibraryMid1) at(5.3cm, -11.6cm);
 \coordinate (artifabrianLibraryMid2) at(5.3cm, -15cm);
 \coordinate (ardentConclaveMid) at(17.45cm, -12cm);
@@ -169,11 +170,11 @@
 \draw [connectorDashedArrow] (alleyRummorsMid) |- (kharbranthRumors.165);
 
 \draw [connector] (cityHospitalLogs.center) |- (9.2cm, -3.9cm);
-\draw [connector] (cityHospitalLogs.south) |- (logsConclaveMid);
-\draw [connectorArrow] (logsConclaveMid) |- (conclaveHospital.west);
+\draw [connector] (cityHospitalLogs.45) |- (logsConclaveMid);
+\draw [connectorArrow] (logsConclaveMid) |- (conclaveHospital.east);
 
 \draw [connector] (cityHospitalTenseSurgeon.center) |- (13.2cm, -3.9cm);
-\draw [connectorArrow] (cityHospitalTenseSurgeon.south) |- (kharbranthApothecary.north east);
+\draw [connectorArrow] (cityHospitalTenseSurgeon.south) |- (kharbranthApothecary.15);
 
 \draw [connector] (cityHospitalFollowSurgeon.230) |- (followingGraveyardMid1);
 \draw [connector] (followingGraveyardMid1) -- (followingGraveyardMid2);
@@ -182,11 +183,11 @@
 \draw [connector] (cityHospitalFollowSurgeon.east) -| (followingConclaveMid);
 \draw [connectorArrow] (followingConclaveMid) |- (conclaveHospital.east);
 
-\draw [connector] (kharbranthOrphan.north) |- (orphanHospitalMid);
-\draw [connectorArrow] (orphanHospitalMid) |- (cityHospitalLogs.south west);
+\draw [connector] (kharbranthOrphan.10) -| (orphanHospitalMid);
+\draw [connectorArrow] (orphanHospitalMid) |- (cityHospitalLogs.west);
 \draw [connectorDashedArrow] (kharbranthOrphan.center) |- (kharbranthRumors.west);
-\draw [connector] (kharbranthOrphan.south) |- (orphanLibraryMid);
-\draw [connectorArrow] (orphanLibraryMid) |- (palanaeum.west);
+\draw [connectorDashed] (kharbranthOrphan.south) |- (orphanLibraryMid);
+\draw [connectorDashedArrow] (orphanLibraryMid) |- (palanaeum.west);
 
 \draw [connector] (vorinMonasteryArdent.south) -- (vorinMonasterySoulcaster.north);
 \draw [connector] (vorinMonasteryArdent.230) |- (followingGraveyardMid2);
@@ -197,10 +198,10 @@
 \draw [connectorArrow] (artifabrianRummorsMid) |- (vedenCampArtifabrian.east);
 \draw [connectorArrow] (artifabrianRummorsMid) |- (kharbranthRumors.195);
 
-\draw [connectorDashed] (vedenCampArtifabrian.320) |- (artifabrianLibraryMid1);
-\draw [connectorDashed] (artifabrianLibraryMid1) -- (artifabrianLibraryMid2);
-\draw [connectorDashedArrow] (artifabrianLibraryMid2) -| (palanaeum.north);
-
+% \draw [connectorDashed] (vedenCampArtifabrian.320) |- (artifabrianLibraryMid1);
+% \draw [connectorDashed] (artifabrianLibraryMid1) -- (artifabrianLibraryMid2);
+% \draw [connectorDashedArrow] (artifabrianLibraryMid2) -| (palanaeum.north);
+\draw [connectorDashed] (vedenCampArtifabrian.320) |- (artifabrianOrphanLibraryMid);
 
 \draw [connector] (kharbranthRumors.south)  |- (widowRummorsMid1);
 \draw [connector] (widowRummorsMid1)  |- (widowRummorsMid2);
