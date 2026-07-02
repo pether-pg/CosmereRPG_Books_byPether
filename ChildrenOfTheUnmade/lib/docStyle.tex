@@ -1,0 +1,46 @@
+\definecolor{goldStats}{RGB}{208, 164, 82}
+\definecolor{yellowQuote}{RGB}{245, 236, 221}
+\definecolor{yellowRoleplay}{RGB}{244, 239, 233}
+\definecolor{grayReason}{RGB}{200, 200, 200}
+\definecolor{blueRadiance}{RGB}{30, 60, 96}
+\definecolor{redSpoiler}{RGB}{200, 0, 0}
+
+% \usepackage{titlesec}	% change how chapters are printed
+
+\titleformat{\chapter}
+	{\LARGE\bfseries\sffamily\color{blueRadiance}}
+	{}
+	{0em}
+	{}
+\titleformat{\section}
+	{\Large\bfseries\sffamily\color{blueRadiance}}
+	{\thesection}
+	{1em}
+	{}
+	[\color{goldStats}\titlerule]
+\titleformat{\subsection}
+	{\large\bfseries\sffamily\color{blueRadiance}}
+	{\thesubsection}
+	{1em}
+	{}
+\titleformat{\subsubsection}
+	{\bfseries\sffamily}
+	{\thesubsection}
+	{1em}
+	{\color{blueRadiance}}
+	
+% \usepackage{fancyhdr} % for fancy page numbering
+\fancyhf{} % Clear defaults
+\newcommand{\defaultPageNumberStyle}{\fancyfoot[C]{\sffamily \bfseries \color{goldStats} --- \color{blueRadiance} \thepage\ \color{goldStats} --- }}
+\fancypagestyle{plain}{%
+	\fancyhf{}
+	\defaultPageNumberStyle{}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+}\fancypagestyle{fancy}{%
+	\fancyhf{}
+	\defaultPageNumberStyle{}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+}
+\pagestyle{fancy}
