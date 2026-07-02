@@ -1,6 +1,6 @@
 \documentclass{report}
 
-\title{\Huge Children of the Unmade \\ \vspace{0.5cm} \Large A Fan-made Adventure in \cosmereRPG}
+\title{\Huge \MakeUppercase{Children of the Unmade} \\ \vspace{0.5cm} \Large A Fan-made Adventure in \cosmereRPG}
 
 \author{Pether.pg}
 
@@ -55,9 +55,25 @@
 	urlcolor=black
 }
 
+\usepackage{fancyhdr} % for fancy page numbering
+\fancyhf{} % Clear defaults
+\fancyfoot[C]{\sffamily \bfseries \color{blueRadiance} \thepage }
+\fancypagestyle{plain}{%
+	\fancyhf{}
+	\fancyfoot[C]{\sffamily \bfseries \color{goldStats} --- \color{blueRadiance} \thepage\ \color{goldStats} --- }
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+}\fancypagestyle{fancy}{%
+	\fancyhf{}
+	\fancyfoot[C]{\sffamily \bfseries \color{goldStats} --- \color{blueRadiance} \thepage\ \color{goldStats} --- }
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+}
+\pagestyle{fancy}
+
+
 \usepackage{nameref} % for \nameref{label}
 \usepackage{cleveref}
-% \renewcommand{\familydefault}{\sfdefault} % change global font to sans-serif, more Cosmere-like
 
 \begin{document}
 	
@@ -83,10 +99,10 @@
 	\input{chapter_5/chapter_5.tex}	% Revel of Fools
 	% Act II
 	\input{chapter_6/chapter_6.tex}		% The Realm Beyond
-	\input{chapter_7/chapter_7.tex}
-	\input{chapter_8/chapter_8.tex}
-	\input{chapter_9/chapter_9.tex}
-	\input{chapter_10/chapter_10.tex}	% Beyond Realms
+	\input{chapter_7/chapter_7.tex}		% Whispers of the Slain
+	\input{chapter_8/chapter_8.tex}		% The Dark Tower
+	\input{chapter_9/chapter_9.tex}		% Darkness Slain
+	\input{chapter_10/chapter_10.tex}	% Whispers from Beyond Realms
 	
 	\appendix
 	\input{appendices/docHistory.tex}
