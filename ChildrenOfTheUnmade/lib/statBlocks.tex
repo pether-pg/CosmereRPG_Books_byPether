@@ -1,0 +1,181 @@
+
+\newcommand{\enemyStatBlock}[5]{
+	\begin{adjustwidth}{0cm}{0cm}
+		\fcolorbox{goldStats}{white}{
+			\parbox{8.4cm}{
+				\vspace{0.2cm}
+				#1	% Name and types
+				\par			
+				#2	% Stat Table
+				#3	% Skills
+				
+				\begin{center} \MakeUppercase{\textbf{Features}} \end{center}
+				{\color{goldStats} \hrule \vspace{0.5cm} }
+				#4 % Features
+				
+				\begin{center} \MakeUppercase{\textbf{Actions}} \end{center}
+				{\color{goldStats} \hrule \vspace{0.5cm} } 
+				#5 % Actions
+			}
+		}
+	\end{adjustwidth}
+}
+
+\newcommand{\enemyStatBlockDouble}[5]{
+	\begin{adjustwidth}{0cm}{0cm}
+		\fcolorbox{goldStats}{white}{
+			\parbox{17.8cm}{
+				\begin{multicols}{2}
+					\vspace{0.2cm}
+					#1	% Name and types
+					\par			
+					#2	% Stat Table
+					#3	% Skills
+					\sffamily
+					\begin{center} \MakeUppercase{\textbf{Features}} \end{center}
+					{\color{goldStats} \hrule \vspace{0.5cm} }
+					#4 % Features
+					
+					\begin{center} \MakeUppercase{\textbf{Actions}} \end{center}
+					{\color{goldStats} \hrule \vspace{0.5cm} } 
+					#5 % Actions
+				\end{multicols}
+			}
+		}
+	\end{adjustwidth}
+}
+
+\newcommand{\enemyStatBlockTest}{
+	\enemyStatBlock{
+		\enemyStatBlockHeader{\enemyAxehound}{1}{Minion}{Small Animal}
+	}{
+		\enemyStatBlockStats{1}{2}{3}{4}{5}{6}{7}{8}{9}
+	}{
+		\enemyStatBlockSkills
+	}{
+		Feature 1\\
+		Feature 2\\
+	}{
+		Action 1\\
+		Action 2\\
+	}
+}
+
+\newcommand{\enemyStatBlockHeader}[4]{
+	\textbf{\sffamily \LARGE \bfseries #1} \\
+	\textit{\sffamily Tier #2 #3 - #4} \\
+}
+
+\newcommand{\enemyStatBlockStats}[9]{
+	\fcolorbox{goldStats}{goldStats}{
+		\color{white} 	
+		\begin{tabular}{p{2.2cm} p{2.2cm} p{2.21cm}}
+			\centering \textbf{P\scriptsize HYSICAL} & 
+			\centering \textbf{C\scriptsize OGNITIVE} & 
+			\centering \textbf{S\scriptsize PIRITUAL}
+		\end{tabular}
+	}
+	
+	\vspace{-0.2cm}
+	\fcolorbox{goldStats}{white}{\begin{tabular}{p{0.30cm} p{0.65cm} p{0.30cm} p{0.30cm} p{0.65cm} p{0.30cm} p{0.44cm} p{0.65cm} p{0.3cm} p{0.01cm}}
+			
+			\begin{tabular}{l} \footnotesize \sffamily Str \\ #1 \end{tabular}
+			&
+			\fcolorbox{goldStats}{white}{\centering \begin{tabular}{p{0.5cm}} \centering \footnotesize \sffamily Def \\ \centering \normalsize \the \numexpr 10 + #1 + #2\relax \end{tabular}}
+			&
+			\begin{tabular}{c} \footnotesize \sffamily Spd \\ #2 \end{tabular}
+			&
+			\begin{tabular}{c} \footnotesize \sffamily Int \\ #3 \end{tabular}
+			&
+			\fcolorbox{goldStats}{white}{\centering \begin{tabular}{p{0.5cm}} \centering \footnotesize \sffamily Def \\ \centering \normalsize \the \numexpr 10 + #3 + #4\relax \end{tabular}}
+			&
+			\begin{tabular}{c} \footnotesize \sffamily Wil \\ #4 \end{tabular}
+			&
+			\begin{tabular}{c} \footnotesize \sffamily Awa \\ #5 \end{tabular}
+			&
+			\fcolorbox{goldStats}{white}{\centering \begin{tabular}{p{0.5cm}} \centering \footnotesize \sffamily Def \\ \centering \normalsize \the \numexpr 10 + #5 + #6\relax \end{tabular}}
+			&
+			\begin{tabular}{c} \footnotesize \sffamily Pre \\ #6 \end{tabular}
+			& \\
+			
+	\end{tabular}}
+	
+	\vspace{0.2cm}
+	\sffamily
+	\textbf{Health:} #7 \hfill
+	\textbf{Focus:} #8 \hfill
+	\textbf{Investiture:} #9
+	\\
+}
+
+\newcommand{\enemyStatBlockSkills}[1][
+\enemyStatblockSkillsDeflect
+\enemyStatblockSkillsMovement
+\enemyStatblockSkillsSenses
+\enemyStatblockSkillsImmunities
+\enemyStatblockSkillsPhysical
+\enemyStatblockSkillsCognitive
+\enemyStatblockSkillsSpiritual
+\enemyStatblockSkillsLanguages
+]{
+	{\color{goldStats} \hrule \vspace{0.5cm} } 			
+	\sffamily #1
+}
+
+\newcommand{\enemyStatblockSkillsDeflect}[1][0 (none)]{
+	\textbf{Deflect:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsMovement}[1][0 ft.]{
+	\textbf{Movement:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsSenses}[1][(none)]{
+	\textbf{Senses:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsImmunities}[1][(none)]{
+	\textbf{Immunities:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsPhysical}[1][(none)]{
+	\textbf{Physical Skills:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsCognitive}[1][(none)]{
+	\textbf{Cognitive Skills:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsSpiritual}[1][(none)]{
+	\textbf{Spiritual Skills:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsSurges}[1][(none)]{
+	\textbf{Surge Skills:} #1 \\
+}
+
+\newcommand{\enemyStatblockSkillsLanguages}[1][(none)]{
+	\textbf{Languages:} #1
+}
+
+\newcommand{\enemyStatblockFeature}[2]{\textbf{#1.} #2}
+
+\newcommand{\enemyStatblockFeatureMinion}{\enemyStatblockFeature{Minion}{This creature's attacks can’t critically hit, and they’re immediately defeated when they suffer an injury}}
+
+\newcommand{\enemyStatblockFeatureNewborn}{\enemyStatblockFeature{Newborn}{When this singer rolls a Complication, they become Disoriented until their next turn.}}
+
+\newcommand{\enemyStatblockFeatureSprenHunger}{\enemyStatblockFeature{Spren Attraction}{The spren can sense the phenomenon it is named for or the use of Investiture within 5 miles of them. }}
+
+\newcommand{\enemyStatblockFeatureSprenDeath}{\enemyStatblockFeature{\abilitySprenName}{\abilitySprenText}}
+
+\newcommand{\enemyStatblockFeatureFutureKnowledge}[1][N]{\enemyStatblockFeature{\abilityFutureKnowledgeName[#1]}{\abilityFutureKnowledgeText[#1]}}
+
+\newcommand{\enemyStatblockFeatureTaravangianBoon}{\enemyStatblockFeature{\abilityTaravangianBoonName}{\abilityTaravangianBoonText}}
+
+\newcommand{\enemyStatblockFeatureInurePoison}{\enemyStatblockFeature{Inured to Poison}{The Ghostblood gains an advantage on tests to resist the effects of poison. Additionally, before the Ghostblood takes vital damage, they reduce it by 2.}}
+
+\newcommand{\enemyStatblockFeatureBoss}{\enemyStatblockFeature{Boss}{This creature can take both a fast turn and a slow turn each round. After an enemy finishes a turn, this creature can spend 1 Focus to immediately use an extra \iconAction{} or \iconFreeAction{}. Additionally, they can spend 1 Focus on their turn to remove a condition from themself.}}
+
+\newcommand{\enemyStatblockFeatureBossConversation}{\enemyStatblockFeature{Boss (Conversation)}{This character makes a contribution twice in a Conversation round: once after more than a half of enemies made their contribution, and the second time after all of them contributed. \\ After an enemy finishes a turn, the character can spend 1 Focus to immediately use an extra  \iconAction{} or  \iconFreeAction{}. Additionally, they can spend 1 Focus on their turn to remove a condition from themself.} \\}
+
+\newcommand{\enemyStatblockAction}[3][\iconAction{}]{#1 \textbf{#2.} #3}

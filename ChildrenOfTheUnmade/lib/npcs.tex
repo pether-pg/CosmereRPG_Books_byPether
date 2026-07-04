@@ -1,0 +1,134 @@
+% Names
+
+\newcommand{\npc}[2][u]{\hyperref[personae]{#2}\ifthenelse{\equal{#1}{f}}{ (she/her)}{\ifthenelse{\equal{#1}{m}}{ (he/him)}{}}}
+
+% Official Characters
+
+\newcommand{\npcOdium}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Odium}}{\npc{Odium}}}
+
+% Unmade
+\newcommand{\npcMidnightMotherName}{Re-Shephir}
+\newcommand{\npcSjaAnatName}{Sja-anat}
+\newcommand{\npcYeligNarName}{Yelig-nar}
+
+\newcommand{\npcThrill}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{Nergaoul}}{\npc{Nergaoul}}}
+\newcommand{\npcYeligNar}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{\npcYeligNarName{}}}{\npc{\npcYeligNarName{}}}}
+\newcommand{\npcDustmother}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Chemoarish}}{\npc{Chemoarish}}}
+\newcommand{\npcMidnightMother}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcMidnightMotherName{}}}{\npc{\npcMidnightMotherName{}}}}
+\newcommand{\npcMoelach}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{Moelach}}{\npc{Moelach}}}
+\newcommand{\npcSjaAnat}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcSjaAnatName{}}}{\npc{\npcSjaAnatName{}}}}
+\newcommand{\npcBlackFisher}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Dai-Gonarthis}}{\npc{Dai-Gonarthis}}}
+\newcommand{\npcHeartRevel}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{Ashertmarn}}{\npc{Ashertmarn}}}
+\newcommand{\npcMishram}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Ba-Ado-Mishram}}{\npc{Ba-Ado-Mishram}}}
+
+\newcommand{\npcThrillTitle}{Thrill}
+\newcommand{\npcYeligNarTitle}{Blightwind}
+\newcommand{\npcDustmotherTitle}{Dustmother}
+\newcommand{\npcMidnightMotherTitle}{Midnight Mother}
+\newcommand{\npcSjaAnatTitle}{Taker of Secrets}
+\newcommand{\npcBlackFisherTitle}{Black Fisher}
+\newcommand{\npcHeartRevelTitle}{Heart of the Revel}
+
+\newcommand{\npcMidnightMotherFull}{\npcMidnightMother{}, the \npcMidnightMotherTitle{}}
+
+% Monarchs
+\newcommand{\npcQueenName}{Aesudan}
+\newcommand{\npcQueen}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Queen \npcQueenName{}}}{\npc{Queen \npcQueenName{}}}}
+\newcommand{\npcDeadKingName}{Gavilar}
+\newcommand{\npcDeadKing}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{King \npcDeadKingName{}}}{\npc{King \npcDeadKingName{}}}}
+\newcommand{\npcTaravangianName}{King Taravangian}
+\newcommand{\npcTaravangian}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcTaravangianName{}}}{\npc{\npcTaravangianName{}}}}
+\newcommand{\npcElhokar}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{King Elhokar}}{\npc{King Elhokar}}}
+% Ardents
+\newcommand{\npcRebelArdentName}{Pai}
+\newcommand{\npcRebelArdent}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcRebelArdentName{}}}{\npc{\npcRebelArdentName{}}}}
+\newcommand{\npcRevelerGeneralName}{Kishi}
+\newcommand{\npcRevelerGeneral}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcRevelerGeneralName{}}}{\npc{\npcRevelerGeneralName{}}}}
+\newcommand{\npcRevelerGuide}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Kharat}}{\npc{Kharat}}}
+% Wall Guard
+\newcommand{\npcHighmarshalName}{Highmarshal Azure}
+\newcommand{\npcHighmarshal}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcHighmarshalName{}}}{\npc{\npcHighmarshalName{}}}}
+\newcommand{\npcSoulcasterName}{Ithi}
+\newcommand{\npcSoulcaster}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcSoulcasterName{}}}{\npc{\npcSoulcasterName{}}}}
+% Singers
+\newcommand{\npcSingerWorkerGranM}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Nal}}{\npc{Nal}}}
+\newcommand{\npcSingerWorkerGranF}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Tir}}{\npc{Tir}}}
+\newcommand{\npcSingerWouned}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Rishai}}{\npc{Rishai}}}
+\newcommand{\npcSingerEnvoy}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Serin}}{\npc{Serin}}}
+% Characters
+\newcommand{\npcShallan}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Shallan}}{\npc{Shallan}}}
+\newcommand{\npcVeil}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Veil}}{\npc{Veil}}}
+\newcommand{\npcRadiant}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Brightness Radiant}}{\npc{Brightness Radiant}}}
+\newcommand{\npcDalinarName}{Dalinar}
+\newcommand{\npcDalinar}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcDalinarName{}}}{\npc{\npcDalinarName{}}}}
+\newcommand{\npcAdolinName}{Adolin}
+\newcommand{\npcAdolin}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcAdolinName{}}}{\npc{\npcAdolinName{}}}}
+\newcommand{\npcRenarinName}{Renarin}
+\newcommand{\npcRenarin}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcRenarinName{}}}{\npc{\npcRenarinName{}}}}
+\newcommand{\npcJasnahName}{Jasnah}
+\newcommand{\npcJasnah}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcJasnahName{}}}{\npc{\npcJasnahName{}}}}
+\newcommand{\npcNavaniName}{Navani}
+\newcommand{\npcNavani}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcNavaniName{}}}{\npc{\npcNavaniName{}}}}
+\newcommand{\npcGavinorName}{Gavinor}
+\newcommand{\npcGavinor}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcGavinorName{}}}{\npc{\npcGavinorName{}}}}
+\newcommand{\npcKaladinName}{Kaladin}
+\newcommand{\npcKaladin}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcKaladinName{}}}{\npc{\npcKaladinName{}}}}
+\newcommand{\npcAmaramName}{Meridas Amaram}
+\newcommand{\npcAmaram}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcAmaramName{}}}{\npc{\npcAmaramName{}}}}
+\newcommand{\npcHoid}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Hoid}}{\npc{Hoid}}}
+\newcommand{\npcMalata}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Malata}}{\npc{Malata}}}
+\newcommand{\npcMelishi}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Melishi}}{\npc{Melishi}}}
+\newcommand{\npcGarith}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Garith}}{\npc{Garith}}}
+\newcommand{\npcMraize}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Mraize}}{\npc{Mraize}}}
+\newcommand{\npcIyatil}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Iyatil}}{\npc{Iyatil}}}
+% Kholinar
+\newcommand{\npcGrandmaName}{Veda}
+\newcommand{\npcGrandmaTitle}{Gran-gran}
+\newcommand{\npcGrandma}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcGrandmaTitle{}}}{\npc{\npcGrandmaTitle{}}}}
+\newcommand{\npcLockedArdentName}{Liha}
+\newcommand{\npcLockedArdent}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcLockedArdentName{}}}{\npc{\npcLockedArdentName{}}}}
+\newcommand{\npcTroublemaker}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Chanri}}{\npc{Chanri}}}
+\newcommand{\npcCellarBoyName}{Arin}
+\newcommand{\npcCellarBoy}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcCellarBoyName{}}}{\npc{\npcCellarBoyName{}}}}
+\newcommand{\npcGhostbloodBossName}{Big Al}
+\newcommand{\npcGhostbloodBoss}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcGhostbloodBossName{}}}{\npc{\npcGhostbloodBossName{}}}}
+% Shadesmar
+\newcommand{\npcSprenGuide}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Echo}}{\npc{Echo}}}
+\newcommand{\npcFortuneReader}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Riino}}{\npc{Riino}}}
+\newcommand{\npcGhostbloodScout}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Steel}}{\npc{Steel}}}
+\newcommand{\npcIceCultivationsprenTrader}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Hoarfrost}}{\npc{Hoarfrost}}}
+\newcommand{\npcIceCultivationsprenGardener}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Floe}}{\npc{Floe}}}
+\newcommand{\npcCultivationsprenPainter}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Dew}}{\npc{Dew}}}
+\newcommand{\npcHonorsprenCaptain}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Captain Gale}}{\npc{Captain Gale}}}
+\newcommand{\npcPeaksprenCaptain}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Captain Ava}}{\npc{Captain Ava}}}
+\newcommand{\npcCrypticCaptain}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Captain Chart}}{\npc{Captain Chart}}}
+% Kharbranth
+\newcommand{\npcWoundedTrader}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Tareh}}{\npc{Tareh}}}
+\newcommand{\npcGhostbloodWoundedName}{Ferrum}
+\newcommand{\npcGhostbloodWounded}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{\npcGhostbloodWoundedName{}}}{\npc{\npcGhostbloodWoundedName{}}}}
+\newcommand{\npcKharbranthNobleName}{Sartvian}
+\newcommand{\npcKharbranthNoble}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[u]{\npcKharbranthNobleName{}}}{\npc{\npcKharbranthNobleName{}}}}
+\newcommand{\npcOrphanSickName}{Kina}
+\newcommand{\npcOrphanSick}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{\npcOrphanSickName{}}}{\npc{\npcOrphanSickName{}}}}
+\newcommand{\npcOrphanHomeless}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Dor}}{\npc{Dor}}}
+\newcommand{\npcDiagramSurgeonName}{Telvash}
+\newcommand{\npcDiagramSurgeon}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Telvash}}{\npc{Telvash}}}
+\newcommand{\npcDiagramAarchivist}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Arvia}}{\npc{Arvia}}}
+\newcommand{\npcVedenArtifabrian}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{Dorlivana}}{\npc{Dorlivana}}}
+
+
+\newcommand{\npcFractionPalace}{Royal Palace}
+\newcommand{\npcFractionSingers}{Singers}
+\newcommand{\npcFractionCult}{Cult of Moments}
+\newcommand{\npcFractionWall}{Wall Guards}
+\newcommand{\npcFractionCrime}{Crime Lords}
+\newcommand{\npcFractionGhostbloods}{Ghostbloods}
+
+\newcommand{\sicknessOrphanName}{Weeping Fever}
+
+\newcommand{\locationFidelity}{Unyielding Fidelity}
+\newcommand{\locationKharbranth}{Kharbranth}
+\newcommand{\locationPalanaeum}{Palanaeum}
+\newcommand{\locationPerpendicularity}{Perpendicularity}
+\newcommand{\locationUrithiru}{Urithiru}
+\newcommand{\locationVedenar}{Vedenar}

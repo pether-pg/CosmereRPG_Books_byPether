@@ -1,0 +1,51 @@
+
+\newcommand{\ability}[2]{
+	\vspace{0.2cm}
+	\fcolorbox{goldStats}{white}{
+		\parbox{7cm}{
+			\noindent \sffamily \textbf{#1.} #2
+		}
+	}
+	\vspace{0.2cm}
+}
+
+\newcommand{\abilityVinesName}[1][N]{\hyperref[ssec:ruleVines]{Enhancing Vines [#1]}}
+\newcommand{\abilityVinesTextShort}[1][N]{This creature has +#1 bonus to Strength and all its derivatives.}
+\newcommand{\abilityVinesText}[1][N]{\abilityVinesTextShort[#1] \textit{(Bonus is included in the stat block.)} After death, it will be reanimated with \abilityHuskName[#1]{} ability, unless it already has one.}
+\newcommand{\abilityVines}[1][N]{
+	\ability{\abilityVinesName[#1]}{
+		\abilityVinesText[#1]
+	}
+}
+
+\newcommand{\abilityHuskName}[1][N]{\hyperref[ssec:ruleHusk]{Reanimated Husk [#1]}}
+\newcommand{\abilityHuskText}[1][N]{This creature's Intelligence, Willpower and Focus drop to 0. When this creature dies, roll #1 Plot Die(s). For each Complication rolled, spawn \enemyReanimatedRemains{} onto the battlefield.}
+\newcommand{\abilityHusk}[1][N]{
+	\ability{\abilityHuskName[#1]}{
+		\abilityHuskText[#1]{}
+	}
+}
+
+\newcommand{\abilityFutureKnowledgeName}[1][N]{\hyperref[ssec:ruleDiagram]{Forbidden Knowledge~[#1]}}
+\newcommand{\abilityFutureKnowledgeText}[1][N]{Roll #1d20 and note the results. As a \iconReaction{}, the character can spend one of those results to replace any d20 roll with it. Roll new set of d20s each time the character gains access to the source of the knowledge.}
+\newcommand{\abilityFutureKnowledge}[1][N]{
+	\ability{\abilityFutureKnowledgeName[#1]}{
+		\abilityFutureKnowledgeText[#1]{}
+	}
+}
+
+\newcommand{\abilitySprenName}{\hyperref[ssec:ruleSpren]{Spren}}
+\newcommand{\abilitySprenText}{This creature cannot be killed with normal methods. Instead, if its Health drops to 0, the creature ceases fighting and flees the scene.}
+\newcommand{\abilitySpren}{
+	\ability{\abilitySprenName}{
+		\abilitySprenText{}
+	}
+}
+
+\newcommand{\abilityTaravangianBoonName}{\hyperref[ssec:ruleBoon]{The Boon and the Curse}}
+\newcommand{\abilityTaravangianBoonText}{At beginning of each day, roll 2d6. Change this character's Intelligence by +X-7 and Awareness by +7-X, where X is the result of the roll. That affects the character's Defenses and skills. }
+\newcommand{\abilityTaravangianBoon}{
+	\ability{\abilityTaravangianBoonName}{
+		\abilityTaravangianBoonText{}
+	}
+}
