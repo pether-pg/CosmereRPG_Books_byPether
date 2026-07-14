@@ -1,0 +1,105 @@
+
+
+\newcommand{\fullref}[1]{\ref{#1}.~"\nameref{#1}"}
+
+% Art and graphics
+
+\newcommand{\includeCreditedGraphics}[3]{\ifthenelse{\equal{\useAI}{false} \AND \equal{#3}{AI}}{}{\includegraphics[#1]{#2}}}
+
+\newcommand{\creditedArtFigure}[5]{
+	\ifthenelse{\equal{\useAI}{false} \AND \equal{#3}{AI}}{}{
+		\begin{figure}[h]
+			\centering
+			\includegraphics[#1]{#2}
+			\caption{#4}
+			\label{#5}
+		\end{figure}
+	}
+}
+
+
+% Predefined Text
+
+
+
+\newcommand{\conversationDefence}[4]{#1 has a Cognitive defense of #2, a Spiritual defense of #3, and #4 Focus.}
+
+\newcommand{\conversationEnd}[2]{If #1’s test equals or exceeds the Spiritual defense of a PC, that PC either must spend #2 Focus to resist influence or must back down from the conversation. }
+
+\newcommand{\pursuitResolveHeader}{Resolving the Endeavor}
+
+\newcommand{\pursuitReq}[2]{The endeavor succeeds if the party accrues #1 successes before #2 failures, or if they otherwise complete the objective.}
+
+
+\newcommand{\talent}[5]{
+	\LARGE \noindent \color{blueRadiance} \textbf{#1}\vspace{0.15cm}\normalsize\\	
+	\noindent \color{black}
+	\textbf{Prerequisite:} #2 \\
+	\textbf{Activation:} #3 \\
+	\noindent \color{gray} \textit{#4} \\
+	\noindent \color{black} #5 \\
+	\par
+}
+
+
+
+\newcommand{\scriptedOption}[2]{
+	\begin{adjustwidth}{0cm}{0cm} \begin{minipage}{8.6cm}
+			\textbf{\newline #1}
+			\begin{adjustwidth}{1cm}{0cm}		
+				#2
+			\end{adjustwidth}
+	\end{minipage} \end{adjustwidth}
+}
+
+\newcommand{\eventComplication}[2]{
+	\parbox{8cm}{	
+		\fcolorbox{redSpoiler}{redSpoiler}{			
+			\begin{tabular}{p{8cm}}				
+				\color{white} \centering \textbf{EVENT} \\
+			\end{tabular}
+		}\par
+		\vspace{-0.5cm}
+		\noindent
+		\begin{adjustwidth}{0.5cm}{0cm}
+			\fcolorbox{goldStats}{white}{
+				\begin{tabular}{p{7cm}}
+					\footnotesize \centering Triggers when the final Complication slot is filled. \normalsize \\
+					\vspace{0.15cm}
+					#2
+					
+					\vspace{0.25cm} %\ECFAugie
+					\LARGE {#1} \\ \color{goldStats}\titlerule
+					\vspace{0.25cm}
+				\end{tabular}
+			}
+		\end{adjustwidth}
+	}
+}
+
+
+\newcommand{\iconCompEvent}{
+	\fcolorbox{redSpoiler}{white}{\iconComp[1cm]}
+}
+
+
+\newcommand{\oppCompHead}{\textbf{Result} & \textbf{Example}\\ \hline }
+\newcommand{\oppCompRow}[2]{\vfill #1 \vfill & \color{black} #2\\}
+\newcommand{\oppCompTable}[1]{
+	\begin{tabular}{p{1cm} p{6cm}}
+		\oppCompHead
+		#1
+	\end{tabular}
+}
+
+
+% Opportunities, Complication
+
+\newcommand{\iconOpp}[1][10pt]{\includegraphics[height=#1]{icons/opportunity.png}}
+\newcommand{\iconComp}[1][10pt]{\includegraphics[height=#1]{icons/complication.png}}
+\newcommand{\iconAction}[1][10pt]{\includegraphics[height=#1]{icons/action.png}}
+\newcommand{\iconActionDouble}[1][10pt]{\includegraphics[height=#1]{icons/actionDouble.png}}
+\newcommand{\iconFreeAction}[1][10pt]{\includegraphics[height=#1]{icons/freeAction.png}}
+\newcommand{\iconReaction}[1][10pt]{\includegraphics[height=#1]{icons/reaction.png}}
+\newcommand{\iconSpecial}[1][10pt]{\includegraphics[height=#1]{icons/activationSpecial.png}}
+\newcommand{\iconConstant}[1][10pt]{\includegraphics[height=#1]{icons/activationConstant.png}}

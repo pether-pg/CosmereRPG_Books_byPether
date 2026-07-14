@@ -1,0 +1,11 @@
+% Names
+
+\newcommand{\npc}[2][u]{\hyperref[personae]{#2}\ifthenelse{\equal{#1}{f}}{ (she/her)}{\ifthenelse{\equal{#1}{m}}{ (he/him)}{}}}
+
+% Official Characters
+
+\newcommand{\npcOdium}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Odium}}{\npc{Odium}}}
+\newcommand{\npcHoid}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Hoid}}{\npc{Hoid}}}
+
+
+
