@@ -12,12 +12,15 @@
 \usepackage{graphicx} % insert images
 \usepackage{pdfpages} % insert pdfs
 \usepackage{ulem} % strikethrough \sout
+\usepackage{multicol} % multicol
+\usepackage{eso-pic} % for background images
+\usepackage[absolute,overlay]{textpos} % to set possition of the box \begin{textblock*}
+\usepackage{tikz} % for talent tree graphs
 
 \setlength{\columnsep}{20pt} % space between text columns
 
-
 \usepackage{titlesec}	% change how chapters are printed
-\titleformat{\chapter}{}{}{0em}{\bf\LARGE}
+\usepackage{fancyhdr} % for fancy page numbering
 
 \usepackage{hyperref}
 \hypersetup{
@@ -36,8 +39,7 @@
 	\input{defsAndCommands.tex}
 		
 	\twocolumn
-	\setcounter{chapter}{5}
-	\setcounter{section}{2}
-	\input{chapter_5/heartOfTheRevel_sample.tex}
-	\input{appendices/enemies/statblockHeartOfTheRevel.tex}
+	\setcounter{chapter}{6}
+	\setcounter{section}{3}
+	\input{chapter_6/celebrant_sample.tex}
 \end{document}

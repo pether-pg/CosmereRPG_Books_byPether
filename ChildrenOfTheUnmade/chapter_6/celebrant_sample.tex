@@ -1,0 +1,135 @@
+
+\setcounter{subsection}{4}
+\subsection{Cultivationspren's Painting}
+\label{ssec:celebrantPainter}
+
+Start this encounter by reading the following:
+
+\quoteBox{
+	You see an art stand with many human portraits, most of them depicting Shin people in odd, outlandish clothing. However, one of the paintings catches your attention:\\ \\	
+	It is made in a very unique technique, painted with thick, vine-like brush strokes. It shows a spren with bronze skin, looking longingly into the black horizon. \\ \\	
+	"Hi there!", a cultivationspren greets you. "Would you like to buy a painting?"
+}
+
+\npcCultivationsprenPainter[s]{} is a cultivationspren \enemyExpert{}. She buys and sells off-world paintings, sometimes adding her own creation to the stock. She is excited to see the characters and is eager to show her stock and answer any questions:
+
+\scriptedOption{Who is on this painting?}{
+	Oh, that is our local deadeye. Do you like the painting? I made it!
+}
+
+\scriptedOption{Where can we find it? The deadeye.}{
+	"Her", not "it". Why would you need to know that? She suffered enough, let her rest.
+}
+
+\scriptedOption{How much for the painting?}{
+	Off-world art prices vary from 100 to 500 broams, that would be 400-2000 marks. The one I made I can sell for 100 marks.
+}
+
+\scriptedOption{Have you ever painted a human?}{
+	That would be exciting! But no, there are few of them on this side, and those who are here have no time for those things...
+}
+
+\scriptedOption{Would you like me to be your model?}{
+	Really? Oh yes, that would be amazing! You would need to sit really still for an entire day, but I can pay you 20 marks for your trouble!
+}
+
+\subsubsection{Deadeye's Location}
+
+\npcCultivationsprenPainter{} does not wish to tell where the party can find the deadeye. If a PC decides to buy the painting, she will tell them more about it.
+
+The party can also attempt to convince her to share this information during a Conversation.
+
+\conversationDefence{\npcCultivationsprenPainter{}}{15}{14}{4}
+
+She loves art and lives to create and sell it. Any attempts to influence her gain disadvantage unless the PC shows shared passion for it - by either buying her paintings or helping her paint one.
+
+\conversationEnd{\npcCultivationsprenPainter{}}{1}
+
+\spoilerBox{
+	Kaladin browsing paintings in a similar shop in Celebrant is described in \bookOB{}, Chapter 102. Celebrant.
+}
+
+
+\subsection{Exploring the Island}
+\label{ssec:celebrantExplore}
+
+If the party wishes, they can leave the city and explore the outskirts. If they are scouting without any specific direction or knowledge about the island, ask them for a \skillCheck{20}{\skillSurvival{}}. 
+
+If they succeed, they will find something interesting. Roll d12 to determine what is it:
+
+\begin{itemize}
+	\item 1-4: A lone spren standing on a cliff \\ \textit{(see \fullref{ssec:celebrantDeadeye})} 
+	\item 5-8: A strange glimmer on the sky \\ \textit{(see 6.4.8. ”Hunting for Starspren”)}
+	\item 9-12: A mandra entangled in glassy bush \\ \textit{(see 6.4.9. ”Mandra Whisperer”)}
+\end{itemize}
+
+Searching the island takes a whole day. The test can be repeated after a Long Rest.
+
+\reasonBox{
+	If you have specified ideas on progression rewards for your players, don't roll the dice. Pick one of the results instead.
+}
+
+
+
+\subsection{Stranded Deadeye}
+\label{ssec:celebrantDeadeye}
+
+The party might have learned about a deadeye located on the island. If they wish to rescue her, that will take several steps:
+
+\subsubsection{Searching for the Spren}
+
+The party might have randomly find the spren while their island exploration (see \fullref{ssec:celebrantExplore}). 
+
+However if they are aware of the deadeye existence and her general location, if the party searches for her, don't roll for a random encounter during the exploration and allow them to find what they are looking for (assuming they succeeded on a \skillSurvival{} test).
+
+If the painter shared exact location of the spren, the party can skip this step and assume the party already knows the way.
+
+\subsubsection{Reaching the Spren}
+
+The deadeye is stranded on top of a cliff. It will take an Endeavor to get there. \pursuitReq{6}{4}
+
+Potential approaches may include:
+
+\scriptedOption{Searching for the best path}{
+	A PC can attempt \skillCheck{18}{\skillSurvival{}} to scout for a better path.
+}
+
+\scriptedOption{Improvise a climbing equipment}{
+	A PC can attempt \skillCheck{17}{\skillCrafting{}} to create an improvised climbing equipment from things they have.
+}
+
+\scriptedOption{Use an actual climbing equipment}{
+	If the party previously obtained a climbing equipment, they can make \skillCheck{12}{\skillAthletics{} or \skillAgility{}} to use it.
+}
+
+\scriptedOption{Help with your expertise}{
+	Does a character know how to best climb those? They can attempt a \skillCheck{16}{\skillLore{}} to see.
+}
+
+\scriptedOption{Climbing obsidian cliff}{
+	The surface is glassy and hard to climb. If a PC fails a \skillCheck{21}{\skillAthletics{} or \skillAgility{}} they will fall and hurt themselves for an amount of Health equal to the difference between their test's result and the required threshold.
+}
+
+\subsubsection{Extracting the Spren}
+
+Once the party reaches the top of the cliffs, they will see that the path between them and the deadeye is guarded by four \enemyAngerSpren{}s, who still remain in the area after the burning of the Rift.
+
+During the fight, each time a character is wounded by the \enemyAngerSpren{} for the first time, they attract a \enemyPainSpren{} who will join the fight next round, attacking that PC.
+
+The spren will not pursue fleeing characters, but they will fight to the end. It is impossible to leave this area with the deadeye without defeating them.
+
+\subsubsection{Claiming the Spren}
+
+Once all the hostile spren on the cliff are defeated, the party can safely approach the deadeye. It's a female Reacher standing on the edge and looking at the endless bead ocean. After the party interacts with her, she will start following them.
+
+Other spren in are not fond of people using corpses as weapons, so having a deadeye in the party might harm some of the relations and interactions with other NPCs in Shadesmar.
+
+ If the party manages to exit the Cognitive Realm with her on their side, she will manifest as a Shardblade in the Physical Realm.
+ 
+ \reasonBox{
+ 	In most adventures rewarding the party with a Shardblade seems to be more natural in the Physical Realm. I like how Shadesmar offers different approach to that reward and it would seem to be a wasted opportunity if I did it the same way as always. \\ \\
+ 	Try to make sure your party is aware of a deadeye located somewhere on the island before they leave it.
+ }
+
+
+
