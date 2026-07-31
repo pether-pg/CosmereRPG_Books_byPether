@@ -1,0 +1,78 @@
+\documentclass{report}
+
+\def \myTitle{Secrets of Tashikk} % workaround - \@title not always works...
+\def \subtitle{A Fan-made Adventure for \cosmereRPG}
+\title{\myTitle{}}
+\author{Pether.pg}
+
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{xcolor}
+\usepackage{ifthen}
+\usepackage{changepage} % margins and adjustwidth 
+\usepackage{graphicx} % insert images
+\usepackage{pdfpages} % insert pdfs
+\usepackage{ulem} % strikethrough \sout
+\usepackage{multicol} % multicol
+\usepackage{eso-pic} % for background images
+\usepackage[absolute,overlay]{textpos} % to set possition of the box \begin{textblock*}
+\usepackage{tikz} % for talent tree graphs
+% TODO - remove before final release, you should not need lipsum there
+\usepackage{lipsum} % for example text generation; 
+%\usepackage{emerald} % for hand-written ECFAugie
+%\usepackage[T1]{fontenc} % for hand-written ECFAugie
+
+\setlength{\columnsep}{20pt} % space between text columns
+
+\usepackage{titlesec}	% change how chapters are printed
+
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+\usepackage{fancyhdr} % for fancy page numbering
+\usepackage{nameref} % for \nameref{label}
+\usepackage{cleveref}
+
+\begin{document}
+	
+	\input{defsAndCommands.tex}
+	
+	\input{title_page.tex}
+	\input{template_page.tex}
+	
+	\setcounter{tocdepth}{1}
+	\tableofcontents
+	
+	\renewcommand{\listfigurename}{List of Images}
+	\renewcommand{\figurename}{Image}
+	% \listoffigures
+	
+	\twocolumn
+	\setcounter{chapter}{-1}
+	\input{introduction/introduction.tex}
+	
+	\input{chapter_1/chapter_1.tex} 					% Enter Yeddaw
+	\input{chapter_cult/chapter_cult.tex} 				% Cult of Secrets
+	\input{chapter_guards/chapter_guards.tex} 			% City Patrols
+	\input{chapter_immigrants/chapter_immigrants.tex} 	% Immigrant Quarter
+	\input{chapter_indicium/chapter_indicium.tex} 		% Grand Indicium
+	\input{chapter_orphanage/chapter_orphanage.tex} 	% Tashi's Light Orphanage
+	\input{chapter_sleepless/chapter_sleepless.tex} 	% The Sleepless
+	\input{chapter_informant/chapter_informant.tex} 	% Finding the Informant
+
+
+	\appendix
+	\input{appendices/docHistory.tex}
+	\input{appendices/enemies.tex}
+	\input{appendices/items.tex}
+	\input{appendices/exampleSheets.tex}
+	\input{appendices/acknowledgments.tex}
+	
+\end{document}

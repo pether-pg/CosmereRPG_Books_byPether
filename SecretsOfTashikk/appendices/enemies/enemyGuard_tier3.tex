@@ -1,0 +1,35 @@
+\label{enemyGuardC}
+
+\enemyStatBlock{
+	\enemyStatBlockHeader{\enemyGuardNameC}{3}{Rival}{\mediumHuman}
+}{
+	\enemyStatBlockStats{5}{1}{3}{3}{5}{2}{60 (55–65)}{5}{0}
+}{
+	\small
+	\enemyStatBlockSkills[
+		\enemyStatblockSkillsDeflect[3 (half plate)] \\
+		\enemyStatblockSkillsMovement[25 ft.]		
+		\enemyStatblockSkillsSenses[50 ft. (sight)]	
+		\enemyStatblockSkillsPhysical[Athletics +9, Heavy Weaponry +9]
+		\enemyStatblockSkillsCognitive[Deduction+7, Discipline+7, Intimidation+7]
+		\enemyStatblockSkillsSpiritual[Insight +9, Perception +9]
+		\enemyStatblockSkillsLanguages[azish]
+	]
+}{
+	\enemyStatblockFeatureRaiseAlert{} \\
+	
+	\enemyStatblockFeatureBaleful{} \\
+	
+	\enemyStatblockFeatureGatherEvidence{} \\
+	
+	\enemyStatblockFeatureImposingPosture{} \\
+}{
+	\enemyStatblockAction{Strike: Longspear}{Attack +9, reach 5 ft., one target. Graze: 4 (1d8) keen damage. Hit: 13 (1d8 + 9) keen damage, and the guard can spend 1 Focus to knock the target Prone.}\\
+	
+	\enemyStatblockAction[\iconActionDouble]{Debilitate (Costs 2 Focus)}{Attack +9, reach 5 ft., one Prone target. Graze: 9 (2d8) impact damage. Hit: 18 (2d8 + 9) impact damage.}\\
+	
+	\enemyStatblockAction[\iconFreeAction]{Work as One (Costs 1 Focus)}{After the guard hits with an attack, they choose an ally they can influence, urging them to advance. That ally can immediately Disengage (no action required).}\\
+	
+	\enemyStatblockActionGetEmTalking{}
+}
+\normalsize

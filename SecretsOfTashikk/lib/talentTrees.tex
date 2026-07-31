@@ -1,0 +1,87 @@
+
+
+\def \discoveryWebNodeWidth{3.3cm}
+\def \talentNodeWidth{3.5cm}
+\def \talentKeyNodeWidth{6.7cm}
+\def \talentTitleNodeWidth{10cm}
+\def \talentKeyAnchorX{9.0cm}
+\def \talentKeyAnchorY{-5.7cm}
+\def \talentEnlightenedAnchorY{-7.4cm}
+\def \talentFakeGoldAnchorX{12.7cm}
+\def \talentFakeGoldAnchorY{-7cm}
+\def \talentLeftAnchorX{8cm}
+\def \talentRightAnchorX{12.82cm}
+\def \talentMidAnchorX{12.52cm}
+\def \talentTitleAnchorX{8.5cm}
+\tikzstyle{connector} = [color=white, sharp corners, line width = 3pt]
+\tikzstyle{connectorArrow} = [color=white, sharp corners, line width = 3pt, ->]
+\tikzstyle{connectorArrowDouble} = [color=white, sharp corners, line width = 3pt, <->]
+\tikzstyle{connectorDotted} = [color=white, sharp corners, line width = 3pt, dotted]
+\tikzstyle{connectorDashed} = [color=white, sharp corners, line width = 3pt, dashed]
+\tikzstyle{connectorDashedArrow} = [color=white, sharp corners, line width = 3pt, dashed, ->]
+
+
+\newcommand{\talentTreeNodeText}[4]{
+	\sffamily
+	#1~{\large \raggedright \textbf{#2}\vspace{0.15cm}\\}
+	\ifstrempty{#3}{}{\color{gray} \textit{Prerequisite: #3}\vspace{0.15cm}\\}
+	\color{black} #4
+}
+
+\newcommand{\talentTreeNodeBox}[4]{
+	\fcolorbox{white}{white}{
+		\parbox{\talentNodeWidth}{
+			\talentTreeNodeText{#1}{#2}{#3}{#4}
+		}
+	}
+}
+
+\newcommand{\talentTreeKeyNodeBox}[4]{
+	\fcolorbox{goldStats}{white}{
+		\parbox{\talentKeyNodeWidth}{
+			\talentTreeNodeText{#1}{#2}{#3}{#4}
+		}
+	}
+}
+
+\newcommand{\talentTreeTitleNodeBox}[2]{
+	\fcolorbox{goldStats}{white}{
+		\parbox{\talentTitleNodeWidth}{
+			\centering
+			\sffamily \Huge \vspace{0.2cm} \textbf{#1}\vspace{0.15cm}\\
+			\large \color{gray} \textit{#2} \vspace{0.15cm}
+		}
+	}
+}
+
+\newcommand{\talentTreeSubpathBox}[1]{
+	\fcolorbox{goldStats}{goldStats}{
+		\parbox{\talentKeyNodeWidth}{
+			\vspace{0.16cm}
+			\color{white} \Large \centering \textbf{#1} \normalsize 
+			\vspace{0.16cm}
+		}
+	}
+}
+
+\newcommand{\talentTreeEnlightenedBox}{
+\fcolorbox{goldStats}{goldStats}{
+	\parbox{\talentKeyNodeWidth}{
+		\vspace{0.16cm}
+		\color{white} \Large \centering \textbf{ENLIGHTENED} \normalsize 
+		\vspace{0.16cm}
+	}
+}
+}
+
+\newcommand{\discoveryWebNodeBox}[3]{
+	\fcolorbox{white}{white}{
+		\parbox{\discoveryWebNodeWidth}{
+			\sffamily
+			{\raggedright \small \textbf{#1}\vspace{0.15cm}\\}
+			\ifstrempty{#2}{}{\scriptsize \textit{#2}\vspace{0.15cm}\\}
+			\raggedright \color{black} \scriptsize Clues: \\ #3
+		}
+	}
+}
+

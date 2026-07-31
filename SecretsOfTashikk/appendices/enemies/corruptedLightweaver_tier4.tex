@@ -1,0 +1,49 @@
+\label{enemyCorruptedLightweaverD}
+
+% Illumination (Pre)
+% Transformation (Wil)
+% Envoy (Faithful): Galvanize
+% Lightweaver: 1st, 2nd, 3rd, 4th Ideal
+% Enlightened: Interpret Body Language, Uncover Secrets, LureWithsecrets, DecryptThoughts
+\enemyStatBlockDouble{
+	\enemyStatBlockHeader{\enemyCorruptedLightweaverNameD}{4}{Rival}{\mediumHuman}
+}{
+	\enemyStatBlockStats{0}{5}{2}{5}{5}{5}{65 (60-70)}{7}{7}
+}{
+	\enemyStatBlockSkills[
+		\enemyStatblockSkillsMovement[30 ft.] \\		
+		\enemyStatblockSkillsSenses[20 ft. (sight)]	
+		\enemyStatblockSkillsPhysical[Light Weaponry +10]
+		\enemyStatblockSkillsCognitive[Intimidation +10, Lore +6]
+		\enemyStatblockSkillsSpiritual[Deception +10, Insight~+10, Perception~+10]
+		\enemyStatblockSkillsSurges[Illumination +10 (5 ranks), Transformation +7 (2 ranks)]
+		\enemyStatblockSkillsLanguages[defined by culture]
+	]
+}{
+	\enemyStatblockInterpretBodyLanguage{} \\ 
+	
+	\enemyStatblockFeatureComposed{} \\
+}{	
+	\enemyStatblockAction{Strike: Radiant Sidesword}{Attack +10, reach 5 ft., one target. Graze: 7 (2d6) spirit damage. Hit: 17 (2d6 + 10) spirit.} \\
+	
+	\enemyStatblockAction[\iconActionDouble{}]{Strike: Blinding Knife}{Raise stakes. Attack +10, reach 5 ft., one target. Graze: 2 (1d4) keen damage. Hit: 12 (1d4 + 10) damage and this character may spend \iconOpp{} to make the target suffer a permanent injury to their eye, giving them a disadvantage on \skillPerception{} tests. If a character already has such an injury, they become permanently blinded.} \\
+
+	\enemyStatblockActionReadDesires{} \\
+	\columnbreak
+	
+	\enemyStatblockActionUncoverSecrets{} \\
+	
+	\enemyStatblockActionLureWithsecrets{} \\
+	
+	\enemyStatblockActionDecryptThoughts{} \\
+	
+	\enemyStatblockActionSuggestion{} \\
+
+	\enemyStatblockActionGalvanizeSelf{} \\
+	
+	\enemyStatblockActionRegenerate{4} \\
+	
+	\enemyStatblockActionResponseDeception{} \\
+	
+	\enemyStatblockActionReactivePlate{}	
+}

@@ -1,0 +1,48 @@
+\label{enemyGuardD}
+
+\enemyStatBlockDouble{
+	\enemyStatBlockHeader{\enemyGuardNameD}{4}{Rival}{\mediumHuman}
+}{
+	\enemyStatBlockStats{5}{2}{4}{4}{5}{3}{70 (65–75)}{6}{0}
+}{	
+	\enemyStatBlockSkills[
+		\enemyStatblockSkillsDeflect[4 (full plate)] \\
+		\enemyStatblockSkillsMovement[25 ft.]		
+		\enemyStatblockSkillsSenses[50 ft. (sight)]	
+		\enemyStatblockSkillsPhysical[Athletics +10, Heavy Weaponry +10]
+		\enemyStatblockSkillsCognitive[Deduction +9, Discipline +9, Intimidation +9]
+		\enemyStatblockSkillsSpiritual[Insight +10, Perception +10]
+		\enemyStatblockSkillsLanguages[azish]
+	]
+}{
+	\enemyStatblockFeatureRaiseAlert{} \\
+	
+	\enemyStatblockFeatureBaleful{} \\
+	
+	\enemyStatblockFeatureGatherEvidence{} \\
+	
+	\enemyStatblockFeatureSleuthsInstincts{} \\
+	
+	\enemyStatblockFeatureImposingPosture{} \\
+	\columnbreak
+}{
+	\enemyStatblockAction{Strike: Longspear}{Attack +10, reach 5 ft., one target. Graze: 4 (1d8) keen damage. Hit: 14 (1d8 + 10) keen damage, and the guard can spend 1 Focus to knock the target Prone.}\\
+	
+	\enemyStatblockAction[\iconActionDouble]{Debilitate (Costs 2 Focus)}{Attack +10, reach 5 ft., one Prone target. Graze: 9 (2d8) impact damage. Hit: 19 (2d8 + 10) impact damage.}\\
+	
+	\enemyStatblockAction[\iconFreeAction]{Work as One (Costs 1 Focus)}{After the guard hits with an attack, they choose an ally they can influence, urging them to advance. That ally can immediately Disengage (no action required).}\\
+	
+	\enemyStatblockActionGetEmTalking{} \\
+	
+	\enemyStatblockActionCloseCase{} \\
+	
+	\begin{center} \MakeUppercase{\textbf{Opportunities and Complications}} \end{center}
+	{\color{goldStats} \hrule \vspace{0.5cm} }
+	
+	The following options are available when an enemy gains an Opportunity or Complication during a scene with \enemyGuardNameD{}:
+	
+	\scriptedOption{Opportunity}{An enemy can spend \iconOpp{} to make the \enemyGuardNameD{} pronounce their rights to them, losing \iconAction{}.}
+	
+	\scriptedOption{Complication}{The GM can spend \iconComp{} from an enemy’s test to have the \enemyGuardNameD{} call for reinforcements. At beginning of the next round, two \enemyGuardB{}s will join the combat.}
+}
+
