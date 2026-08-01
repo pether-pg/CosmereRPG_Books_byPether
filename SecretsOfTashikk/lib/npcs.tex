@@ -19,7 +19,10 @@
 
 % Yeddaw
 
+\newcommand{\npcInformant}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{TODO}}{\npc{TODO}}}
 \newcommand{\npcImmigrant}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{Ganxir}}{\npc{Ganxir}}}
+\newcommand{\npcStormwarden}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{TODO}}{\npc{TODO}}}
+\newcommand{\npcDoctor}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{TODO}}{\npc{TODO}}}
 \newcommand{\npcGossipGuard}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[f]{TODO}}{\npc{TODO}}}
 \newcommand{\npcBindBeggaar}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{TODO}}{\npc{TODO}}}
 \newcommand{\npcCultist}[1][u]{\ifthenelse{\equal{#1}{s}}{\npc[m]{TODO}}{\npc{TODO}}}
@@ -29,6 +32,8 @@
 
 \newcommand{\locationTashikk}{Tashikk}
 \newcommand{\locationYeddaw}{Yeddaw}
+\newcommand{\locationIndicium}{Grand Indicium}
+
 \newcommand{\locationFidelity}{Unyielding Fidelity}
 \newcommand{\locationKharbranth}{Kharbranth}
 \newcommand{\locationPalanaeum}{Palanaeum}

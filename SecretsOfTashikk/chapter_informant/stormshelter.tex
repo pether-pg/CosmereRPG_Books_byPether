@@ -1,0 +1,101 @@
+\section{Stormshelter}
+\label{sec:stormshelter}
+
+As the party enters the Stormshelter, read the following:
+
+\quoteBox{
+	TODO
+}
+
+Stormwarden \npcStormwarden[s]{} is responsible for maintaining this place. At this moment, the building would be empty if not for him. There is no sight of the informant.
+
+
+
+\subsection{Talking with the Stormwarden}
+
+The PCs may ask \npcStormwarden{} for more information. He will politely share the most basic facts that the PCs could learn from anyone else, but he won't give the biggest secrets for free.
+
+\scriptedOption{Who are you?}{
+	I am \npcStormwarden{}, the stormwarden. I run this place. Who are you?
+}
+
+\scriptedOption{We are looking for someone...}{
+	Well, as you can see, nobody is here.
+}
+
+\scriptedOption{Do you know \npcInformant{}?}{
+	Yeah, I know them.
+}
+
+\scriptedOption{Do you know where he is?}{
+	Perhaps...
+}
+
+\scriptedOption{Will you help us find him?}{
+	I could, but you are in \locationYeddaw{}, lad. Information here has price.
+}
+
+\scriptedOption{Fine, what do you want?}{
+	Well, as I said, you are in \locationYeddaw{}. We value information in here.
+}
+
+
+
+\subsection{Coveted Secret}
+\label{ssec:stormshelterQuest}
+
+\npcStormwarden{} is willing to help the party, but he requires one thing in return: the PCs must learn what happened to the Tashi's Light Orphanage. 
+
+Recently the orphanage stopped accepting new children and \npcStormwarden{} wishes to know why. He believes this is a good secret to trade with someone during the next Storm, but so far he failed to learn anything.
+
+To learn more, the party may proceed to \nameref{chap:chapterOrphanage}.
+
+
+
+
+\subsection{Trading Secrets}
+\label{ssec:stormshelterTradeSecrets}
+
+Once the party learned the secrets of the orphanage, they can return and trade them for more information about \npcInformant{}. When they do, read the following:
+
+\quoteBox{
+	TODO
+}
+
+\npcStormwarden{} does not know the exact location of \npcInformant{}. However, from what he said it seems that \npcInformant{} is a Singer with white-and-red skin. That sounds specific enough to help with finding him...
+
+\npcStormwarden{} that this isn't exactly what the party was hoping for. To sweeten the deal, he offers them to buy \lootSpanreedStormwarden{} for half the price - only 150 mk! For more details, see \fullref{ssec:stormshelterSpanreed}.
+
+\ptrBox{
+	Trading secrets with \npcStormwarden{} may be recognized by a Cryptic.}
+
+
+\subsection{Stormwarden Spanreed}
+\label{ssec:stormshelterSpanreed}
+
+If the party completed \fullref{ssec:stormshelterTradeSecrets} quest, they can buy \lootSpanreedStormwarden{} for 150 mk.
+
+\npcStormwarden{} promises to send regular Highstorm forecast using the spanreed. It is a standard service with many satisfied customers all across Roshar. Best quality, real bargain!
+
+By default he sends information about the upcoming Highstorm with one day advance, but the party can adjust that to their own needs. They can also use the spanreed to ask about exact hour the Storm is expected to arrive anywhere in the world.
+
+He hopes to expand the service to include forecasts about the new red storm, but so far he has not enough data points to provide accurate estimates.
+
+
+
+\subsection{Stormwarden's Prot\'eg\'e}
+
+\npcStormwarden{} doesn't bring this topic up, but if a character wishes to learn the trade, the stormwarden might agree to teach them the craft. To convince him, the party will need to share one additional secret with him on top of the one from \fullref{ssec:stormshelterTradeSecrets}.
+
+When they do, allow one PC to start "Stormwarden's Prot\'eg\'e" goal. To complete it, they will need to either stay in \locationYeddaw{} or buy a spanreed from \npcStormwarden{} (see \fullref{ssec:stormshelterSpanreed}).
+
+To earn the milestones for the goal, once per approaching Highstorm the PC may attempt a \skillCheck{20}{\skillLore}. On a success, the PC completes one milestone for the goal.
+
+For the first milestone the test gains disadvantage as the PC is just staring learning. The last one gains advantage, as the PC should already be familiar with the calculations. The GM might also suggest other solutions.
+
+Once the final milestone of "Stormwarden's Prot\'eg\'e" goal is completed, the PC gains Stormwarden Expertise:
+
+\ability{Stormwarden Expertise}{You know stormwardens' script. You always know when the next Highstorm will arrive. If you can observe the weather, you always know which direction is north.}
+
+\ptrBox{
+	Learning new ability may be recognized by an inkspren.}
