@@ -94,9 +94,38 @@
 	}
 }
 
+\newcommand{\event}[3]{
+	\noindent
+	\parbox{8cm}{	
+		\fcolorbox{#3}{#3}{			
+			\begin{tabular}{p{7.7cm}}				
+				\color{white} \centering \textbf{EVENT} \\
+			\end{tabular}
+		}\par
+		\vspace{-0.5cm}
+		\noindent
+		\begin{adjustwidth}{0.35cm}{0cm}
+			\fcolorbox{goldStats}{white}{
+				\begin{tabular}{p{7cm}}
+					\footnotesize \centering Triggers when the final Complication slot is filled. \normalsize \\
+					\vspace{0.15cm}
+					#2
+					
+					\vspace{0.25cm} %\ECFAugie
+					\LARGE {#1} \\ \color{goldStats}\titlerule
+					\vspace{0.25cm}
+				\end{tabular}
+			}
+		\end{adjustwidth}
+	}
+}
+
 
 \newcommand{\iconCompEvent}{
 	\fcolorbox{redSpoiler}{white}{\iconComp[1cm]}
+}
+\newcommand{\iconOppEvent}{
+	\fcolorbox{blueRadiance}{white}{\iconOpp[1cm]}
 }
 
 
