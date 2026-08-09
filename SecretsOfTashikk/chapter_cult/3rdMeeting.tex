@@ -7,7 +7,40 @@ When the PCs reach the informant, read the following:
 	TODO
 }
 
-\npcBlindBeggar{} was faster and he reached \npcInformant{} before the party. He killed the Singer after learning his secrets and now he wants the party to offer something in return for them. You can run this scene as a Conversation.
+\npcBlindBeggar{} was faster and he reached \npcInformant{} before the party. However, depending on the Endeavor result in \fullref{sec:searchForSinger}, the informant might be still alive or already dead...
+
+\reasonBox{
+	Description in this scene assumes \npcBlindBeggar{} is a \enemyCorruptedLightweaverC{} wielding a Shardblade. If you are running this adventure on a lower tier, \enemyCorruptedLightweaverB{} carries no such weapon, so you will need to adjust the details.
+}
+
+\subsection{Singer Hostage}
+\label{ssec:3rdMeetingHostage}
+
+If the party succeeded during \fullref{sec:searchForSinger}, read the following:
+
+\quoteBox{
+	TODO
+}
+
+\npcInformant{} is still still alive and held hostage. \npcInformant{} offers to trade his life and secrets for \lootSealedMessage{}. Proceed to \fullref{ssec:3rdMeetingConversation}.
+
+
+
+\subsection{Singer Slain}
+\label{ssec:3rdMeetingMurder}
+
+If the party failed during \fullref{sec:searchForSinger}, read the following:
+
+\quoteBox{
+	TODO
+}
+
+\npcBlindBeggar{} killed the Singer after learning his secrets and now he wants the party to give him \lootSealedMessage{} in return for them. Proceed to \fullref{ssec:3rdMeetingConversation}.
+
+
+
+\subsection{Final Conversation}
+\label{ssec:3rdMeetingConversation}
 
 \npcBlindBeggar{} is a \enemyCorruptedLightweaverC{}. \conversationDefence{He}{16}{20}{7}
 
@@ -36,7 +69,9 @@ On top of that, once per scene, he can use his Firemoss ability to replenish his
 
 \subsubsection{Boss Fight}
 
-If the PCs attack \npcBlindBeggar{}, either to avenge \npcInformant{} or after they lose temper and back down from the Conversation, the scene changes into a Boss Fight.
+If the PCs attack \npcBlindBeggar{}, either to avenge \npcInformant{} or after they lose temper and back down from the Conversation, the scene changes into a Boss Fight. 
+
+If \npcInformant{} is alive at this point, he will be slain at the first sign of PCs' hostility.
 
 To even the odds, double the total Health of \enemyCorruptedLightweaverC{} and give him the Boss feature:
 
