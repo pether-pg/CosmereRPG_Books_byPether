@@ -44,7 +44,7 @@
 
 \newcommand{\pursuitReq}[2]{The Endeavor succeeds if the party accrues #1 successes before #2 failures, or if they otherwise complete the objective.}
 
-\newcommand{\pursuitReqPerPC}[2]{To complete the Endeavor, the party must accure #1 successes before #2 failures per each player. This story assumes the party consists of 4 people.}
+\newcommand{\pursuitReqPerPC}[2]{To complete the Endeavor, the party must accure #1 \ifthenelse{\equal{#1}{1}}{success}{successes} before #2 \ifthenelse{\equal{#2}{1}}{failure}{failures} per each player. This story assumes the party consists of 4 people.}
 
 
 \newcommand{\talent}[5]{
