@@ -33,14 +33,14 @@
 		{\fullref{sec:prison}}
 };
 
-\node[anchor=north west] (1stMeeting) at(5cm, -3cm) {
+\node[anchor=north west] (1stMeeting) at(10cm, -3cm) {
 	\discoveryWebNodeBox
 		{\fullref{sec:1stMeeting}}
 		{}
 		{(none)}
 };
 
-\node[anchor=north west] (stormshelter) at(13cm, -3cm) {
+\node[anchor=north west] (stormshelter) at(5cm, -3cm) {
 	\discoveryWebNodeBox
 		{\fullref{sec:stormshelter}}
 		{}
@@ -140,29 +140,24 @@
 
 \draw [connectorArrow] (cityGates.east) -- (enteredCity.west);
 \draw [connectorDashedArrow] (cityGates.south) -- (wanted.north);
-\draw [connectorArrow] (enteredCity.south) -- (1stMeeting.north);
-\coordinate (enteredCityStormshelterMid) at(10cm, -2.3cm);
-\draw [connector] (enteredCity.320) |- (enteredCityStormshelterMid);
-\draw [connectorArrow] (enteredCityStormshelterMid) -| (stormshelter.north);
+\coordinate (enteredCity1stMeetingMid) at(9.5cm, -2.3cm);
+\draw [connector] (enteredCity.320) |- (enteredCity1stMeetingMid);
+\draw [connectorArrow] (enteredCity1stMeetingMid) -| (1stMeeting.north);
+\draw [connectorArrow] (enteredCity.south) -- (stormshelter.north);
 
 \draw [connectorArrow] (wanted.south) -- (prison.north);
-\draw [connectorArrow] (stormshelter.south) -- (secretInformant.north);
+\draw [connectorArrow] (stormshelter.south) -- (chapterOrphanage.north);
 
 \draw [connectorArrow] (prison.south) -- (prisonTalking.north);
 \draw [connectorArrow] (chapterOrphanage.south) -- (philosopher.north);
 
-\coordinate (tradeLock) at(15.07cm, -5.3cm);
-\coordinate (stormshelterOrphanageMid1) at(10.5cm, -5.35cm);
-\coordinate (stormshelterOrphanageMid2) at(10.5cm, -5.3cm);
-\coordinate (orphanageTradeLockMid) at(12cm, -6cm);
-
-\draw [connector] (stormshelter.west) -| (stormshelterOrphanageMid1);
-\draw [connectorArrow] (stormshelterOrphanageMid2) -| (chapterOrphanage.north);
-\draw [connector] (chapterOrphanage.east) -| (orphanageTradeLockMid);
-\draw [connector] (orphanageTradeLockMid) |- (tradeLock);
-
+\coordinate (tradeLock) at(11.5cm, -5.3cm);
 \fill[white] (tradeLock) circle (0.25cm);
+\coordinate (stormshelterTradeLockMid) at(9.5cm, -5.3cm);
 
+\draw [connector] (stormshelter.320) |- (stormshelterTradeLockMid);
+\draw [connectorArrow] (stormshelterTradeLockMid) -| (secretInformant.north);
+\draw [connector] (chapterOrphanage.east) -| (tradeLock);
 
 \draw [connectorArrow] (prisonTalking.south) -- (secretSinger.north);
 \draw [connectorArrow] (philosopher.south) -- (chapterIndicium.north);
@@ -191,10 +186,10 @@
 \draw [connectorArrow] (searchForSinger.east) -- (3rdMeeting.west);
 \draw [connectorArrow] (3rdMeeting.east) -- (missionComplete.west);
 
-\draw[connectorDashedArrow]	(11cm, -0.5cm) -- (12.5cm, -0.5cm) node[right] {\sffamily Potential Follow-up};
-\draw[connectorArrow] 		(11cm, -1.0cm) -- (12.5cm, -1.0cm) node[right] {\sffamily Direct Follow-up};
-\draw[connector]			(11cm, -1.5cm) -- (12.5cm, -1.5cm) node[right] {\sffamily Both Paths Required};
-\fill[white] (12.25cm, -1.5cm) circle (0.25cm);
+\draw[connectorDashedArrow]	(11cm, -0.3cm) -- (12.5cm, -0.3cm) node[right] {\sffamily Potential Follow-up};
+\draw[connectorArrow] 		(11cm, -0.8cm) -- (12.5cm, -0.8cm) node[right] {\sffamily Direct Follow-up};
+\draw[connector]			(11cm, -1.3cm) -- (12.5cm, -1.3cm) node[right] {\sffamily Both Paths Required};
+\fill[white] (12.25cm, -1.3cm) circle (0.25cm);
 
 \end{tikzpicture}
 
