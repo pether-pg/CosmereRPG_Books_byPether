@@ -1,0 +1,205 @@
+\label{sec:sceneTransitions}
+
+\fancyfoot[C]{\sffamily \bfseries \color{white} --- \thepage\ --- }
+\newpage
+\onecolumn
+
+\pagecolor{blueRadiance}
+
+\begin{tikzpicture}[remember picture]
+	
+\node[anchor=center] (title) at(8.5cm, 2cm){
+	\talentTreeTitleNodeBox{\Large \myTitle}{Scene Map}
+};
+
+\node[anchor=north west] (cityGates) at(0cm, 0cm) {
+	\discoveryWebNodeBox
+		{\fullref{sec:cityGates}}
+		{}
+		{\fullref{sec:enteredCity} \\ \fullref{sec:wanted}}
+};
+
+\node[anchor=north west] (enteredCity) at(5cm, 0cm) {
+	\discoveryWebNodeBox
+		{\fullref{sec:enteredCity}}
+		{}
+		{\fullref{sec:1stMeeting} \\ \fullref{sec:stormshelter}}
+};
+
+\node[anchor=north west] (wanted) at(0cm, -3cm) {
+	\discoveryWebNodeBox
+		{\fullref{sec:wanted}}
+		{\hfill \iconComp{} \iconComp{} \iconComp{} \hfill}
+		{\fullref{sec:prison}}
+};
+
+\node[anchor=north west] (1stMeeting) at(5cm, -3cm) {
+	\discoveryWebNodeBox
+		{\fullref{sec:1stMeeting}}
+		{}
+		{(none)}
+};
+
+\node[anchor=north west] (stormshelter) at(13cm, -3cm) {
+	\discoveryWebNodeBox
+		{\fullref{sec:stormshelter}}
+		{}
+		{\nameref{chap:chapterOrphanage} \\ Secret - Informant is a Singer}
+};
+
+\node[anchor=north west] (prison) at(0cm, -6cm) {
+	\discoveryWebNodeBox
+		{\fullref{sec:prison}}
+		{}
+		{\fullref{ssec:prisonTalking}}
+};
+
+\node[anchor=north west] (chapterOrphanage) at(5cm, -6cm) {
+	\discoveryWebNodeBox
+		{"\nameref{chap:chapterOrphanage}"}
+		{}
+		{\fullref{sec:philosopher}}
+};
+
+\node[anchor=north west] (secretInformant) at(13cm, -6cm) {
+	\discoveryWebNodeBox
+		{Secret - Informant is a Singer}
+		{}
+		{\fullref{sec:searchForSinger}}
+};
+
+\node[anchor=north west] (prisonTalking) at(0cm, -9cm) {
+	\discoveryWebNodeBox
+		{\fullref{ssec:prisonTalking}}
+		{}
+		{Secret - Singer in the Immigrant Quarter}
+};
+
+\node[anchor=north west] (philosopher) at(5cm, -9cm) {
+	\discoveryWebNodeBox
+		{\fullref{sec:philosopher}}
+		{}
+		{\fullref{ssec:prisonTalking} \\ \fullref{sec:unexpectedHelp}}
+};
+
+\node[anchor=north west] (unexpectedHelp) at(10cm, -9cm) {
+	\discoveryWebNodeBox
+		{\fullref{sec:unexpectedHelp}}
+		{\hfill \iconOpp{} \iconOpp{} \iconOpp{} \hfill}
+		{(varied)}
+};
+
+\node[anchor=north west] (secretSinger) at(0cm, -12cm) {
+	\discoveryWebNodeBox
+		{Secret - Singer in the Immigrant Quarter}
+		{}
+		{\fullref{sec:searchForSinger}}
+};
+
+\node[anchor=north west] (chapterIndicium) at(5cm, -12cm) {
+	\discoveryWebNodeBox
+		{"\nameref{chap:chapterIndicium}"}
+		{}
+		{\fullref{sec:cultHideout} \\ Secret - Singer in the Immigrant Quarter}
+};
+
+\node[anchor=north west] (cultHideout) at(10cm, -12cm) {
+	\discoveryWebNodeBox
+		{\fullref{sec:cultHideout}}
+		{}
+		{(none)}
+};
+
+\node[anchor=north west] (2ndMeeting) at(10cm, -14.3cm) {
+	\discoveryWebNodeBox
+		{\fullref{sec:2ndMeeting}}
+		{}
+		{\fullref{sec:cultHideout}}
+};
+
+\node[anchor=west] (searchForSinger) at(0cm, -18cm) {
+	\discoveryWebNodeBox
+		{\fullref{sec:searchForSinger}}
+		{}
+		{\fullref{sec:3rdMeeting}}
+};
+
+\node[anchor=west] (3rdMeeting) at(6cm, -18cm) {
+	\discoveryWebNodeBox
+		{\fullref{sec:3rdMeeting}}
+		{}
+		{\fullref{sec:missionComplete}}
+};
+
+\node[anchor=west] (missionComplete) at(12cm, -18cm) {
+	\discoveryWebNodeBox
+		{\fullref{sec:missionComplete}\vspace{0.1cm}}
+		{\hfill{} VICTORY! \hfill{}}
+		{}
+};
+
+\draw [connectorArrow] (cityGates.east) -- (enteredCity.west);
+\draw [connectorDashedArrow] (cityGates.south) -- (wanted.north);
+\draw [connectorArrow] (enteredCity.south) -- (1stMeeting.north);
+\coordinate (enteredCityStormshelterMid) at(10cm, -2.3cm);
+\draw [connector] (enteredCity.320) |- (enteredCityStormshelterMid);
+\draw [connectorArrow] (enteredCityStormshelterMid) -| (stormshelter.north);
+
+\draw [connectorArrow] (wanted.south) -- (prison.north);
+\draw [connectorArrow] (stormshelter.south) -- (secretInformant.north);
+
+\draw [connectorArrow] (prison.south) -- (prisonTalking.north);
+\draw [connectorArrow] (chapterOrphanage.south) -- (philosopher.north);
+
+\coordinate (tradeLock) at(15.07cm, -5.3cm);
+\coordinate (stormshelterOrphanageMid1) at(10.5cm, -5.35cm);
+\coordinate (stormshelterOrphanageMid2) at(10.5cm, -5.3cm);
+\coordinate (orphanageTradeLockMid) at(12cm, -6cm);
+
+\draw [connector] (stormshelter.west) -| (stormshelterOrphanageMid1);
+\draw [connectorArrow] (stormshelterOrphanageMid2) -| (chapterOrphanage.north);
+\draw [connector] (chapterOrphanage.east) -| (orphanageTradeLockMid);
+\draw [connector] (orphanageTradeLockMid) |- (tradeLock);
+
+\fill[white] (tradeLock) circle (0.25cm);
+
+
+\draw [connectorArrow] (prisonTalking.south) -- (secretSinger.north);
+\draw [connectorArrow] (philosopher.south) -- (chapterIndicium.north);
+\coordinate (prisonTalkingEast) at(4.1cm, -10.07cm);
+\coordinate (philosopherWest) at(5cm, -10.07cm);
+\draw [connectorArrow] (philosopherWest) -- (prisonTalkingEast);
+\coordinate (philosopherEast) at(9.1cm, -10.07cm);
+\coordinate (unexpectedHelpWest) at(10cm, -10.07cm);
+\draw [connectorDashedArrow] (philosopherEast) -- (unexpectedHelpWest);
+
+\draw [connectorArrow] (secretSinger.south) -- (searchForSinger.north);
+\coordinate (secretSingerEast) at(4.1cm, -13.07cm);
+\coordinate (chapterIndiciumWest) at(5cm, -13.07cm);
+\draw [connectorArrow] (chapterIndiciumWest) -- (secretSingerEast);
+\coordinate (chapterIndiciumEast) at(9.1cm, -13.07cm);
+\coordinate (cultHideoutWest) at(10cm, -13.07cm);
+\draw [connectorDashedArrow] (chapterIndiciumEast) -- (cultHideoutWest);
+
+\draw [connectorDashedArrow] (2ndMeeting.north) -- (cultHideout.south);
+
+\coordinate (searchLock) at(2.07cm, -16.3cm);
+\fill[white] (searchLock) circle (0.25cm);
+\draw [connector] (secretInformant.295) |- (searchLock);
+\draw [connectorArrow] (secretInformant.245) |- (2ndMeeting.east);
+
+\draw [connectorArrow] (searchForSinger.east) -- (3rdMeeting.west);
+\draw [connectorArrow] (3rdMeeting.east) -- (missionComplete.west);
+
+\draw[connectorDashedArrow]	(11cm, -0.5cm) -- (12.5cm, -0.5cm) node[right] {\sffamily Potential Follow-up};
+\draw[connectorArrow] 		(11cm, -1.0cm) -- (12.5cm, -1.0cm) node[right] {\sffamily Direct Follow-up};
+\draw[connector]			(11cm, -1.5cm) -- (12.5cm, -1.5cm) node[right] {\sffamily Both Paths Required};
+\fill[white] (12.25cm, -1.5cm) circle (0.25cm);
+
+\end{tikzpicture}
+
+\newpage
+
+\pagecolor{white}
+\fancyfoot[C]{\sffamily \bfseries \color{goldStats} --- \color{blueRadiance} \thepage\ \color{goldStats} --- }
+\twocolumn

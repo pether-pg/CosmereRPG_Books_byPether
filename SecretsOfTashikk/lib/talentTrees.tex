@@ -80,7 +80,7 @@
 			\sffamily
 			{\raggedright \small \textbf{#1}\vspace{0.15cm}\\}
 			\ifstrempty{#2}{}{\scriptsize \textit{#2}\vspace{0.15cm}\\}
-			\raggedright \color{black} \scriptsize Clues: \\ #3
+			\ifstrempty{#3}{}{\raggedright \color{black} \scriptsize Follow-up: \\ #3}
 		}
 	}
 }
