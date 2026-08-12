@@ -141,8 +141,7 @@
 \draw [connectorArrow] (cityGates.east) -- (enteredCity.west);
 \draw [connectorDashedArrow] (cityGates.south) -- (wanted.north);
 \coordinate (enteredCity1stMeetingMid) at(9.5cm, -2.3cm);
-\draw [connector] (enteredCity.320) |- (enteredCity1stMeetingMid);
-\draw [connectorArrow] (enteredCity1stMeetingMid) -| (1stMeeting.north);
+\draw [connectorArrow] (enteredCity.east) -| (1stMeeting.120);
 \draw [connectorArrow] (enteredCity.south) -- (stormshelter.north);
 
 \draw [connectorArrow] (wanted.south) -- (prison.north);
@@ -186,10 +185,10 @@
 \draw [connectorArrow] (searchForSinger.east) -- (3rdMeeting.west);
 \draw [connectorArrow] (3rdMeeting.east) -- (missionComplete.west);
 
-\draw[connectorDashedArrow]	(11cm, -0.3cm) -- (12.5cm, -0.3cm) node[right] {\sffamily Potential Follow-up};
-\draw[connectorArrow] 		(11cm, -0.8cm) -- (12.5cm, -0.8cm) node[right] {\sffamily Direct Follow-up};
-\draw[connector]			(11cm, -1.3cm) -- (12.5cm, -1.3cm) node[right] {\sffamily Both Paths Required};
-\fill[white] (12.25cm, -1.3cm) circle (0.25cm);
+\draw[connectorDashedArrow]	(12.5cm, -0.3cm) -- (14cm, -0.3cm) node[right] {\sffamily Potential Follow-up};
+\draw[connectorArrow] 		(12.5cm, -0.8cm) -- (14cm, -0.8cm) node[right] {\sffamily Direct Follow-up};
+\draw[connector]			(12.5cm, -1.3cm) -- (14cm, -1.3cm) node[right] {\sffamily Both Paths Required};
+\fill[white] (13.75cm, -1.3cm) circle (0.25cm);
 
 \end{tikzpicture}
 
