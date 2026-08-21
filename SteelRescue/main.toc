@@ -1,0 +1,50 @@
+\contentsline {chapter}{\numberline {0}Introduction}{4}{chapter.0}%
+\contentsline {section}{\numberline {0.1}About This Book}{4}{section.0.1}%
+\contentsline {subsection}{\numberline {0.1.1}About author}{4}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {0.1.2}Who is it for?}{4}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {0.1.3}Is it canon?}{4}{subsection.0.1.3}%
+\contentsline {subsection}{\numberline {0.1.4}How many spoilers?}{4}{subsection.0.1.4}%
+\contentsline {subsection}{\numberline {0.1.5}Motivation behind this book}{4}{subsection.0.1.5}%
+\contentsline {section}{\numberline {0.2}About the Adventure}{4}{section.0.2}%
+\contentsline {subsection}{\numberline {0.2.1}Campaign Themes}{4}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {0.2.2}Campaign Setting}{4}{subsection.0.2.2}%
+\contentsline {section}{\numberline {0.3}Running the Adventure}{4}{section.0.3}%
+\contentsline {subsection}{\numberline {0.3.1}Adjusting Difficulty}{5}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {0.3.2}Handling Canon}{5}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {0.3.3}Playing with Singers}{5}{subsection.0.3.3}%
+\contentsline {subsection}{\numberline {0.3.4}Playing with Radiants}{5}{subsection.0.3.4}%
+\contentsline {subsection}{\numberline {0.3.5}Playing with TODO}{5}{subsection.0.3.5}%
+\contentsline {subsection}{\numberline {0.3.6}Unique Rules}{5}{subsection.0.3.6}%
+\contentsline {subsubsection}{\hyperref [ssec:ruleExample]{TODO - Example}{}}{5}{subsubsection*.3}%
+\contentsline {section}{\numberline {0.4}Adventure Summary}{6}{section.0.4}%
+\contentsline {subsection}{\numberline {0.4.1}Chapter 1 Summary}{6}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {0.4.2}Chapter TODO Summary}{6}{subsection.0.4.2}%
+\contentsline {section}{\numberline {0.5}Dramatis Person\ae }{6}{section.0.5}%
+\contentsline {section}{\numberline {0.6}Before Starting the Campaign}{7}{section.0.6}%
+\contentsline {subsection}{\numberline {0.6.1}Required Knowledge}{7}{subsection.0.6.1}%
+\contentsline {subsection}{\numberline {0.6.2}Read the Adventure}{7}{subsection.0.6.2}%
+\contentsline {subsection}{\numberline {0.6.3}Players’ Expectations}{7}{subsection.0.6.3}%
+\contentsline {subsection}{\numberline {0.6.4}Create Player Characters}{7}{subsection.0.6.4}%
+\contentsline {subsection}{\numberline {0.6.5}Character Relationships}{7}{subsection.0.6.5}%
+\contentsline {subsection}{\numberline {0.6.6}Character Backstory}{8}{subsection.0.6.6}%
+\contentsline {chapter}{\numberline {1}Chapter 1 - TODO}{10}{chapter.1}%
+\contentsline {section}{\numberline {1.0}Running This Chapter}{10}{section.1.0}%
+\contentsline {subsection}{\numberline {1.0.1}Character Advancement}{10}{subsection.1.0.1}%
+\contentsline {section}{\numberline {1.1}TODO - Section}{10}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}TODO - Subsection}{10}{subsection.1.1.1}%
+\contentsline {subsubsection}{TODO - Subsubsection}{10}{subsubsection*.4}%
+\contentsline {subsubsection}{TODO - Subsubsection}{10}{subsubsection*.5}%
+\contentsline {subsection}{\numberline {1.1.2}Example Choices}{11}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Example Conversation}{11}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Example Endeavor}{11}{subsection.1.1.4}%
+\contentsline {section}{\numberline {1.2}Journeying Onward}{11}{section.1.2}%
+\contentsline {chapter}{\numberline {A}Appendix A{}: Document History}{13}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Appendix B{}: Adversaries}{14}{appendix.B}%
+\contentsline {subsection}{\numberline {B.0.1}Hungry Axehound}{14}{subsection.B.0.1}%
+\contentsline {chapter}{\numberline {C}Appendix C{}: Items}{15}{appendix.C}%
+\contentsline {section}{\numberline {C.1}\hyperref [chap:items]{\textit {\textbf {TODO - Example Loot}}}{}}{15}{section.C.1}%
+\contentsline {chapter}{\numberline {D}Appendix D{}: Example Character Sheets}{16}{appendix.D}%
+\contentsline {chapter}{\numberline {E}Appendix E{}: Acknowledgments}{19}{appendix.E}%
+\contentsline {section}{\numberline {E.1}Artists involved}{19}{section.E.1}%
+\contentsline {section}{\numberline {E.2}Other Support}{19}{section.E.2}%
+\contentsline {section}{\numberline {E.3}PDF Building}{19}{section.E.3}%

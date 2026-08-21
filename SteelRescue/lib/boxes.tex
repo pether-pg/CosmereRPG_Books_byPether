@@ -1,0 +1,87 @@
+% Boxes
+
+\newcommand{\quoteBox}[1]{
+	\vspace{0.2cm}
+	\colorbox{yellowQuote}{
+		\parbox{7cm}{\sffamily #1}
+	}
+	\vspace{0.2cm}
+}
+
+\newcommand{\reasonBox}[1]{
+	\vspace{0.2cm}
+	\colorbox{grayReason}{		
+		\parbox{7cm}{\textit{#1}}
+	}
+	\vspace{0.2cm}
+}
+
+\newcommand{\coloredBox}[5]{	
+	\begin{minipage}{7cm}
+		\vspace{0.2cm}
+		\noindent
+		\fcolorbox{#1}{#1}{
+			\color{#3}
+			\begin{tabular}{p{7cm}}
+				\textbf{#4}
+			\end{tabular}		
+		}\par
+		\vspace{-0.15cm}
+		\noindent
+		\fcolorbox{#1}{#2}{
+			\begin{tabular}{p{7cm}}
+				#5
+			\end{tabular}
+		}
+		\vspace{0.2cm}
+	\end{minipage}
+}
+
+\newcommand{\roleplayBox}[2]{
+	\coloredBox{goldStats}{yellowRoleplay}{black}{\sffamily Roleplaying #1}{#2}
+}
+
+\newcommand{\roleplayTips}[4]{	
+	\sffamily \textbf{Characteristics:} #1\\
+	\sffamily \textbf{Goal:} #2\\
+	\sffamily \textbf{Appearance:} #3 \\ \\
+	\sffamily #4
+}
+
+\newcommand{\blueBox}[2]{
+	\coloredBox{blueRadiance}{white}{white}{\sffamily #1}{\sffamily #2}
+}
+
+\newcommand{\blackBox}[2]{
+	\coloredBox{black}{white}{white}{\sffamily #1}{\sffamily #2}
+}
+
+\newcommand{\redBox}[2]{
+	\coloredBox{redSpoiler}{white}{white}{\sffamily #1}{\sffamily #2}
+}
+
+\newcommand{\tacticsBox}[1]{
+	\blueBox{Tactics}{#1}
+}
+
+\newcommand{\ptrBox}[1]{
+	\blueBox{Path to Radiance}{#1}
+}
+
+\newcommand{\corruptedBox}[1]{
+	\blackBox{Path to Enlightenment}{#1}
+}
+
+\newcommand{\spoilerBox}[1]{
+	\redBox{Spoiler Info}{#1}
+}
+
+\newcommand{\abilityBox}[1]{
+	\vspace{0.2cm}
+	\fcolorbox{goldStats}{white}{
+		\parbox{7cm}{
+			\noindent \sffamily #1
+		}
+	}
+	\vspace{0.2cm}
+}
