@@ -158,7 +158,11 @@
 	\textbf{Languages:} #1
 }
 
+% FEATURES
+
 \newcommand{\enemyStatblockFeature}[2]{\textbf{#1.} #2}
+
+\newcommand{\enemyStatblockFeatureExcl}[2]{\textbf{#1!} #2}
 
 \newcommand{\enemyStatblockFeatureMinion}{\enemyStatblockFeature{Minion}{This creature's attacks can’t critically hit, and they’re immediately defeated when they suffer an injury}}
 
@@ -174,8 +178,96 @@
 
 \newcommand{\enemyStatblockFeatureInurePoison}{\enemyStatblockFeature{Inured to Poison}{The Ghostblood gains an advantage on tests to resist the effects of poison. Additionally, before the Ghostblood takes vital damage, they reduce it by 2.}}
 
+\newcommand{\enemyStatblockInterpretBodyLanguage}{\enemyStatblockFeature{Interpret Body Language}{This character gains an advantage on Insight tests made to interpret the desires or intentions of others.}}
+
+\newcommand{\enemyStatblockFeatureComposed}{\enemyStatblockFeature{Composed}{Increase this character's max Focus by their tier. \textit{(not included in the above stats)}}}
+
+\newcommand{\enemyStatblockFeatureCollected}{\enemyStatblockFeature{Collected}{Increase this character's Cognitive and Spiritual Defenses by 2. \textit{(not included in the above stats)}}}
+
 \newcommand{\enemyStatblockFeatureBoss}{\enemyStatblockFeature{Boss}{This creature can take both a fast turn and a slow turn each round. After an enemy finishes a turn, this creature can spend 1 Focus to immediately use an extra \iconAction{} or \iconFreeAction{}. Additionally, they can spend 1 Focus on their turn to remove a condition from themself.}}
 
-\newcommand{\enemyStatblockFeatureBossConversation}{\enemyStatblockFeature{Boss (Conversation)}{This character makes a contribution twice in a Conversation round: once after more than a half of enemies made their contribution, and the second time after all of them contributed. \\ After an enemy finishes a turn, the character can spend 1 Focus to immediately use an extra  \iconAction{} or  \iconFreeAction{}. Additionally, they can spend 1 Focus on their turn to remove a condition from themself.} \\}
+\newcommand{\enemyStatblockFeatureBossConversation}{\enemyStatblockFeature{Boss (Conversation)}{This character makes a contribution twice in a Conversation round: once after more than a half of enemies made their contribution, and the second time after all of them contributed. \\ After an enemy finishes a turn, the character can spend 1 Focus to immediately use an extra  \iconAction{} or  \iconFreeAction{}. Additionally, they can spend 1 Focus on their turn to remove a condition from themself.}}
+
+\newcommand{\enemyStatblockFeatureDivisible}{\enemyStatblockFeature{Divisible}{After the Sleepless takes impact or keen damage, they can immediately use their Divide to send out one hordeling (no action required).}}
+
+\newcommand{\enemyStatblockFeatureRaiseAlert}{\enemyStatblockFeatureExcl{Raise the Alert}{After an enemy the guard can sense within 60 feet of them fails a Stealth test, or after the guard succeeds on a test to notice that enemy, this guard and each allied guard who can sense that enemy gain the Focused condition until the end of the scene.}}
+
+\newcommand{\enemyStatblockFeatureBaleful}{\enemyStatblockFeature{Baleful}{To resist the influence, enemies must spend additional focus equal to the tier of this character.}}
+
+\newcommand{\enemyStatblockFeatureGatherEvidence}{\enemyStatblockFeature{Gather Evidence}{After succeeding on a cognitive test against another character, this character becomes Focused until the end of their next turn. Additionally, this character gains a Legal Codes expertise.}}
+
+\newcommand{\enemyStatblockFeatureSleuthsInstincts}{\enemyStatblockFeature{Sleuth’s Instincts}{This character gains an advantage on cognitive tests against characters whose motivation they know. This character knows when those characters lie to them.}}
+
+\newcommand{\enemyStatblockFeatureImposingPosture}{\enemyStatblockFeature{Imposing Posture}{After an enemy resists this character's influence while in their weapon’s reach, they are Disoriented.}}
+
+\newcommand{\enemyStatblockFeatureCapable}{\enemyStatblockFeature{Capable}{This character has a utility expertise in one profession, and they gain an advantage on skill tests related to that profession.}}
+
+\newcommand{\enemyStatblockFeatureSternCountenance}{\enemyStatblockFeature{Stern Countenance}{After this character spends focus to resist a character’s influence, that character loses 1 Focus.}}
+
+\newcommand{\enemyStatblockFeatureWellDressed}{\enemyStatblockFeature{Well Dressed}{This character has Fashion expertise. While wearing Presentable armor or fashionable clothing, they gain an advantage on their first Deception, Leadership, or Persuasion test.}}
+
+\newcommand{\enemyStatblockFeatureCalmAppeal}{\enemyStatblockFeature{Calm Appeal}{When this character's Steadfast Challenge makes a target Disoriented, this character may spend 1 Focus to pacify them. Resisting this character's Steadfast Challenge costs additional Focus equal to their ranks in Discipline.}}
+
+\newcommand{\enemyStatblockFeaturePracticedOratory}{\enemyStatblockFeature{Practiced Oratory}{When this character uses Steadfast Challenge, they may spend Focus up to their ranks in Persuasion to add that many targets.}}
+
+\newcommand{\enemyStatblockFeatureTruthseeker}{\enemyStatblockFeature{Truthseeker}{This character gains an advantage on Deduction and Insight tests made to ascertain truth.}}
+
+\newcommand{\enemyStatblockFeatureShardplate}{\enemyStatblockFeature{Shardplate (4 Charges)}{This character is equipped with Shardplate. Before they take damage, they can expend a charge (no action required) to increase their deflect value against that damage by 10. While the armor has charges, all Invested tests against the character gain a disadvantage, and the armor’s deflect value applies to all damage types. After the armor runs out of charges, some of the character’s attributes and skills are reduced by 2, along with their related modifiers; these statistics are marked with an asterisk (*).}}
+
+\newcommand{\enemyStatblockFeatureBreakableArmor}{\enemyStatblockFeature{Breakable Armor}{After this character is hit by an attack, the attacker can spend \iconOpp{} to cause the character’s Shardplate to lose 1 charge.}}
+
+\newcommand{\enemyStatblockFeatureObservant}{\enemyStatblockFeature{Observant}{This character cannot be affected by \skillStealth{} and \skillDeception{} tests if he observes the enemy attempting them with one of the hordelings.}}
+
+
+
+% ACTIONS
 
 \newcommand{\enemyStatblockAction}[3][\iconAction{}]{#1 \textbf{#2.} #3}
+
+\newcommand{\enemyStatblockActionRegenerate}[1]{\enemyStatblockAction[\iconFreeAction{}]{Regenerate (Costs 1 Investiture)}{This character recovers 1d6 + #1 Health.}}
+
+\newcommand{\enemyStatblockActionSteadfastChallenge}{\enemyStatblockAction{Steadfast Challenge (Costs 1 Focus)}{This character makes a Discipline test against the Spiritual defense of an enemy they can influence. On a success, they become Disoriented and gain a disadvantage on tests against this character until the end of their next turn.}}
+
+\newcommand{\enemyStatblockActionGalvanizeSelf}{\enemyStatblockAction[\iconActionDouble{}]{Inner Focus}{Once during a Conversation scene, this character skips their turn. At beginning of their next turn, this character recovers 1d8 Focus.}}
+
+\newcommand{\enemyStatblockActionReadDesires}{\enemyStatblockAction{Read Desires}{This character makes an Insight test against the Spiritual Defense of the target enemy. On a succes, this character learns a desire or intention of the target, which, if revealed, causes target to spend 2 Focus or back out from the Conversation.}}
+
+\newcommand{\enemyStatblockActionResponseDeception}{\enemyStatblockAction[\iconReaction{}]{Deceptive Response}{After another character's test successfully contributes to the Conversation, this character may make a Deception test. On a succes, that charcter loses 1 Focus. The DC of the Deception check equals the result of the first test.}}
+
+\newcommand{\enemyStatblockActionUncoverSecrets}{\enemyStatblockAction{Uncover Secrets (Costs 1 Focus)}{This character learns one secret of the target they can sense. If they reveal the secret, the target must spend 2 Focus or back out from the Conversation.}}
+
+\newcommand{\enemyStatblockActionLureWithsecrets}{\enemyStatblockAction{Lure with Secrets (Costs 1 Investiture)}{This character makes an Illumination test against the target’s Cognitive Defense. On a success, they learn what information or secret is highly coveted by the target. This character may spend an additional 1 Investiture to determine how to obtain that secret. If used in a Conversation, they can mention their findings to make the target lose 2 Focus.}}
+
+\newcommand{\enemyStatblockActionDecryptThoughts}{\enemyStatblockAction{Decrypt Thoughts (Costs 1 Investiture)}{This character can glipmse into the target's thoughts. They can determine what the target is thinking and can use this information to gain an advantage to the next test against that character.}}
+
+\newcommand{\enemyStatblockActionSuggestion}{\enemyStatblockAction[\iconActionDouble{}]{Suggestion (Costs 1 Investiture)}{This character makes a Deception or Persuasion test against the Spiritual Defense of an enemy they can influence. That test gains an advantage if the character knows the target’s secrets, goals or intentions that are relevant. On a success, the character can suggest a reasonable action - the target will be forced to enact it.}}
+
+\newcommand{\enemyStatblockActionReactivePlate}{\enemyStatblockAction[\iconReaction{}]{Secret Plate}{If this character would be hit by an enemy's attack, they can summon their Radiant Shardplate. The summoned Shardplate has default Deflect value of 5, grants Enhanced [+2 Strength] and Enhanced [+2 Speed] and follows the standard Shardplate rules.}}
+
+\newcommand{\enemyStatblockActionUnsettle}{\enemyStatblockAction{Unsettle (Costs 1 Focus)}{The Sleepless eerily distorts their form toward an enemy they can sense within 30 feet of them. The target must succeed on a DC 15 Discipline test or lose 1d4 Focus.}}
+
+\newcommand{\enemyStatblockActionDivide}{\enemyStatblockAction[\iconFreeAction]{Divide}{The Sleepless can divide the swarm that comprises them, decreasing their health by 5 per hordeling sent out. Each hordeling is a Small character with 5 health who otherwise uses the statistics of a Sleepless. These hordelings immediately gain a reaction, but they can’t use actions until the next round. Anything a hordeling learns is known by the rest of their horde.}}
+
+\newcommand{\enemyStatblockActionSwarmWeapon}{\enemyStatblockAction[\iconReaction]{Swarm Weapon}{After the Sleepless is hit by a melee attack, the hordelings that comprise them can momentarily swarm the attacker’s weapon, giving the attacker a disadvantage on their next test against the Sleepless.}}
+
+\newcommand{\enemyStatblockActionGetEmTalking}{\enemyStatblockAction[\iconActionDouble]{Get 'Em Talking (Costs 1 Focus)}{This character makes a Deduction test against the Spiritual defense of a character they can influence. On a success, the character learns the target’s motivation.}}
+
+\newcommand{\enemyStatblockActionCloseCase}{\enemyStatblockAction[\iconActionDouble]{Close the Case (Costs 3 Focus)}{This character makes a Deduction test against the Cognitive Defense of the target, gaining an advantage if they know the target’s motivation. On a failure, the target gains an advantage against this character. On success, they back down from the Conversation.}}
+
+\newcommand{\enemyStatblockActionCounterArgument}{\enemyStatblockAction{Counter Argument}{During a conversation, this character makes a Persuasion test against a character’s Spiritual defense. On a success, the target loses 3 Focus.}}
+
+\newcommand{\enemyStatblockActionLegalTechnicality}{\enemyStatblockAction{Legal Technicality}{During a conversation, this character makes a Lore test against a character’s Cognitive defense. On a success, the target loses 3 Focus.}}
+
+\newcommand{\enemyStatblockActionTaxForThat}[1]{\enemyStatblockAction[\iconReaction]{There is a Tax For That [#1] (Costs 1 Focus)}{If an enemy fails a Stealth, Thievery, Intimidation or Deception test, this character may tax the attempt. The enemy must pay #1~mk or back down from the Conversation. If the enemy pays, they receive a paperwork confirming it. Each character can be taxed only once per skill.}}
+
+\newcommand{\enemyStatblockActionFillTheForm}{\enemyStatblockAction{Form Ash-38 (Costs 2 Focus)}{Once during a Conversation, choose a character. Start an Endeavor with a test DCs in a range 11-14 (10 + 1d4). Increase the DC by twice the tier of this character. Instead of contributing to the Conversation, the target and their allies can contribute to the Endeavor. The target cannot contribute to the Conversation until they accurse a number of successes equal to this character's tier. If they accurse 2 failures, they must back down from the Conversation.}}
+
+\newcommand{\enemyStatblockActionLegalThreat}{\enemyStatblockAction{Threat of Legal Actions}{This character makes a Lore test and adds their Intimidation ranks to it. If it is equal or greater than the target's Cognitive Defense, they loose 3 Focus. If the result is smaller, this character must back down from the Conversation. }}
+
+\newcommand{\enemyStatblockActionMenace}{\enemyStatblockAction[\iconReaction]{Menace}{After this character is hit with an attack or influenced in a Conversation, they make an Intimidation test against the attacker’s Cognitive defense. On a success, the attacker loses 1 Focus.}}
+
+\newcommand{\enemyStatblockActionAncientQuestion}{\enemyStatblockAction{Ancient Question}{This character makes a contestetd \skillLore{} test against another character. If this character wins, the enemy loses 3 Focus.}}
+
+\newcommand{\enemyStatblockActionForgottenKnowledge}{\enemyStatblockAction{Forgotten Knowledge}{Once per scene, this character shares a long-forgotten knowledge with all enemies they can hear them. Each of those characters loses 2 Focus, but gains Enhanced [+1 Inteligence] until the end of the scene.}}
+
+\newcommand{\enemyStatblockActionAlwaysWatching}{\enemyStatblockAction[\iconReaction]{Always Watching (Costs 2 Focus)}{When the situation would be beneficial for the sleepless to have a hordeling watching a person or a place, the sleepless can spend 2 Focus to declare that hordeling was there from the beginning.}}

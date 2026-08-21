@@ -75,3 +75,13 @@
 \newcommand{\spoilerBox}[1]{
 	\redBox{Spoiler Info}{#1}
 }
+
+\newcommand{\abilityBox}[1]{
+	\vspace{0.2cm}
+	\fcolorbox{goldStats}{white}{
+		\parbox{7cm}{
+			\noindent \sffamily #1
+		}
+	}
+	\vspace{0.2cm}
+}
