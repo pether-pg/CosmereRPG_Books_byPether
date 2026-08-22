@@ -1,0 +1,114 @@
+\newpage
+\fancyfoot[C]{}
+\AddToShipoutPictureBG*{%
+	\put(-10,0){
+		\includegraphics[width=1.1\paperwidth,height=\paperheight]{images/background_3_dustbringer.png}
+		
+	}
+}
+
+\def \talentTopAnchorYLvlMid{-13cm}
+\def \talentTopAnchorYLvlBot{-17cm}
+
+\begin{tikzpicture}
+	[remember picture]
+	
+\node[anchor=center](title) at(\talentTitleAnchorX, 0cm){
+	\talentTreeTitleNodeBox
+		{Hemlurgy Talent Tree}
+		{Bring death and ruin on your foes, steal their powers to use as your own.}
+};
+
+% use this node to keep the rest of the tree in the coordinates you want to have them
+\node[anchor=north west] (phantom) at(0cm,0cm) {};
+
+\node[anchor=south west] (key) at(\talentKeyAnchorX,\talentKeyAnchorY) {
+	\talentTreeKeyNodeBox
+		{\iconSpecial}
+		{\talentHemalurgyKeyName{} (Key)}
+		{Patron or other source of Hemalurgic knowledge.}
+		{Gain Hemalurgy Expertise and start "\goalLearnHemalurgyName{}" goal. After you complete it, you will gain Hemalurgy skill.}
+};
+
+% this node will not be visible, but it will allow for side connections
+\node[anchor=center, draw] (gold) at(\talentFakeGoldAnchorX,\talentFakeGoldAnchorY){X};
+
+\node[anchor=north west] (t1) at(\talentLeftAnchorX,-8cm) {
+	\talentTreeNodeBox
+		{\iconConstant}
+		{\talentMeleeHemalurgyName{}}
+		{"\goalLearnHemalurgyName{}" goal}
+		{You may spend \iconOpp{} to use Hemalurgy after hitting with a melee weapon.}
+};
+
+\node[anchor=north west] (t2) at(\talentLeftAnchorX,\talentTopAnchorYLvlMid){
+	\talentTreeNodeBox
+		{\iconConstant}
+		{\talentRangeddHemalurgyName{}}
+		{}
+		{You may spend \iconOpp{} to use Hemalurgy after hitting with a ranged weapon.}
+};
+
+\node[anchor=north west] (t3) at(\talentLeftAnchorX,\talentTopAnchorYLvlBot){
+	\talentTreeNodeBox
+		{\iconConstant}
+		{\talentTrapHemalurgyName{}}
+		{}
+		{You may spend \iconOpp{} to use Hemalurgy after hitting with a trap.}
+};
+
+\node[anchor=north west] (t4) at(\talentRightAnchorX,-8cm){
+	\talentTreeNodeBox
+		{\iconConstant}
+		{\talentSpikeStackingName{}}
+		{"\goalLearnHemalurgyName{}" goal}
+		{You may use the same spike multiple times to increase its potency.}
+};
+
+\node[anchor=north west] (t5) at(\talentRightAnchorX,\talentTopAnchorYLvlMid){
+	\talentTreeNodeBox
+		{\iconConstant}
+		{\talentSpikeRuinousName{}}
+		{}
+		{Successful Hemalurgy deals 2d4 spirit damage (more with additional Hemalurgy ranks).}
+
+};
+
+\node[anchor=north west] (t6) at(\talentRightAnchorX,\talentTopAnchorYLvlBot){
+	\talentTreeNodeBox
+		{\iconConstant}
+		{\talentSpikeDdeathlessName{}}
+		{}
+		{Your target doesn't need to die in order to create a Hemalurgic Spike.}
+};
+
+\coordinate (midMid) at(12.6cm, -14cm);
+\coordinate (sideMid) at(17.6cm, -14cm);
+\draw [connector] (key) |- (gold);
+\draw [connector] (gold) ++(0.15,0) -| (t1);
+\draw [connector] (gold) ++(0.15,0) -| (t4);
+\draw [connector] (t1) -- (t2);
+\draw [connector] (t2) -- (t3);
+\draw [connector] (t4) -- (t5);
+\draw [connector] (t4.east) -| (sideMid);
+\draw [connector] (t6.east) -| (sideMid);
+\draw [connector] (t1.east) -| (midMid);
+\draw [connector] (t5.west) -| (midMid);
+
+% use this one to draw gold box above the existing lines
+\node[anchor=south west] (enlightened) at(\talentKeyAnchorX,\talentEnlightenedAnchorY) {
+	\talentTreeSubpathBox{HEMALURGY}
+};
+
+	
+\end{tikzpicture}
+
+
+\begin{textblock*}{4cm}(0cm,10cm)
+	\includegraphics[width=10cm]{images/SteelGlyph_white.png}
+\end{textblock*}
+
+\newpage
+\clearpage
+\defaultPageNumberStyle
+\ClearShipoutPictureBG

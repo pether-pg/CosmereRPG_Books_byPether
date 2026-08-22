@@ -1,0 +1,55 @@
+\documentclass{report}
+
+\def \myTitle{Hemalurgy Rules} % workaround - \@title not always works...
+\def \subtitle{A Fan-made Adventure for \cosmereRPG}
+\title{\myTitle{}}
+\author{Pether.pg}
+
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{xcolor}
+\usepackage{ifthen}
+\usepackage{changepage} % margins and adjustwidth 
+\usepackage{graphicx} % insert images
+\usepackage{pdfpages} % insert pdfs
+\usepackage{ulem} % strikethrough \sout
+\usepackage{multicol} % multicol
+\usepackage{eso-pic} % for background images
+\usepackage[absolute,overlay]{textpos} % to set possition of the box \begin{textblock*}
+\usepackage{tikz} % for talent tree graphs 
+%\usepackage{emerald} % for hand-written ECFAugie
+%\usepackage[T1]{fontenc} % for hand-written ECFAugie
+
+\setlength{\columnsep}{20pt} % space between text columns
+
+\usepackage{titlesec}	% change how chapters are printed
+
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+\usepackage{fancyhdr} % for fancy page numbering
+\usepackage{nameref} % for \nameref{label}
+\usepackage{cleveref}
+
+\begin{document}
+	
+	\input{defsAndCommands.tex}
+	
+	\input{title_page.tex}
+	\input{template_page.tex}
+	
+	\setcounter{tocdepth}{1}
+	% \tableofcontents
+	
+	\twocolumn
+	\setcounter{chapter}{0}
+	\input{appendices/hemalurgyRules/hemalurgyRules.tex}
+	
+\end{document}

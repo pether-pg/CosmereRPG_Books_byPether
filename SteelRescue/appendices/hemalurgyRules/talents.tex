@@ -1,0 +1,75 @@
+\section{Hemalurgy Talents}
+\label{sec:hemalurgyTalents}
+
+\newcommand{\goalLearnHemalurgyName}{Learn Hemalurgy}
+\newcommand{\talentHemalurgyKeyName}{Prot\'eg\'e of Ruin}
+\newcommand{\talentMeleeHemalurgyName}{Combat Hemalurgy}
+\newcommand{\talentRangeddHemalurgyName}{Ranged Hemalurgy}
+\newcommand{\talentTrapHemalurgyName}{Hemalurgic Traps}
+\newcommand{\talentSpikeStackingName}{Stacking Powers}
+\newcommand{\talentSpikeDdeathlessName}{Deathless Spike}
+\newcommand{\talentSpikeRuinousName}{Ruinous Spike}
+
+
+\talent
+	{\talentHemalurgyKeyName{} (Key Talent)}
+	{Patron or other source of Hemalurgic knowledge.}
+	{\iconSpecial}
+	{TODO}
+	{
+		Gain Hemalurgy Expertise, allowing you to recognize Hemalurgic Spikes and know their application. Additionally, you gain the goal "\goalLearnHemalurgyName{}". After you complete it, you gain access to Hemalurgy skill.
+	}
+	
+\talent
+	{\talentMeleeHemalurgyName{}}
+	{Complete "\goalLearnHemalurgyName{}" goal.}
+	{\iconConstant}
+	{TODO}
+	{
+		You may use Hemalurgy after you hit another character with a metal melee weapon you have an expertise in, as long as you spend \iconOpp{} from that attack. In that case, your metal weapon will take the role of the spike.
+	}
+	
+\talent
+	{\talentRangeddHemalurgyName{}}
+	{\talentMeleeHemalurgyName{} talent}
+	{\iconConstant}
+	{TODO}
+	{
+		You may use Hemalurgy after you hit another character with a metal ranged weapon you have an expertise in, as long as you spend \iconOpp{} from that attack. In that case, your projectile will take the role of the spike.
+	}
+	
+\talent
+	{\talentTrapHemalurgyName{}}
+	{Survival 3+; \talentRangeddHemalurgyName{} talent}
+	{\iconConstant}
+	{TODO}
+	{
+		You may use Hemalurgy after a trap with metal spikes you constructed hits a creature, as long as you spend \iconOpp{} from that attack. In that case, the trap's metal teeth will take the role of the spike.
+	}
+	
+\talent
+	{\talentSpikeStackingName{}}
+	{Complete "\goalLearnHemalurgyName{}" goal.}
+	{\iconConstant}
+	{TODO}
+	{
+		You may use previously created Hemalurgic Spike as a spike while testing Hemalurgy to increase its potency. The new potency is 1 higher then the previous one, or 1 higher than whatever the spike would have after the new Hemalurgy test, whichever is higher. At any point the potency of a newly created Hemalurgic Spike cannot exceed a number of Hemalurgy ranks the hemalurgist has.
+	}
+	
+\talent
+	{\talentSpikeDdeathlessName{}}
+	{\talentSpikeStackingName{} talent}
+	{\iconConstant}
+	{TODO}
+	{
+	You don't need to wait for the donor's death to collect the Hemalurgic Spike after a successful Hemalurgy test. Once the Spike is removed from the donor's body, they lose the characteristic stolen by the Spike in an amount of the Spike's potency.
+	}
+	
+\talent
+	{\talentSpikeRuinousName{}}
+	{\talentSpikeStackingName{} talent}
+	{\iconConstant}
+	{TODO}
+	{
+	After you successfully pass the Hemalurgy test, the target suffers 2d4 spirit damage. The size of dice increases with your ranks in Hemalurgy; at 2 ranks, roll 2d6 (instead of 2d4), and so on.
+	}
