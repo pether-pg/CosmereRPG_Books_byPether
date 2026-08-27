@@ -51,7 +51,7 @@
 	\discoveryWebNodeBox
 		{\fullref{sec:prison}}
 		{}
-		{\fullref{ssec:prisonTalking}}
+		{\fullref{sec:enteredCity} \\ \fullref{ssec:prisonTalking}}
 };
 
 \node[anchor=north west] (chapterOrphanage) at(5cm, -6cm) {
@@ -149,6 +149,9 @@
 
 \draw [connectorArrow] (prison.south) -- (prisonTalking.north);
 \draw [connectorArrow] (chapterOrphanage.south) -- (philosopher.north);
+\coordinate (prisonCityMid) at(4.5cm, -5.3cm);
+\draw [connector] (prison.east) -| (prisonCityMid);
+\draw [connectorArrow] (prisonCityMid) |- (enteredCity.west);
 
 \coordinate (tradeLock) at(11.5cm, -5.3cm);
 \fill[white] (tradeLock) circle (0.25cm);
