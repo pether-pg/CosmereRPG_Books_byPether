@@ -239,11 +239,11 @@
 
 \newcommand{\enemyStatblockFeatureBaleful}{\enemyStatblockFeature{Baleful}{To resist the influence, enemies must spend additional focus equal to the tier of this character.}}
 
-\newcommand{\enemyStatblockFeatureGatherEvidence}{\enemyStatblockFeature{Gather Evidence}{After succeeding on a cognitive test against another character, this character becomes Focused until the end of their next turn. Additionally, this character gains a Legal Codes expertise.}}
+\newcommand{\enemyStatblockFeatureGatherEvidence}{\enemyStatblockFeature{Gather Evidence}{After succeeding on a Cognitive test against another character, this character becomes Focused until the end of their next turn. Additionally, this character gains a Legal Codes expertise.}}
 
 \newcommand{\enemyStatblockFeatureSleuthsInstincts}{\enemyStatblockFeature{Sleuth’s Instincts}{This character gains an advantage on cognitive tests against characters whose motivation they know. This character knows when those characters lie to them.}}
 
-\newcommand{\enemyStatblockFeatureImposingPosture}{\enemyStatblockFeature{Imposing Posture}{After an enemy resists this character's influence while in their weapon’s reach, they are Disoriented.}}
+\newcommand{\enemyStatblockFeatureImposingPosture}{\enemyStatblockFeature{Imposing Posture}{After an enemy resists this character's influence while within their weapon’s reach, they are Disoriented.}}
 
 \newcommand{\enemyStatblockFeatureCapable}{\enemyStatblockFeature{Capable}{This character has a utility expertise in one profession, and they gain an advantage on skill tests related to that profession.}}
 
@@ -301,11 +301,11 @@
 
 \newcommand{\enemyStatblockActionLegalTechnicality}{\enemyStatblockAction{Legal Technicality}{During a conversation, this character makes a Lore test against a character’s Cognitive defense. On a success, the target loses 3 Focus.}}
 
-\newcommand{\enemyStatblockActionTaxForThat}[1]{\enemyStatblockAction[\iconReaction]{There is a Tax For That [#1] (Costs 1 Focus)}{If an enemy fails a Stealth, Thievery, Intimidation or Deception test, this character may tax the attempt. The enemy must pay #1~mk or back down from the Conversation. If the enemy pays, they receive a paperwork confirming it. Each character can be taxed only once per skill.}}
+\newcommand{\enemyStatblockActionTaxForThat}[1]{\enemyStatblockAction[\iconReaction]{There is a Tax For That [#1] (Costs 1 Focus)}{If an enemy fails a Stealth, Thievery, Intimidation or Deception test, this character may tax the attempt. The enemy must pay #1~mk or back down from the Conversation. If the enemy pays, they receive a paperwork confirming it. Each character can be taxed only once per each skill \textit{(subsequent test failures using that skill cannot be taxed)}.}}
 
-\newcommand{\enemyStatblockActionFillTheForm}{\enemyStatblockAction{Form Ash-38 (Costs 2 Focus)}{Once during a Conversation, choose a character. Start an Endeavor with a test DCs in a range 11-14 (10 + 1d4). Increase the DC by twice the tier of this character. Instead of contributing to the Conversation, the target and their allies can contribute to the Endeavor. The target cannot contribute to the Conversation until they accurse a number of successes equal to this character's tier. If they accurse 2 failures, they must back down from the Conversation.}}
+\newcommand{\enemyStatblockActionFillTheForm}{\enemyStatblockAction{Form Ash-38 (Costs 2 Focus)}{Once during a Conversation, choose a character. Start an Endeavor with test DCs in the range 11-14 (10 + 1d4). Increase the DC by twice the tier of this character. Instead of contributing to the Conversation, the target and their allies can contribute to the Endeavor. The target cannot contribute to the Conversation until they accrue a number of successes equal to this character's tier. If they accrue 2 failures, they must back down from the Conversation.}}
 
-\newcommand{\enemyStatblockActionLegalThreat}{\enemyStatblockAction{Threat of Legal Actions}{This character makes a Lore test and adds their Intimidation ranks to it. If it is equal or greater than the target's Cognitive Defense, they loose 3 Focus. If the result is smaller, this character must back down from the Conversation. }}
+\newcommand{\enemyStatblockActionLegalThreat}{\enemyStatblockAction{Threat of Legal Actions}{This character makes a Lore test and adds their Intimidation ranks to it. If it is equal to or greater than the target's Cognitive Defense, they lose 3 Focus. If the result is lower, this character must back down from the Conversation. }}
 
 \newcommand{\enemyStatblockActionMenace}{\enemyStatblockAction[\iconReaction]{Menace}{After this character is hit with an attack or influenced in a Conversation, they make an Intimidation test against the attacker’s Cognitive defense. On a success, the attacker loses 1 Focus.}}
 
