@@ -7,8 +7,8 @@
 	}
 }
 
-\def \talentTopAnchorYLvlMid{-13cm}
-\def \talentTopAnchorYLvlBot{-17.5cm}
+\def \talentTopAnchorYLvlMid{-12.5cm}
+\def \talentTopAnchorYLvlBot{-17.0cm}
 
 \begin{tikzpicture}
 	[remember picture]
@@ -38,7 +38,7 @@
 		{\iconConstant}
 		{\talentMeleeHemalurgyName{}}
 		{Complete "\goalLearnHemalurgyName{}"}
-		{You may spend \iconOpp{} to use Hemalurgy after hitting with a melee weapon.}
+		{You may spend \iconOpp{} to use Hemalurgy after hitting with a weapon.}
 };
 
 \node[anchor=north west] (t2) at(\talentLeftAnchorX,\talentTopAnchorYLvlMid){
@@ -82,7 +82,7 @@
 		{You may steal a trace amounts of a skill your target has not developed.}
 };
 
-\coordinate (midMid) at(12.6cm, -14cm);
+\coordinate (midMid) at(12.6cm, -11cm);
 \coordinate (sideMid) at(17.5cm, -14cm);
 \draw [connector] (key) |- (gold);
 \draw [connector] (gold) ++(0.15,0) -| (t1);

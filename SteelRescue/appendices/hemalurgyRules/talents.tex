@@ -6,7 +6,7 @@
 \newcommand{\talentMeleeHemalurgyName}{Combat Hemalurgy}
 \newcommand{\talentRangeddHemalurgyName}{Ranged Hemalurgy}
 \newcommand{\talentTrapHemalurgyName}{Hemalurgic Traps}
-\newcommand{\talentSpikeStackingName}{Stacking Powers}
+\newcommand{\talentSpikeStackingName}{Stacking Potency}
 \newcommand{\talentSpikeDdeathlessName}{Deathless Spike}
 \newcommand{\talentSpikeRuinousName}{Ruinous Spike}
 \newcommand{\talentCreateLinchpinName}{Steel Linchpin}
@@ -15,11 +15,11 @@
 
 \talent
 	{\talentHemalurgyKeyName{} (Key Talent)}
-	{Patron or other source of Hemalurgic knowledge.}
+	{Hemalurgist Patron or other source of knowledge about the art of Hemalurgy.}
 	{\iconSpecial}
 	{The art that is unique to Hemalurgy is the knowledge of where to place the spikes.}
 	{
-		Gain Hemalurgy Expertise, allowing you to recognize Hemalurgic Spikes and know their application. Additionally, you gain the goal "\goalLearnHemalurgyName{}". After you complete it, you gain access to Hemalurgy skill.
+		Gain Hemalurgy Expertise, which allows you to recognize Hemalurgic Spikes and to know their application. Additionally, you gain the goal "\goalLearnHemalurgyName{}". After you complete it, you gain Hemalurgy skill and 1 rank in it.
 	}
 	
 \talent
@@ -30,11 +30,31 @@
 	{
 		You may use Hemalurgy after you hit another character with a metal melee weapon you have an expertise in, as long as you spend \iconOpp{} from that attack. In that case, your metal weapon will take the role of the spike.
 		
-		Starting from tier 2, you may may also use this talent after hitting a character with a ranged weapon you have an expertise in.
-		
-		Starting from tier 3, you may also use this talent after a trap you made triggered and hit a character. 
+		Starting from tier 2, you may may also use this talent after hitting a character with a ranged weapon you have an expertise in.	Starting from tier 3, you may also use this talent after a trap you made triggered and hit a character. 
+	}
+	
+\talent
+	{\talentSpikeRuinousName{}}
+	{\talentSpikeStackingName{} talent}
+	{\iconConstant}
+	{YOU SHOULD KILL THEM.}
+	{
+	After you successfully pass the Hemalurgy test, the target suffers 2d4 spirit damage. The size of dice increases with your ranks in Hemalurgy; at 2 ranks, roll 2d6 (instead of 2d4), and so on.
 	}
 
+	
+\talent
+	{\talentCreateLinchpinName{}}
+	{Lore 4+; \talentSpikeRuinousName{} talent}
+	{\iconConstant}
+	{Another spike! That is the secret!}
+	{
+		You may use steel spikes to steal the target's capacity for the number of Hemalurgic Spikes a person can use at the same time before succumbing to Ruin's influence. 
+		
+		As described in "Hemalurgic Spike Effects - Spiritweb Disruption" (\handbookMistborn{}, page 291.), a person can usually use 3 Hemalurgic Spikes before the Shard takes control of them. You may use the Linchpin Spike to increase that limit.
+		
+		The Linchpin counts as a Spike toward that limit. A person can have only one Linchpin. If at any point you lose the Linchpin while having 4 or more other Spikes, your character is lost to Ruin.
+	}
 	
 \talent
 	{\talentSpikeStackingName{}}
@@ -42,20 +62,14 @@
 	{\iconConstant}
 	{Roughly five percent Invested. Fully Investing one spike takes between twenty and thirty people.}
 	{
-		You may use previously created Hemalurgic Spike as a spike while testing Hemalurgy to increase its potency. The new potency is 1 higher then the previous one, or 1 higher than whatever the spike would have after the new Hemalurgy test, whichever is higher. At any point the potency of a newly created Hemalurgic Spike cannot exceed a number of Hemalurgy ranks the Hemalurgist has.
+		You may use a previously created Hemalurgic Spike as a spike while testing Hemalurgy to increase its potency. If you do, you may only choose to steal the same characteristic as was previously stolen by the spike.
 		
-		If the Spike had previously had a smaller Whispers of Ruin value than your current Hemalurgy ranks, update the value to the higher number.
+		The new potency is 1 higher then the previous one, or 1 higher than whatever the spike would have after the new Hemalurgy test, whichever is higher. At any point the potency of a newly created Hemalurgic Spike cannot exceed a number of your ranks in Hemalurgy or the spike's capacity.
+		
+		If the Spike had previously had a smaller Whispers of Ruin value than your current Hemalurgy ranks, update the value to the higher value.
+		
+		You cannot use this talent if either the target or your Spike don't have at least 1 of the characteristic you wish to steal (eg. if you have some trace amounts stolen with \talentStealTraceName{}).
 	}
-	
-	
-\talent
-		{\talentSpikeRuinousName{}}
-		{\talentSpikeStackingName{} talent}
-		{\iconConstant}
-		{YOU SHOULD KILL THEM.}
-		{
-			After you successfully pass the Hemalurgy test, the target suffers 2d4 spirit damage. The size of dice increases with your ranks in Hemalurgy; at 2 ranks, roll 2d6 (instead of 2d4), and so on.
-		}
 
 	
 \talent
@@ -64,33 +78,21 @@
 	{\iconConstant}
 	{The process involves a very thin spike, my lord, and, oddly, the right mindset.}
 	{
-		You don't need to wait for the donor's death to collect the Hemalurgic Spike after a successful Hemalurgy test. Once the Spike is removed from the donor's body, they lose the characteristic stolen by the Spike in the amount of the Spike's potency.
+		You don't need to wait for the donor's death to collect the Hemalurgic Spike after the successful Hemalurgy test. Once the Spike is removed from the donor's body, they lose the characteristic stolen by the Spike in the amount of the Spike's potency.
 	}
 
 
 
-\talent
-	{\talentCreateLinchpinName{}}
-	{Lore 4+; \talentSpikeRuinousName{} talent}
-	{\iconConstant}
-	{Another spike! That is the secret!}
-	{
-		You may use steel Spikes to steal the target's capacity for the number of Hemalurgic Spikes a person can use at the same time before succumbing to Ruin's influence. 
-		
-		As described in "Hemalurgic Spike Effects - Spiritweb Disruption" (\handbookMistborn{}, page 291), usually a person can use 3 Hemalurgic Spikes before the Shard takes control of them. You may use the Linchpin Spike to increase that limit.
-		
-		The Linchpin counts as a Spike toward that limit. A person can have only one Linchpin. If at any point you lose the Linchpin while having 4 or more other Spikes, your character is lost.
-	}
 	
 \talent
 	{\talentStealTraceName{}}
-	{Lore 4+; \talentSpikeStackingName{}}
+	{Lore 4+; \talentSpikeStackingName{} talent}
 	{\iconConstant}
 	{They don't need that extra if the powers didn't manifest in them. We simply slice it off and use it in a spike.}
 	{
 		You may chose to steal a skill your target does not have developed (eg. a specific Allomantic power). If you do, after collecting the created Spike, roll 1d20 and divide the result by 100 to determine the amount your Spike has stolen.
 		
-		When determining the total bonus granted by the Spike, round down the Spike's Blessing value. The Blessing must be at least 1 to give you any noticeable bonuses.
+		When determining the total bonus granted by the Spike, round down the Spike's Blessing value. The Blessing must be at least 1 to give you any noticeable effects.
 		
 		While the amount gathered from a single donor will not be enough to grant you the skill, you may repeat the process on more targets, each time adding the new result to the existing total. Each character can be targeted like that only once.
 	}
