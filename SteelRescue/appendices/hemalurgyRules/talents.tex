@@ -9,13 +9,15 @@
 \newcommand{\talentSpikeStackingName}{Stacking Powers}
 \newcommand{\talentSpikeDdeathlessName}{Deathless Spike}
 \newcommand{\talentSpikeRuinousName}{Ruinous Spike}
+\newcommand{\talentCreateLinchpinName}{Steel Linchpin}
+\newcommand{\talentStealTraceName}{Vestigial Powers}
 
 
 \talent
 	{\talentHemalurgyKeyName{} (Key Talent)}
 	{Patron or other source of Hemalurgic knowledge.}
 	{\iconSpecial}
-	{TODO}
+	{The art that is unique to Hemalurgy is the knowledge of where to place the spikes.}
 	{
 		Gain Hemalurgy Expertise, allowing you to recognize Hemalurgic Spikes and know their application. Additionally, you gain the goal "\goalLearnHemalurgyName{}". After you complete it, you gain access to Hemalurgy skill.
 	}
@@ -24,52 +26,71 @@
 	{\talentMeleeHemalurgyName{}}
 	{Complete "\goalLearnHemalurgyName{}" goal.}
 	{\iconConstant}
-	{TODO}
+	{Kill her with the spike, and drive it into your own body. That is the only way!}
 	{
 		You may use Hemalurgy after you hit another character with a metal melee weapon you have an expertise in, as long as you spend \iconOpp{} from that attack. In that case, your metal weapon will take the role of the spike.
+		
+		Starting from tier 2, you may may also use this talent after hitting a character with a ranged weapon you have an expertise in.
+		
+		Starting from tier 3, you may also use this talent after a trap you made triggered and hit a character. 
 	}
-	
-\talent
-	{\talentRangeddHemalurgyName{}}
-	{\talentMeleeHemalurgyName{} talent}
-	{\iconConstant}
-	{TODO}
-	{
-		You may use Hemalurgy after you hit another character with a metal ranged weapon you have an expertise in, as long as you spend \iconOpp{} from that attack. In that case, your projectile will take the role of the spike.
-	}
-	
-\talent
-	{\talentTrapHemalurgyName{}}
-	{Survival 3+; \talentRangeddHemalurgyName{} talent}
-	{\iconConstant}
-	{TODO}
-	{
-		You may use Hemalurgy after a trap with metal spikes you constructed hits a creature, as long as you spend \iconOpp{} from that attack. In that case, the trap's metal teeth will take the role of the spike.
-	}
+
 	
 \talent
 	{\talentSpikeStackingName{}}
 	{Complete "\goalLearnHemalurgyName{}" goal.}
 	{\iconConstant}
-	{TODO}
+	{Roughly five percent Invested. Fully Investing one spike takes between twenty and thirty people.}
 	{
-		You may use previously created Hemalurgic Spike as a spike while testing Hemalurgy to increase its potency. The new potency is 1 higher then the previous one, or 1 higher than whatever the spike would have after the new Hemalurgy test, whichever is higher. At any point the potency of a newly created Hemalurgic Spike cannot exceed a number of Hemalurgy ranks the hemalurgist has.
+		You may use previously created Hemalurgic Spike as a spike while testing Hemalurgy to increase its potency. The new potency is 1 higher then the previous one, or 1 higher than whatever the spike would have after the new Hemalurgy test, whichever is higher. At any point the potency of a newly created Hemalurgic Spike cannot exceed a number of Hemalurgy ranks the Hemalurgist has.
+		
+		If the Spike had previously had a smaller Whispers of Ruin value than your current Hemalurgy ranks, update the value to the higher number.
 	}
+	
+	
+\talent
+		{\talentSpikeRuinousName{}}
+		{\talentSpikeStackingName{} talent}
+		{\iconConstant}
+		{YOU SHOULD KILL THEM.}
+		{
+			After you successfully pass the Hemalurgy test, the target suffers 2d4 spirit damage. The size of dice increases with your ranks in Hemalurgy; at 2 ranks, roll 2d6 (instead of 2d4), and so on.
+		}
+
 	
 \talent
 	{\talentSpikeDdeathlessName{}}
-	{\talentSpikeStackingName{} talent}
+	{Medicine 3+; \talentSpikeStackingName{} talent}
 	{\iconConstant}
-	{TODO}
+	{The process involves a very thin spike, my lord, and, oddly, the right mindset.}
 	{
-	You don't need to wait for the donor's death to collect the Hemalurgic Spike after a successful Hemalurgy test. Once the Spike is removed from the donor's body, they lose the characteristic stolen by the Spike in an amount of the Spike's potency.
+		You don't need to wait for the donor's death to collect the Hemalurgic Spike after a successful Hemalurgy test. Once the Spike is removed from the donor's body, they lose the characteristic stolen by the Spike in the amount of the Spike's potency.
+	}
+
+
+
+\talent
+	{\talentCreateLinchpinName{}}
+	{Lore 4+; \talentSpikeRuinousName{} talent}
+	{\iconConstant}
+	{Another spike! That is the secret!}
+	{
+		You may use steel Spikes to steal the target's capacity for the number of Hemalurgic Spikes a person can use at the same time before succumbing to Ruin's influence. 
+		
+		As described in "Hemalurgic Spike Effects - Spiritweb Disruption" (\handbookMistborn{}, page 291), usually a person can use 3 Hemalurgic Spikes before the Shard takes control of them. You may use the Linchpin Spike to increase that limit.
+		
+		The Linchpin counts as a Spike toward that limit. A person can have only one Linchpin. If at any point you lose the Linchpin while having 4 or more other Spikes, your character is lost.
 	}
 	
 \talent
-	{\talentSpikeRuinousName{}}
-	{\talentSpikeStackingName{} talent}
+	{\talentStealTraceName{}}
+	{Lore 4+; \talentSpikeStackingName{}}
 	{\iconConstant}
-	{TODO}
+	{They don't need that extra if the powers didn't manifest in them. We simply slice it off and use it in a spike.}
 	{
-	After you successfully pass the Hemalurgy test, the target suffers 2d4 spirit damage. The size of dice increases with your ranks in Hemalurgy; at 2 ranks, roll 2d6 (instead of 2d4), and so on.
+		You may chose to steal a skill your target does not have developed (eg. a specific Allomantic power). If you do, after collecting the created Spike, roll 1d20 and divide the result by 100 to determine the amount your Spike has stolen.
+		
+		When determining the total bonus granted by the Spike, round down the Spike's Blessing value. The Blessing must be at least 1 to give you any noticeable bonuses.
+		
+		While the amount gathered from a single donor will not be enough to grant you the skill, you may repeat the process on more targets, each time adding the new result to the existing total. Each character can be targeted like that only once.
 	}

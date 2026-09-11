@@ -5,21 +5,27 @@
 \definecolor{blueRadiance}{RGB}{30, 60, 96}
 \definecolor{redSpoiler}{RGB}{200, 0, 0}
 
+\definecolor{scadrialBrown}{RGB}{102, 81, 84}
+\definecolor{scadrialRed}{RGB}{106, 31, 36}
+\definecolor{scadrialQuote}{RGB}{220, 203, 199}
+\definecolor{scadrialGray}{RGB}{157, 154, 154}
+\definecolor{scadrialDarkGray}{RGB}{44, 42, 44}
+
 % \usepackage{titlesec}	% change how chapters are printed
 
 \titleformat{\chapter}
-	{\LARGE\bfseries\sffamily\color{blueRadiance}}
+	{\LARGE\bfseries\sffamily\color{scadrialRed}}
 	{}
 	{0em}
 	{}
 \titleformat{\section}
-	{\Large\bfseries\sffamily\color{blueRadiance}}
+	{\Large\bfseries\sffamily\color{scadrialRed}}
 	{\thesection}
 	{1em}
 	{}
-	[\color{goldStats}\titlerule]
+	[\color{scadrialGray}\titlerule]
 \titleformat{\subsection}
-	{\large\bfseries\sffamily\color{blueRadiance}}
+	{\large\bfseries\sffamily\color{scadrialRed}}
 	{\thesubsection}
 	{1em}
 	{}
@@ -27,11 +33,11 @@
 	{\bfseries\sffamily}
 	{\thesubsection}
 	{1em}
-	{\color{blueRadiance}}
+	{\color{scadrialRed}}
 	
 % \usepackage{fancyhdr} % for fancy page numbering
 \fancyhf{} % Clear defaults
-\newcommand{\defaultPageNumberStyle}{\fancyfoot[C]{\sffamily \bfseries \color{goldStats} --- \color{blueRadiance} \thepage\ \color{goldStats} --- }}
+\newcommand{\defaultPageNumberStyle}{\fancyfoot[C]{\sffamily \bfseries \color{scadrialGray} --- \color{scadrialRed} \thepage\ \color{scadrialGray} --- }}
 \fancypagestyle{plain}{%
 	\fancyhf{}
 	\defaultPageNumberStyle{}

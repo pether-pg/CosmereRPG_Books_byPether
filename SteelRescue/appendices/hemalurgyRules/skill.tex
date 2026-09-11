@@ -5,12 +5,12 @@ To obtain Hemalurgy skill, a PC must take a Key talent from the Hemalurgy talent
 
 See \fullref{sec:hemalurgyTalents} for more details.\\
 
-\noindent \huge Hemalurgy \\ \Large(Intelligence) \normalsize \\ \\
-\textbf{Activation:} \iconFreeAction{}
+\noindent \huge Hemalurgy \\ \Large(Intellect) \normalsize \\ \\
+\textbf{Activation:} \iconAction{}
 
-\noindent After you pierce your target with a metal spike, you may spend 1 Focus as \iconFreeAction{} to make a Hemalurgy test against Spiritual Defence of the target. On a success, you place the spike in a correct binding point, allowing to steal one of their characteristic and collect a Hemalurgic Spike after the target dies.
+\noindent After you pierce your target with a metal spike, you may spend 1 Focus as \iconAction{} to make a Hemalurgy test against Spiritual Defence of the target. On a success, the spike is placed in a correct binding point, allowing to steal one of the target's characteristic (like attribute or skill ranks) and collect a Hemalurgic Spike after the target dies.
 
-A Hemalurgic Spike created this way has Blessing [Characteristic +Potency] and Whispers of Ruin [+X], where Characteristic is a chosen by the hemalurgist at the time of the test roll, Potency is determined by users ranks in Hemalurgy and the target's statistics, and X equals to the number of Hemalurgy ranks.
+A Hemalurgic Spike created this way has Blessing [Characteristic +Potency] and Whispers of Ruin [+X], where Characteristic is a chosen by the hemalurgist at the time of the test roll, Potency is determined by users ranks in Hemalurgy and the target's statistics, and X equals to the number of Hemalurgy ranks the Hemalurgist has.
 
 \subsubsection{Hemalurgic Spike}
 
@@ -24,11 +24,60 @@ Hemalurgic Spike is an item created as a result of a successful Hemalurgy test. 
 	A character pierced by this item can be influenced by Ruin. A DC of resisting the influence is a sum of numbers specified in brackets of various Hemalurgic Spikes in use.
 }
 
+
+
+\subsubsection{Whispers of Ruin}
+
+Each Hemalurgic Spike has \textbf{Whispers of Ruin [+X]} trait. If a character using the spike rolls \iconComp{} the GM might spend it to request a \skillDiscipline{} test from that character. The DC of the test equals the sum of \textbf{Whispers of Ruin} traits' values. 
+
+On a failure, Ruin takes control over the character, forcing them to take hostile, murderous and/or destructive actions. It is up to the GM if the character becomes an NPC for the rest of the game, forcing their player to create a new PC.
+
+
+
 \subsubsection{Piercing the Target}
 
 Unless the target is a willing character, is Unconscious or Restrained, you must make a test against the targets Physical Defense to determine if you successfully pierce them with a spike. Depending on the context, the GM might request a \skillThievery{} or other skill for that purpose, and the attempt costs at least \iconAction{}.
 
 Initially, to pierce their target, a hemalurgist requires focus and precision, making it impossible to use in the chaos of combat. Some talents may modify this, expanding it to eg. attacks with a melee weapon.
+
+
+\newpage
+
+
+
+\subsubsection{Capacity}
+
+The bigger the spike, the more power it can absorb with Hemalurgy. If the characteristic you are trying to steal with a spike has a numeric value (like attribute or skill ranks), the spike can hold only an amount of that equal to the half of the size of its damage die. 
+
+\begin{center}
+	\textbf{spike's capacity = \\max(spike's damage die) / 2}
+\end{center}
+
+\textit{(eg. a spike dealing 1d6 damage can hold up to 3 skill ranks of the stolen skill.)}
+
+
+
+\subsubsection{Potency}
+
+Once the Hemalurgic Spike is created as a result of a character's Hemalurgy test, it steals some amount of the selected characteristic. If a numeric value can be assigned to it, it steals whatever the target had before the test, but never more than the number of ranks of the Hemalurgy user.
+
+Please note, that the spike can never hold more power than it's capacity. To steal more power, you will need bigger spikes.
+
+\begin{center}
+	\textbf{stolen value = \\min(target's value, Hemalurgy rank, spike's capacity)}
+\end{center}
+
+
+
+\subsubsection{Hemalurgy on Higher Tiers}
+
+The art of Hemalurgy requires a lot of practice and study. Novice Hemalurgy users will not be able to correct use all types of spikes, but they will learn to do so with time. Because of that, using Hemalurgy skill with some metals requires higher tiers, as follows:
+
+\scriptedOption{Characters on any tier:}{You can use God metals: atium, lerasium, harmonium, etc., though some of them may work differently depending on your tier.}
+\scriptedOption{Characters on tier 1:}{You can use Physical metals: iron, steel, tin and pewter.}
+\scriptedOption{Characters on tier 2:}{You can use Cognitive metals: zinc, brass, copper and bronze.}
+\scriptedOption{Characters on tier 3:}{You can use Temporal metals: cadmium, bendalloy, gold and electrum.}
+\scriptedOption{Characters on tier 4:}{You can use Spiritual metals: chromium, nicrosil, aluminum and duralumin.}
 
 \subsubsection{Metal Spike}
 
@@ -36,32 +85,25 @@ Depending on a metal used to make the spike, different characteristics of the ta
 
 The following metals allow to steal the characteristics listed below:
 
-TODO
-
-
-\subsubsection{Hemalurgy on Higher Tiers}
-
-The art of Hemalurgy requires a lot of practice and study. Novice Hemalurgy users will not be able to correct use all types of spikes, but they will learn to do so with time. Because of that, using Hemalurgy skill with some metals requires higher tiers, as follows:
-
-\scriptedOption{Characters on any tier:}{You can use God metals: atium, lerasium, harmonium, etc.}
-\scriptedOption{Characters on tier 1:}{You can use Physical metals: iron, steel, tin and pewter.}
-\scriptedOption{Characters on tier 2:}{You can use Cognitive metals: zinc, brass, copper and bronze.}
-\scriptedOption{Characters on tier 3:}{You can use Temporal metals: cadmium, bendalloy, gold and electrum.}
-\scriptedOption{Characters on tier 4:}{You can use Spiritual metals: chromium, nicrosil, aluminum and duralumin.}
-
-
-\subsubsection{Potency}
-
-Once the Hemalurgic Spike is created as a result of a character's Hemalurgy test, it steals some amount of the selected characteristic. If a numeric value can be assigned to it, it steals whatever the target had before the test, but never more than the number of ranks of the Hemalurgy user:
-
-\begin{center}
-	\textbf{stolen value = \\min(target's value, Hemalurgy rank)}
-\end{center}
-
-
-
-\subsubsection{Whispers of Ruin}
-
-Each Hemalurgic Spike has \textbf{TODO} trait. If a character using the spike rolls \iconComp{} the GM might spend it to request a \skillDiscipline{} test from that character. The DC of the test equals the sum of \textbf{TODO} traits' values. On a failure, Ruin takes control over the character, forcing them to take hostile, murderous and/or destructive actions.
+\begin{itemize}
+	\item Iron: steals Strength or Speed
+	\item Steel: steals one physical Allomantic power (Iron, Pewter, Steel, or Tin Allomancy)
+	\item Tin: steals Awareness or Presence
+	\item Pewter: steals one physical Feruchemical power(Iron, Pewter, Steel, or Tin Feruchemy)
+	\item Zinc: steals Willpower
+	\item Brass: steals one cognitive Feruchemical power (Brass, Bronze, Copper, or Zinc Feruchemy)
+	\item Copper: steals Intellect
+	\item Bronze: steals one mental Allomantic power (Brass, Bronze, Copper, or Zinc Allomancy)
+	\item Cadmium: steals one temporal Allomantic power (Bendalloy, Cadmium, Electrum, or Gold Allomancy)
+	\item Bendalloy: steals one spiritual Feruchemical power (Aluminum, Chromium, Duralumin, or Nicrosil Feruchemy)
+	\item Gold: steals one hybrid Feruchemical power (Bendalloy, Cadmium, Electrum, or Gold Feruchemy)
+	\item Electrum: steals one enhancement Allomantic power (Aluminum, Chromium, Duralumin, or Nicrosil Allomancy)
+	\item Chromium: might steal Destiny \textit{(interpretation up to the GM)}
+	\item Nicrosil: steals Investiture
+	\item Aluminum: removes all Invested powers upon piercing, but does not steal them for the Hemalurgist
+	\item Duralumin: steals Connection or Identity
+	\item Atium: steals any power or attribute you could steal at your current tier.
+	\item Lerasium: steals all powers or attributes you could steal at your current tier.
+\end{itemize}
 
 

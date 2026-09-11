@@ -8,7 +8,7 @@
 }
 
 \def \talentTopAnchorYLvlMid{-13cm}
-\def \talentTopAnchorYLvlBot{-17cm}
+\def \talentTopAnchorYLvlBot{-17.5cm}
 
 \begin{tikzpicture}
 	[remember picture]
@@ -44,17 +44,17 @@
 \node[anchor=north west] (t2) at(\talentLeftAnchorX,\talentTopAnchorYLvlMid){
 	\talentTreeNodeBox
 		{\iconConstant}
-		{\talentRangeddHemalurgyName{}}
+		{\talentSpikeRuinousName{}}
 		{}
-		{You may spend \iconOpp{} to use Hemalurgy after hitting with a ranged weapon.}
+		{Successful Hemalurgy deals 2d4 spirit damage (more with additional Hemalurgy ranks).}
 };
 
 \node[anchor=north west] (t3) at(\talentLeftAnchorX,\talentTopAnchorYLvlBot){
 	\talentTreeNodeBox
 		{\iconConstant}
-		{\talentTrapHemalurgyName{}}
-		{Survival 3+}
-		{You may spend \iconOpp{} to use Hemalurgy after hitting with a trap.}
+		{\talentCreateLinchpinName{}}
+		{Lore 4+}
+		{You may steal a capacity to use more Hemalurgic Spikes.}
 };
 
 \node[anchor=north west] (t4) at(\talentRightAnchorX,-8cm){
@@ -68,18 +68,18 @@
 \node[anchor=north west] (t5) at(\talentRightAnchorX,\talentTopAnchorYLvlMid){
 	\talentTreeNodeBox
 		{\iconConstant}
-		{\talentSpikeRuinousName{}}
-		{}
-		{Successful Hemalurgy deals 2d4 spirit damage (more with additional Hemalurgy ranks).}
+		{\talentSpikeDdeathlessName{}}
+		{Medicine 3+}
+		{Your target doesn't need to die in order to create a Hemalurgic Spike.}
 
 };
 
 \node[anchor=north west] (t6) at(\talentRightAnchorX,\talentTopAnchorYLvlBot){
 	\talentTreeNodeBox
 		{\iconConstant}
-		{\talentSpikeDdeathlessName{}}
-		{}
-		{Your target doesn't need to die in order to create a Hemalurgic Spike.}
+		{\talentStealTraceName{}}
+		{Lore 4+}
+		{You may steal a trace amounts of a skill your target has not developed.}
 };
 
 \coordinate (midMid) at(12.6cm, -14cm);
@@ -92,8 +92,8 @@
 \draw [connector] (t4) -- (t5);
 \draw [connector] (t4.east) -| (sideMid);
 \draw [connector] (t6.east) -| (sideMid);
-\draw [connector] (t1.east) -| (midMid);
-\draw [connector] (t5.west) -| (midMid);
+\draw [connector] (t4.west) -| (midMid);
+\draw [connector] (t2.east) -| (midMid);
 
 % use this one to draw gold box above the existing lines
 \node[anchor=south west] (enlightened) at(\talentKeyAnchorX,\talentEnlightenedAnchorY) {
