@@ -8,9 +8,9 @@
 \def \talentKeyAnchorY{-5.7cm}
 \def \talentEnlightenedAnchorY{-7.4cm}
 \def \talentFakeGoldAnchorX{12.7cm}
-\def \talentFakeGoldAnchorY{-7cm}
+\def \talentFakeGoldAnchorY{-6.3cm}
 \def \talentLeftAnchorX{8cm}
-\def \talentRightAnchorX{12.82cm}
+\def \talentRightAnchorX{13.2cm}
 \def \talentMidAnchorX{12.52cm}
 \def \talentTitleAnchorX{8.5cm}
 \tikzstyle{connector} = [color=white, sharp corners, line width = 3pt]
@@ -23,9 +23,12 @@
 
 \newcommand{\talentTreeNodeText}[4]{
 	\sffamily
-	#1~{\large \raggedright \textbf{#2}\vspace{0.15cm}\\}
-	\ifstrempty{#3}{}{\color{gray} \textit{Prerequisite: #3}\vspace{0.15cm}\\}
-	\normalsize\color{black} #4
+	#1~{\raggedright \color{scadrialRed} \textbf{#2}\vspace{0.15cm}\\}
+	{\ifstrempty{#3}
+		{}
+		{\raggedright \small \color{scadrialBrown} \textit{Requires: #3}\vspace{0.15cm}\\}
+	}
+	\small\color{black} #4
 }
 
 \newcommand{\talentTreeNodeBox}[4]{
@@ -55,7 +58,7 @@
 }
 
 \newcommand{\talentTreeSubpathBox}[1]{
-	\fcolorbox{goldStats}{goldStats}{
+	\fcolorbox{scadrialGray}{scadrialGray}{
 		\parbox{\talentKeyNodeWidth}{
 			\vspace{0.16cm}
 			\color{white} \Large \centering \textbf{#1} \normalsize 

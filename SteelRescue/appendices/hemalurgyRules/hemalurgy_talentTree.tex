@@ -2,13 +2,15 @@
 \fancyfoot[C]{}
 \AddToShipoutPictureBG*{%
 	\put(-10,0){
-		\includegraphics[width=1.1\paperwidth,height=\paperheight]{images/background_3_dustbringer.png}
+		\includegraphics[width=1.1\paperwidth,height=\paperheight]{images/background_hemalurgist.png}
 		
 	}
 }
 
-\def \talentTopAnchorYLvlMid{-12.5cm}
-\def \talentTopAnchorYLvlBot{-17.0cm}
+\def \talentTopAnchorYLvlTop{-7cm}
+\def \talentTopAnchorYLvlMid{-11.2cm}
+\def \talentTopAnchorYLvlBot{-14.7cm}
+\def \talentTopAnchorYLvlFinal{-18cm}
 
 \begin{tikzpicture}
 	[remember picture]
@@ -31,9 +33,9 @@
 };
 
 % this node will not be visible, but it will allow for side connections
-\node[anchor=center, draw] (gold) at(\talentFakeGoldAnchorX,\talentFakeGoldAnchorY){X};
+\node[anchor=center] (gold) at(\talentFakeGoldAnchorX,\talentFakeGoldAnchorY){};
 
-\node[anchor=north west] (t1) at(\talentLeftAnchorX,-8cm) {
+\node[anchor=north west] (t1) at(\talentLeftAnchorX,\talentTopAnchorYLvlTop) {
 	\talentTreeNodeBox
 		{\iconConstant}
 		{\talentMeleeHemalurgyName{}}
@@ -46,7 +48,7 @@
 		{\iconConstant}
 		{\talentSpikeRuinousName{}}
 		{}
-		{Successful Hemalurgy deals 2d4 spirit damage (more with additional Hemalurgy ranks).}
+		{Successful Hemalurgy tests and attacks with Hemalurgic Spikes deal an additional 1d4* spirit damage.}
 };
 
 \node[anchor=north west] (t3) at(\talentLeftAnchorX,\talentTopAnchorYLvlBot){
@@ -54,27 +56,36 @@
 		{\iconConstant}
 		{\talentCreateLinchpinName{}}
 		{Lore 4+}
-		{You may steal a capacity to use more Hemalurgic Spikes.}
+		{Increase a capacity to use more Hemalurgic Spikes.}
 };
 
-\node[anchor=north west] (t4) at(\talentRightAnchorX,-8cm){
+\node[anchor=north west] (t4) at(\talentLeftAnchorX,\talentTopAnchorYLvlFinal){
+	\talentTreeNodeBox
+		{\iconConstant}
+		{\talentSinisterIntentName{}}
+		{Crafting 4+}
+		{You may steal use Hemalurgy to steal unique features and abilities.}
+};
+
+% 2ND COLUMN
+
+\node[anchor=north west] (t5) at(\talentRightAnchorX,\talentTopAnchorYLvlTop){
+	\talentTreeNodeBox
+		{\iconConstant}
+		{\talentHemalurgyMedicineName{}}
+		{Complete "\goalLearnHemalurgyName{}"}
+		{You may add your ranks in Hemalurgy to \skillMedicine{} tests you make.}
+};
+
+\node[anchor=north west] (t6) at(\talentRightAnchorX,\talentTopAnchorYLvlMid){
 	\talentTreeNodeBox
 		{\iconConstant}
 		{\talentSpikeStackingName{}}
-		{Complete "\goalLearnHemalurgyName{}"}
+		{}
 		{You may use the same spike multiple times to increase its potency.}
 };
 
-\node[anchor=north west] (t5) at(\talentRightAnchorX,\talentTopAnchorYLvlMid){
-	\talentTreeNodeBox
-		{\iconConstant}
-		{\talentSpikeDdeathlessName{}}
-		{Medicine 3+}
-		{Your target doesn't need to die in order to create a Hemalurgic Spike.}
-
-};
-
-\node[anchor=north west] (t6) at(\talentRightAnchorX,\talentTopAnchorYLvlBot){
+\node[anchor=north west] (t7) at(\talentRightAnchorX,\talentTopAnchorYLvlBot){
 	\talentTreeNodeBox
 		{\iconConstant}
 		{\talentStealTraceName{}}
@@ -82,23 +93,36 @@
 		{You may steal a trace amounts of a skill your target has not developed.}
 };
 
-\coordinate (midMid) at(12.6cm, -11cm);
-\coordinate (sideMid) at(17.5cm, -14cm);
+\node[anchor=north west] (t8) at(\talentRightAnchorX,\talentTopAnchorYLvlFinal){
+	\talentTreeNodeBox
+		{\iconConstant}
+		{\talentSpikeDdeathlessName{}}
+		{Medicine 4+}
+		{Your target doesn't need to die in order to create a Hemalurgic Spike.}
+
+};
+
+\coordinate (midMid) at(\talentFakeGoldAnchorX, -11cm);
+\coordinate (leftMid) at(7.7cm, -14cm);
+\coordinate (rightMid) at(17.8cm, -14cm);
 \draw [connector] (key) |- (gold);
 \draw [connector] (gold) ++(0.15,0) -| (t1);
-\draw [connector] (gold) ++(0.15,0) -| (t4);
+\draw [connector] (gold) ++(0.15,0) -| (t5);
 \draw [connector] (t1) -- (t2);
 \draw [connector] (t2) -- (t3);
-\draw [connector] (t4) -- (t5);
-\draw [connector] (t4.east) -| (sideMid);
-\draw [connector] (t6.east) -| (sideMid);
-\draw [connector] (t4.west) -| (midMid);
+\draw [connector] (t5) -- (t6);
+\draw [connector] (t6) -- (t7);
+\draw [connector] (t5.east) -| (rightMid);
+\draw [connector] (t8.east) -| (rightMid);
+\draw [connector] (t5.west) -| (midMid);
 \draw [connector] (t2.east) -| (midMid);
+\draw [connector] (t2.west) -| (leftMid);
+\draw [connector] (t4.west) -| (leftMid);
 
 % use this one to draw gold box above the existing lines
-\node[anchor=south west] (enlightened) at(\talentKeyAnchorX,\talentEnlightenedAnchorY) {
-	\talentTreeSubpathBox{HEMALURGY}
-};
+% \node[anchor=south west] (enlightened) at(\talentKeyAnchorX,\talentEnlightenedAnchorY) {
+% 	\talentTreeSubpathBox{HEMALURGY}
+% };
 
 	
 \end{tikzpicture}

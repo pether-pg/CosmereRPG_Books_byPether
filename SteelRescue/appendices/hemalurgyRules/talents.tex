@@ -11,6 +11,8 @@
 \newcommand{\talentSpikeRuinousName}{Ruinous Spike}
 \newcommand{\talentCreateLinchpinName}{Steel Linchpin}
 \newcommand{\talentStealTraceName}{Vestigial Powers}
+\newcommand{\talentHemalurgyMedicineName}{Forbidden Medicine}
+\newcommand{\talentSinisterIntentName}{Sinister Intent}
 
 
 \talent
@@ -28,7 +30,7 @@
 	{\iconConstant}
 	{Kill her with the spike, and drive it into your own body. That is the only way!}
 	{
-		You may use Hemalurgy after you hit another character with a metal melee weapon you have an expertise in, as long as you spend \iconOpp{} from that attack. In that case, your metal weapon will take the role of the spike.
+		You may use Hemalurgy as \iconAction{} after you hit another character with a metal melee weapon you have an expertise in, as long as you spend 2 Focus or \iconOpp{} from that attack. In that case, your metal weapon will take the role of the spike.
 		
 		Starting from tier 2, you may may also use this talent after hitting a character with a ranged weapon you have an expertise in.	Starting from tier 3, you may also use this talent after a trap you made triggered and hit a character. 
 	}
@@ -39,10 +41,12 @@
 	{\iconConstant}
 	{YOU SHOULD KILL THEM.}
 	{
-	After you successfully pass the Hemalurgy test, the target suffers 2d4 spirit damage. The size of dice increases with your ranks in Hemalurgy; at 2 ranks, roll 2d6 (instead of 2d4), and so on.
+		After you successfully pass the Hemalurgy test, the target suffers 1d4 spirit damage. The size of dice increases with your ranks in Hemalurgy; at 2 ranks, roll 1d6 (instead of 1d4), and so on.
+		
+		If you use a previously created Hemalurgic Spike as a weapon, it deals an additional 1d4 spirit damage on hit. The size of dice increases with your ranks in Hemalurgy. This dice cannot be used to graze the enemy.
 	}
 
-	
+\newpage	
 \talent
 	{\talentCreateLinchpinName{}}
 	{Lore 4+; \talentSpikeRuinousName{} talent}
@@ -51,7 +55,9 @@
 	{
 		You may use steel spikes to steal the target's capacity for the number of Hemalurgic Spikes a person can use at the same time before succumbing to Ruin's influence. 
 		
-		As described in "Hemalurgic Spike Effects - Spiritweb Disruption" (\handbookMistborn{}, page 291.), a person can usually use 3 Hemalurgic Spikes before the Shard takes control of them. You may use the Linchpin Spike to increase that limit.
+		A person can usually use 3 Hemalurgic Spikes before the Shard takes control of them. You may use the Linchpin Spike to increase that limit. 
+		
+		Additionally, for as long as the Linchpin Spike is implanted, all Spikes can never reduce the user's Spiritual Defense by more than -2.
 		
 		The Linchpin counts as a Spike toward that limit. A person can have only one Linchpin. If at any point you lose the Linchpin while having 4 or more other Spikes, your character is lost to Ruin.
 	}
@@ -74,25 +80,51 @@
 	
 \talent
 	{\talentSpikeDdeathlessName{}}
-	{Medicine 3+; \talentSpikeStackingName{} talent}
+	{Medicine 4+; \talentSpikeStackingName{} talent}
 	{\iconConstant}
 	{The process involves a very thin spike, my lord, and, oddly, the right mindset.}
 	{
 		You don't need to wait for the donor's death to collect the Hemalurgic Spike after the successful Hemalurgy test. Once the Spike is removed from the donor's body, they lose the characteristic stolen by the Spike in the amount of the Spike's potency.
 	}
 
-
-
-	
+\newpage
 \talent
 	{\talentStealTraceName{}}
 	{Lore 4+; \talentSpikeStackingName{} talent}
 	{\iconConstant}
 	{They don't need that extra if the powers didn't manifest in them. We simply slice it off and use it in a spike.}
 	{
-		You may chose to steal a skill your target does not have developed (eg. a specific Allomantic power). If you do, after collecting the created Spike, roll 1d20 and divide the result by 100 to determine the amount your Spike has stolen.
+		You may chose to steal a skill your target does not have developed (eg. a specific Allomantic power). If you do, after collecting the created Spike, it gains a single Charge of that skill instead of Blessing trait.
 		
-		When determining the total bonus granted by the Spike, round down the Spike's Blessing value. The Blessing must be at least 1 to give you any noticeable effects.
+		You may continue using the Spike in your Hemalurgy tests to gather more Charges for the selected skill. You may target each character only once.
 		
-		While the amount gathered from a single donor will not be enough to grant you the skill, you may repeat the process on more targets, each time adding the new result to the existing total. Each character can be targeted like that only once.
+		For as long the Spike is implanted in your body, you may spend 1 Charge to make a single test of the stolen skill. Alternatively, you may spend 5 Charges to give the Spike Blessing [stolen skill +1], allowing it to grant a permanent bonus.
+		
+		You may continue to increase permanent Blessing bonus up to the Spike's capacity or the number of your Hemalurgy ranks, whatever is smaller.
+	}
+	
+\talent
+	{\talentHemalurgyMedicineName{}}
+	{TODO}
+	{\iconConstant}
+	{TODO}
+	{
+		When making a \skillMedicine{} test, you may add your Hemalurgy ranks on top of other modifiers. That includes, but is not limited to, \skillMedicine{} tests to implant and remove Hemalurgic Spikes.
+	}
+
+\talent
+	{\talentSinisterIntentName{}}
+	{Crafting 4+}
+	{\iconConstant}
+	{TODO}
+	{
+		You may use Hemalurgy with intention to steal unique characteristics, not specified in the list of properties of each Hemalurgic metals. Work with your GM to determine if the characteristic can be stolen and which metal should be used as a spike to achieve this.		
+		Examples may include: 
+		\\ \hspace*{0.5cm} - maximum Health or Focus,  
+		\\ \hspace*{0.5cm} - innate Deflect Value,  
+		\\ \hspace*{0.5cm} - non-Invested skills,   
+		\\ \hspace*{0.5cm} - non-Scadrial Invested skills,  
+		\\ \hspace*{0.5cm} - unique Features and Actions,  
+		\\ \hspace*{0.5cm} - talents, or other special abilities,  
+		\\ \hspace*{0.5cm} - etc.
 	}
