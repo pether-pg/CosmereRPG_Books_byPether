@@ -12,12 +12,12 @@
 \newcommand{\talentCreateLinchpinName}{Steel Linchpin}
 \newcommand{\talentStealTraceName}{Vestigial Powers}
 \newcommand{\talentHemalurgyMedicineName}{Forbidden Medicine}
-\newcommand{\talentSinisterIntentName}{Sinister Intent}
+\newcommand{\talentSinisterIntentName}{Sinister Mastery}
 
 
 \talent
 	{\talentHemalurgyKeyName{} (Key Talent)}
-	{Hemalurgist Patron or other source of knowledge about the art of Hemalurgy.}
+	{Hemalurgist Patron or other source of knowledge about the art of Hemalurgy}
 	{\iconSpecial}
 	{The art that is unique to Hemalurgy is the knowledge of where to place the spikes.}
 	{
@@ -26,7 +26,7 @@
 	
 \talent
 	{\talentMeleeHemalurgyName{}}
-	{Complete "\goalLearnHemalurgyName{}" goal.}
+	{Complete "\goalLearnHemalurgyName{}" goal}
 	{\iconConstant}
 	{Kill her with the spike, and drive it into your own body. That is the only way!}
 	{
@@ -37,7 +37,7 @@
 	
 \talent
 	{\talentSpikeRuinousName{}}
-	{\talentSpikeStackingName{} talent}
+	{\talentMeleeHemalurgyName{} or \talentHemalurgyMedicineName{} talent}
 	{\iconConstant}
 	{YOU SHOULD KILL THEM.}
 	{
@@ -46,7 +46,7 @@
 		If you use a previously created Hemalurgic Spike as a weapon, it deals an additional 1d4 spirit damage on hit. The size of dice increases with your ranks in Hemalurgy. This dice cannot be used to graze the enemy.
 	}
 
-\newpage	
+
 \talent
 	{\talentCreateLinchpinName{}}
 	{Lore 4+; \talentSpikeRuinousName{} talent}
@@ -57,14 +57,23 @@
 		
 		A person can usually use 3 Hemalurgic Spikes before the Shard takes control of them. You may use the Linchpin Spike to increase that limit. 
 		
-		Additionally, for as long as the Linchpin Spike is implanted, all Spikes can never reduce the user's Spiritual Defense by more than -2.
-		
 		The Linchpin counts as a Spike toward that limit. A person can have only one Linchpin. If at any point you lose the Linchpin while having 4 or more other Spikes, your character is lost to Ruin.
+		
+		Additionally, for as long as the Linchpin Spike is implanted, all Spikes can never reduce the user's Spiritual Defense by more than -2.
+	}	
+	
+\talent
+	{\talentHemalurgyMedicineName{}}
+	{Complete "\goalLearnHemalurgyName{}" goal}
+	{\iconConstant}
+	{For all that it disgusts me, I cannot help but be impressed by Hemalurgy as an art.}
+	{
+		When making a \skillMedicine{} test, you may add your Hemalurgy ranks on top of other modifiers. That includes, but is not limited to, \skillMedicine{} tests to implant and remove Hemalurgic Spikes.
 	}
 	
 \talent
 	{\talentSpikeStackingName{}}
-	{Complete "\goalLearnHemalurgyName{}" goal.}
+	{\talentHemalurgyMedicineName{} talent}
 	{\iconConstant}
 	{Roughly five percent Invested. Fully Investing one spike takes between twenty and thirty people.}
 	{
@@ -72,53 +81,45 @@
 		
 		The new potency is 1 higher then the previous one, or 1 higher than whatever the spike would have after the new Hemalurgy test, whichever is higher. At any point the potency of a newly created Hemalurgic Spike cannot exceed a number of your ranks in Hemalurgy or the spike's capacity.
 		
-		If the Spike had previously had a smaller Whispers of Ruin value than your current Hemalurgy ranks, update the value to the higher value.
+		% If the Spike had previously had a smaller Whispers of Ruin value than your current Hemalurgy ranks, update the value to the higher value.
 		
 		You cannot use this talent if either the target or your Spike don't have at least 1 of the characteristic you wish to steal (eg. if you have some trace amounts stolen with \talentStealTraceName{}).
 	}
 
-	
+
+\newpage ~~\\
 \talent
 	{\talentSpikeDdeathlessName{}}
-	{Medicine 4+; \talentSpikeStackingName{} talent}
+	{Medicine 4+; \talentHemalurgyMedicineName{} talent}
 	{\iconConstant}
 	{The process involves a very thin spike, my lord, and, oddly, the right mindset.}
 	{
 		You don't need to wait for the donor's death to collect the Hemalurgic Spike after the successful Hemalurgy test. Once the Spike is removed from the donor's body, they lose the characteristic stolen by the Spike in the amount of the Spike's potency.
 	}
 
-\newpage
 \talent
 	{\talentStealTraceName{}}
 	{Lore 4+; \talentSpikeStackingName{} talent}
 	{\iconConstant}
 	{They don't need that extra if the powers didn't manifest in them. We simply slice it off and use it in a spike.}
 	{
-		You may chose to steal a skill your target does not have developed (eg. a specific Allomantic power). If you do, after collecting the created Spike, it gains a single Charge of that skill instead of Blessing trait.
+		You may chose to steal a skill your target doesn't have developed (eg. a specific Allomantic power). If you do, after collecting the created Spike, it gains a single Charge of that skill instead of Blessing trait.
 		
 		You may continue using the Spike in your Hemalurgy tests to gather more Charges for the selected skill. You may target each character only once.
 		
-		For as long the Spike is implanted in your body, you may spend 1 Charge to make a single test of the stolen skill. Alternatively, you may spend 5 Charges to give the Spike Blessing [stolen skill +1], allowing it to grant a permanent bonus.
+		While the Spike is implanted in your body, you may spend 1 Charge to make a single test of the stolen skill. Alternatively, you may spend 5 Charges to give the Spike Blessing [stolen skill +1], allowing it to grant a permanent bonus.
 		
 		You may continue to increase permanent Blessing bonus up to the Spike's capacity or the number of your Hemalurgy ranks, whatever is smaller.
 	}
-	
-\talent
-	{\talentHemalurgyMedicineName{}}
-	{TODO}
-	{\iconConstant}
-	{TODO}
-	{
-		When making a \skillMedicine{} test, you may add your Hemalurgy ranks on top of other modifiers. That includes, but is not limited to, \skillMedicine{} tests to implant and remove Hemalurgic Spikes.
-	}
+
 
 \talent
 	{\talentSinisterIntentName{}}
-	{Crafting 4+}
+	{Crafting 4+; \talentSpikeRuinousName{} talent}
 	{\iconConstant}
-	{TODO}
+	{How could such a change be effected by a single spike? This is a level of Hemalurgy beyond my understanding.}
 	{
-		You may use Hemalurgy with intention to steal unique characteristics, not specified in the list of properties of each Hemalurgic metals. Work with your GM to determine if the characteristic can be stolen and which metal should be used as a spike to achieve this.		
+		You may use Spiritual metals as Hemalurgic Spikes as if you were tier 4 character. Additionally, you may use Hemalurgy with intention to steal unique characteristics, not specified in the list of properties of each Hemalurgic metals. Work with your GM to determine if the characteristic can be stolen and which metal should be used as a spike to achieve this.		
 		Examples may include: 
 		\\ \hspace*{0.5cm} - maximum Health or Focus,  
 		\\ \hspace*{0.5cm} - innate Deflect Value,  
