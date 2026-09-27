@@ -1,6 +1,8 @@
 \documentclass{report}
 
-\title{\Huge \MakeUppercase{Children of the Unmade} \\ \vspace{0.5cm} \Large A Fan-made Adventure in \cosmereRPG}
+\def \myTitle{\MakeUppercase{Children of the Unmade}} % workaround - \@title not always works...
+\def \subtitle{A Fan-made Adventure for \cosmereRPG}
+\title{\myTitle{}}
 
 \author{Pether.pg}
 
@@ -43,6 +45,7 @@
 	\input{defsAndCommands.tex}
 	
 	\input{title_page.tex}
+	\input{template_page.tex}
 	
 	\setcounter{tocdepth}{1}
 	\tableofcontents

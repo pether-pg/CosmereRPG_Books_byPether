@@ -1,6 +1,8 @@
 \documentclass{report}
 
-\title{\Huge \corruptedRulesChapTitle{} \\ \vspace{0.5cm} \Large A Fan-made Ruleset for \cosmereRPG}
+\def \myTitle{\MakeUppercase{\corruptedRulesChapTitle{}}} % workaround - \@title not always works...
+\def \subtitle{A Fan-made Ruleset for \cosmereRPG}
+\title{\myTitle{}}
 
 \author{Pether.pg}
 
@@ -41,6 +43,7 @@
 	\input{defsAndCommands.tex}
 	
 	\input{title_page.tex}
+	\input{template_page.tex}
 	
 	\setcounter{tocdepth}{1}
 	\tableofcontents
