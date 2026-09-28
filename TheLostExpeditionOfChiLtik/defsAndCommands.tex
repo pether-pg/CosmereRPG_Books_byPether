@@ -1,3 +1,22 @@
+
+\input{lib/docStyle.tex}
+
+\newcommand{\credits}[4]{
+	\sffamily \huge
+	\noindent \color{blueRadiance} \textbf{CREDITS} \large \\
+	
+	\noindent \color{blueRadiance} \textbf{Designer:} \color{black} #1
+	
+	\noindent \color{blueRadiance} \textbf{Writer:}   \color{black} #2
+	
+	\noindent \color{blueRadiance} \textbf{Editor:}   \color{black} #3
+	
+	\noindent \color{blueRadiance} \textbf{Artists:}  \color{black} #4
+	
+	\normalsize
+}
+
+
 % Basic
 
 \newcommand{\fullref}[1]{\ref{#1}.~"\nameref{#1}"}
@@ -29,6 +48,8 @@
 
 
 % Official Books
+\newcommand{\markR}{\normalsize\textsuperscript{\textregistered{}}\normalsize}
+\newcommand{\markC}{\normalsize\textsuperscript{\textcopyright{}}\normalsize}
 
 \newcommand{\cosmereRPG}[0]{Cosmere RPG}
 \newcommand{\handbook}[0]{\textit{Stormlight Handbook}}
@@ -67,7 +88,7 @@
 
 % Abilities, Skills, Checks
 
-\newcommand{\skillCheck}[2]{DC~#1~#2 check}
+\newcommand{\skillCheck}[2]{DC~#1~#2 test}
 \newcommand{\skillTreeClimb}{\skillCheck{12}{Athletics}}
 
 \newcommand{\exhausted}[1][-1]{Exhausted [#1]}
@@ -327,7 +348,7 @@
 
 	\textbf{Health:} #7 \hfill
 	\textbf{Focus:} #8 \hfill
-	\textbf{Intesture:} #9
+	\textbf{Investiture:} #9
 	\\
 }
 
